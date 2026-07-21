@@ -89,13 +89,14 @@ td, th { padding: 0.3rem 0.8rem !important; }
 | 0:15 | How AI tools actually work |
 | 0:45 | Working conversationally with AI |
 | 1:10 | **Lab 1:** From messy notes to useful output |
-| 1:30 | *Break* |
 | 1:40 | Connected AI and your own data |
 | 2:10 | **Lab 2:** Copilot where you already work |
 | 2:25 | Multimodal AI (+ **Lab 3:** vision) |
 | 2:45 | Using AI without fooling yourself (+ **Lab 4:** catch the hallucination) |
 | 3:10 | Equity, classroom questions, wrap-up |
 | 3:30 | Done — but the repo stays with you |
+
+<div class="text-sm text-gray-500 mt-2">Plus a 10-minute break when a natural pause arrives</div>
 
 <!--
 All labs, data files, and these slides live in the GitHub repo.
@@ -457,20 +458,6 @@ Two paths in the lab document: **Copilot** or **any free chat tool**
 Circulate during the lab. The teachable moment is almost always someone
 accepting a mediocre first draft — push them to iterate.
 -->
-
----
-layout: image-right
-image: /images/coffee.jpg
----
-
-# Break
-
-## 10 minutes
-
-<br>
-
-When we're back: connecting AI to your own data —
-Copilot, connectors, skills, and agents
 
 ---
 layout: center
@@ -899,24 +886,6 @@ class: text-center
 <div class="text-6xl mb-4"><carbon:checkmark-outline class="text-amber-500 inline-block" /></div>
 
 # <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Wrap-Up</span>
-
----
-
-# Before You Leave: Two Commitments
-
-<v-clicks>
-
-**One workflow to try this week**
-Something real from your job — a report you dread, a mailbox ritual, an inherited spreadsheet
-
-**One risk or question to manage**
-Something you'll verify, a policy you'll check, a boundary you'll clarify with your team
-
-<br>
-
-Say them out loud to a neighbor. Public commitments stick.
-
-</v-clicks>
 
 ---
 
