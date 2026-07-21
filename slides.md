@@ -801,6 +801,12 @@ Attach an image; the model reads and reasons about it
 
 </v-click>
 
+<v-click>
+
+- **Do this tonight:** agree on a **safe word** with family and close friends — an urgent call that *sounds* exactly like someone you love can be a clone; the safe word is the check a voice can't fake
+
+</v-click>
+
 ---
 
 # Video

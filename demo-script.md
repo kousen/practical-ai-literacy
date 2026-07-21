@@ -264,6 +264,10 @@ to the public repo).
 - Professional voice cloning is consumer-grade now: minutes of audio, modest cost
 - Voice is no longer an authentication factor — connect directly to help-desk
   procedures, vishing, and "grandparent scam" patterns campus users will face
+- **The take-home advice:** agree on a safe word or phrase with family and
+  close friends. An urgent call that sounds exactly like your kid, your parent,
+  or your boss can be a clone — the safe word is the check the caller can't fake.
+  This is the single most repeatable tip of the day; say it slowly
 - This is also a *tools* callback: a coding agent just called a third-party
   API through a skill — the same plumbing from the Connected AI section
 - Ethics note worth saying aloud: cloning requires consent; this one is mine
