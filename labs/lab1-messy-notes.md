@@ -12,29 +12,34 @@ The core skill of this entire course: iterate, don't accept the first draft.
 
 ## Steps
 
-1. **Paste the messy notes** with this starting prompt:
+1. **Define done first.** Before prompting, write one sentence:
+   *"This email succeeds if ____."* (Example: "…the CIO knows the vendor
+   decision deadline and what we're asking for, in under 30 seconds of
+   reading.") Keep it visible — you'll judge every draft against it.
+
+2. **Paste the messy notes** with this starting prompt:
 
    > Here are raw notes from an IT infrastructure meeting. Turn them into a
    > brief status email to the CIO. Professional but not stiff. One paragraph
    > of summary, then bullets for decisions and open issues.
 
-2. **Refine at least twice.** Ideas:
+3. **Refine at least twice.** Ideas:
    - "Shorter. The CIO reads email on a phone."
    - "The tone is too apologetic about the delay — make it matter-of-fact."
    - "Add a clear ask: we need a decision on the storage vendor by Friday."
 
-3. **Change the output, not the input.** From the same conversation:
+4. **Change the output, not the input.** From the same conversation:
    - "Now produce an action-item list: owner, task, due date, as a table."
    - "Now draft the agenda for the follow-up meeting. 45 minutes."
 
-4. **Challenge it:**
+5. **Challenge it:**
    - "What's ambiguous in the original notes that you had to guess about?"
 
    Read that answer carefully — it's usually the most useful output of the lab.
 
 ## If you finish early
 
-Run step 1's prompt in a *different* tool and compare the two drafts.
+Run step 2's prompt in a *different* tool and compare the two drafts.
 Which guessed better? Which followed the format instructions more precisely?
 
 ## What you should notice
@@ -42,3 +47,4 @@ Which guessed better? Which followed the format instructions more precisely?
 - The first draft is rarely bad, but it's never *yours* — iteration is where it earns its keep
 - The model made assumptions about anything the notes left vague (step 4 makes it confess)
 - One conversation produced four deliverables; context accumulates in your favor
+- Your step-1 success sentence did double duty: it sharpened the prompt *and* gave you something objective to judge drafts against

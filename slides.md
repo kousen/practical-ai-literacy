@@ -438,6 +438,28 @@ No magic words — just information the model can't guess:
 
 ---
 
+# Say What Success Looks Like
+
+<v-clicks>
+
+- An AI can't hit a target you haven't described — it will guess one, confidently
+- **Coders have solved this:** they hand the agent *test cases* — the work isn't done until the tests pass
+- The same move exists for everything else:
+  - **An exemplar** — "here's last month's report; match its tone, length, and structure"
+  - **Acceptance criteria** — "done means: one page, no jargon, includes all three budget numbers"
+  - **A rubric** — the checklist you'd use to judge the result afterward, handed over *up front*
+- Hidden benefit: writing the success condition clarifies *your* thinking before the AI ever sees the task
+
+</v-clicks>
+
+<v-click>
+
+> If you can't say how you'll judge the answer, you're not ready to ask the question.
+
+</v-click>
+
+---
+
 # What to Delegate, What to Keep
 
 | Delegate freely | Keep your hands on |
