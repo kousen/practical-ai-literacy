@@ -107,7 +107,9 @@ layout: center
 class: text-center
 ---
 
-# Getting Started
+<div class="text-6xl mb-4"><carbon:idea class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Getting Started</span>
 
 ## What AI Literacy Means Now
 
@@ -151,7 +153,8 @@ This is the course thesis. Everything else hangs off this slide.
 -->
 
 ---
-layout: center
+layout: image-right
+image: /images/mic.jpg
 ---
 
 # Demo: Speech to Clean Text
@@ -177,7 +180,9 @@ layout: center
 class: text-center
 ---
 
-# How AI Tools Actually Work
+<div class="text-6xl mb-4"><carbon:machine-learning-model class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">How AI Tools Actually Work</span>
 
 ## The mental model that explains the weird behavior
 
@@ -316,7 +321,9 @@ layout: center
 class: text-center
 ---
 
-# Working Conversationally with AI
+<div class="text-6xl mb-4"><carbon:chat class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Working Conversationally with AI</span>
 
 ## It's a dialogue, not a search box
 
@@ -415,23 +422,33 @@ accepting a mediocre first draft — push them to iterate.
 -->
 
 ---
-layout: center
-class: text-center
+layout: image-right
+image: /images/coffee.jpg
 ---
 
 # Break
 
 ## 10 minutes
 
+<br>
+
+When we're back: connecting AI to your own data —
+Copilot, connectors, skills, and agents
+
 ---
 layout: center
 class: text-center
 ---
 
-# Connected AI and Your Own Data
+<div class="text-6xl mb-4"><carbon:plug class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Connected AI and Your Own Data</span>
 
 ## From "chat with a model" to "AI that can see your work"
 
+---
+layout: image-right
+image: /images/library.jpg
 ---
 
 # The Grounding Idea
@@ -620,10 +637,15 @@ layout: center
 class: text-center
 ---
 
-# Multimodal AI
+<div class="text-6xl mb-4"><carbon:camera class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Multimodal AI</span>
 
 ## Beyond text in, text out
 
+---
+layout: image-right
+image: /images/vision.jpg
 ---
 
 # Image Generation and Editing
@@ -631,10 +653,10 @@ class: text-center
 <v-clicks>
 
 - Every major tool now generates and edits images from descriptions
-- Practical campus uses: event graphics, illustrations for documentation, quick mockups
-- Editing is often more useful than generation: "remove the background," "make this a diagram"
-- Honest limits: text inside images, brand consistency, and anything requiring factual precision
-- Institutional caution: check licensing/policy before using generated images in official materials
+- Campus uses: event graphics, documentation, quick mockups
+- Editing often beats generation: "remove the background," "make this a diagram"
+- Limits: text inside images, brand consistency, factual precision
+- Check licensing/policy before official use
 
 </v-clicks>
 
@@ -703,7 +725,9 @@ layout: center
 class: text-center
 ---
 
-# Using AI Without Fooling Yourself
+<div class="text-6xl mb-4"><carbon:warning-alt class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Using AI Without Fooling Yourself</span>
 
 ## The section that keeps you employed
 
@@ -811,7 +835,9 @@ layout: center
 class: text-center
 ---
 
-# Wrap-Up
+<div class="text-6xl mb-4"><carbon:checkmark-outline class="text-amber-500 inline-block" /></div>
+
+# <span class="bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">Wrap-Up</span>
 
 ---
 

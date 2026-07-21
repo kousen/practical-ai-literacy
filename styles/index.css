@@ -1,0 +1,21 @@
+/* Accent system: navy + gold (a quiet nod to Trinity's colors) */
+
+.slidev-layout:not(.cover) h1 {
+  color: #1e3a8a;
+}
+
+.slidev-layout blockquote {
+  border-left: 4px solid #d4a017;
+  background: #fbf6e9;
+  border-radius: 0 0.4rem 0.4rem 0;
+  padding: 0.7rem 1.1rem;
+}
+
+.slidev-layout table th {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+.slidev-layout table tr:nth-child(even) td {
+  background: #f1f5f9;
+}
