@@ -908,6 +908,7 @@ class: text-center
 # Thank You
 
 Ken Kousen
+
 kenneth.kousen@trincoll.edu
 
 *Ask, refine, challenge, verify.*
