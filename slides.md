@@ -568,7 +568,7 @@ Bridges between an AI tool and outside systems
 - Same grounding idea, generalized beyond one vendor's ecosystem
 - The question to ask about any connector — and this is an IT instinct you already have:
   **what exactly can it read, and what can it do?**
-- Under the hood, more and more of these bridges are built on one open standard: **MCP** — coming up in two slides
+- Under the hood, more and more of these bridges are built on one open standard: **MCP** — coming up in a moment
 
 </v-clicks>
 
@@ -596,9 +596,29 @@ A **skill** is a reusable instruction package a tool loads when relevant
 
 ---
 
+# Tools: How a Model Does Anything at All
+
+<v-clicks>
+
+- On its own, a model can only do one thing: **produce text**
+- The harness changes that by offering it **tools** — actions it can request: "search the web," "read this file," "run this command," "query this calendar"
+- The model asks; the harness executes and hands back the result; the loop continues
+- Coding agents ship with the essentials built in: reading and writing files, running programs
+- But the interesting question is: **how do you add tools nobody built in — tools you didn't write?**
+
+</v-clicks>
+
+<v-click>
+
+> That question is exactly what MCP answers →
+
+</v-click>
+
+---
+
 # MCP: A Standard Way to Connect Tools
 
-**Model Context Protocol** — an open standard for plugging data sources and tools into AI assistants
+**Model Context Protocol** — an open standard for adding third-party tools to any AI assistant
 
 <v-clicks>
 
@@ -631,6 +651,29 @@ permission prompt is the governance story IT people care about.
 <v-click>
 
 > **Two words you'll keep hearing:** the **harness** is the software wrapped around the model — the loop, the tools, the permission checks. A **surface** is where a harness meets you: web chat, desktop app, terminal, or inside Outlook and Word.
+
+</v-click>
+
+---
+
+# Permissions: Who Said You Could Do That?
+
+This is where your IT instincts transfer directly
+
+<v-clicks>
+
+- Every tool is a **capability**, and they are not equal: reading a file ≠ writing one ≠ running a command ≠ sending an email
+- Good harnesses **ask before acting** — allow once, allow always, or deny — and you'll see those prompts live in today's demos
+- **Least privilege applies to agents exactly like service accounts:** grant the access the task needs, nothing more
+- The questions you already ask about any integration are the right ones here:
+  - What can it *read*? What can it *do*? Is it *logged*? Who *approved* it?
+- The permission prompt is the governance story — when campus asks "is this safe?", this model of scoped, auditable, ask-first access is the answer
+
+</v-clicks>
+
+<v-click>
+
+> Treat an agent like a new hire with credentials: capable, fast, and not yet trusted with the master key.
 
 </v-click>
 
