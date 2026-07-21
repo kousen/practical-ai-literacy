@@ -9,7 +9,8 @@ narration beats, and a fallback if it dies on stage.
 - [ ] Claude Desktop open, signed in, MCP servers connected (check the tools icon)
 - [ ] Terminal with Claude Code, `cd` into the prepared demo folder
 - [ ] Copies of `labs/data/` files on the desktop for quick access
-- [ ] Browser tabs: copilot.microsoft.com (Trinity account), claude.ai, chatgpt.com
+- [ ] Browser tabs: copilot.microsoft.com (Trinity account), claude.ai, chatgpt.com,
+      the Tokenizer Playground (loaded and tested — it fetches the tokenizer on first use)
 - [ ] Screen mirroring, font sizes bumped (terminal ≥ 18pt, browser zoom 125%)
 - [ ] Do a 30-second dry run of each demo — models and tools change weekly;
       last week's demo is not this week's demo
@@ -39,6 +40,37 @@ narration beats, and a fallback if it dies on stage.
 **Fallback:** if the mic or room audio fails, show a 30-second pre-recorded
 screen capture (record one the night before), or simply narrate it and move
 on — this demo is a tone-setter, not load-bearing.
+
+---
+
+## Micro-demo: The Tokenizer Playground
+
+**When:** the "Tokens: The Unit of Everything" slide — 2 minutes, in the browser.
+
+**URL:** <https://huggingface.co/spaces/Xenova/the-tokenizer-playground>
+(runs in the browser via Transformers.js; needs network to load the page, then
+tokenizes locally — keep the tab open from the morning pre-flight)
+
+**Steps:**
+
+1. Type "Trinity College" — watch it split, note the token count
+2. Paste a sentence from a real email — point out common words are one token,
+   rare words shatter into fragments
+3. Try something odd: "supercalifragilistic" or a long URL — fragments everywhere
+4. Switch the tokenizer dropdown between models to show different vendors
+   slice text differently
+
+**Narration beats:**
+
+- "This is what the model actually sees — not words, not letters"
+- Connects forward to pricing (metered per million of *these*) and context
+  windows (the memory is measured in *these*)
+- Why models are historically bad at "how many R's in strawberry": they don't
+  see letters at all
+
+**Fallback:** OpenAI's tokenizer at <https://platform.openai.com/tokenizer>
+shows the same idea. If both are unreachable, the slide's ¾-of-a-word rule of
+thumb carries the point.
 
 ---
 

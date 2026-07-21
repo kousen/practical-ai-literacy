@@ -214,6 +214,13 @@ class: text-center
 
 </v-clicks>
 
+<v-click>
+
+> **Live demo:** [The Tokenizer Playground](https://huggingface.co/spaces/Xenova/the-tokenizer-playground) —
+> paste your own text and watch it split into tokens
+
+</v-click>
+
 ---
 
 # Context Windows
