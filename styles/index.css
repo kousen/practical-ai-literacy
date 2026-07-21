@@ -4,6 +4,17 @@
   color: #1e3a8a;
 }
 
+/* seriph mutes all paragraphs; keep body copy dark for projector legibility,
+   but preserve the muted look for the subtitle paragraph right under the title */
+.slidev-layout:not(.cover) p {
+  color: #1f2937;
+  opacity: 1;
+}
+
+.slidev-layout:not(.cover) h1 + p {
+  color: #64748b;
+}
+
 .slidev-layout blockquote {
   border-left: 4px solid #d4a017;
   background: #fbf6e9;

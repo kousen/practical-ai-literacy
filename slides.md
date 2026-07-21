@@ -347,6 +347,8 @@ Models you can download and run on your own hardware
 
 # Cost Literacy
 
+How the money works — and why it shapes the tools
+
 <v-clicks>
 
 **Subscriptions** (ChatGPT Plus, Claude Pro, M365 Copilot): flat monthly fee, usage limits, per-seat
