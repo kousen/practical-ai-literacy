@@ -64,10 +64,11 @@ Let's talk about what just happened." Sets the tone: practical, not philosophica
 
 # Contact Info
 
-Ken Kousen
-Kousen IT, Inc.
+**Ken Kousen**
 
-- ken.kousen@kousenit.com
+Professor of Practice, Computer Science
+
+- kenneth.kousen@trincoll.edu
 - https://www.kousenit.com
 - https://kousenit.org (blog)
 - LinkedIn: [kenkousen](https://www.linkedin.com/in/kenkousen/)
@@ -907,6 +908,6 @@ class: text-center
 # Thank You
 
 Ken Kousen
-ken.kousen@kousenit.com
+kenneth.kousen@trincoll.edu
 
 *Ask, refine, challenge, verify.*

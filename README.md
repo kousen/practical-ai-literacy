@@ -47,8 +47,8 @@ npm run export   # PDF export
 
 ## About
 
-Presented by [Ken Kousen](https://www.kousenit.com), Kousen IT, Inc.
-(ken.kousen@kousenit.com)
+Presented by [Ken Kousen](https://www.kousenit.com), Professor of Practice,
+Computer Science, Trinity College (kenneth.kousen@trincoll.edu)
 
 Questions afterward? The AI Lab holds ongoing sessions at the Elting
 Innovation and Entrepreneurship Center.
