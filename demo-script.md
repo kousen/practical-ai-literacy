@@ -121,7 +121,7 @@ terminal.
 
 ## Demo 3: Claude Code doing non-code work
 
-**When:** "AI Coding Assistants (Yes, for You Too)" slide.
+**When:** "Coding Agents (Yes, for You Too)" slide.
 
 **Prep:** a `demo-messy-folder/` (NOT in this repo — create it fresh) with
 15–20 files: PDFs, CSVs, screenshots, docs with inconsistent names like
@@ -143,7 +143,7 @@ with any file generator or by hand.
 
 **Narration beats:**
 
-- Nobody wrote code. "Coding assistant" undersells these tools —
+- Nobody wrote code. "Coding" undersells these agents —
   they're do-things-on-a-computer agents
 - For IT staff: this is the fastest on-ramp to automation you've ever had —
   it can also *write and explain* the script version for repeat use

@@ -610,11 +610,17 @@ permission prompt is the governance story IT people care about.
 
 </v-clicks>
 
+<v-click>
+
+> **Two words you'll keep hearing:** the **harness** is the software wrapped around the model — the loop, the tools, the permission checks. A **surface** is where a harness meets you: web chat, desktop app, terminal, or inside Outlook and Word.
+
+</v-click>
+
 ---
 
-# AI Coding Assistants (Yes, for You Too)
+# Coding Agents (Yes, for You Too)
 
-**Claude Code** (Anthropic) and **Codex** (OpenAI, now built into ChatGPT) are agents that work with files and run commands
+**Claude Code** (Anthropic) and **Codex** (OpenAI, now built into ChatGPT) are agents that work with files and run commands — same models you've been using, in a different **harness** with a different **surface**
 
 <v-clicks>
 
