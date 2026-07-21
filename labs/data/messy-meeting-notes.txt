@@ -1,0 +1,18 @@
+infra mtg 7/14 -- conf room B + zoom (half the zoom people couldn't hear, again, AV ticket??)
+
+present: me, Dana, Marcus, P.J., Sam from procurement (left early), somebody from the library? (get name)
+
+storage migration -- Dana says vendor A quote came back 15% over budget, vendor B cheaper but their support SLA is next-business-day only which Marcus says is a nonstarter for anything under Banner. Sam says if we want it in this FY the PO has to be in by the 25th!!! nobody decided anything
+
+- old NAS is at 91% capacity, was 87% last month
+- Marcus will get revised quote from vendor A by wed? thurs?
+
+wifi APs in Jarvis -- 6 of the new ones still in boxes, facilities won't schedule the lift for the atrium until after commencement cleanup, P.J. to follow up (again)
+
+phishing -- 3 more reports this week, all the fake "payroll update" one. Dana already blocked the domain. do we need another campus reminder email? last one was in March. tabled
+
+student worker onboarding docs are still pointing at the OLD ticket system, I said I'd fix that like a month ago, ugh
+
+next mtg -- two weeks? P.J. out the week of the 28th. maybe just do async update
+
+parking lot: printer fleet contract renewal (expires Sept), Dana's idea about self-service password reset kiosk for move-in weekend

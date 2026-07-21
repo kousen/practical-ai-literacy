@@ -1,0 +1,18 @@
+{
+  "name": "practical-ai-literacy",
+  "version": "1.0.0",
+  "description": "Practical AI Literacy — a half-day hands-on workshop",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "private": true,
+  "devDependencies": {
+    "@slidev/cli": "^51.8.1",
+    "@slidev/theme-seriph": "^0.25.0",
+    "playwright-chromium": "^1.53.1",
+    "slidev-addon-qrcode": "^1.0.2",
+    "slidev-component-progress": "^1.1.0"
+  }
+}

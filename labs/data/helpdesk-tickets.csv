@@ -1,0 +1,41 @@
+ticket_id,category,opened,closed,priority,building,summary
+5001,Password Reset,2026-06-01,2026-06-01,Low,Downing,Forgot password after break
+5002,Wi-Fi,2026-06-01,2026-06-03,Medium,Jarvis,Intermittent drops in room 210
+5003,Printer,2026-06-02,2026-06-02,Low,Library,Toner replacement 2nd floor
+5004,VPN,2026-06-02,2026-06-09,High,Remote,Session drops every 30 min
+5005,Software Install,2026-06-03,2026-06-04,Low,Admissions,SPSS install request
+5006,Password Reset,2026-06-03,2026-06-03,Low,Elting,Locked out after MFA change
+5007,Classroom AV,2026-06-04,2026-06-06,High,Jarvis,Projector no signal room 114
+5008,Wi-Fi,2026-06-05,2026-06-05,Medium,Dorms,Gaming console registration
+5009,Email,2026-06-05,2026-06-08,Medium,Advancement,Shared mailbox access request
+5010,Hardware,2026-06-08,2026-06-15,Medium,Registrar,Laptop battery swelling
+5011,Password Reset,2026-06-08,2026-06-08,Low,Library,Student worker account
+5012,Phishing,2026-06-09,2026-06-09,High,Campus-wide,Fake payroll update email report
+5013,VPN,2026-06-09,2026-06-16,High,Remote,Cannot connect after client update
+5014,Printer,2026-06-10,2026-06-11,Low,Downing,Paper jam recurring tray 2
+5015,Software Install,2026-06-10,2026-06-12,Low,Faculty,MATLAB license renewal
+5016,Classroom AV,2026-06-11,2026-06-18,High,Elting,Mic feedback in lecture hall
+5017,Email,2026-06-11,2026-06-12,Low,HR,Distribution list update
+5018,Wi-Fi,2026-06-12,2026-06-19,Medium,Jarvis,Dead zone near atrium
+5019,Password Reset,2026-06-12,2026-06-12,Low,Dorms,Forgot password
+5020,Phishing,2026-06-15,2026-06-15,High,Campus-wide,Gift card scam targeting staff
+5021,Hardware,2026-06-15,,Medium,Library,Scanner not detected 1st floor
+5022,VPN,2026-06-16,2026-06-23,High,Remote,Drops during video calls
+5023,Software Install,2026-06-16,2026-06-17,Low,Registrar,Adobe Acrobat request
+5024,Printer,2026-06-17,2026-06-17,Low,Admissions,Driver missing new laptop
+5025,Classroom AV,2026-06-18,,High,Jarvis,Touch panel unresponsive room 302
+5026,Email,2026-06-18,2026-06-19,Medium,Faculty,Calendar delegation broken
+5027,Password Reset,2026-06-19,2026-06-19,Low,Elting,Locked out MFA phone lost
+5028,Wi-Fi,2026-06-19,2026-06-22,Medium,Dorms,Slow speeds evening hours
+5029,Phishing,2026-06-22,2026-06-22,High,Campus-wide,Fake payroll update variant
+5030,Hardware,2026-06-22,2026-06-29,Medium,Downing,Monitor flickering dual setup
+5031,VPN,2026-06-23,,High,Remote,New hire cannot enroll device
+5032,Software Install,2026-06-23,2026-06-24,Low,Library,Zotero on public machines
+5033,Email,2026-06-24,2026-06-25,Low,Advancement,Signature template rollout
+5034,Printer,2026-06-24,2026-06-25,Low,Faculty,Duplex default request
+5035,Classroom AV,2026-06-25,2026-07-02,High,Elting,HDMI input dead lecture hall B
+5036,Password Reset,2026-06-25,2026-06-25,Low,Admissions,Seasonal staff onboarding
+5037,Wi-Fi,2026-06-26,2026-06-30,Medium,Jarvis,AP offline 3rd floor
+5038,Hardware,2026-06-26,,Medium,HR,Docking station USB ports dead
+5039,Phishing,2026-06-29,2026-06-29,High,Campus-wide,Credential harvest link report
+5040,VPN,2026-06-30,2026-07-07,High,Remote,MFA prompt loop on connect
