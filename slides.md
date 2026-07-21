@@ -550,6 +550,7 @@ Bridges between an AI tool and outside systems
 - Same grounding idea, generalized beyond one vendor's ecosystem
 - The question to ask about any connector — and this is an IT instinct you already have:
   **what exactly can it read, and what can it do?**
+- Under the hood, more and more of these bridges are built on one open standard: **MCP** — coming up in two slides
 
 </v-clicks>
 
