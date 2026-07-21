@@ -867,12 +867,23 @@ IT staff will field these questions from campus, so frame this section as
 
 <v-clicks>
 
-- **AI detection tools are unreliable** — false positives harm real students, and detection is an arms race the detectors are losing
-- More durable than detection: assessment design — process artifacts, drafts, oral components, in-class work
+- **AI detection is no longer uniformly bad** — in independent University of Chicago testing, **Pangram** showed essentially zero false positives with ≥99.8% detection, a different class from first-generation tools
+- **But detection alone doesn't settle it**: "humanizer" paraphrasing tools exist to evade detectors, hybrid human-plus-AI work confuses the labels, and a false accusation — however rare — carries real cost
+- Still more durable than detection: assessment design — process artifacts, drafts, oral components, in-class work
 - Many instructors now write explicit AI-use policies per assignment: *forbidden / permitted with citation / expected*
 - These are evolving problems, not solved ones — distrust anyone selling certainty
 
 </v-clicks>
+
+<!--
+Pangram evidence: UChicago Booth study (1,992 human + 1,992 AI texts) — only
+detector meeting a 0.5% false-positive policy cap without losing detection power.
+Caveats are real too: Pangram's own humanizer report shows an arms race, and
+hybrid AI-edited text gets flagged wholesale. Verify current state before each
+delivery — this moves fast.
+-->
+
+
 
 ---
 layout: center
