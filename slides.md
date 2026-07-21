@@ -78,6 +78,11 @@ Kousen IT, Inc.
 
 # Today's Plan
 
+<style>
+table { font-size: 0.85rem; }
+td, th { padding: 0.3rem 0.8rem !important; }
+</style>
+
 | Time | Topic |
 |------|-------|
 | 0:00 | Getting started — what AI literacy means now |
