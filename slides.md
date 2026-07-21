@@ -201,6 +201,36 @@ class: text-center
 
 ---
 
+# One Word at a Time
+
+<div class="text-xl mt-4 mb-6">"The Trinity College library will be closed for <span class="border-b-2 border-blue-900 px-8 text-blue-900 font-bold">?</span>"</div>
+
+<div class="space-y-2 max-w-130">
+  <div class="flex items-center gap-3"><span class="w-28 text-right font-mono">renovations</span><div class="h-5 rounded bg-amber-500" style="width: 28%"></div><span class="text-sm text-gray-500">28%</span></div>
+  <div class="flex items-center gap-3"><span class="w-28 text-right font-mono">the</span><div class="h-5 rounded bg-blue-900" style="width: 17%"></div><span class="text-sm text-gray-500">17%</span></div>
+  <div class="flex items-center gap-3"><span class="w-28 text-right font-mono">maintenance</span><div class="h-5 rounded bg-blue-900" style="width: 14%"></div><span class="text-sm text-gray-500">14%</span></div>
+  <div class="flex items-center gap-3"><span class="w-28 text-right font-mono">summer</span><div class="h-5 rounded bg-blue-900" style="width: 11%"></div><span class="text-sm text-gray-500">11%</span></div>
+  <div class="flex items-center gap-3"><span class="w-28 text-right font-mono">repairs</span><div class="h-5 rounded bg-blue-900" style="width: 8%"></div><span class="text-sm text-gray-500">8%</span></div>
+  <div class="flex items-center gap-3"><span class="w-28 text-right font-mono italic">all others</span><div class="h-5 rounded bg-gray-300" style="width: 22%"></div><span class="text-sm text-gray-500">22%</span></div>
+</div>
+
+<div class="text-xs text-gray-400 mt-2">Illustrative probabilities — real numbers vary by model and context</div>
+
+<v-clicks>
+
+- The model scores **every possible next token**, picks one, appends it, and repeats
+- It doesn't always pick the favorite — controlled randomness keeps text from sounding robotic (and is why the same question gets different answers)
+- A whole report is just this loop, run thousands of times
+
+</v-clicks>
+
+<!--
+Point at "the" in second place: even function words compete. And note there's
+no step where it checks facts — just plausibility, which sets up hallucination.
+-->
+
+---
+
 # Tokens: The Unit of Everything
 
 <v-clicks>
