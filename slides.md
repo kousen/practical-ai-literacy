@@ -337,6 +337,12 @@ Models you can download and run on your own hardware
 
 </v-clicks>
 
+<v-click>
+
+> **Live demo:** Gemma running on this laptop via Ollama — no cloud, no account. Then [OpenRouter.ai](https://openrouter.ai): hundreds of models on one menu, prices per million tokens in plain sight
+
+</v-click>
+
 ---
 
 # Cost Literacy

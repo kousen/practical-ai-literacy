@@ -10,7 +10,9 @@ narration beats, and a fallback if it dies on stage.
 - [ ] Terminal with Claude Code, `cd` into the prepared demo folder
 - [ ] Copies of `labs/data/` files on the desktop for quick access
 - [ ] Browser tabs: copilot.microsoft.com (Trinity account), claude.ai, chatgpt.com,
-      the Tokenizer Playground (loaded and tested — it fetches the tokenizer on first use)
+      the Tokenizer Playground (loaded and tested — it fetches the tokenizer on first use),
+      openrouter.ai
+- [ ] Ollama running, model already pulled (`ollama run gemma4` answers a test question)
 - [ ] Screen mirroring, font sizes bumped (terminal ≥ 18pt, browser zoom 125%)
 - [ ] Do a 30-second dry run of each demo — models and tools change weekly;
       last week's demo is not this week's demo
@@ -71,6 +73,48 @@ tokenizes locally — keep the tab open from the morning pre-flight)
 **Fallback:** OpenAI's tokenizer at <https://platform.openai.com/tokenizer>
 shows the same idea. If both are unreachable, the slide's ¾-of-a-word rule of
 thumb carries the point.
+
+---
+
+## Micro-demo: An Open-Weights Model on This Laptop
+
+**When:** the "Open-Weights Models" slide — 3–4 minutes.
+
+**Prep (night before):** `ollama pull gemma4` (multi-GB download — never on
+room wifi, morning of). Test the exact question you'll ask. Have OpenRouter.ai
+loaded in a tab.
+
+**Steps:**
+
+1. Terminal, big font: `ollama run gemma4` — point out what just happened:
+   a capable model, running entirely on this laptop
+2. **Optional flourish:** turn off wifi first, visibly. "No cloud. No account.
+   No data leaving this machine."
+3. Ask it the car wash problem — your standard trick question. Let the room
+   watch a local model reason (or stumble — either is the lesson: this is the
+   evaluate-it-yourself method from the first section, applied live)
+4. Ask the same question in a frontier tool for contrast if time allows
+
+**Then OpenRouter.ai (1 minute):**
+
+5. Switch to the OpenRouter tab: hundreds of models — commercial and
+   open-weights — behind one interface, each with its price **per million
+   tokens** right there in the list
+6. Sort by price or popularity. "This is the menu. Token pricing isn't
+   abstract — it's a column on this page."
+
+**Narration beats:**
+
+- Why an institution cares: privacy (nothing leaves the machine), cost
+  (no per-use fee), and smaller models are genuinely useful for drafting,
+  summarizing, classifying
+- Honest trade-off: local models are less capable than the frontier ones —
+  which you may have just watched happen
+- OpenRouter connects back to the cost-literacy slide: the market is visible
+
+**Fallback:** if Ollama misbehaves, OpenRouter alone carries the segment — many
+open-weights models are runnable there in the browser, and the pricing table
+makes the cost point regardless.
 
 ---
 
