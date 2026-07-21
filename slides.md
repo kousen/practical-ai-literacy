@@ -70,6 +70,7 @@ Kousen IT, Inc.
 - ken.kousen@kousenit.com
 - https://www.kousenit.com
 - https://kousenit.org (blog)
+- LinkedIn: [kenkousen](https://www.linkedin.com/in/kenkousen/)
 - Newsletter: [Tales from the jar side](https://kenkousen.substack.com)
 - Social: [@kenkousen](https://twitter.com/kenkousen) (X), [@kousenit.com](https://bsky.app/profile/kousenit.com) (Bluesky)
 
