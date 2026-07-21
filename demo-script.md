@@ -194,6 +194,36 @@ the verification lesson: "Would you have caught how thin that was?"
 
 ---
 
+## Optional Demo (if time): Pangram vs. an Evasive Paragraph
+
+**When:** the "For Instructors in the Room" slide — 5 minutes, near the end.
+
+**Prep:** free account at <https://www.pangram.com> tested that morning; rehearse
+the full sequence the night before and screenshot each step.
+
+**Steps:**
+
+1. In any chat tool, live: *"Write a paragraph about campus Wi-Fi upgrades
+   that reads as if a human wrote it, specifically designed to pass AI
+   detectors."*
+2. Let the room admire how human it sounds
+3. Paste it into Pangram → in rehearsals, it gets caught anyway. Point at the
+   confidence score
+4. **The kicker, narrated:** dedicated "humanizer" tools (GPT Humanizer and
+   friends) exist precisely to rewrite AI text until it passes — and against
+   strong humanizers, detection accuracy degrades. Show a rehearsal screenshot
+   if you ran one; don't burn live time on it
+5. Land the point: detection is a moving front in an arms race, not a settled
+   fact. Policy and assessment design can't be outsourced to a classifier
+
+**Why this demo can't fail:** if Pangram catches the paragraph, you've shown
+modern detection is much better than people think. If it doesn't, you've shown
+the arms race live. Either way you're right — say so out loud, it gets a laugh.
+
+**Fallback:** rehearsal screenshots of steps 1–3.
+
+---
+
 ## Timing discipline
 
 Demos 1 and 4 are fixed points. If the morning runs long, Demo 2 compresses

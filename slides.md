@@ -875,6 +875,12 @@ IT staff will field these questions from campus, so frame this section as
 
 </v-clicks>
 
+<v-click>
+
+> **Demo (if time):** generate a paragraph *designed* to evade detection — then watch Pangram catch it anyway. And then talk about humanizers…
+
+</v-click>
+
 <!--
 Pangram evidence: UChicago Booth study (1,992 human + 1,992 AI texts) — only
 detector meeting a 0.5% false-positive policy cap without losing detection power.
