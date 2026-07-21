@@ -13,6 +13,7 @@ narration beats, and a fallback if it dies on stage.
       the Tokenizer Playground (loaded and tested — it fetches the tokenizer on first use),
       openrouter.ai
 - [ ] Ollama running, model already pulled (`ollama run gemma4` answers a test question)
+- [ ] ElevenLabs key working; `demo-assets/voice-clone-demo.mp3` plays through the room's speakers
 - [ ] Screen mirroring, font sizes bumped (terminal ≥ 18pt, browser zoom 125%)
 - [ ] Do a 30-second dry run of each demo — models and tools change weekly;
       last week's demo is not this week's demo
@@ -235,6 +236,40 @@ the Microsoft world they know):**
 **Fallback:** this demo is nearly failure-proof (attach file, ask questions),
 but if the tool gives a shallow analysis, that's not a failure — turn it into
 the verification lesson: "Would you have caught how thin that was?"
+
+---
+
+## Demo 5: The Voice Clone Moment
+
+**When:** the "Voice" slide in the Multimodal section — 3 minutes. Sequence it
+so you've just been talking; the contrast is the demo.
+
+**Prep:** ElevenLabs key set (`ELEVENLABS_API_KEY`); your cloned voice is
+"Ken Kousen" (`AnMHhwDcnqFSc3sT34OR`). A pre-rendered fallback lives at
+`demo-assets/voice-clone-demo.mp3` (gitignored — do not commit voice samples
+to the public repo).
+
+**Steps:**
+
+1. Mid-sentence, stop and say: "Actually, let me have… me… finish this section"
+2. In Claude Code, live: *"Use the text-to-speech skill with my ElevenLabs
+   voice to say: [something topical about the morning so far — make it
+   specific to today so the room knows it wasn't pre-recorded]"*
+3. Play it. Let the room sit in the uncanny valley for a beat
+4. Then the turn: **"I consented to this. I trained that voice on purpose.
+   Now — who here does phone-based password resets?"**
+
+**Narration beats:**
+
+- Professional voice cloning is consumer-grade now: minutes of audio, modest cost
+- Voice is no longer an authentication factor — connect directly to help-desk
+  procedures, vishing, and "grandparent scam" patterns campus users will face
+- This is also a *tools* callback: a coding agent just called a third-party
+  API through a skill — the same plumbing from the Connected AI section
+- Ethics note worth saying aloud: cloning requires consent; this one is mine
+
+**Fallback:** play `demo-assets/voice-clone-demo.mp3` — pre-rendered in your
+cloned voice, with lines written to make the same point.
 
 ---
 

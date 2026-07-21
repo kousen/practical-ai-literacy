@@ -3,3 +3,4 @@ dist/
 .slidev/
 *.log
 .DS_Store
+demo-assets/

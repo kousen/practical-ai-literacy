@@ -795,6 +795,12 @@ Attach an image; the model reads and reasons about it
 
 </v-clicks>
 
+<v-click>
+
+> **Live demo:** my cloned voice will say something I never said. Then let's talk about phone-based verification…
+
+</v-click>
+
 ---
 
 # Video
