@@ -12,6 +12,13 @@ data in `labs/data/`; instructor demo run sheet is `demo-script.md`.
 - Save generated audio to `demo-assets/` (gitignored — never commit rendered
   voice samples to this public repo), then play it with `afplay`.
 
+## Pangram AI-detection
+
+- To check text for AI detection ("check this with Pangram"), run
+  `python3 scripts/pangram_check.py` with the text as a file argument or on
+  stdin. Requires `PANGRAM_API_KEY` (already in the environment).
+- Print the verdict and the dashboard link.
+
 ## Conventions
 
 - Verify slide changes with `slidev build` before committing.

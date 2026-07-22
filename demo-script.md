@@ -294,17 +294,23 @@ cloned voice, with lines written to make the same point.
 
 **When:** the "For Instructors in the Room" slide — 5 minutes, near the end.
 
-**Prep:** free account at <https://www.pangram.com> tested that morning; rehearse
-the full sequence the night before and screenshot each step.
+**Prep:** `PANGRAM_API_KEY` set (you have API access). The repo has
+`scripts/pangram_check.py` — a plain-text version of the book repo's
+AsciiDoc-aware `run_pangram.py` — and `CLAUDE.md` tells Claude Code about it,
+so "check that with Pangram" works as a prompt. Rehearse the full sequence the
+night before and screenshot each step.
 
 **Steps:**
 
-1. In any chat tool, live: *"Write a paragraph about campus Wi-Fi upgrades
+1. In Claude Code, live: *"Write a paragraph about campus Wi-Fi upgrades
    that reads as if a human wrote it, specifically designed to pass AI
    detectors."*
 2. Let the room admire how human it sounds
-3. Paste it into Pangram → in rehearsals, it gets caught anyway. Point at the
-   confidence score
+3. Then: *"Now check it with Pangram."* → verdict appears in the terminal —
+   in rehearsals, it gets caught anyway. The response includes a dashboard
+   link; open it if you want the visual version on screen
+   (Alternative: paste into <https://www.pangram.com> by hand — same result,
+   more clicking)
 4. **The kicker, narrated:** dedicated "humanizer" tools (GPT Humanizer and
    friends) exist precisely to rewrite AI text until it passes — and against
    strong humanizers, detection accuracy degrades. Show a rehearsal screenshot
