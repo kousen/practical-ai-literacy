@@ -318,6 +318,14 @@ night before and screenshot each step.
 5. Land the point: detection is a moving front in an arms race, not a settled
    fact. Policy and assessment design can't be outsourced to a classifier
 
+**Rehearsal result (July 2026):** two evasion attempts by Claude (Fable 5) —
+one polished "human writer" imitation, one deliberately typo-riddled casual
+email — both scored **100% AI, 0.0% Human**. Prompting alone couldn't move the
+needle at all. The explanation to give the room: a model can imitate human
+*style*, but it can't escape the statistical fingerprint of its own generation
+process — that's not a style, it's the mechanism. Humanizers work by rewriting
+the output after the fact, which is why they're a different threat.
+
 **Why this demo can't fail:** if Pangram catches the paragraph, you've shown
 modern detection is much better than people think. If it doesn't, you've shown
 the arms race live. Either way you're right — say so out loud, it gets a laugh.
