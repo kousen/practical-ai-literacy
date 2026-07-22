@@ -300,6 +300,11 @@ AsciiDoc-aware `run_pangram.py` — and `CLAUDE.md` tells Claude Code about it,
 so "check that with Pangram" works as a prompt. Rehearse the full sequence the
 night before and screenshot each step.
 
+Every check appends its verdict and dashboard link to
+`demo-assets/pangram-log.txt` — that's the history. (Verified July 2026:
+API-submitted checks do NOT appear in pangram.com's "All Checks" web history;
+only the per-check dashboard links work.)
+
 **Steps:**
 
 1. In Claude Code, live: *"Write a paragraph about campus Wi-Fi upgrades
