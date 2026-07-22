@@ -760,10 +760,35 @@ image: /images/vision.jpg
 - Every major tool now generates and edits images from descriptions
 - Campus uses: event graphics, documentation, quick mockups
 - Editing often beats generation: "remove the background," "make this a diagram"
-- Limits: text inside images, brand consistency, factual precision
+- Limits: brand consistency, factual precision — though in-image *text*, hopeless a year ago, mostly works now (next slide)
 - Check licensing/policy before official use
 
 </v-clicks>
+
+---
+
+# Case Study: The Ram Reads His Own Book
+
+<div class="flex gap-8 justify-center my-3">
+  <img src="/images/cc-cover.png" class="h-60 rounded shadow" alt="Official book cover" />
+  <img src="/images/ram-reading.jpg" class="h-60 rounded shadow" alt="Generated image of the ram reading the book" />
+</div>
+
+<v-clicks>
+
+- Left: my new book's official cover. Right: an image model given it as a **reference image**
+- Pipeline: Claude Code read Google's prompting docs → **built a reusable skill** → the skill wrote this prompt
+- He's reading *the actual cover* — in-image text and reference fidelity both arrived within the year
+- The skill is public — take it home: [gist.github.com/kousen](https://gist.github.com/kousen/f7c66a70cefe90b12c8b5285688a0016)
+
+</v-clicks>
+
+<!--
+This is the skills lesson resurfacing: nobody hand-crafted that prompt. The
+skill encodes Google's own prompting guidance, written once, reused for every
+book cover since. If time allows, run the image-prompt skill live on a
+volunteer's suggestion.
+-->
 
 ---
 
