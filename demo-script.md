@@ -254,10 +254,14 @@ to the public repo).
 **Steps:**
 
 1. Mid-sentence, stop and say: "Actually, let me have… me… finish this section"
-2. In Claude Code (in this repo's folder), live: *"Say this in my voice:
-   [something topical about the morning so far — make it specific to today so
-   the room knows it wasn't pre-recorded]"*
-   — and if anyone asks how it knew your voice, show them `CLAUDE.md`: project
+2. In Claude Code (in this repo's folder), **dictate the prompt with Wispr
+   Flow**: *"Say the following in my voice: [something topical about the
+   morning — specific to today, so the room knows it wasn't pre-recorded]"*
+   — the room now hears the sentence twice: your real voice speaking it, then
+   the clone rendering the identical words. That side-by-side is the demo
+   — and it chains two AI tools (speech→text, text→speech), bookending the
+   Wispr opener from three hours earlier
+   — if anyone asks how it knew your voice, show them `CLAUDE.md`: project
    memory, a bonus lesson in how agents pick up context
 3. **Use the delay.** There are a few seconds between the ask and the audio —
    that's suspense, not lag. Narrate it: "it's reading the project notes,
