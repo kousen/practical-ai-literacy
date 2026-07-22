@@ -57,6 +57,19 @@ def main() -> int:
     )
     if r.get("dashboard_link"):
         print(f"Dashboard: {r['dashboard_link']}")
+
+    # Local history: every check appends a line next to this script's repo,
+    # so dashboard links are never lost (demo-assets/ is gitignored).
+    log_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "demo-assets")
+    os.makedirs(log_dir, exist_ok=True)
+    from datetime import datetime
+    preview = " ".join(text.split())[:80]
+    with open(os.path.join(log_dir, "pangram-log.txt"), "a", encoding="utf-8") as f:
+        f.write(
+            f"{datetime.now():%Y-%m-%d %H:%M}  {r.get('prediction_short', '?'):<12} "
+            f"AI={r.get('fraction_ai', 0):.0%} Human={r.get('fraction_human', 0):.0%}  "
+            f"{r.get('dashboard_link', '-')}  | {preview}\n"
+        )
     return 0
 
 
