@@ -320,6 +320,11 @@ only the per-check dashboard links work.)
    friends) exist precisely to rewrite AI text until it passes — and against
    strong humanizers, detection accuracy degrades. Show a rehearsal screenshot
    if you ran one; don't burn live time on it
+   (To produce that screenshot: paste the flagged paragraph into any
+   humanizer's web UI, save the output to a file, and re-check with
+   `python3 scripts/pangram_check.py <file>` — no humanizer API needed; the
+   before/after verdicts and links land in the log. Several humanizers do
+   sell APIs, which is itself worth mentioning: evasion is programmable at scale.)
 5. Land the point: detection is a moving front in an arms race, not a settled
    fact. Policy and assessment design can't be outsourced to a classifier
 
