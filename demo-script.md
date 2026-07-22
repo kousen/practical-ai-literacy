@@ -244,17 +244,21 @@ the verification lesson: "Would you have caught how thin that was?"
 **When:** the "Voice" slide in the Multimodal section — 3 minutes. Sequence it
 so you've just been talking; the contrast is the demo.
 
-**Prep:** ElevenLabs key set (`ELEVENLABS_API_KEY`); your cloned voice is
-"Ken Kousen" (`AnMHhwDcnqFSc3sT34OR`). A pre-rendered fallback lives at
+**Prep:** ElevenLabs key set (`ELEVENLABS_API_KEY`). The voice id lives in
+this repo's `CLAUDE.md` ("Ken Kousen", `AnMHhwDcnqFSc3sT34OR`), so run Claude
+Code **from this repo's folder** and it knows what "my voice" means — no
+pasting IDs on stage. A pre-rendered fallback lives at
 `demo-assets/voice-clone-demo.mp3` (gitignored — do not commit voice samples
 to the public repo).
 
 **Steps:**
 
 1. Mid-sentence, stop and say: "Actually, let me have… me… finish this section"
-2. In Claude Code, live: *"Use the text-to-speech skill with my ElevenLabs
-   voice to say: [something topical about the morning so far — make it
-   specific to today so the room knows it wasn't pre-recorded]"*
+2. In Claude Code (in this repo's folder), live: *"Say this in my voice:
+   [something topical about the morning so far — make it specific to today so
+   the room knows it wasn't pre-recorded]"*
+   — and if anyone asks how it knew your voice, show them `CLAUDE.md`: project
+   memory, a bonus lesson in how agents pick up context
 3. Play it. Let the room sit in the uncanny valley for a beat
 4. Then the turn: **"I consented to this. I trained that voice on purpose.
    Now — who here does phone-based password resets?"**
