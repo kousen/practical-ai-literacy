@@ -966,7 +966,7 @@ IT staff will field these questions from campus, so frame this section as
 <v-clicks>
 
 - **AI detection is no longer uniformly bad** — in independent University of Chicago testing, **Pangram** showed essentially zero false positives with ≥99.8% detection, a different class from first-generation tools
-- **But detection alone doesn't settle it**: "humanizer" paraphrasing tools exist to evade detectors, hybrid human-plus-AI work confuses the labels, and a false accusation — however rare — carries real cost
+- **But detection alone doesn't settle it**: "humanizer" rewriting tools exist to evade detectors — in our own rehearsal, one pass flipped a paragraph from 100% AI to 100% Human — hybrid human-plus-AI work confuses the labels, and a false accusation carries real cost
 - Still more durable than detection: assessment design — process artifacts, drafts, oral components, in-class work
 - Many instructors now write explicit AI-use policies per assignment: *forbidden / permitted with citation / expected*
 - These are evolving problems, not solved ones — distrust anyone selling certainty
@@ -975,7 +975,7 @@ IT staff will field these questions from campus, so frame this section as
 
 <v-click>
 
-> **Demo (if time):** generate a paragraph *designed* to evade detection — then watch Pangram catch it anyway. And then talk about humanizers…
+> **Demo (if time):** generate a paragraph *designed* to evade detection — Pangram catches it anyway. Then run it through a humanizer and re-check: the verdict flips. The arms race, live.
 
 </v-click>
 
@@ -983,8 +983,10 @@ IT staff will field these questions from campus, so frame this section as
 Pangram evidence: UChicago Booth study (1,992 human + 1,992 AI texts) — only
 detector meeting a 0.5% false-positive policy cap without losing detection power.
 Caveats are real too: Pangram's own humanizer report shows an arms race, and
-hybrid AI-edited text gets flagged wholesale. Verify current state before each
-delivery — this moves fast.
+hybrid AI-edited text gets flagged wholesale. Our July 2026 rehearsal: three
+prompting-only evasion attempts all scored 100% AI; one gpthuman pass scored
+0% AI / 100% Human (files in demo-assets/, links in pangram-log.txt).
+Verify current state before each delivery — this moves fast.
 -->
 
 

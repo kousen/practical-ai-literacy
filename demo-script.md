@@ -316,15 +316,18 @@ only the per-check dashboard links work.)
    link; open it if you want the visual version on screen
    (Alternative: paste into <https://www.pangram.com> by hand — same result,
    more clicking)
-4. **The kicker, narrated:** dedicated "humanizer" tools (GPT Humanizer and
-   friends) exist precisely to rewrite AI text until it passes — and against
-   strong humanizers, detection accuracy degrades. Show a rehearsal screenshot
-   if you ran one; don't burn live time on it
-   (To produce that screenshot: paste the flagged paragraph into any
-   humanizer's web UI, save the output to a file, and re-check with
-   `python3 scripts/pangram_check.py <file>` — no humanizer API needed; the
-   before/after verdicts and links land in the log. Several humanizers do
-   sell APIs, which is itself worth mentioning: evasion is programmable at scale.)
+4. **The kicker, live:** *"Now run it through the humanizer and check it
+   again."* The gpthuman MCP server is connected in Claude Code, so this runs
+   end-to-end in the same session — humanized text comes back, Pangram
+   re-checks it, verdict flips. In the July 2026 rehearsal this went from
+   **100% AI to 100% Human** in one pass, default settings, no retries.
+   Worth saying aloud: the humanizer is an API a coding agent just called —
+   evasion is programmable at scale. Before/after files are
+   `demo-assets/pangram-original.txt` and `demo-assets/pangram-humanized.txt`;
+   both verdicts and dashboard links are in the log.
+   (Fallback if the MCP server is down: paste the flagged paragraph into the
+   humanizer's web UI, save the output, and re-check with
+   `python3 scripts/pangram_check.py <file>`.)
 5. Land the point: detection is a moving front in an arms race, not a settled
    fact. Policy and assessment design can't be outsourced to a classifier
 
@@ -335,6 +338,12 @@ needle at all. The explanation to give the room: a model can imitate human
 *style*, but it can't escape the statistical fingerprint of its own generation
 process — that's not a style, it's the mechanism. Humanizers work by rewriting
 the output after the fact, which is why they're a different threat.
+
+**Humanizer rehearsal (July 22, 2026):** a fresh campus-Wi-Fi paragraph scored
+100% AI on the first check; one pass through gpthuman (Balanced/College
+defaults, ~99 "human score" by its own meter) and Pangram scored the rewrite
+**0% AI, 100% Human**. Prompting couldn't move the needle at all; a rewriting
+tool flipped it completely. That contrast IS the arms-race slide.
 
 **Why this demo can't fail:** if Pangram catches the paragraph, you've shown
 modern detection is much better than people think. If it doesn't, you've shown
