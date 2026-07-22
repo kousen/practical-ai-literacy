@@ -776,7 +776,7 @@ image: /images/vision.jpg
 
 <v-clicks>
 
-- Left: my new book's official cover. Right: an image model given it as a **reference image**
+- Left: my new book's official cover. Right: a **generated image**, created with the cover as a reference
 - Pipeline: Claude Code read Google's prompting docs → **built a reusable skill** → the skill wrote this prompt
 - He's reading *the actual cover* — in-image text and reference fidelity both arrived within the year
 - The skill is public — take it home: [gist.github.com/kousen](https://gist.github.com/kousen/f7c66a70cefe90b12c8b5285688a0016)
