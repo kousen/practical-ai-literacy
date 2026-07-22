@@ -259,8 +259,13 @@ to the public repo).
    the room knows it wasn't pre-recorded]"*
    — and if anyone asks how it knew your voice, show them `CLAUDE.md`: project
    memory, a bonus lesson in how agents pick up context
-3. Play it. Let the room sit in the uncanny valley for a beat
-4. Then the turn: **"I consented to this. I trained that voice on purpose.
+3. **Use the delay.** There are a few seconds between the ask and the audio —
+   that's suspense, not lag. Narrate it: "it's reading the project notes,
+   finding my voice id, calling the API…" (If you ever want near-instant
+   audio instead, `eleven_flash_v2_5` trades some quality for ~75ms latency —
+   but for this demo, the pause works in your favor.)
+4. Play it. Let the room sit in the uncanny valley for a beat
+5. Then the turn: **"I consented to this. I trained that voice on purpose.
    Now — who here does phone-based password resets?"**
 
 **Narration beats:**
