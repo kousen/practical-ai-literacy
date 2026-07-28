@@ -15,14 +15,29 @@ tool. All of them support it: Copilot, ChatGPT, Claude, Gemini.
    - A photo of a whiteboard (if you have one on your phone)
 
 2. **Attach it** to any chat tool and ask something useful:
-   - "Explain what this error means and the three most likely causes"
-   - "Turn this settings screen into step-by-step instructions a student
-     worker could follow"
-   - "Summarize what this chart shows in two sentences"
+
+   ```text
+   Explain what this error means and the three most likely causes
+   ```
+
+   ```text
+   Turn this settings screen into step-by-step instructions a student
+   worker could follow
+   ```
+
+   ```text
+   Summarize what this chart shows in two sentences
+   ```
 
 3. **Push it further:**
-   - "Write the knowledge-base article for this"
-   - "What on this screen would confuse a non-technical user?"
+
+   ```text
+   Write the knowledge-base article for this
+   ```
+
+   ```text
+   What on this screen would confuse a non-technical user?
+   ```
 
 4. **Find the failure boundary.** Try something harder: a blurry photo, a
    screenshot with tiny text, a complex diagram. Where does it start misreading?

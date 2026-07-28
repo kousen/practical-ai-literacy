@@ -10,38 +10,52 @@ answerable. These prompts are designed to land in those zones.
 
 **Obscure specifics** (thin data, maximum improvisation):
 
-> What year was the Trinity College (Hartford) chapel organ last fully
-> restored, and by which firm?
+```text
+What year was the Trinity College (Hartford) chapel organ last fully
+restored, and by which firm?
+```
 
-> List the office numbers and phone extensions for the IT help desk at
-> Trinity College.
+```text
+List the office numbers and phone extensions for the IT help desk at
+Trinity College.
+```
 
 **The fake premise** (models are agreeable — will it correct you?):
 
-> Summarize the main findings of the 2019 EDUCAUSE report "Voice Assistants
-> in the Residence Hall: A Five-Campus Study."
+```text
+Summarize the main findings of the 2019 EDUCAUSE report "Voice Assistants
+in the Residence Hall: A Five-Campus Study."
+```
 
 (That report doesn't exist. Does the tool tell you, or summarize it anyway?)
 
 **Citations on demand:**
 
-> Give me three peer-reviewed papers on AI literacy training for university
-> IT staff, with authors, journals, and years.
+```text
+Give me three peer-reviewed papers on AI literacy training for university
+IT staff, with authors, journals, and years.
+```
 
 Then actually search for each one. How many are real? How many are *almost*
 real — real authors, plausible journal, nonexistent paper?
 
 **The leading question:**
 
-> Why is it that universities that adopted AI chatbots for the help desk saw
-> ticket volumes drop by 40%?
+```text
+Why is it that universities that adopted AI chatbots for the help desk saw
+ticket volumes drop by 40%?
+```
 
 (You supplied the "fact." Watch it get explained rather than questioned.)
 
 ## Verify
 
 For whatever you got:
-1. Ask a **second tool**: "Verify this answer. What's wrong or unsupported?"
+1. Ask a **second tool** (paste the first tool's answer after this):
+
+   ```text
+   Verify this answer. What's wrong or unsupported?
+   ```
 2. Do a real web search for the specifics
 3. Note *how confident the wrong answer sounded* — that's the lesson
 

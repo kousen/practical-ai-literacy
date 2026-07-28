@@ -10,26 +10,34 @@ practice without touching anything FERPA-covered.
 1. **Attach the CSV** to any capable tool (Copilot with the file in Excel,
    or claude.ai / chatgpt.com / gemini.google.com with the file attached) and ask:
 
-   > Analyze this financial-aid application data. What patterns do you see in
-   > aid offered relative to aid requested? Anything notable by residency or
-   > EFC band?
+   ```text
+   Analyze this financial-aid application data. What patterns do you see in
+   aid offered relative to aid requested? Anything notable by residency or
+   EFC band?
+   ```
 
 2. **Ask for outliers:**
 
-   > Which applications look unusual, and why?
+   ```text
+   Which applications look unusual, and why?
+   ```
 
 3. **Challenge the analysis** — the most important step:
 
-   > What would make this analysis misleading? What can't we conclude from
-   > this data?
+   ```text
+   What would make this analysis misleading? What can't we conclude from
+   this data?
+   ```
 
    (Sample size, missing variables, correlation vs. causation, how the bands
    were defined... a good tool will name several. Did it?)
 
 4. **Produce the deliverable:**
 
-   > Write a one-page brief for a financial aid committee: key patterns,
-   > caveats, and two questions the committee should investigate further.
+   ```text
+   Write a one-page brief for a financial aid committee: key patterns,
+   caveats, and two questions the committee should investigate further.
+   ```
 
 5. **Verify before you'd ever send it:** hand-check three numbers the brief
    cites against the actual CSV. Open the file. Count. This step is not optional

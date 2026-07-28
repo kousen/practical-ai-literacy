@@ -14,25 +14,45 @@ transfers even when the buttons differ.
 
 **Copilot path:** Send yourself the text of `data/email-thread.md` (or find a real
 long thread in your mailbox). Open it and use **Summarize**, then **Draft a reply**
-with instructions: "Agree to the Tuesday time, ask them to send the current
-firewall rule export beforehand, friendly but brief."
+with instructions:
+
+```text
+Agree to the Tuesday time, ask them to send the current firewall rule
+export beforehand, friendly but brief.
+```
 
 **Free-tool path:** Paste the thread into any chat tool with the same instructions.
 
-**Push further:** "Rewrite the reply for a recipient who is clearly frustrated."
+**Push further:**
+
+```text
+Rewrite the reply for a recipient who is clearly frustrated.
+```
 
 ---
 
 ## Exercise B: Word — outline to draft
 
-**Copilot path:** New Word doc → Copilot → "Write a one-page draft from this
-outline" → paste `data/word-outline.md`. Then select the result and ask Copilot
-to "make the tone warmer and less bureaucratic."
+**Copilot path:** New Word doc → Copilot → paste `data/word-outline.md` with:
+
+```text
+Write a one-page draft from this outline.
+```
+
+Then select the result and ask Copilot to:
+
+```text
+Make the tone warmer and less bureaucratic.
+```
 
 **Free-tool path:** Same prompts in a chat tool; paste the result into Word.
 
-**Push further:** "Add a short FAQ section anticipating three questions students
-will actually ask."
+**Push further:**
+
+```text
+Add a short FAQ section anticipating three questions students will
+actually ask.
+```
 
 ---
 
@@ -40,26 +60,50 @@ will actually ask."
 
 **Copilot path:** Open `data/helpdesk-tickets.csv` in Excel, format as a table
 (Ctrl/Cmd+T — Copilot requires a real table). Then ask:
-- "What are the top categories by ticket count?"
-- "Add a column computing days between opened and closed"
-- "Which categories have the longest average resolution time?"
+
+```text
+What are the top categories by ticket count?
+```
+
+```text
+Add a column computing days between opened and closed
+```
+
+```text
+Which categories have the longest average resolution time?
+```
 
 **Free-tool path:** Attach or paste the CSV into any chat tool and ask the same
-questions. Also try: "Write the Excel formula I'd use for the days-open column,
-and explain it."
+questions. Also try:
 
-**Push further:** "What's misleading about averaging resolution time here?"
-(Hint: look at the still-open tickets.)
+```text
+Write the Excel formula I'd use for the days-open column, and explain it.
+```
+
+**Push further** (hint: look at the still-open tickets):
+
+```text
+What's misleading about averaging resolution time here?
+```
 
 ---
 
 ## Exercise D: Copilot Chat — grounded in your own work
 
 **Copilot path only** (this is the one thing free tools can't do):
-In M365 Copilot Chat, try:
-- "Summarize the emails I received this week about [a real project]"
-- "What meetings do I have tomorrow and what should I prepare?"
-- "Find the most recent document I edited about [topic] and summarize it"
+In M365 Copilot Chat, try (fill in the brackets):
+
+```text
+Summarize the emails I received this week about [a real project]
+```
+
+```text
+What meetings do I have tomorrow and what should I prepare?
+```
+
+```text
+Find the most recent document I edited about [topic] and summarize it
+```
 
 **Notice:** it cites the sources it used. Open one and check it.
 
