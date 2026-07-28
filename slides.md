@@ -345,6 +345,33 @@ Models you can download and run on your own hardware
 
 ---
 
+# Dense vs. Mixture-of-Experts (MoE)
+
+Why "how big is the model?" now has two answers
+
+<v-clicks>
+
+- **Dense** model: every parameter works on every token
+- **MoE** model: built from many "experts"; a router activates only a few of them per token
+- You can read it right off the name — Qwen3-30B-**A3B**: 30 billion parameters total, ~3 billion **active** per token
+- Why it matters when you're comparing models:
+  - **Total** parameters set the memory you need to hold it
+  - **Active** parameters set the compute — speed and cost — per token
+- So a giant MoE can be cheaper *per token* than a mid-size dense model — one more reason sticker comparisons mislead (next slides)
+
+</v-clicks>
+
+<!--
+Concrete anchor if asked: DeepSeek-V3/R1 — 671B total, ~37B active per token —
+is the release that made MoE mainstream vocabulary. Google has said Gemini
+uses MoE; most frontier vendors don't disclose either way, so it's the
+open-weights world where you actually see these numbers. Analogy that lands:
+a hospital employs 2,000 specialists (memory), but your visit only involves
+three of them (compute).
+-->
+
+---
+
 # Cost Literacy
 
 How the money works — and why it shapes the tools
@@ -362,6 +389,32 @@ Why you should care even if you never touch an API:
 - Free tiers exist because your usage is worth something — know what you're trading
 
 </v-clicks>
+
+---
+
+# Cost per Accepted Result
+
+Price per token is the sticker price — not the real cost
+
+<v-clicks>
+
+- The number that matters: what did a **finished, usable answer** cost, start to accept?
+- A model with a low per-token rate can still be the expensive option if it retries, makes extra tool calls, or needs three more prompts to get there
+- A model with a high per-token rate is only worth it if it actually saves those rounds — the premium has to earn itself on *your* tasks
+- The gap is widest in **agentic** use (tools that browse, run code, call APIs), where the model decides how many steps to take
+- Vendors quote whichever number flatters them — measure total tokens *and your time* from question to accepted answer
+- Same math applies to people: an answer you fixed three times wasn't cheap
+
+</v-clicks>
+
+<!--
+This is the current marketing battleground: premium commercial models justify
+their rates by claiming fewer tokens to a correct answer; some open-weights
+models are cheap per token but iterate more. Both claims are sometimes true —
+which is why the honest move is measuring on your own workload, not trusting
+either sticker. Ties back to the OpenRouter demo: those per-million prices
+are inputs to this calculation, not the answer.
+-->
 
 ---
 layout: center
