@@ -838,13 +838,22 @@ image: /images/vision.jpg
 
 <v-clicks>
 
-- Every major tool now generates and edits images from descriptions
+- Most major tools now generate and edit images from descriptions — ChatGPT, Gemini, Copilot
+- The exception: **Claude reads images but doesn't make them** — knowing a tool's gaps is part of literacy
 - Campus uses: event graphics, documentation, quick mockups
 - Editing often beats generation: "remove the background," "make this a diagram"
 - Limits: brand consistency, factual precision — though in-image *text*, hopeless a year ago, mostly works now (next slide)
 - Check licensing/policy before official use
 
 </v-clicks>
+
+<!--
+Anthropic has no image model at all — not in the API, not in the apps. What
+exists are third-party MCP bridges that let Claude call Flux/Replicate, i.e.
+Claude orchestrates, someone else's model paints. The ram case study next is
+exactly that division of labor: Claude wrote the prompt, Nano Banana made the
+image. Claude's native visuals are code: SVG, diagrams, artifacts.
+-->
 
 ---
 
