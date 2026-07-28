@@ -106,7 +106,7 @@ td, th { padding: 0.3rem 0.8rem !important; }
 | 2:10 | **Lab 2:** Copilot where you already work |
 | 2:25 | Multimodal AI (+ **Lab 3:** vision) |
 | 2:45 | Using AI without fooling yourself (+ **Lab 4:** catch the hallucination) |
-| 3:10 | Equity, classroom questions, wrap-up |
+| 3:10 | Digital equity, classroom questions, wrap-up |
 | 3:30 | Done — but the repo stays with you |
 
 <div class="text-sm text-gray-500 mt-2">Plus a 10-minute break when a natural pause arrives</div>
@@ -1038,7 +1038,7 @@ IT staff will field these questions from campus, so frame this section as
 
 ---
 
-# Equity
+# Digital Equity
 
 <v-clicks>
 
