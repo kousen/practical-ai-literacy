@@ -7,8 +7,9 @@ data in `labs/data/`; instructor demo run sheet is `demo-script.md`.
 ## Voice demos (ElevenLabs)
 
 - My cloned voice is **"Ken Kousen"**, voice id `AnMHhwDcnqFSc3sT34OR`.
-- When I ask to say or read something "in my voice," use the text-to-speech
-  skill with that voice id, model `eleven_multilingual_v2`.
+- When I ask to say or read something "in my voice," use the `say-in-my-voice`
+  skill (user-level), which already knows the voice id and model
+  `eleven_multilingual_v2` and always estimates cost before generating.
 - Save generated audio to `demo-assets/` (gitignored — never commit rendered
   voice samples to this public repo), then play it with `afplay`.
 
