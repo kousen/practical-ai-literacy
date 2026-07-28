@@ -267,6 +267,22 @@ no step where it checks facts — just plausibility, which sets up hallucination
 
 ---
 
+# What the Model Actually Sees
+
+<div class="flex justify-center">
+  <img src="/images/tokenizer-playground.png" class="h-105 rounded shadow" alt="Tokenizer Playground showing a sentence split into 31 colored tokens from 131 characters" />
+</div>
+
+<!--
+Backup if the live demo can't run — and worth a beat either way:
+131 characters became 31 tokens (~4 chars each, the "¾ of a word" claim
+with receipts), and "tokenized" visibly splits into token + ized.
+That split is why letter-counting questions fail — remember it when
+raspberry comes up in the OpenRouter demo.
+-->
+
+---
+
 # Context Windows
 
 The model's **working memory** for your conversation
