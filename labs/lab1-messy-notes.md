@@ -69,6 +69,6 @@ Which guessed better? Which followed the format instructions more precisely?
 ## What you should notice
 
 - The first draft is rarely bad, but it's never *yours* — iteration is where it earns its keep
-- The model made assumptions about anything the notes left vague (step 4 makes it confess)
+- The model made assumptions about anything the notes left vague (step 5 makes it confess)
 - One conversation produced four deliverables; context accumulates in your favor
 - Your step-1 success sentence did double duty: it sharpened the prompt *and* gave you something objective to judge drafts against

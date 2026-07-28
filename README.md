@@ -17,6 +17,8 @@ Two ideas run throughout:
 - `labs/data/` — sample files for the labs. **All data is fictional**,
   including the student-aid scenario — no real students, tickets, or people
 - `demo-script.md` — instructor notes for the live demos
+- `skills/` — take-home agent skills shown in the workshop, including the
+  Nano Banana `image-prompt` generator from the book-cover case study
 - `Practical AI Literacy Outline.md` — the original course outline
 
 ## Labs
@@ -38,6 +40,10 @@ Two ideas run throughout:
 - No programming experience required
 
 ## Running the slides
+
+Just want to read the deck? Grab the always-current PDF:
+**[practical-ai-literacy-slides.pdf](https://github.com/kousen/practical-ai-literacy/releases/latest/download/practical-ai-literacy-slides.pdf)**
+(rebuilt automatically on every slide change)
 
 ```bash
 npm install
