@@ -13,27 +13,51 @@ The core skill of this entire course: iterate, don't accept the first draft.
 ## Steps
 
 1. **Define done first.** Before prompting, write one sentence:
-   *"This email succeeds if ____."* (Example: "…the CIO knows the vendor
-   decision deadline and what we're asking for, in under 30 seconds of
-   reading.") Keep it visible — you'll judge every draft against it.
+   *"This email succeeds if ____."* Keep it visible — you'll judge every
+   draft against it. Sample answer:
+
+   ```text
+   This email succeeds if the CIO knows the vendor decision deadline and
+   what we're asking for, in under 30 seconds of reading.
+   ```
 
 2. **Paste the messy notes** with this starting prompt:
 
-   > Here are raw notes from an IT infrastructure meeting. Turn them into a
-   > brief status email to the CIO. Professional but not stiff. One paragraph
-   > of summary, then bullets for decisions and open issues.
+   ```text
+   Here are raw notes from an IT infrastructure meeting. Turn them into a
+   brief status email to the CIO. Professional but not stiff. One paragraph
+   of summary, then bullets for decisions and open issues.
+   ```
 
 3. **Refine at least twice.** Ideas:
-   - "Shorter. The CIO reads email on a phone."
-   - "The tone is too apologetic about the delay — make it matter-of-fact."
-   - "Add a clear ask: we need a decision on the storage vendor by Friday."
+
+   ```text
+   Shorter. The CIO reads email on a phone.
+   ```
+
+   ```text
+   The tone is too apologetic about the delay — make it matter-of-fact.
+   ```
+
+   ```text
+   Add a clear ask: we need a decision on the storage vendor by Friday.
+   ```
 
 4. **Change the output, not the input.** From the same conversation:
-   - "Now produce an action-item list: owner, task, due date, as a table."
-   - "Now draft the agenda for the follow-up meeting. 45 minutes."
+
+   ```text
+   Now produce an action-item list: owner, task, due date, as a table.
+   ```
+
+   ```text
+   Now draft the agenda for the follow-up meeting. 45 minutes.
+   ```
 
 5. **Challenge it:**
-   - "What's ambiguous in the original notes that you had to guess about?"
+
+   ```text
+   What's ambiguous in the original notes that you had to guess about?
+   ```
 
    Read that answer carefully — it's usually the most useful output of the lab.
 
