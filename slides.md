@@ -64,6 +64,9 @@ Let's talk about what just happened." Sets the tone: practical, not philosophica
 
 # Contact Info
 
+<div class="flex gap-10 items-start">
+<div>
+
 **Ken Kousen**
 
 Professor of Practice, Computer Science
@@ -74,6 +77,15 @@ Professor of Practice, Computer Science
 - LinkedIn: [kenkousen](https://www.linkedin.com/in/kenkousen/)
 - Newsletter: [Tales from the jar side](https://kenkousen.substack.com)
 - Social: [@kenkousen](https://twitter.com/kenkousen) (X), [@kousenit.com](https://bsky.app/profile/kousenit.com) (Bluesky)
+
+**Today's materials: [github.com/kousen/practical-ai-literacy](https://github.com/kousen/practical-ai-literacy)**
+
+</div>
+<div class="text-center pt-4">
+  <QRCode data="https://github.com/kousen/practical-ai-literacy" :width="170" :height="170" />
+  <div class="text-sm text-gray-500 mt-2">Slides, labs, and data</div>
+</div>
+</div>
 
 ---
 
@@ -1063,7 +1075,14 @@ class: text-center
 
 <br>
 
+<div class="flex gap-8 items-center">
+<div>
+
 Repo: **[github.com/kousen/practical-ai-literacy](https://github.com/kousen/practical-ai-literacy)**
+
+</div>
+<QRCode data="https://github.com/kousen/practical-ai-literacy" :width="140" :height="140" />
+</div>
 
 ---
 layout: center
