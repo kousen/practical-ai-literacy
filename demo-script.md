@@ -103,6 +103,39 @@ loaded in a tab.
    tokens** right there in the list
 6. Sort by price or popularity. "This is the menu. Token pricing isn't
    abstract — it's a column on this page."
+7. **If time allows:** OpenRouter's chat lets you run one prompt against
+   several models side by side. Picked shortlist (full list captured in
+   `openrouter-predefined-questions.md` — OpenRouter's own canned prompts,
+   so attendees can replay these at home):
+
+   ```text
+   How many r's are in the word strawberry?
+   ```
+
+   ```text
+   9.11 and 9.9, which one is larger?
+   ```
+
+   ```text
+   Three people check into a hotel room that costs $30. They each pay $10.
+   Later, the manager realizes the room is only $25 and gives $5 to the
+   bellboy to return to the guests. The bellboy, unable to split $5 evenly,
+   gives each guest $1 and keeps $2 as a tip. Now, each guest has paid $9
+   (totaling $27), and the bellboy has $2, totaling $29. Where is the
+   missing dollar?
+   ```
+
+   Talking points, one per prompt:
+   - **Strawberry / 9.11 vs 9.9:** models see *tokens*, not letters or digit
+     columns — the tokenizer playground from this morning is why these fail.
+     When a model gets them right, that's usually training against the famous
+     failure, not new eyesight. (Both connect back to the Tokens slide.)
+   - **Missing dollar:** the question's own framing is the error ($27 already
+     *includes* the $2). A fake premise, politely accepted — Lab 4's lesson,
+     live.
+   - **Cost angle:** same prompt, cheap model vs. premium model, prices on
+     screen — did the cheaper one need more coaxing? That's cost per
+     *accepted result*, not cost per token.
 
 **Narration beats:**
 
