@@ -109,8 +109,11 @@ loaded in a tab.
    so attendees can replay these at home):
 
    ```text
-   How many r's are in the word strawberry?
+   How many r's are in the word raspberry?
    ```
+
+   (Raspberry, not the famous strawberry — models have been trained against
+   that meme; an unfamous word tests the ability, not the memorization.)
 
    ```text
    9.11 and 9.9, which one is larger?
@@ -126,10 +129,11 @@ loaded in a tab.
    ```
 
    Talking points, one per prompt:
-   - **Strawberry / 9.11 vs 9.9:** models see *tokens*, not letters or digit
+   - **Raspberry / 9.11 vs 9.9:** models see *tokens*, not letters or digit
      columns — the tokenizer playground from this morning is why these fail.
-     When a model gets them right, that's usually training against the famous
-     failure, not new eyesight. (Both connect back to the Tokens slide.)
+     OpenRouter's own version uses "strawberry"; if a model aces that one but
+     stumbles on raspberry, you've just demonstrated memorization vs. ability.
+     (Both connect back to the Tokens slide.)
    - **Missing dollar:** the question's own framing is the error ($27 already
      *includes* the $2). A fake premise, politely accepted — Lab 4's lesson,
      live.
