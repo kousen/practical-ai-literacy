@@ -8,10 +8,16 @@
     "export": "slidev export --output practical-ai-literacy-slides.pdf"
   },
   "private": true,
+  "overrides": {
+    "slidev-component-progress": {
+      "@slidev/client": "$@slidev/cli"
+    },
+    "dompurify": "^3.4.12"
+  },
   "devDependencies": {
     "@slidev/cli": "^52.18.0",
     "@slidev/theme-seriph": "^0.25.0",
-    "playwright-chromium": "^1.53.1",
+    "playwright-chromium": "^1.62.0",
     "slidev-addon-qrcode": "^1.0.2",
     "slidev-component-progress": "^1.1.0"
   }
