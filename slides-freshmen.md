@@ -21,10 +21,6 @@ fonts:
   sans: Atkinson Hyperlegible
   serif: Bricolage Grotesque
   mono: IBM Plex Mono
-slidev:
-  slide-number: true
-  controls: true
-  progress: true
 css: unocss
 ---
 
@@ -126,7 +122,7 @@ class: section glow-blue
 # AI is not new — <span class="acc-blue">this moment</span> is
 
 - AI research goes back to the **1950s**; what changed recently is **massive data + massive computation** + a few algorithmic breakthroughs landing together
-- **AI ⊃ machine learning ⊃ generative AI** — you've used AI for years: **recommendation systems** (Spotify, TikTok, Netflix), autocomplete, spam filters
+- **Machine learning is one part of AI; generative AI is one kind of machine learning.** You've used other AI for years: **recommendation systems** (Spotify, TikTok, Netflix), autocomplete, spam filters
 - Generative AI **creates** text, images, and audio: ChatGPT, Claude, Gemini, image generators
 - A **model** is the trained engine; a **system** (ChatGPT, Copilot, BoodleBox) wraps a model with tools, search, and an interface — you interact with systems
 - Other kinds of AI exist; today we focus on **generative AI**, because that's what you'll touch
@@ -143,20 +139,19 @@ layout: center
 class: section glow-purple
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How generative AI works</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How language models generate text</div>
 
 # A very good <span class="acc-purple">prediction machine</span>
 
-- **Training**: the model reads enormous amounts of text and learns patterns. **Inference**: when you type, it predicts what comes next — that's the whole trick
+- **Training**: a language model learns statistical patterns from large text collections. **Generation**: it predicts one token at a time
 - It doesn't see words — it sees **tokens**, numbered fragments of text
-- Each answer is **next-token prediction**, repeated: fluent, polished, confident — *without knowing anything in the human sense*
-- That's how it can sound so right: coherence is what it was trained to produce
-- **Context matters**: what you put in the conversation is most of what it has to work with
+- Repeated prediction can produce fluent, polished text; **coherence does not guarantee factual knowledge or human understanding**
+- **Context matters**: the prompt and conversation shape the response, alongside training and any tools or search the system can use
 
 <!--
-"This is no magic — it's prediction." The framework everything else hangs on:
-sections 4 and 6 both come back to this slide. Then straight into the tokenizer
-demo as evidence.
+"For language models, text generation happens one token at a time." Sections 4
+and 6 come back to the distinction between fluent prediction and verified
+knowledge. Then straight into the tokenizer demo as evidence.
 -->
 
 ---
@@ -168,7 +163,7 @@ class: glow-purple text-center
 
 # What the AI <span class="acc-purple">actually sees</span>
 
-<p class="takeaway">Not words. Not letters. Numbered fragments — and everything it does is prediction over them, not counting or knowing.</p>
+<p class="takeaway">For a language model: numbered text fragments. It generates text one token at a time, which helps explain why tasks like counting can be unexpectedly difficult.</p>
 
 <!--
 Tokenizer playground: "Trinity College", a sentence from the syllabus, switch
@@ -189,13 +184,13 @@ class: glow-purple text-center
 
 # New melody, <span class="acc-purple">old structure</span>
 
-<p class="takeaway">In 1853 Gounod wrote a new melody over Bach's prelude from 1722 — every note shaped by the structure underneath. Generation over learned patterns, 170 years early.</p>
+<p class="takeaway">In 1852 Gounod composed a new melody over Bach's prelude from 1722; it was published in 1853. New music shaped by an existing structure, long before modern generative AI.</p>
 
 <!--
 ~3 min, replaces the raspberry/9.11 pair. Play Bach's Prelude in C major alone,
-then Gounod's Ave Maria over it. Beat: the model does what Gounod did — produce
-something new that fits a structure it learned. It never "knows" the harmony;
-it continues it.
+then Gounod's melody over it. Beat: both examples involve new material fitting
+an existing structure, but the analogy has limits — Gounod composed deliberately;
+the language model generates statistically, one token at a time.
 TODO(Ken): audio files + cue points aren't in this repo — drop them in
 demo-assets/ and note the cues here.
 Fallback: describe it in one sentence and move on — the tokenizer already made
@@ -209,18 +204,18 @@ class: section glow-green
 
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
-# Where prediction <span class="acc-green">shines</span>
+# Common strengths — <span class="acc-green">and limits</span>
 
-- **Explain, summarize, rewrite** — at any length, in any register, instantly
-- **Brainstorm**: ten options, five counterarguments, three ways to structure a paper
-- **Mechanical work at scale**: extract, reformat, tabulate, translate — large amounts, fast
-- **Across mediums**: text, images, audio — photograph a page, get a table; text in, speech out
-- **Tutoring and feedback**: iterate on *your* work like a partner who never gets tired
+- **Explain, summarize, rewrite** — within context and output limits; quality still varies
+- **Generate options**: counterarguments, questions, or possible ways to organize material
+- **Assist with repetitive transformations**: extract, reformat, tabulate, translate
+- **Work across mediums**: photograph a page, get a table; text in, speech out
+- **Offer practice and feedback**: generate questions and respond to your attempts
 
 <!--
-Frame before demos: these are the categories; the demos are evidence, not a
-sales pitch. "This is what's possible — what you'll have access to varies and
-will change while you're here."
+Frame before demos: these are common capabilities, not guarantees; the demos
+are evidence. "What works, what you can access, and the quality of the result
+all vary by tool and will change while you're here."
 -->
 
 ---
@@ -282,19 +277,18 @@ class: section glow-blue
 
 # The failure modes are <span class="acc-blue">predictable too</span>
 
-- It's **probabilistic**: same question, different answers — inconsistent reasoning is normal, not a bug you can file
-- It **wants to give you an answer you'll like** — push back and it often folds, even when it was right
-- **Looking real ≠ being real**: it knows what a legitimate citation *looks like*, and can produce one that fits the pattern perfectly without existing
-- Fabrication is much rarer in the best current systems — and still routine in smaller and free ones. **The front moves; the mechanism doesn't**
-- It's only as good as **the data it was trained on** — gaps, bias, and cutoff dates included
+- **Outputs vary**: probabilistic generation can produce different or inconsistent answers
+- **Sycophancy**: models may mirror your view or yield to confident pushback
+- **Looking real ≠ being real**: a plausible-looking citation may not exist
+- **Fabrication persists**: newer systems reduce it; price and model size are not guarantees
+- **Inputs matter**: training data, prompts, instructions, and tools can introduce errors
 
 <!--
-Both §4 demos hang off this slide (sycophancy, then the voice clone). The
-fake-citations evidence is now a rehearsal SCREENSHOT delivered here: a small
-local model inventing five perfect-looking scholarly sources — hold it up
-while giving the looking-real bullet, one breath, move on. Honest calibration
-matters for credibility: don't present 2024 failure modes as current. The
-sycophancy point is the one they haven't heard.
+Both §4 demos hang off this slide (sycophancy, then the voice clone). PENDING
+ASSET: add the rehearsal screenshot of a local model inventing five
+perfect-looking scholarly sources as rendered slide content before the final
+export. Until then, describe the example while giving the looking-real bullet,
+one breath, move on. Calibrate it as one model and prompt, not a model tier.
 -->
 
 ---
@@ -310,9 +304,10 @@ class: glow-blue text-center
 
 <!--
 Rehearsed pushback demo: ask something with a checkable right answer, get it,
-then insist confidently on a wrong one and watch the model cave. (Smaller model
-folds more reliably; rehearse which one.) Beat: "it's not trying to be right —
-it's trying to be liked. The confidence in the answer is not evidence."
+then insist confidently on a wrong one and see whether the response follows
+the pressure instead of the evidence. Behavior varies by model and prompt;
+rehearse the exact example. Confidence in the answer is not evidence.
+Fallback: show the rehearsal screenshot and describe the exchange.
 -->
 
 ---
@@ -324,7 +319,7 @@ class: glow-blue text-center
 
 # That was my voice. <span class="acc-blue">Except it wasn't.</span>
 
-<p class="takeaway">A cloned voice, trained on minutes of audio. It sounds exactly right — and it isn't me. Looking real is not being real.</p>
+<p class="takeaway">A cloned voice, created from minutes of audio. It sounds like me — and it isn't me. Looking real is not being real.</p>
 
 <!--
 ~3 min, adapted from the workshop's Demo 5 (full steps in demo-script.md).
@@ -332,11 +327,11 @@ Say a topical sentence about THIS morning out loud, then have the clone speak
 the identical words — the side-by-side is the demo. Run from this repo's
 folder so Claude Code knows the voice id from CLAUDE.md.
 Fallback: demo-assets/voice-clone-demo.mp3 through the room speakers.
-Beats: "I consented to this — I trained that voice on purpose." Voice is no
-longer proof of identity. THE take-home: agree on a family safe word — an
-urgent call that sounds exactly like your kid, your parent, or your boss can
-be a clone; the safe word is the check a caller can't fake. Say it slowly —
-it's the most repeatable tip of the day.
+Beats: "I consented to this — I created that voice clone on purpose." Voice is
+no longer proof of identity. THE take-home: for an urgent call, hang up and
+call the person back on a number you already know. A private family phrase can
+be a second check, but it is not a guarantee. Say it slowly — it's the most
+repeatable tip of the day.
 -->
 
 ---
@@ -348,11 +343,11 @@ class: section glow-purple
 
 # An answer is not <span class="acc-purple">the truth</span>
 
-- It can be **very wrong on simple things and right on hard ones** — confidence tells you nothing
-- **Click the source.** Thirty seconds. Every time, for anything you'd hand in
+- It can be **wrong on simple things and right on hard ones** — surface confidence is not evidence of accuracy
+- **Open the source.** For consequential claims, inspect the actual page
 - **Cross-check**: a second tool, a search engine, the actual reading
 - Ask it to **show its work** — quote the passage, cite the page — then check the quote
-- The unfixable check: **can you defend it yourself?** If you can't explain it, you don't know it yet
+- The essential check: **can you explain how the evidence supports the claim?**
 
 <!--
 Section numbering is the shared outline's: Ewa covers §5 (how to use AI
@@ -374,9 +369,9 @@ class: glow-tri text-center
   <span class="lampdot dot-blue"></span><span class="lampdot dot-purple"></span><span class="lampdot dot-green"></span>
 </div>
 
-# Ask for help <span class="acc-green">thinking</span>, not for a way out of thinking.
+# Prediction produces <span class="acc-green">possibilities</span>. Verification tests them.
 
-<p class="takeaway">Used this way, these are <strong>curiosity amplifiers</strong>. The tools will change every year you're here; how they work — prediction, not knowledge — changes much more slowly. That framework is what you keep.</p>
+<p class="takeaway">The tools will change every year you're here. Keep the durable framework: distinguish the model from the system, recognize pattern generation, and check claims against evidence.</p>
 
 <p class="contact">
 <strong style="color: var(--fg);">Ken Kousen</strong><br>

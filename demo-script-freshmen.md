@@ -41,7 +41,7 @@ isn't surprised.
   back rows.
 - **Fri Sept 4** — fallback day. James's and Andrew's slides likely arrive
   this late; combine into the master deck as they land.
-- **Sat Sept 6** — the session (not the first slot of the day).
+- **Sun Sept 6** — the session (not the first slot of the day).
 
 ## Pre-flight (morning of)
 
@@ -74,7 +74,7 @@ isn't surprised.
 | 0:00 | §1 What AI actually is (slide) | 2 |
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod** | 6 |
 | 0:08 | §3 What it does well (slide) → **Demo: syllabus spine + poster** | 12 |
-| 0:20 | §4 What it does poorly (slide + citations screenshot) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
+| 0:20 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
 | 0:27 | §6 Verification (slide) → **Demo: click the sources** | 3 |
 | 0:30 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
 
@@ -86,7 +86,7 @@ say it in a sentence). The spine and the voice clone are the fixed points.
 
 ---
 
-## §1 — What AI actually is (slide only, 3 min)
+## §1 — What AI actually is (slide only, 2 min)
 
 A bullet or two on history, no more: in progress since the 1950s; what changed
 is massive data + massive computation + algorithmic breakthroughs landing
@@ -99,8 +99,8 @@ the model is the engine, ChatGPT/Copilot/BoodleBox are cars built around one.
 
 ## §2 — How it works → tokenizer + Bach/Gounod (6 min)
 
-Slide first (training vs. inference, tokens, next-token prediction, context),
-then evidence:
+Slide first (how autoregressive language models generate text, tokens,
+next-token prediction, context, and tools), then evidence:
 
 1. Tokenizer playground: type "Trinity College", paste a sentence from the
    syllabus, switch the vendor dropdown — common words one token, rare words
@@ -115,10 +115,11 @@ then evidence:
    **TODO(Ken): audio files + cue points — drop in `demo-assets/`, note
    them here.**
 
-**Beat:** "This is what the model actually sees — tokens, not words. And what
-it does with them is what Gounod did: produce something new that fits a
-structure it learned. Coherent without knowing: that's the whole trick, and
-it's the frame for everything else today."
+**Beat:** "For this language model, text is represented as tokens, not words,
+and generation happens one token at a time. Gounod gives us an analogy for new
+material fitting an existing structure — with an important limit: he composed
+deliberately; the model generates statistically. Fluent is not the same as
+verified, and that's the frame for everything else today."
 
 **Fallback:** OpenAI tokenizer page; describe Bach/Gounod in one sentence and
 move on — the tokenizer already made the mechanism point.
@@ -127,8 +128,9 @@ move on — the tokenizer already made the mechanism point.
 
 ## §3 — What it does well → the syllabus spine + poster (12 min)
 
-Slide first (explain/summarize/rewrite, brainstorm, mechanical scale,
-multimodal, tutoring), then the one-document-five-tools centerpiece:
+Slide first (common capabilities and their limits: explanation, option
+generation, repetitive transformations, multiple mediums, and practice), then
+the one-document-five-tools centerpiece:
 
 1. **Photograph it** — hold up the printed syllabus, shoot it with the phone,
    *"Extract every date, deadline, and reading into a table."*
@@ -157,25 +159,25 @@ draft, pre-generated poster. Any one can go static; not all five.
 
 ## §4 — What it does poorly → two demos (7 min)
 
-Slide first (probabilistic, sycophantic, looking-real-vs-being-real, training
-data limits — with the honest calibration that frontier systems rarely
-fabricate citations anymore). The fake-citations evidence is now a
-**rehearsal screenshot on the slide**: gemma4 inventing five perfect-looking
-scholarly sources (shoot it during rehearsal — `ollama run gemma4`, *"Give me
-five scholarly sources on [niche topic from the syllabus], with authors,
-years, and journals."*). Hold it up while giving the looking-real bullet, one
-breath, move on. Then:
+Slide first (variable outputs, sycophancy, looking-real-vs-being-real, and the
+limits introduced by training data, prompts, system instructions, and tools).
+Newer systems reduce fabrication, but none eliminate it; price and model size
+are not guarantees. **Pending asset:** during rehearsal, capture gemma4
+inventing five perfect-looking scholarly sources (`ollama run gemma4`, *"Give
+me five scholarly sources on [niche topic from the syllabus], with authors,
+years, and journals."*) and add the screenshot as rendered content on the §4
+slide before the final export. Until then, describe it in one breath. Then:
 
 ### Demo: watch it fold (sycophancy)
 
 Rehearsed pushback: ask a question with a checkable right answer, get the
-right answer, then insist confidently that it's wrong. Watch it apologize and
-agree. Smaller models fold more reliably than frontier ones — rehearse which
-model and which question that morning; keep a rehearsal screenshot as backup.
+right answer, then insist confidently that it's wrong. See whether it
+apologizes and agrees. Behavior varies — rehearse the exact model and question
+that morning, and keep a rehearsal screenshot as backup.
 
-**Beat:** "It's not trying to be right — it's trying to be liked. Its
-confidence is not evidence. If you push a model toward the answer you want,
-you will usually get it."
+**Beat:** "This is sycophancy: the response followed my pressure instead of
+the evidence. Confidence is not evidence. The behavior varies by model and
+prompt, which is why I rehearsed this exact example."
 
 ### Demo: looking real vs. being real (the voice clone)
 
@@ -189,13 +191,12 @@ Adapted from the workshop's Demo 5 (full steps in `demo-script.md`). ~3 min.
    is the demo. Narrate the few seconds of delay; it's suspense, not lag.
 3. Let the room sit in the uncanny valley for a beat.
 
-**Beats:** "I consented to this — I trained that voice on purpose." Voice is
-no longer proof of identity. **The take-home: agree on a safe word with
-family and close friends.** An urgent call that sounds exactly like your kid,
-your parent, or your boss can be a clone — the safe word is the check the
-caller can't fake. Say it slowly; it's the most repeatable tip of the day.
-It's also the citation lesson in a different medium: looking real — sounding
-real — is not being real.
+**Beats:** "I consented to this — I created that voice clone on purpose."
+Voice is no longer proof of identity. **The take-home: for an urgent call,
+hang up and call the person back on a number you already know.** A private
+family phrase can be a second check, but it is not a guarantee. Say it slowly;
+it's the most repeatable tip of the day. It's also the citation lesson in a
+different medium: looking real — sounding real — is not being real.
 
 **Fallback:** `demo-assets/voice-clone-demo.mp3` through the room speakers.
 
@@ -207,21 +208,21 @@ Slide first (wrong on simple things, right on hard ones; confidence ≠ truth),
 then the undramatic habit — self-contained now that the Ollama contrast is
 gone: in the frontier chat with search on, ask for scholarly sources on the
 niche syllabus topic (the old §4 prompt), click one, find the quoted passage
-in the actual source. Thirty seconds. Calibration beat lands here too: "the
-best tools mostly don't fabricate these anymore; the free one behind some
-random chat window still might — and you won't always know which kind you're
-talking to."
+in the actual source. Thirty seconds. Calibration beat lands here too:
+"Newer systems reduce fabrication, but no model, product tier, or polished
+interface removes the need to check."
 
-**Beat:** "Because it predicts rather than knows, checking is your job — and
-it's cheap. The unfixable check: can you defend it in office hours?"
+**Beat:** "Fluent prediction is not verified evidence. Open the source, check
+the passage, and ask whether the evidence actually supports the claim."
 
 ---
 
 ## Closing (1 min)
 
-"Ask for help thinking, not for a way out of thinking. Used this way, these
-are curiosity amplifiers." Tools change every year they're here; the
-prediction-not-knowledge framework doesn't. Hand back to Ewa.
+"Prediction produces possibilities. Verification tests them." Tools change
+every year they're here; keep the durable framework: distinguish the model
+from the system, recognize pattern generation, and check claims against
+evidence. Hand back to Ewa.
 
 ---
 
