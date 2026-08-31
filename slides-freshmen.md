@@ -110,6 +110,8 @@ Ken Kousen · Trinity College · First-Year Orientation · September 2026</p>
 ~30 minutes, six sections, demos as evidence. Ewa introduces; she follows with
 AI-in-college and the integrity policy, so stay OFF policy and integrity here.
 Tone check: mechanism and evidence, never advocacy — this must not read as marketing.
+Optional opener (one breath): "When an AI answer sounds polished, what would
+make you trust it?" — the closing slide answers it.
 -->
 
 ---
@@ -239,9 +241,13 @@ class: glow-green text-center
 </div>
 
 <!--
-The centerpiece: photo→table (vision), study schedule→calendar (pause on the
-permission prompt — point at the ⚿ chip on screen; repeat the pause on ANY
-later permission prompt, same beat, same chip), quiz-me in Gemini Notebook —
+The centerpiece: photo→table (vision — then check ONE extracted deadline
+against the printed syllabus before scheduling anything: verification inside
+the successful workflow, not an afterthought), study schedule→calendar (pause
+on the permission prompt — point at the ⚿ chip on screen; say "it's asking
+before it acts — read what it wants to do, and afterwards check what it
+changed"; permission is not the same as privacy or correctness; repeat the
+pause on ANY later permission prompt, same beat, same chip), quiz-me in Gemini Notebook —
 say "(formerly NotebookLM)" ONCE, then just Gemini Notebook — "quiz me, don't
 tell me" (answer one wrong on purpose — the tutoring beat matters most for
 this audience), Copilot email draft (edit a sentence live: the tool proposes,
@@ -358,6 +364,10 @@ Demo (self-contained now that the Ollama contrast is gone): in the frontier
 chat with search on, ask for scholarly sources on the niche syllabus topic,
 click ONE citation, find the quoted passage in the actual source. Thirty
 seconds. Fast, undramatic, exactly the habit they should copy.
+Second verification move (30 sec, spoken or live): tell it you LIKED its
+answer — then ask it to argue the exact opposite. If it flips with equal
+confidence, you've just measured what its confidence is worth. Frame as
+verification (testing the answer), not as a usage tip — usage is Ewa's §5.
 -->
 
 ---
@@ -369,9 +379,9 @@ class: glow-tri text-center
   <span class="lampdot dot-blue"></span><span class="lampdot dot-purple"></span><span class="lampdot dot-green"></span>
 </div>
 
-# Prediction produces <span class="acc-green">possibilities</span>. Verification tests them.
+# They're eager <span class="acc-green">toddlers</span>
 
-<p class="takeaway">The tools will change every year you're here. Keep the durable framework: distinguish the model from the system, recognize pattern generation, and check claims against evidence.</p>
+<p class="takeaway">They want you to keep talking, and they want you to be happy — with a toddler's grasp on reality. So verify anything that matters. Ask for help <strong>thinking</strong>, not for a way out of thinking.</p>
 
 <p class="contact">
 <strong style="color: var(--fg);">Ken Kousen</strong><br>
@@ -381,6 +391,14 @@ Associate Director, Elting Center for Innovation &amp; Entrepreneurship<br>
 </p>
 
 <!--
+Ken's framing — the metaphor is a mnemonic, not a mechanism: §2 explained the
+mechanism; this is how to REMEMBER the failure modes. Eager toddler = wants
+you to keep talking (engagement), wants you to be happy (sycophancy — the
+"watch it fold" demo), tenuous grasp on reality (the fabricated citations).
+It ties every demo they just saw into one image.
+Say the HANDOFF explicitly before the bio registers as "the end" — otherwise
+this slide triggers premature applause: "That's my part — and I skipped
+number five on purpose, because Ewa owns it. Ewa?"
 Cut order if running long (notes only, never on screen): compress §1 to one
 breath → drop the spine's email step → drop the Nano Banana poster → drop the
 sycophancy demo (keep the bullet, say it in a sentence). The spine and the

@@ -64,6 +64,19 @@ isn't surprised.
 - [ ] Demo/scrubbed inbox only — never project real student mail
 - [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
 - [ ] Rehearsal screenshots for every demo in one folder, in run order
+- [ ] **Disposable demo calendar** (not the real one) — session one writes
+      real events, and session two's "check conflicts" must start clean
+
+## Between sessions (reset — session one leaves state behind)
+
+- [ ] Delete the study-schedule blocks session one added (or switch to a
+      second demo calendar prepared in advance)
+- [ ] Discard the Copilot email draft
+- [ ] Close/clear the chat threads and the Gemini Notebook quiz so session
+      two starts from the same blank state
+- [ ] Delete the session-one syllabus photo and poster; re-cue the
+      Bach/Gounod audio and the voice-clone fallback mp3
+- [ ] Battery/power check; re-silence notifications
 
 ---
 
@@ -133,12 +146,17 @@ generation, repetitive transformations, multiple mediums, and practice), then
 the one-document-five-tools centerpiece:
 
 1. **Photograph it** — hold up the printed syllabus, shoot it with the phone,
-   *"Extract every date, deadline, and reading into a table."*
+   *"Extract every date, deadline, and reading into a table."* **Then check
+   one extracted deadline against the printed page before scheduling
+   anything** — verification inside the successful workflow, not something
+   you do later when the output looks suspicious.
 2. **Schedule it** — calendar connector: *"Build a study schedule for the
    first six weeks, check conflicts, add the blocks."* **Pause on the
-   permission prompt:** "It's asking. It can't touch what I haven't allowed."
-   Point at the ⚿ chip on the slide; repeat the pause on any later
-   permission prompt — same beat, same chip.
+   permission prompt:** "It's asking before it acts. Read exactly what it
+   wants to do — and afterwards, check what it changed." (Permission is not
+   the same as privacy or correctness — don't overclaim what the prompt
+   guarantees.) Point at the ⚿ chip on the slide; repeat the pause on any
+   later permission prompt — same beat, same chip.
 3. **Quiz me on it** — in **Gemini Notebook** — say "(formerly NotebookLM)"
    once, then just Gemini Notebook: *"Quiz me on week 1. One question at a
    time. Don't give me the answer until I've tried twice."* Answer one wrong
@@ -215,14 +233,25 @@ interface removes the need to check."
 **Beat:** "Fluent prediction is not verified evidence. Open the source, check
 the passage, and ask whether the evidence actually supports the claim."
 
+**Second verification move (30 sec):** tell it you *liked* its answer — then
+ask it to argue the exact opposite. If it flips with equal confidence, you've
+just measured what its confidence is worth. Keep the framing on *testing the
+answer* (verification), not on how-to-use-AI — usage tips are Ewa's §5.
+
 ---
 
 ## Closing (1 min)
 
-"Prediction produces possibilities. Verification tests them." Tools change
-every year they're here; keep the durable framework: distinguish the model
-from the system, recognize pattern generation, and check claims against
-evidence. Hand back to Ewa.
+Ken's framing, the mnemonic that ties every demo together: **"They're eager
+toddlers. They want you to keep talking to them, and they want you to be
+happy — and they have a toddler's tenuous grasp on reality. So verify
+anything important. Ask for help thinking, not for a way out of thinking."**
+The metaphor is a memory hook, not a mechanism — §2 already gave the
+mechanism; this is how they'll retell it.
+
+Then the explicit handoff, *before* the bio on screen reads as "the end" and
+triggers applause: "That's my part — and I skipped number five on purpose,
+because Ewa owns it. Ewa?"
 
 ---
 
