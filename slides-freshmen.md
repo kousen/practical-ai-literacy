@@ -182,21 +182,31 @@ layout: center
 class: glow-purple text-center
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · Bach → Gounod</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · Bach → Gounod, in conversation</div>
 
-# New melody, <span class="acc-purple">old structure</span>
+# Just keep <span class="acc-purple">asking</span>
 
-<p class="takeaway">In 1852 Gounod composed a new melody over Bach's prelude from 1722; it was published in 1853. New music shaped by an existing structure, long before modern generative AI.</p>
+<p class="takeaway">You don't ask an AI what you'd ask a search engine. One question becomes ten — and the conversation is where the understanding happens.</p>
 
 <!--
-~3 min, replaces the raspberry/9.11 pair. Play Bach's Prelude in C major alone,
-then Gounod's melody over it. Beat: both examples involve new material fitting
-an existing structure, but the analogy has limits — Gounod composed deliberately;
-the language model generates statistically, one token at a time.
-TODO(Ken): audio files + cue points aren't in this repo — drop them in
-demo-assets/ and note the cues here.
-Fallback: describe it in one sentence and move on — the tokenizer already made
-the mechanism point.
+~5 min — the §2 centerpiece, and live evidence for the "context matters"
+bullet. Play Bach's Prelude in C major alone, then Gounod's melody over it
+(TODO(Ken): audio files + cue points → demo-assets/). Then the Pet in Codex,
+BY VOICE, interruptible: "Was this a common practice?" → "Did Gounod do this
+with other pieces?" → "Was Bach a common source for this sort of thing?" →
+"What are some other examples?" Follow the thread wherever it goes — the
+free-association IS the demo. Push back once on purpose ("really? I thought…")
+— plants the seed §4's sycophancy demo pays off later.
+Mechanism callback, one sentence: every follow-up works because the whole
+conversation is the context — that's the "context matters" bullet, live.
+META BEAT to close: "Everything you just watched was live. Is this a good way
+to use these tools? What would you watch out for?" — one beat of silence, then
+hand it forward: "Hold that thought — that's exactly what Ewa's section is
+about." (Tell Ewa on the Wed call so she can catch the pass.)
+Fallback ladder: pet fails → same conversation typed in a chat window; AV
+fails entirely → rehearsal screenshots and narrate one exchange.
+Thursday tech check: stage mic pickup, pet audio through house speakers,
+interruption behavior in the room.
 -->
 
 ---
@@ -237,7 +247,7 @@ class: glow-green text-center
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">1</span><br><strong>Photograph it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">2</span><br><strong>Schedule it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">3</span><br><strong>Quiz me on it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Email about it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Poster it</strong></div>
 </div>
 
 <!--
@@ -250,8 +260,8 @@ changed"; permission is not the same as privacy or correctness; repeat the
 pause on ANY later permission prompt, same beat, same chip), quiz-me in Gemini Notebook —
 say "(formerly NotebookLM)" ONCE, then just Gemini Notebook — "quiz me, don't
 tell me" (answer one wrong on purpose — the tutoring beat matters most for
-this audience), Copilot email draft (edit a sentence live: the tool proposes,
-you decide). If time runs long, drop the email first.
+this audience), then the poster reveal on the next slide (static — see its
+notes). Email demo cut 9/1 to fund the Pet conversation; steps in git history.
 -->
 
 ---
@@ -263,15 +273,18 @@ class: glow-green text-center
 
 # One more trick — <span class="acc-green">make it a picture</span>
 
-<p class="takeaway">Same document, fifth tool: a study poster generated straight from the syllabus. Text in, visual out.</p>
+<p class="takeaway">Same document, fourth tool: a study poster generated from this syllabus. Text in, visual out — it took about a minute.</p>
 
 <!--
-~2 min. Nano Banana (Gemini image generation): "Turn this syllabus into a
-one-page study poster / six-week timeline diagram." The repo's image-prompt
-skill can pre-write a strong prompt during rehearsal. Keeps the one-document
-story going — same syllabus, different medium.
-Fallback: pre-generated poster image on the desktop.
-Cut order: this is the second drop on overrun, right after the email step.
+STATIC BY DEFAULT (9/1 — funds the Pet conversation): show the pre-generated
+poster, ~20-30 seconds. PENDING ASSET: generate it during rehearsal with Nano
+Banana (Gemini image generation) — "Turn this syllabus into a one-page study
+poster / six-week timeline diagram"; the repo's image-prompt skill can write
+the prompt — then put the image ON this slide before the final export.
+Say honestly that it was made earlier: "I generated this from the same
+syllabus during rehearsal — it took about a minute." Keeps the one-document
+story's visual ending without a live generation wait.
+If somehow ahead of schedule, generating live takes ~2 min.
 -->
 
 ---
@@ -400,9 +413,10 @@ Say the HANDOFF explicitly before the bio registers as "the end" — otherwise
 this slide triggers premature applause: "That's my part — and I skipped
 number five on purpose, because Ewa owns it. Ewa?"
 Cut order if running long (notes only, never on screen): compress §1 to one
-breath → drop the spine's email step → drop the Nano Banana poster → drop the
-sycophancy demo (keep the bullet, say it in a sentence). The spine and the
-voice clone are the fixed points.
+breath → cap the Pet conversation at two follow-ups (skip the meta beat, keep
+the Ewa tee-up) → drop the sycophancy demo (keep the bullet, say it in a
+sentence). The spine, the Pet conversation, and the voice clone are the
+fixed points. (Email already cut; poster already static.)
 Hand back to Ewa: she covers §5 (using AI effectively), then AI in the context
 of college, the integrity policy, and where this is headed — then Andrew on
 the year's events and the AI Lab.

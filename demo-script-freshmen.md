@@ -17,6 +17,12 @@ to pay for it — it survives as a rehearsal screenshot on the §4 slide.
 Mention on the Wed call that the safe-word tip is back in Ken's §4, so Ewa
 isn't surprised.
 
+**Revised 2026-09-01:** Bach/Gounod is now a **live Pet-in-Codex voice
+conversation** — free-association follow-ups about the piece, ending with a
+meta beat that tees up Ewa's §5 (tell her Wednesday). It demonstrates
+conversation-as-the-unit-of-use, not a generation analogy. To fund it: email
+demo cut, poster static by default.
+
 ## Session facts
 
 - **Washington Room, Mather (2nd floor)** — theater stage, large projector,
@@ -49,19 +55,22 @@ isn't surprised.
       tested; ours exported to PPTX/PDF as the fallback for the live Slidev
 - [ ] Browser tabs: Tokenizer Playground (loaded once — it fetches on first
       use), a frontier chat with search (claude.ai or ChatGPT), Gemini
-      Notebook, Gemini (image generation), Outlook web (Trinity), calendar
+      Notebook, calendar
 - [ ] Bach/Gounod audio in `demo-assets/`, cued, plays through room speakers
+- [ ] **Codex Pet ready**: voice in/out through the house system, mic pickup
+      tested from stage position, interruption rehearsed, the Bach/Gounod
+      follow-up chain run once that morning
 - [ ] ElevenLabs key working; `demo-assets/voice-clone-demo.mp3` plays
       through the room's speakers as the clone fallback
 - [ ] Sycophancy pushback prompt and the car wash question rehearsed **that
       morning** — models change weekly. Ollama app open, `gemma4:12b-mlx`
       selected, thinking display hidden, text size checked
 - [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
-      slide beat) and a pre-generated study poster, both in the folder
+      slide beat); **pre-generated study poster ON its slide** (it's the
+      demo now, not the fallback)
 - [ ] Phone charged, camera ready, mirroring tested; pre-shot syllabus photo
       on the desktop as fallback
 - [ ] Printed syllabus (the prop) in the bag
-- [ ] Demo/scrubbed inbox only — never project real student mail
 - [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
 - [ ] Rehearsal screenshots for every demo in one folder, in run order
 - [ ] **Disposable demo calendar** (not the real one) — session one writes
@@ -71,11 +80,10 @@ isn't surprised.
 
 - [ ] Delete the study-schedule blocks session one added (or switch to a
       second demo calendar prepared in advance)
-- [ ] Discard the Copilot email draft
-- [ ] Close/clear the chat threads and the Gemini Notebook quiz so session
-      two starts from the same blank state
-- [ ] Delete the session-one syllabus photo and poster; re-cue the
-      Bach/Gounod audio and the voice-clone fallback mp3
+- [ ] Close/clear the chat threads, the Pet conversation, and the Gemini
+      Notebook quiz so session two starts from the same blank state
+- [ ] Delete the session-one syllabus photo; re-cue the Bach/Gounod audio
+      and the voice-clone fallback mp3
 - [ ] Battery/power check; re-silence notifications
 
 ---
@@ -85,17 +93,18 @@ isn't surprised.
 | Clock | Segment | Min |
 | ----- | ------- | --- |
 | 0:00 | §1 What AI actually is (slide) | 2 |
-| 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod** | 6 |
-| 0:08 | §3 What it does well (slide) → **Demo: syllabus spine + poster** | 12 |
-| 0:20 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
-| 0:27 | §6 Verification (slide) → **Demo: click the sources** | 3 |
-| 0:30 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
+| 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
+| 0:10 | §3 What it does well (slide) → **Demo: syllabus spine** (photo → calendar → quiz) → **static poster reveal** | 9 |
+| 0:19 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
+| 0:26 | §6 Verification (slide) → **Demo: click the sources** | 3 |
+| 0:29 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
 
-(§5, effective use, is Ewa's — per her 8/27 email.) On paper this is ~31
-against a 30-minute slot — the cut order is live, not theoretical. Overrun
-order: compress §1 to one breath → drop the email step of the spine → drop
-the Nano Banana poster → drop the sycophancy demo (keep the slide bullet —
-say it in a sentence). The spine and the voice clone are the fixed points.
+(§5, effective use, is Ewa's — per her 8/27 email. Email demo cut and poster
+made static 9/1 to fund the Pet conversation.) ~30 on paper. Overrun order:
+compress §1 to one breath → cap the Pet conversation at two follow-ups (skip
+the meta beat, keep the Ewa tee-up) → drop the sycophancy demo (keep the
+slide bullet — say it in a sentence). The spine, the Pet conversation, and
+the voice clone are the fixed points.
 
 ---
 
@@ -110,7 +119,7 @@ the model is the engine, ChatGPT/Copilot/BoodleBox are cars built around one.
 
 ---
 
-## §2 — How it works → tokenizer + Bach/Gounod (6 min)
+## §2 — How it works → tokenizer + the Pet conversation (8 min)
 
 Slide first (how autoregressive language models generate text, tokens,
 next-token prediction, context, and tools), then evidence:
@@ -122,28 +131,42 @@ next-token prediction, context, and tools), then evidence:
    walk or drive?"* Many models, even reasonably good ones, advise walking —
    the car has to be there. Rehearse which model that morning; a correct
    answer kills the joke. Bach/Gounod carries the mechanism beat now.)
-2. **Bach/Gounod (~3 min):** play Bach's Prelude in C major alone, then
-   Gounod's Ave Maria over it — a new melody composed over an existing
-   structure, every note shaped by the pattern underneath.
-   **TODO(Ken): audio files + cue points — drop in `demo-assets/`, note
-   them here.**
+2. **Bach/Gounod, in conversation (~5 min) — the §2 centerpiece.** This is
+   NOT a generation analogy; it's a live demonstration of *conversation as
+   the way to use these tools*. Play Bach's Prelude in C major alone, then
+   Gounod's melody over it. **TODO(Ken): audio files + cue points — drop in
+   `demo-assets/`, note them here.** Then the **Pet in Codex, by voice**
+   (interruptible — interrupt it at least once, naturally): *"Was this a
+   common practice?"* → *"Did Gounod do this with other pieces?"* → *"Was
+   Bach a common source for this sort of thing?"* → *"What are some other
+   examples?"* Follow the thread wherever it actually goes — the
+   free-association is the demo. **Push back once on purpose** ("really? I
+   thought…") — plants the seed the §4 sycophancy demo pays off.
 
-**Beat:** "For this language model, text is represented as tokens, not words,
-and generation happens one token at a time. Gounod gives us an analogy for new
-material fitting an existing structure — with an important limit: he composed
-deliberately; the model generates statistically. Fluent is not the same as
-verified, and that's the frame for everything else today."
+**Beats:** "You don't ask an AI what you'd ask a search engine. It's not
+about retrieving a fact — it's a conversation that builds understanding, and
+you're free — encouraged — to push back." Mechanism callback in one
+sentence: every follow-up worked because the whole conversation is the
+context — that's the context bullet, live. **Then go meta:** "Everything you
+just watched was live. Is this a good way to use these tools? What would you
+watch out for?" — one beat of silence — "Hold that thought: that's exactly
+what Ewa's section is about." (Tell Ewa on the Wed call so she can catch
+the pass.)
 
-**Fallback:** OpenAI tokenizer page; describe Bach/Gounod in one sentence and
-move on — the tokenizer already made the mechanism point.
+**Fallback ladder:** pet misbehaves → same conversation typed in a chat
+window (loses charm, keeps content); AV fails → rehearsal screenshots,
+narrate one exchange. Tokenizer fallback: OpenAI tokenizer page.
+
+**Thursday tech check:** stage mic pickup for the pet, pet audio through the
+house speakers, interruption behavior in a big room.
 
 ---
 
-## §3 — What it does well → the syllabus spine + poster (12 min)
+## §3 — What it does well → the syllabus spine (9 min)
 
 Slide first (common capabilities and their limits: explanation, option
 generation, repetitive transformations, multiple mediums, and practice), then
-the one-document-five-tools centerpiece:
+the one-document-four-tools centerpiece:
 
 1. **Photograph it** — hold up the printed syllabus, shoot it with the phone,
    *"Extract every date, deadline, and reading into a table."* **Then check
@@ -162,16 +185,19 @@ the one-document-five-tools centerpiece:
    time. Don't give me the answer until I've tried twice."* Answer one wrong
    on purpose; let it coach. **This is the beat that decides whether they
    hear 'cheating machine' or 'study partner' — do not rush it.**
-4. **Email about it** — Copilot/Outlook: draft the professor email about the
-   week-6 conflict. Read it aloud, edit one sentence live: it proposes, you
-   decide. (First thing to drop on overrun.)
-5. **Poster it (~2 min)** — Nano Banana (Gemini image generation): *"Turn
-   this syllabus into a one-page study poster / six-week timeline diagram."*
-   The repo's `image-prompt` skill can pre-write the prompt during rehearsal.
-   (Second thing to drop.)
+4. **Poster it (static, ~30 sec)** — show the pre-generated study poster on
+   its slide, with the honest line: *"I generated this from the same
+   syllabus during rehearsal — it took about a minute."* (Made static 9/1
+   to fund the Pet conversation; generate the asset during rehearsal with
+   Nano Banana — the `image-prompt` skill can write the prompt — and put
+   the image on the slide before the final export. Live generation only if
+   somehow ahead of schedule.)
 
-**Fallback:** pre-shot photo, pre-built calendar, quiz screenshot, saved
-draft, pre-generated poster. Any one can go static; not all five.
+(**Email demo cut 9/1** to fund the Pet conversation — steps in git history
+on this file.)
+
+**Fallback:** pre-shot photo, pre-built calendar, quiz screenshot. Any one
+can go static; not all three.
 
 ---
 
@@ -295,7 +321,9 @@ usable for the faculty/adult version or future sessions:
   doesn't cost time.
 - **Lyrics trainer** ("nobody typed any code") — reads as marketing under
   the new tone guardrail; keep for the AI Lab sessions.
-- **Codex pet + Halo lamp** — agents/ambient status; AI Lab material now.
+- **Copilot email draft** ("draft the professor email about the week-6
+  conflict") — cut 9/1 to fund the Pet conversation; steps in git history.
+  (The Codex Pet itself is un-parked: it's now the §2 conversation vehicle.)
 - **Ollama fake-citations pair** (gemma4 invents sources / frontier-with-
   search doesn't) — dropped 8/31 to pay for the restored demos; survives as
   the rehearsal screenshot on the §4 slide and the §6 click-the-sources
