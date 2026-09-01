@@ -43,6 +43,9 @@ Two ideas run throughout:
 
 Just want to read the deck? Grab the always-current PDF:
 **[practical-ai-literacy-slides.pdf](https://github.com/kousen/practical-ai-literacy/releases/latest/download/practical-ai-literacy-slides.pdf)**
+
+The first-year orientation talk (*AI Tools for Academic Success*, `slides-freshmen.md`) is built the same way:
+**[ai-tools-for-academic-success.pdf](https://github.com/kousen/practical-ai-literacy/releases/latest/download/ai-tools-for-academic-success.pdf)**
 (rebuilt automatically on every slide change)
 
 ```bash

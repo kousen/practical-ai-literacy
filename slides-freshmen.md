@@ -99,7 +99,14 @@ css: unocss
 <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--faint);">
 Ken Kousen · Trinity College · First-Year Orientation · September 2026</p>
 
+<div style="position: absolute; right: 36px; bottom: 30px; text-align: center;">
+  <img src="/images/qr-freshmen-pdf.svg" style="width: 96px; height: 96px; background: #fff; padding: 5px; border-radius: 6px;" alt="QR code linking to the slides PDF" />
+  <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; color: var(--faint); margin-top: 3px;">slides (PDF)</div>
+</div>
+
 <!--
+QR (title + close) → the rolling "latest" release asset; the URL is stable
+across rebuilds, so it stays valid no matter how often the deck changes.
 ~30 minutes, six sections, demos as evidence, one point per slide — advance
 briskly; the slides are backdrops, not documents. Ewa introduces; she follows
 with AI-in-college and the integrity policy, so stay OFF policy and integrity.
@@ -656,12 +663,18 @@ class: glow-tri text-center
 
 <p class="takeaway">They want you to keep talking, and they want you to be happy — with a toddler's grasp on reality. So verify anything that matters. Ask for help <strong>thinking</strong>, not for a way out of thinking.</p>
 
-<p class="contact">
-<strong style="color: var(--fg);">Ken Kousen</strong><br>
-Professor of the Practice, Computer Science Department<br>
-Associate Director, Elting Center for Innovation &amp; Entrepreneurship<br>
-<span style="font-family: 'IBM Plex Mono', monospace;" class="acc-blue">kenneth.kousen@trincoll.edu</span>
-</p>
+<div style="display: flex; gap: 36px; justify-content: center; align-items: center; margin-top: 0.6rem;">
+  <p class="contact" style="text-align: right; margin: 0;">
+  <strong style="color: var(--fg);">Ken Kousen</strong><br>
+  Professor of the Practice, Computer Science Department<br>
+  Associate Director, Elting Center for Innovation &amp; Entrepreneurship<br>
+  <span style="font-family: 'IBM Plex Mono', monospace;" class="acc-blue">kenneth.kousen@trincoll.edu</span>
+  </p>
+  <div style="text-align: center;">
+    <img src="/images/qr-freshmen-pdf.svg" style="width: 128px; height: 128px; background: #fff; padding: 6px; border-radius: 6px;" alt="QR code linking to the slides PDF" />
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--muted); margin-top: 4px;">these slides (PDF)</div>
+  </div>
+</div>
 
 <!--
 Ken's framing — the metaphor is a mnemonic, not a mechanism: §2 explained the

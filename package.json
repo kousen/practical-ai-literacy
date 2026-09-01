@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
-    "export": "slidev export --output practical-ai-literacy-slides.pdf"
+    "export": "slidev export --output practical-ai-literacy-slides.pdf",
+    "export:freshmen": "slidev export slides-freshmen.md --output ai-tools-for-academic-success.pdf"
   },
   "private": true,
   "overrides": {
