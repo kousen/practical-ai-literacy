@@ -58,6 +58,8 @@ night-before option (old notebooks underwhelmed in rehearsal).
         confirm it doesn't hear itself through the house speakers (echo)
   - [ ] Interrupting the Pet mid-answer works in the room
   - [ ] Font sizes / Ollama app text from the back rows
+  - [ ] **Phone over USB-C to the room's input** (adapter, folded vs.
+        unfolded, DND on) — decides laptop vs. phone path for the §3 spine
 - **Wed Sept 2, 10:00** — sync call with Ewa (calendar invite received);
   Sonia wants structure/slides visibility early that week. Send the deck
   before this call if possible.
@@ -90,8 +92,8 @@ night-before option (old notebooks underwhelmed in rehearsal).
       selected, thinking display hidden, text size checked
 - [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
       slide beat)
-- [ ] Phone charged (no longer load-bearing — the spine runs from the
-      laptop)
+- [ ] Phone charged, Do Not Disturb on, USB-C video adapter in the bag (the
+      spine may run from the phone — see §3 phone path)
 - [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
 - [ ] Rehearsal screenshots for every demo in one folder, in run order
 ## Between sessions (reset — session one leaves state behind)
@@ -232,10 +234,32 @@ schedule visual is text-heavy, which image models still garble.)
 screenshots of the no-class-dates answer and the quiz exchange, saved email
 draft. Any one can go static; not all of them.
 
-**Rehearsal checks:** (a) Claude actually disambiguates to Hartford from the
-account you present from; (b) the 2026–27 approved academic calendar page
-is findable and current; (c) the calendar connector is connected and the
-permission prompt fires on the write.
+**Two ways to run it — decide after the 5 pm check (full menu):**
+
+- **Laptop path:** claude.ai in the browser, portal screenshot pasted,
+  calendar tab open to show the event land, Copilot/Outlook for the email.
+- **Phone path (9/1 test: worked end to end in the Claude app):** Pixel
+  mirrored over USB-C to the room — retrieve the calendar, *photograph* the
+  schedule with the camera, ask for the no-class dates, add the reminder,
+  and draft the email, all in one app. More relatable (it's the device
+  every student is holding), no tab-juggling. Phone-path checks:
+  - [ ] USB-C video out works with the room's actual input (likely needs a
+        USB-C-to-HDMI adapter — test the exact cable/adapter/input combo)
+  - [ ] Folded vs. unfolded: the inner screen letterboxes but projects
+        larger and tablet-like — compare both from the back row
+  - [ ] **Do Not Disturb ON before plugging in** — a mirrored phone shows
+        everything; stay inside the Claude app
+  - [ ] Battery full; a charging cable that doesn't fight the video cable
+  - [ ] Email step: **draft, don't send** — a live send to real students is
+        a one-way door
+
+**Rehearsal checks (either path):** (a) Claude actually disambiguates to
+Hartford from the account you present from; (b) the 2026–27 approved
+academic calendar page is findable and current; (c) **the permission prompt
+actually fires on the calendar write** — a long-ago "always allow" can
+silence it (reset the tool permission in the connector settings, or
+disconnect/reconnect the connector — the Google consent screen is itself a
+good "it's asking" moment); test in a fresh conversation tonight.
 
 ---
 
