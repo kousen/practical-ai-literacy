@@ -371,7 +371,11 @@ class: glow-green text-center
 
 <!--
 ~15 seconds, mostly for the laugh. Real cover shows first; NEXT reveals the
-ram and its caption. Then: "I used Nano Banana to make the other one." Mention you've done this for all your books —
+ram and its caption. Then: "I used Nano Banana to make the other one."
+The two-step reveal is deliberate and does double duty: the room registers
+"he wrote the book" (an O'Reilly cover, your name) BEFORE the joke, so the
+laugh carries the credibility — never deliver this as a single image, and
+never recite credentials; the gag does it. Mention you've done this for all your books —
 they're on your home page. Then move on. Tone: it's a joke about your own
 book, not a product pitch.
 -->
