@@ -11,7 +11,8 @@ outline's numbers, so our deck jumps 4 → 6 deliberately.
 
 **Revised 2026-08-31 (per Ken, via the Desktop planning session):** restored
 Bach/Gounod (in §2, replacing raspberry/9.11), the Nano Banana study poster
-(step 5 of the spine), and the ElevenLabs voice clone + family safe word (in
+(step 5 of the spine; cut again 9/1 — the ram-cover slide now carries image
+generation), and the ElevenLabs voice clone + family safe word (in
 §4, as the looking-real demo). The Ollama fake-citations live demo is dropped
 to pay for it — it survives as a rehearsal screenshot on the §4 slide.
 Mention on the Wed call that the safe-word tip is back in Ken's §4, so Ewa
@@ -25,7 +26,7 @@ in the menu (~33 full); Ken trims to fit the night before** — nothing is
 pre-cut. Tech check moved up to Tue 9/1, 5 pm; laptop-audio-over-HDMI is the
 headline item. **The §3 spine is now Ken's real semester** (academic
 calendar lookup → portal schedule screenshot → no-class dates → one reminder
-event → quiz → email → poster) instead of a fictional printed syllabus — no
+event → quiz → email) instead of a fictional printed syllabus — no
 props, no phone transfer, no seeded calendar. Gemini Notebook demoted to a
 night-before option (old notebooks underwhelmed in rehearsal).
 
@@ -73,9 +74,9 @@ night-before option (old notebooks underwhelmed in rehearsal).
 - [ ] Browser tabs, in run order: Tokenizer Playground (loaded once — it
       fetches on first use), claude.ai (calendar connector connected),
       Trinity portal on "My Course Schedule" (signed in; only the schedule
-      page ever goes on screen), Google Calendar, Outlook web (Trinity),
-      Gemini (image generation); Gemini Notebook only if it made the cut —
-      signed into the personal Gmail account
+      page ever goes on screen), Google Calendar, Outlook web (Trinity);
+      Gemini Notebook only if it made the cut — signed into the personal
+      Gmail account
 - [ ] Portal schedule screenshot pre-shot on the desktop as the fallback
 - [ ] Demo/scrubbed inbox only — never project real student mail
 - [ ] Bach/Gounod audio in `demo-assets/`, cued, plays through room speakers
@@ -88,8 +89,7 @@ night-before option (old notebooks underwhelmed in rehearsal).
       morning** — models change weekly. Ollama app open, `gemma4:12b-mlx`
       selected, thinking display hidden, text size checked
 - [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
-      slide beat); pre-generated study poster ready (the static option and
-      the live fallback — on the slide if the night-before call is static)
+      slide beat)
 - [ ] Phone charged (no longer load-bearing — the spine runs from the
       laptop)
 - [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
@@ -113,16 +113,15 @@ night-before option (old notebooks underwhelmed in rehearsal).
 | ----- | ------- | --- |
 | 0:00 | §1 What AI actually is (slide) | 2 |
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
-| 0:10 | §3 What it does well (slide) → **Demo: my real semester** (find calendar → read schedule → one reminder → quiz → email) → **poster** (live or static) | 12 |
-| 0:22 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
-| 0:29 | §6 Verification (slide) → **Demo: click the sources** | 3 |
-| 0:32 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
+| 0:10 | §3 What it does well (slides + ram cover) → **Demo: my real semester** (find calendar → read schedule → one reminder → quiz → email) | 10 |
+| 0:20 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
+| 0:27 | §6 Verification (slide) → **Demo: click the sources** | 3 |
+| 0:30 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
 
 (§5, effective use, is Ewa's — per her 8/27 email.) **This is the full menu,
-~33 with everything — deliberately.** Every demo stays available; **Ken
+~31 with everything — deliberately.** Every demo stays available; **Ken
 trims to fit the night before (Sat)** by choosing among: the email step,
-poster live vs. static, the Pet follow-up count, sycophancy live vs.
-screenshot. Nothing is pre-cut. Live overrun ladder (for slippage on the
+the Pet follow-up count, sycophancy live vs. screenshot. Nothing is pre-cut. Live overrun ladder (for slippage on the
 day, after night-before choices): compress §1 to one breath → cap the Pet
 conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →
 drop the sycophancy demo (keep the slide bullet — say it in a sentence).
@@ -185,7 +184,7 @@ interruption behavior in a big room.
 
 ---
 
-## §3 — What it does well → my real semester (up to 12 min, full menu)
+## §3 — What it does well → my real semester (up to 10 min, full menu)
 
 Slide first (common capabilities and their limits: explanation, option
 generation, repetitive transformations, multiple mediums, and practice), then
@@ -226,17 +225,12 @@ printed-syllabus version — steps in git history):
    the dates we won't meet this fall."* (The portal page literally has an
    "Email all my classes" link.) Read it aloud, edit one sentence live: it
    proposes, you decide. (Night-before candidate for trimming.)
-6. **Poster it (~2 min live, or ~30 sec static)** — Nano Banana (Gemini
-   image generation): *"Turn my fall schedule into a one-page visual with
-   the no-class dates highlighted."* The `image-prompt` skill can pre-write
-   the prompt. **Night-before call: generate live, or show the pre-generated
-   poster** with the honest line *"I made this from the same schedule during
-   rehearsal — took about a minute."* Either way, generate the asset during
-   rehearsal — it's the static option and the live fallback.
+(Poster step cut 9/1 — the ram slide covers image generation, and a
+schedule visual is text-heavy, which image models still garble.)
 
 **Fallback:** pre-shot portal screenshot on the desktop, rehearsal
 screenshots of the no-class-dates answer and the quiz exchange, saved email
-draft, pre-generated poster. Any one can go static; not all of them.
+draft. Any one can go static; not all of them.
 
 **Rehearsal checks:** (a) Claude actually disambiguates to Hartford from the
 account you present from; (b) the 2026–27 approved academic calendar page
