@@ -396,11 +396,12 @@ class: glow-green text-center
 
 # Practice, with <span class="acc-green">feedback</span>
 
-<p class="takeaway">It can generate questions and respond to your attempts. You'll see it quiz me in a minute.</p>
+<p class="takeaway">Ask it to quiz you — one question at a time, no answers until you've tried. A study partner, not an answer key.</p>
 
 <!--
-A few seconds — the quiz step of the spine is the evidence, and for this
-audience it's the beat that matters most.
+A few seconds. Spoken, not demoed (quiz step cut 9/1): "quiz me, don't tell
+me" is the one prompt worth memorizing — it's the difference between a
+cheating machine and a study partner.
 -->
 
 ---
@@ -416,16 +417,15 @@ class: glow-green text-center
 
 <p style="margin-top: 0.4rem;"><span class="permchip">⚿ it's asking</span></p>
 
-<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; max-width: 50rem; margin: 1.8rem auto 0;">
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; max-width: 44rem; margin: 1.8rem auto 0;">
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">1</span><br><strong>Find it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">2</span><br><strong>Read it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">3</span><br><strong>Remind me</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Quiz me</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">5</span><br><strong>Email it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Email it</strong></div>
 </div>
 
 <!--
-The centerpiece, all real — one Claude conversation carries steps 1-4:
+The centerpiece, all real — one Claude conversation carries steps 1-3:
 1 FIND IT: "Find the current Trinity approved academic calendar." It picks
   Hartford, not Dublin or Oxford — because the system knows you. Say so:
   that's the context slide and model-vs-system, live.
@@ -440,13 +440,7 @@ The centerpiece, all real — one Claude conversation carries steps 1-4:
   what it changed"; permission is not privacy or correctness. Say yes, show
   the event land in the calendar tab. "And it could add all of them."
   (Delete the event between sessions.)
-4 QUIZ ME: same conversation — "Quiz me on [week-1 reading / what we just
-  worked out]. One question at a time. Don't give me the answer until I've
-  tried twice." Answer one wrong on purpose; let it coach. THE beat that
-  decides 'cheating machine' vs. 'study partner' — don't rush it. Night-before
-  option: Gemini Notebook with a fresh notebook, if it impresses in rehearsal
-  — say "(formerly NotebookLM)" once if used.
-5 EMAIL IT: Copilot/Outlook — "Draft an email to my students listing the
+4 EMAIL IT: Copilot/Outlook — "Draft an email to my students listing the
   dates we won't meet this fall." Read it aloud, edit one sentence live: it
   proposes, you decide. The spine ends here.
 Full menu by design; Ken trims the night before.
@@ -685,7 +679,7 @@ It ties every demo they just saw into one image.
 Say the HANDOFF explicitly before the bio registers as "the end" — otherwise
 this slide triggers premature applause: "That's my part — and I skipped
 number five on purpose, because Ewa owns it. Ewa?"
-Timing: full menu ~31; Ken chooses the night before (email, Pet follow-up
+Timing: full menu ~29; Ken chooses the night before (email, Pet follow-up
 count, sycophancy live/screenshot). Live overrun
 ladder after those choices: compress §1 to one breath → cap the Pet
 conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →

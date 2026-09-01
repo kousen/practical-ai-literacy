@@ -26,9 +26,10 @@ in the menu (~33 full); Ken trims to fit the night before** — nothing is
 pre-cut. Tech check moved up to Tue 9/1, 5 pm; laptop-audio-over-HDMI is the
 headline item. **The §3 spine is now Ken's real semester** (academic
 calendar lookup → portal schedule screenshot → no-class dates → one reminder
-event → quiz → email) instead of a fictional printed syllabus — no
-props, no phone transfer, no seeded calendar. Gemini Notebook demoted to a
-night-before option (old notebooks underwhelmed in rehearsal).
+event → email) instead of a fictional printed syllabus — no props, no
+phone transfer, no seeded calendar. Gemini Notebook and the quiz step are
+cut (old notebooks underwhelmed in rehearsal; the "quiz me" prompt is
+spoken, not demoed).
 
 ## Session facts
 
@@ -76,9 +77,7 @@ night-before option (old notebooks underwhelmed in rehearsal).
 - [ ] Browser tabs, in run order: Tokenizer Playground (loaded once — it
       fetches on first use), claude.ai (calendar connector connected),
       Trinity portal on "My Course Schedule" (signed in; only the schedule
-      page ever goes on screen), Google Calendar, Outlook web (Trinity);
-      Gemini Notebook only if it made the cut — signed into the personal
-      Gmail account
+      page ever goes on screen), Google Calendar, Outlook web (Trinity)
 - [ ] Portal schedule screenshot pre-shot on the desktop as the fallback
 - [ ] Demo/scrubbed inbox only — never project real student mail
 - [ ] Bach/Gounod audio in `demo-assets/`, cued, plays through room speakers
@@ -102,8 +101,8 @@ night-before option (old notebooks underwhelmed in rehearsal).
       calendar
 - [ ] Discard the Copilot email draft (if the email demo made the cut)
 - [ ] Start a fresh Claude conversation (memory still knows you — the
-      Hartford beat re-fires); close the Pet conversation and any notebook
-      chat so session two starts from the same blank state
+      Hartford beat re-fires); close the Pet conversation so session two
+      starts from the same blank state
 - [ ] Re-cue the Bach/Gounod audio and the voice-clone fallback mp3
 - [ ] Battery/power check; re-silence notifications
 
@@ -115,13 +114,13 @@ night-before option (old notebooks underwhelmed in rehearsal).
 | ----- | ------- | --- |
 | 0:00 | §1 What AI actually is (slide) | 2 |
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
-| 0:10 | §3 What it does well (slides + ram cover) → **Demo: my real semester** (find calendar → read schedule → one reminder → quiz → email) | 10 |
-| 0:20 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
-| 0:27 | §6 Verification (slide) → **Demo: click the sources** | 3 |
-| 0:30 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
+| 0:10 | §3 What it does well (slides + ram cover) → **Demo: my real semester** (find calendar → read schedule → one reminder → email) | 8 |
+| 0:18 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
+| 0:25 | §6 Verification (slide) → **Demo: click the sources** | 3 |
+| 0:28 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
 
 (§5, effective use, is Ewa's — per her 8/27 email.) **This is the full menu,
-~31 with everything — deliberately.** Every demo stays available; **Ken
+~29 with everything — deliberately.** Every demo stays available; **Ken
 trims to fit the night before (Sat)** by choosing among: the email step,
 the Pet follow-up count, sycophancy live vs. screenshot. Nothing is pre-cut. Live overrun ladder (for slippage on the
 day, after night-before choices): compress §1 to one breath → cap the Pet
@@ -186,12 +185,12 @@ interruption behavior in a big room.
 
 ---
 
-## §3 — What it does well → my real semester (up to 10 min, full menu)
+## §3 — What it does well → my real semester (up to 8 min, full menu)
 
 Slide first (common capabilities and their limits: explanation, option
 generation, repetitive transformations, multiple mediums, and practice), then
 the centerpiece — **my actual fall semester, all real, no props.** One
-Claude conversation carries steps 1–4 (revised 9/1; replaces the fictional
+Claude conversation carries steps 1–3 (revised 9/1; replaces the fictional
 printed-syllabus version — steps in git history):
 
 1. **Find it** — *"Find the current Trinity approved academic calendar."*
@@ -214,25 +213,19 @@ printed-syllabus version — steps in git history):
    overclaim what the prompt guarantees.) Point at the ⚿ chip on the slide;
    say yes; show the event land in the calendar tab. "And it could add all
    of them." **Delete the event between sessions.**
-4. **Quiz me** — same conversation: *"Quiz me on [week-1 reading / what we
-   just worked out]. One question at a time. Don't give me the answer until
-   I've tried twice."* Answer one wrong on purpose; let it coach. **This is
-   the beat that decides whether they hear 'cheating machine' or 'study
-   partner' — do not rush it.** *Night-before option:* run it in Gemini
-   Notebook on a **fresh** notebook if it impresses in rehearsal (the old
-   ones didn't) — say "(formerly NotebookLM)" once if used; personal Gmail
-   account, and be signed into it before walking on. **TODO(Ken): pick the
-   quiz content.**
-5. **Email it** — Copilot/Outlook: *"Draft an email to my students listing
+4. **Email it** — Copilot/Outlook: *"Draft an email to my students listing
    the dates we won't meet this fall."* (The portal page literally has an
    "Email all my classes" link.) Read it aloud, edit one sentence live: it
    proposes, you decide. (Night-before candidate for trimming.)
 (Poster step cut 9/1 — the ram slide covers image generation, and a
-schedule visual is text-heavy, which image models still garble.)
+schedule visual is text-heavy, which image models still garble. **Quiz step
+cut 9/1** — Gemini Notebook underwhelmed and Ken wasn't sure he'd do it; the
+"quiz me, don't tell me" prompt is now *spoken* on the §3 "Practice, with
+feedback" slide instead of demoed.)
 
 **Fallback:** pre-shot portal screenshot on the desktop, rehearsal
-screenshots of the no-class-dates answer and the quiz exchange, saved email
-draft. Any one can go static; not all of them.
+screenshot of the no-class-dates answer, saved email draft. Any one can go
+static; not all of them.
 
 **Two ways to run it — decide after the 5 pm check (full menu):**
 
