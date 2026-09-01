@@ -20,8 +20,10 @@ isn't surprised.
 **Revised 2026-09-01:** Bach/Gounod is now a **live Pet-in-Codex voice
 conversation** — free-association follow-ups about the piece, ending with a
 meta beat that tees up Ewa's §5 (tell her Wednesday). It demonstrates
-conversation-as-the-unit-of-use, not a generation analogy. To fund it: email
-demo cut, poster static by default.
+conversation-as-the-unit-of-use, not a generation analogy. **All demos stay
+in the menu (~33 full); Ken trims to fit the night before** — nothing is
+pre-cut. Tech check moved up to Tue 9/1, 5 pm; laptop-audio-over-HDMI is the
+headline item.
 
 ## Session facts
 
@@ -38,13 +40,24 @@ demo cut, poster static by default.
 
 ## Deadlines
 
+- **Tue Sept 1, 5:00 pm — TECH CHECK in the Washington Room (moved up from
+  Thu).** HDMI video and the mics are expected to be fine. **The real
+  question is laptop audio through the house system** — it should ride the
+  HDMI connection, but someone may need to find the volume knob, and
+  multiple demos depend on it (Bach/Gounod playback, voice-clone mp3, Pet
+  voice out). Checklist:
+  - [ ] HDMI audio broadcasts; identify the volume knob and who controls it
+  - [ ] Bach/Gounod-style audio and the voice-clone mp3 at room volume
+  - [ ] **Pet round-trip**: its output goes out over HDMI, but its INPUT is
+        the laptop mic — speak to it from where you'll actually stand, and
+        confirm it doesn't hear itself through the house speakers (echo)
+  - [ ] Interrupting the Pet mid-answer works in the room
+  - [ ] Font sizes / Ollama app text from the back rows
 - **Wed Sept 2, 10:00** — sync call with Ewa (calendar invite received);
   Sonia wants structure/slides visibility early that week. Send the deck
   before this call if possible.
-- **Thu Sept 3** — on campus: tech check in the Washington Room. **Email the
-  AV/setup person now for an appointment** (new person; name is in the email
-  thread). Test: HDMI, audio, both demo laptop setups, font sizes from the
-  back rows.
+- **Thu Sept 3** — on campus; now free for follow-ups if the 5 pm check
+  surfaces anything.
 - **Fri Sept 4** — fallback day. James's and Andrew's slides likely arrive
   this late; combine into the master deck as they land.
 - **Sun Sept 6** — the session (not the first slot of the day).
@@ -55,7 +68,8 @@ demo cut, poster static by default.
       tested; ours exported to PPTX/PDF as the fallback for the live Slidev
 - [ ] Browser tabs: Tokenizer Playground (loaded once — it fetches on first
       use), a frontier chat with search (claude.ai or ChatGPT), Gemini
-      Notebook, calendar
+      Notebook, Gemini (image generation), Outlook web (Trinity), calendar
+- [ ] Demo/scrubbed inbox only — never project real student mail
 - [ ] Bach/Gounod audio in `demo-assets/`, cued, plays through room speakers
 - [ ] **Codex Pet ready**: voice in/out through the house system, mic pickup
       tested from stage position, interruption rehearsed, the Bach/Gounod
@@ -66,8 +80,8 @@ demo cut, poster static by default.
       morning** — models change weekly. Ollama app open, `gemma4:12b-mlx`
       selected, thinking display hidden, text size checked
 - [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
-      slide beat); **pre-generated study poster ON its slide** (it's the
-      demo now, not the fallback)
+      slide beat); pre-generated study poster ready (the static option and
+      the live fallback — on the slide if the night-before call is static)
 - [ ] Phone charged, camera ready, mirroring tested; pre-shot syllabus photo
       on the desktop as fallback
 - [ ] Printed syllabus (the prop) in the bag
@@ -80,6 +94,7 @@ demo cut, poster static by default.
 
 - [ ] Delete the study-schedule blocks session one added (or switch to a
       second demo calendar prepared in advance)
+- [ ] Discard the Copilot email draft (if the email demo made the cut)
 - [ ] Close/clear the chat threads, the Pet conversation, and the Gemini
       Notebook quiz so session two starts from the same blank state
 - [ ] Delete the session-one syllabus photo; re-cue the Bach/Gounod audio
@@ -94,17 +109,20 @@ demo cut, poster static by default.
 | ----- | ------- | --- |
 | 0:00 | §1 What AI actually is (slide) | 2 |
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
-| 0:10 | §3 What it does well (slide) → **Demo: syllabus spine** (photo → calendar → quiz) → **static poster reveal** | 9 |
-| 0:19 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
-| 0:26 | §6 Verification (slide) → **Demo: click the sources** | 3 |
-| 0:29 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
+| 0:10 | §3 What it does well (slide) → **Demo: syllabus spine** (photo → calendar → quiz → email) → **poster** (live or static) | 12 |
+| 0:22 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
+| 0:29 | §6 Verification (slide) → **Demo: click the sources** | 3 |
+| 0:32 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
 
-(§5, effective use, is Ewa's — per her 8/27 email. Email demo cut and poster
-made static 9/1 to fund the Pet conversation.) ~30 on paper. Overrun order:
-compress §1 to one breath → cap the Pet conversation at two follow-ups (skip
-the meta beat, keep the Ewa tee-up) → drop the sycophancy demo (keep the
-slide bullet — say it in a sentence). The spine, the Pet conversation, and
-the voice clone are the fixed points.
+(§5, effective use, is Ewa's — per her 8/27 email.) **This is the full menu,
+~33 with everything — deliberately.** Every demo stays available; **Ken
+trims to fit the night before (Sat)** by choosing among: the email step,
+poster live vs. static, the Pet follow-up count, sycophancy live vs.
+screenshot. Nothing is pre-cut. Live overrun ladder (for slippage on the
+day, after night-before choices): compress §1 to one breath → cap the Pet
+conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →
+drop the sycophancy demo (keep the slide bullet — say it in a sentence).
+The spine, the Pet conversation, and the voice clone are the fixed points.
 
 ---
 
@@ -157,16 +175,17 @@ the pass.)
 window (loses charm, keeps content); AV fails → rehearsal screenshots,
 narrate one exchange. Tokenizer fallback: OpenAI tokenizer page.
 
-**Thursday tech check:** stage mic pickup for the pet, pet audio through the
-house speakers, interruption behavior in a big room.
+**Tech check (Tue 5 pm):** laptop mic pickup for the pet from stage
+position, pet audio through the house speakers, echo/self-hearing,
+interruption behavior in a big room.
 
 ---
 
-## §3 — What it does well → the syllabus spine (9 min)
+## §3 — What it does well → the syllabus spine (up to 12 min, full menu)
 
 Slide first (common capabilities and their limits: explanation, option
 generation, repetitive transformations, multiple mediums, and practice), then
-the one-document-four-tools centerpiece:
+the one-document-five-tools centerpiece:
 
 1. **Photograph it** — hold up the printed syllabus, shoot it with the phone,
    *"Extract every date, deadline, and reading into a table."* **Then check
@@ -185,19 +204,19 @@ the one-document-four-tools centerpiece:
    time. Don't give me the answer until I've tried twice."* Answer one wrong
    on purpose; let it coach. **This is the beat that decides whether they
    hear 'cheating machine' or 'study partner' — do not rush it.**
-4. **Poster it (static, ~30 sec)** — show the pre-generated study poster on
-   its slide, with the honest line: *"I generated this from the same
-   syllabus during rehearsal — it took about a minute."* (Made static 9/1
-   to fund the Pet conversation; generate the asset during rehearsal with
-   Nano Banana — the `image-prompt` skill can write the prompt — and put
-   the image on the slide before the final export. Live generation only if
-   somehow ahead of schedule.)
+4. **Email about it** — Copilot/Outlook: draft the professor email about the
+   week-6 conflict. Read it aloud, edit one sentence live: it proposes, you
+   decide. (Night-before candidate for trimming.)
+5. **Poster it (~2 min live, or ~30 sec static)** — Nano Banana (Gemini
+   image generation): *"Turn this syllabus into a one-page study poster /
+   six-week timeline diagram."* The `image-prompt` skill can pre-write the
+   prompt. **Night-before call: generate live, or show the pre-generated
+   poster** with the honest line *"I made this from the same syllabus during
+   rehearsal — took about a minute."* Either way, generate the asset during
+   rehearsal — it's the static option and the live fallback.
 
-(**Email demo cut 9/1** to fund the Pet conversation — steps in git history
-on this file.)
-
-**Fallback:** pre-shot photo, pre-built calendar, quiz screenshot. Any one
-can go static; not all three.
+**Fallback:** pre-shot photo, pre-built calendar, quiz screenshot, saved
+draft, pre-generated poster. Any one can go static; not all five.
 
 ---
 
@@ -236,9 +255,9 @@ that morning, and keep a rehearsal screenshot as backup.
 **On stage: run the local-model demos in the Ollama app** (model picker →
 `gemma4:12b-mlx`), not a terminal — a chat window reads as an app and
 projects better. The CLI commands below are for rehearsal/screenshots.
-**Thursday tech check: confirm the app hides/collapses the model's thinking
-display** (CLI needed `--think=false`) **and that chat text is readable from
-the back rows.**
+**Tech check (Tue 5 pm): confirm the app hides/collapses the model's
+thinking display** (CLI needed `--think=false`) **and that chat text is
+readable from the back rows.**
 
 **9/1 rehearsal (re-verify morning-of):** `gemma4:12b-mlx --think=false`,
 ask *"What year was Trinity College in Hartford founded? One sentence."*
@@ -321,9 +340,8 @@ usable for the faculty/adult version or future sessions:
   doesn't cost time.
 - **Lyrics trainer** ("nobody typed any code") — reads as marketing under
   the new tone guardrail; keep for the AI Lab sessions.
-- **Copilot email draft** ("draft the professor email about the week-6
-  conflict") — cut 9/1 to fund the Pet conversation; steps in git history.
-  (The Codex Pet itself is un-parked: it's now the §2 conversation vehicle.)
+- (The Codex Pet is un-parked: it's now the §2 conversation vehicle. The
+  email demo is back in the §3 menu as a night-before choice.)
 - **Ollama fake-citations pair** (gemma4 invents sources / frontier-with-
   search doesn't) — dropped 8/31 to pay for the restored demos; survives as
   the rehearsal screenshot on the §4 slide and the §6 click-the-sources

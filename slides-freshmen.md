@@ -205,8 +205,8 @@ hand it forward: "Hold that thought — that's exactly what Ewa's section is
 about." (Tell Ewa on the Wed call so she can catch the pass.)
 Fallback ladder: pet fails → same conversation typed in a chat window; AV
 fails entirely → rehearsal screenshots and narrate one exchange.
-Thursday tech check: stage mic pickup, pet audio through house speakers,
-interruption behavior in the room.
+Tech check (Tue 5 pm): laptop audio over HDMI (the volume knob), pet input
+via laptop mic from stage position, echo/self-hearing, interruption.
 -->
 
 ---
@@ -247,7 +247,7 @@ class: glow-green text-center
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">1</span><br><strong>Photograph it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">2</span><br><strong>Schedule it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">3</span><br><strong>Quiz me on it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Poster it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Email about it</strong></div>
 </div>
 
 <!--
@@ -260,8 +260,9 @@ changed"; permission is not the same as privacy or correctness; repeat the
 pause on ANY later permission prompt, same beat, same chip), quiz-me in Gemini Notebook —
 say "(formerly NotebookLM)" ONCE, then just Gemini Notebook — "quiz me, don't
 tell me" (answer one wrong on purpose — the tutoring beat matters most for
-this audience), then the poster reveal on the next slide (static — see its
-notes). Email demo cut 9/1 to fund the Pet conversation; steps in git history.
+this audience), Copilot email draft (edit a sentence live: it proposes, you
+decide), then the poster on the next slide (live or static — night-before
+call). Full menu by design; Ken trims the night before.
 -->
 
 ---
@@ -273,18 +274,17 @@ class: glow-green text-center
 
 # One more trick — <span class="acc-green">make it a picture</span>
 
-<p class="takeaway">Same document, fourth tool: a study poster generated from this syllabus. Text in, visual out — it took about a minute.</p>
+<p class="takeaway">Same document, fifth tool: a study poster generated from this syllabus. Text in, visual out.</p>
 
 <!--
-STATIC BY DEFAULT (9/1 — funds the Pet conversation): show the pre-generated
-poster, ~20-30 seconds. PENDING ASSET: generate it during rehearsal with Nano
-Banana (Gemini image generation) — "Turn this syllabus into a one-page study
-poster / six-week timeline diagram"; the repo's image-prompt skill can write
-the prompt — then put the image ON this slide before the final export.
-Say honestly that it was made earlier: "I generated this from the same
-syllabus during rehearsal — it took about a minute." Keeps the one-document
-story's visual ending without a live generation wait.
-If somehow ahead of schedule, generating live takes ~2 min.
+LIVE OR STATIC — night-before call. Live (~2 min): Nano Banana (Gemini image
+generation) — "Turn this syllabus into a one-page study poster / six-week
+timeline diagram"; the repo's image-prompt skill can pre-write the prompt.
+Static (~30 sec): show the pre-generated poster with the honest line "I made
+this from the same syllabus during rehearsal — took about a minute" (put the
+image on this slide before the final export if going static).
+Either way, generate the asset during rehearsal — it's the static option AND
+the live fallback. Keeps the one-document story's visual ending.
 -->
 
 ---
@@ -412,11 +412,12 @@ It ties every demo they just saw into one image.
 Say the HANDOFF explicitly before the bio registers as "the end" — otherwise
 this slide triggers premature applause: "That's my part — and I skipped
 number five on purpose, because Ewa owns it. Ewa?"
-Cut order if running long (notes only, never on screen): compress §1 to one
-breath → cap the Pet conversation at two follow-ups (skip the meta beat, keep
-the Ewa tee-up) → drop the sycophancy demo (keep the bullet, say it in a
-sentence). The spine, the Pet conversation, and the voice clone are the
-fixed points. (Email already cut; poster already static.)
+Timing: full menu ~33; Ken chooses the night before (email, poster
+live/static, Pet follow-up count, sycophancy live/screenshot). Live overrun
+ladder after those choices: compress §1 to one breath → cap the Pet
+conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →
+drop the sycophancy demo (keep the bullet, say it in a sentence). The spine,
+the Pet conversation, and the voice clone are the fixed points.
 Hand back to Ewa: she covers §5 (using AI effectively), then AI in the context
 of college, the integrity policy, and where this is headed — then Andrew on
 the year's events and the AI Lab.
