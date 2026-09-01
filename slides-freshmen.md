@@ -201,7 +201,7 @@ class: glow-purple text-center
 <p class="takeaway">For a language model: numbered text fragments. It generates text one token at a time, which helps explain why tasks like counting can be unexpectedly difficult.</p>
 
 <!--
-Tokenizer playground: "Trinity College", a sentence from the syllabus, switch
+Tokenizer playground: "Trinity College", a sentence from the academic calendar page, switch
 vendors — common words one token, rare words shatter. Optional quick aside
 (the standard trick question): "I need to wash my car. There's a carwash 50m
 away. Should I walk or drive?" — many models, even good ones, advise walking;
@@ -284,7 +284,7 @@ class: glow-green text-center
 
 # Where prediction <span class="acc-green">shines</span>
 
-<p class="takeaway">Five quick strengths — then one syllabus, five tools, as evidence.</p>
+<p class="takeaway">Five quick strengths — then my actual fall semester as evidence.</p>
 
 <!--
 Frame before the rapid-fire: these are common capabilities, not guarantees;
@@ -336,7 +336,7 @@ class: glow-green text-center
 <p class="takeaway">Extract, reformat, tabulate, translate — repetitive transformations, fast.</p>
 
 <!--
-A few seconds. You're about to watch this happen to a syllabus.
+A few seconds. You're about to watch this happen to a semester's schedule.
 -->
 
 ---
@@ -348,10 +348,10 @@ class: glow-green text-center
 
 # Across <span class="acc-green">mediums</span>
 
-<p class="takeaway">Photograph a page, get a table. Text in, speech out. Words in, a picture out.</p>
+<p class="takeaway">Paste a screenshot, get an answer. Text in, speech out. Words in, a picture out.</p>
 
 <!--
-A few seconds. Tees up the photo step and the poster.
+A few seconds. Tees up the schedule screenshot and the poster.
 -->
 
 ---
@@ -375,34 +375,48 @@ layout: center
 class: glow-green text-center
 ---
 
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> Demo · one syllabus, four tools</div>
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> Demo · my actual fall semester</div>
 
-# One syllabus, <span class="acc-green">four tools</span>
+# My actual <span class="acc-green">fall semester</span>
 
 <p class="takeaway">It asked permission before touching my calendar. I said yes. Remember that moment.</p>
 
 <p style="margin-top: 0.4rem;"><span class="permchip">⚿ it's asking</span></p>
 
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; max-width: 44rem; margin: 1.8rem auto 0;">
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">1</span><br><strong>Photograph it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">2</span><br><strong>Schedule it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">3</span><br><strong>Quiz me on it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Email about it</strong></div>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; max-width: 50rem; margin: 1.8rem auto 0;">
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">1</span><br><strong>Find it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">2</span><br><strong>Read it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">3</span><br><strong>Remind me</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Quiz me</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">5</span><br><strong>Email it</strong></div>
 </div>
 
 <!--
-The centerpiece: photo→table (vision — then check ONE extracted deadline
-against the printed syllabus before scheduling anything: verification inside
-the successful workflow, not an afterthought), study schedule→calendar (pause
-on the permission prompt — point at the ⚿ chip on screen; say "it's asking
-before it acts — read what it wants to do, and afterwards check what it
-changed"; permission is not the same as privacy or correctness; repeat the
-pause on ANY later permission prompt, same beat, same chip), quiz-me in Gemini Notebook —
-say "(formerly NotebookLM)" ONCE, then just Gemini Notebook — "quiz me, don't
-tell me" (answer one wrong on purpose — the tutoring beat matters most for
-this audience), Copilot email draft (edit a sentence live: it proposes, you
-decide), then the poster on the next slide (live or static — night-before
-call). Full menu by design; Ken trims the night before.
+The centerpiece, all real — one Claude conversation carries steps 1-4:
+1 FIND IT: "Find the current Trinity approved academic calendar." It picks
+  Hartford, not Dublin or Oxford — because the system knows you. Say so:
+  that's the context slide and model-vs-system, live.
+2 READ IT: paste the portal "My Course Schedule" screenshot. "Which dates
+  won't my classes meet this fall?" Vision + reasoning against the calendar
+  it just found. Date arithmetic is where models slip — VERIFY ONE no-class
+  date against the calendar page on screen before going further. A live
+  mistake here is §6 arriving early, not a failure.
+3 REMIND ME: "Add a reminder to my calendar for the first week we don't
+  meet." Pause on the permission prompt — point at the ⚿ chip; say "it's
+  asking before it acts — read what it wants to do, and afterwards check
+  what it changed"; permission is not privacy or correctness. Say yes, show
+  the event land in the calendar tab. "And it could add all of them."
+  (Delete the event between sessions.)
+4 QUIZ ME: same conversation — "Quiz me on [week-1 reading / what we just
+  worked out]. One question at a time. Don't give me the answer until I've
+  tried twice." Answer one wrong on purpose; let it coach. THE beat that
+  decides 'cheating machine' vs. 'study partner' — don't rush it. Night-before
+  option: Gemini Notebook with a fresh notebook, if it impresses in rehearsal
+  — say "(formerly NotebookLM)" once if used.
+5 EMAIL IT: Copilot/Outlook — "Draft an email to my students listing the
+  dates we won't meet this fall." Read it aloud, edit one sentence live: it
+  proposes, you decide. Then the poster on the next slide.
+Full menu by design; Ken trims the night before.
 -->
 
 ---
@@ -410,19 +424,19 @@ layout: center
 class: glow-green text-center
 ---
 
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> Demo · same syllabus, one poster</div>
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> Demo · same semester, one poster</div>
 
 # One more trick — <span class="acc-green">make it a picture</span>
 
-<p class="takeaway">Same document, fifth tool: a study poster generated from this syllabus. Text in, visual out.</p>
+<p class="takeaway">Same semester, one more tool: a one-page visual of my fall, no-class dates highlighted. Text in, picture out.</p>
 
 <!--
 LIVE OR STATIC — night-before call. Live (~2 min): Nano Banana (Gemini image
-generation) — "Turn this syllabus into a one-page study poster / six-week
-timeline diagram"; the repo's image-prompt skill can pre-write the prompt.
-Static (~30 sec): show the pre-generated poster with the honest line "I made
-this from the same syllabus during rehearsal — took about a minute" (put the
-image on this slide before the final export if going static).
+generation) — "Turn my fall schedule into a one-page visual with the
+no-class dates highlighted"; the repo's image-prompt skill can pre-write the
+prompt. Static (~30 sec): show the pre-generated poster with the honest line
+"I made this from the same schedule during rehearsal — took about a minute"
+(put the image on this slide before the final export if going static).
 Either way, generate the asset during rehearsal — it's the static option AND
 the live fallback. Keeps the one-document story's visual ending.
 -->
@@ -584,7 +598,7 @@ class: glow-purple text-center
 
 <!--
 Demo lives here (self-contained): in the frontier chat with search on, ask
-for scholarly sources on the niche syllabus topic, click ONE citation, find
+for scholarly sources on the Gounod reception topic from §2, click ONE citation, find
 the quoted passage in the actual source. Thirty seconds. Fast, undramatic,
 exactly the habit they should copy. Calibration beat: "Newer systems reduce
 fabrication, but no model, product tier, or polished interface removes the

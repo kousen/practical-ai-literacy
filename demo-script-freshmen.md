@@ -23,7 +23,11 @@ meta beat that tees up Ewa's §5 (tell her Wednesday). It demonstrates
 conversation-as-the-unit-of-use, not a generation analogy. **All demos stay
 in the menu (~33 full); Ken trims to fit the night before** — nothing is
 pre-cut. Tech check moved up to Tue 9/1, 5 pm; laptop-audio-over-HDMI is the
-headline item.
+headline item. **The §3 spine is now Ken's real semester** (academic
+calendar lookup → portal schedule screenshot → no-class dates → one reminder
+event → quiz → email → poster) instead of a fictional printed syllabus — no
+props, no phone transfer, no seeded calendar. Gemini Notebook demoted to a
+night-before option (old notebooks underwhelmed in rehearsal).
 
 ## Session facts
 
@@ -66,9 +70,13 @@ headline item.
 
 - [ ] Combined deck (James + Ewa + Ken + Andrew) loaded and page-through
       tested; ours exported to PPTX/PDF as the fallback for the live Slidev
-- [ ] Browser tabs: Tokenizer Playground (loaded once — it fetches on first
-      use), a frontier chat with search (claude.ai or ChatGPT), Gemini
-      Notebook, Gemini (image generation), Outlook web (Trinity), calendar
+- [ ] Browser tabs, in run order: Tokenizer Playground (loaded once — it
+      fetches on first use), claude.ai (calendar connector connected),
+      Trinity portal on "My Course Schedule" (signed in; only the schedule
+      page ever goes on screen), Google Calendar, Outlook web (Trinity),
+      Gemini (image generation); Gemini Notebook only if it made the cut —
+      signed into the personal Gmail account
+- [ ] Portal schedule screenshot pre-shot on the desktop as the fallback
 - [ ] Demo/scrubbed inbox only — never project real student mail
 - [ ] Bach/Gounod audio in `demo-assets/`, cued, plays through room speakers
 - [ ] **Codex Pet ready**: voice in/out through the house system, mic pickup
@@ -82,23 +90,19 @@ headline item.
 - [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
       slide beat); pre-generated study poster ready (the static option and
       the live fallback — on the slide if the night-before call is static)
-- [ ] Phone charged, camera ready, mirroring tested; pre-shot syllabus photo
-      on the desktop as fallback
-- [ ] Printed syllabus (the prop) in the bag
+- [ ] Phone charged (no longer load-bearing — the spine runs from the
+      laptop)
 - [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
 - [ ] Rehearsal screenshots for every demo in one folder, in run order
-- [ ] **Disposable demo calendar** (not the real one) — session one writes
-      real events, and session two's "check conflicts" must start clean
-
 ## Between sessions (reset — session one leaves state behind)
 
-- [ ] Delete the study-schedule blocks session one added (or switch to a
-      second demo calendar prepared in advance)
+- [ ] **Delete the no-class reminder event** session one added to the
+      calendar
 - [ ] Discard the Copilot email draft (if the email demo made the cut)
-- [ ] Close/clear the chat threads, the Pet conversation, and the Gemini
-      Notebook quiz so session two starts from the same blank state
-- [ ] Delete the session-one syllabus photo; re-cue the Bach/Gounod audio
-      and the voice-clone fallback mp3
+- [ ] Start a fresh Claude conversation (memory still knows you — the
+      Hartford beat re-fires); close the Pet conversation and any notebook
+      chat so session two starts from the same blank state
+- [ ] Re-cue the Bach/Gounod audio and the voice-clone fallback mp3
 - [ ] Battery/power check; re-silence notifications
 
 ---
@@ -109,7 +113,7 @@ headline item.
 | ----- | ------- | --- |
 | 0:00 | §1 What AI actually is (slide) | 2 |
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
-| 0:10 | §3 What it does well (slide) → **Demo: syllabus spine** (photo → calendar → quiz → email) → **poster** (live or static) | 12 |
+| 0:10 | §3 What it does well (slide) → **Demo: my real semester** (find calendar → read schedule → one reminder → quiz → email) → **poster** (live or static) | 12 |
 | 0:22 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
 | 0:29 | §6 Verification (slide) → **Demo: click the sources** | 3 |
 | 0:32 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
@@ -143,7 +147,7 @@ Slide first (how autoregressive language models generate text, tokens,
 next-token prediction, context, and tools), then evidence:
 
 1. Tokenizer playground: type "Trinity College", paste a sentence from the
-   syllabus, switch the vendor dropdown — common words one token, rare words
+   academic calendar page, switch the vendor dropdown — common words one token, rare words
    shatter. (Optional aside if there's a breath to spare — the car wash
    problem: *"I need to wash my car. There's a carwash 50m away. Should I
    walk or drive?"* Many models, even reasonably good ones, advise walking —
@@ -181,42 +185,63 @@ interruption behavior in a big room.
 
 ---
 
-## §3 — What it does well → the syllabus spine (up to 12 min, full menu)
+## §3 — What it does well → my real semester (up to 12 min, full menu)
 
 Slide first (common capabilities and their limits: explanation, option
 generation, repetitive transformations, multiple mediums, and practice), then
-the one-document-five-tools centerpiece:
+the centerpiece — **my actual fall semester, all real, no props.** One
+Claude conversation carries steps 1–4 (revised 9/1; replaces the fictional
+printed-syllabus version — steps in git history):
 
-1. **Photograph it** — hold up the printed syllabus, shoot it with the phone,
-   *"Extract every date, deadline, and reading into a table."* **Then check
-   one extracted deadline against the printed page before scheduling
-   anything** — verification inside the successful workflow, not something
-   you do later when the output looks suspicious.
-2. **Schedule it** — calendar connector: *"Build a study schedule for the
-   first six weeks, check conflicts, add the blocks."* **Pause on the
-   permission prompt:** "It's asking before it acts. Read exactly what it
-   wants to do — and afterwards, check what it changed." (Permission is not
-   the same as privacy or correctness — don't overclaim what the prompt
-   guarantees.) Point at the ⚿ chip on the slide; repeat the pause on any
-   later permission prompt — same beat, same chip.
-3. **Quiz me on it** — in **Gemini Notebook** — say "(formerly NotebookLM)"
-   once, then just Gemini Notebook: *"Quiz me on week 1. One question at a
-   time. Don't give me the answer until I've tried twice."* Answer one wrong
-   on purpose; let it coach. **This is the beat that decides whether they
-   hear 'cheating machine' or 'study partner' — do not rush it.**
-4. **Email about it** — Copilot/Outlook: draft the professor email about the
-   week-6 conflict. Read it aloud, edit one sentence live: it proposes, you
-   decide. (Night-before candidate for trimming.)
-5. **Poster it (~2 min live, or ~30 sec static)** — Nano Banana (Gemini
-   image generation): *"Turn this syllabus into a one-page study poster /
-   six-week timeline diagram."* The `image-prompt` skill can pre-write the
-   prompt. **Night-before call: generate live, or show the pre-generated
-   poster** with the honest line *"I made this from the same syllabus during
+1. **Find it** — *"Find the current Trinity approved academic calendar."*
+   It picks Trinity College Hartford — not Dublin, not Oxford — because the
+   system knows you. **Say so out loud:** that's the context slide and
+   model-vs-system, live. (If it asks "which Trinity?" instead, that's also
+   a fine beat — it asks when context is missing.)
+2. **Read it** — paste the portal **"My Course Schedule"** screenshot (Fall
+   2026: Mon 1:30–4:10 lecture, Tue seminars, senior project TBA).
+   *"Which dates won't my classes meet this fall?"* Vision plus reasoning
+   against the calendar it just found — Labor Day, fall break, Thanksgiving,
+   and any Trinity day-swap quirks. **Date arithmetic is where models slip:
+   verify one no-class date against the calendar page on screen before
+   going further** — verification inside the successful workflow. A live
+   mistake here is §6 arriving early, not a failure.
+3. **Remind me** — *"Add a reminder to my calendar for the first week we
+   don't meet."* **Pause on the permission prompt:** "It's asking before it
+   acts. Read exactly what it wants to do — and afterwards, check what it
+   changed." (Permission is not the same as privacy or correctness — don't
+   overclaim what the prompt guarantees.) Point at the ⚿ chip on the slide;
+   say yes; show the event land in the calendar tab. "And it could add all
+   of them." **Delete the event between sessions.**
+4. **Quiz me** — same conversation: *"Quiz me on [week-1 reading / what we
+   just worked out]. One question at a time. Don't give me the answer until
+   I've tried twice."* Answer one wrong on purpose; let it coach. **This is
+   the beat that decides whether they hear 'cheating machine' or 'study
+   partner' — do not rush it.** *Night-before option:* run it in Gemini
+   Notebook on a **fresh** notebook if it impresses in rehearsal (the old
+   ones didn't) — say "(formerly NotebookLM)" once if used; personal Gmail
+   account, and be signed into it before walking on. **TODO(Ken): pick the
+   quiz content.**
+5. **Email it** — Copilot/Outlook: *"Draft an email to my students listing
+   the dates we won't meet this fall."* (The portal page literally has an
+   "Email all my classes" link.) Read it aloud, edit one sentence live: it
+   proposes, you decide. (Night-before candidate for trimming.)
+6. **Poster it (~2 min live, or ~30 sec static)** — Nano Banana (Gemini
+   image generation): *"Turn my fall schedule into a one-page visual with
+   the no-class dates highlighted."* The `image-prompt` skill can pre-write
+   the prompt. **Night-before call: generate live, or show the pre-generated
+   poster** with the honest line *"I made this from the same schedule during
    rehearsal — took about a minute."* Either way, generate the asset during
    rehearsal — it's the static option and the live fallback.
 
-**Fallback:** pre-shot photo, pre-built calendar, quiz screenshot, saved
-draft, pre-generated poster. Any one can go static; not all five.
+**Fallback:** pre-shot portal screenshot on the desktop, rehearsal
+screenshots of the no-class-dates answer and the quiz exchange, saved email
+draft, pre-generated poster. Any one can go static; not all of them.
+
+**Rehearsal checks:** (a) Claude actually disambiguates to Hartford from the
+account you present from; (b) the 2026–27 approved academic calendar page
+is findable and current; (c) the calendar connector is connected and the
+permission prompt fires on the write.
 
 ---
 
@@ -298,7 +323,7 @@ different medium: looking real — sounding real — is not being real.
 Slide first (wrong on simple things, right on hard ones; confidence ≠ truth),
 then the undramatic habit — self-contained now that the Ollama contrast is
 gone: in the frontier chat with search on, ask for scholarly sources on the
-niche syllabus topic (the old §4 prompt), click one, find the quoted passage
+Gounod reception topic from §2 (the rehearsed prompt), click one, find the quoted passage
 in the actual source. Thirty seconds. Calibration beat lands here too:
 "Newer systems reduce fabrication, but no model, product tier, or polished
 interface removes the need to check."
