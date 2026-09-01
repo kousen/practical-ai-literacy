@@ -351,7 +351,29 @@ class: glow-green text-center
 <p class="takeaway">Paste a screenshot, get an answer. Text in, speech out. Words in, a picture out.</p>
 
 <!--
-A few seconds. Tees up the schedule screenshot and the poster.
+A few seconds. Tees up the schedule screenshot and the poster — and the
+next slide is "words in, a picture out," for laughs.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+<div style="display: flex; gap: 40px; justify-content: center; align-items: flex-end; margin-top: 0.4rem;">
+  <img src="/images/cc-cover.png" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Official cover of Claude Code: Up and Running" />
+  <img src="/images/ram-cover.jpg" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Generated image of a ram in a sweater reading the book by a fire" />
+</div>
+
+<p class="takeaway" style="margin-top: 1.2rem; font-size: 1.1rem;">Left: my book's actual cover. Right: the ram reads his own book.</p>
+
+<!--
+~15 seconds, mostly for the laugh. Show the real cover, then: "I used Nano
+Banana to make the other one." Mention you've done this for all your books —
+they're on your home page. Then move on; the poster later is the live version
+of the same idea. Tone: it's a joke about your own book, not a product pitch.
 -->
 
 ---
