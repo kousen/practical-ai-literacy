@@ -60,7 +60,6 @@ css: unocss
   display: flex; align-items: center; gap: 12px; justify-content: center;
   margin-bottom: 1.4rem;
 }
-:global(.section .eyebrow) { justify-content: flex-start; }
 :global(.lampdot) { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
 :global(.acc-blue)   { color: var(--lamp-blue); }
 :global(.acc-purple) { color: var(--lamp-purple); }
@@ -77,12 +76,6 @@ css: unocss
   radial-gradient(1000px 560px at 50% 122%, rgba(74,222,128,0.15), transparent 62%),
   var(--bg) !important; }
 :global(.takeaway) { max-width: 40rem; margin-left: auto; margin-right: auto; text-wrap: pretty; }
-:global(.section) { text-align: left; padding-top: 2.2rem; padding-bottom: 2.2rem; }
-:global(.section .eyebrow) { margin-bottom: 0.9rem; }
-:global(.section h1) { font-size: 2.1rem !important; margin-bottom: 1.1rem; }
-:global(.section ul) { font-size: 1.02rem; line-height: 1.42; color: var(--muted); max-width: 46rem; }
-:global(.section ul li) { margin-bottom: 0.5rem; }
-:global(.section ul li strong) { color: var(--fg); }
 :global(.contact) { font-size: 0.95rem !important; line-height: 1.65; color: #C8CCD4 !important; opacity: 1 !important; }
 :global(.permchip) {
   font-family: 'IBM Plex Mono', Menlo, monospace;
@@ -107,8 +100,9 @@ css: unocss
 Ken Kousen · Trinity College · First-Year Orientation · September 2026</p>
 
 <!--
-~30 minutes, six sections, demos as evidence. Ewa introduces; she follows with
-AI-in-college and the integrity policy, so stay OFF policy and integrity here.
+~30 minutes, six sections, demos as evidence, one point per slide — advance
+briskly; the slides are backdrops, not documents. Ewa introduces; she follows
+with AI-in-college and the integrity policy, so stay OFF policy and integrity.
 Tone check: mechanism and evidence, never advocacy — this must not read as marketing.
 Optional opener (one breath): "When an AI answer sounds polished, what would
 make you trust it?" — the closing slide answers it.
@@ -116,44 +110,83 @@ make you trust it?" — the closing slide answers it.
 
 ---
 layout: center
-class: section glow-blue
+class: glow-blue text-center
 ---
 
 <div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
 
 # AI is not new — <span class="acc-blue">this moment</span> is
 
-- AI research goes back to the **1950s**; what changed recently is **massive data + massive computation** + a few algorithmic breakthroughs landing together
-- **Machine learning is one part of AI; generative AI is one kind of machine learning.** You've used other AI for years: **recommendation systems** (Spotify, TikTok, Netflix), autocomplete, spam filters
-- Generative AI **creates** text, images, and audio: ChatGPT, Claude, Gemini, image generators
-- A **model** is the trained engine; a **system** (ChatGPT, Copilot, BoodleBox) wraps a model with tools, search, and an interface — you interact with systems
-- Other kinds of AI exist; today we focus on **generative AI**, because that's what you'll touch
+<p class="takeaway">Research since the 1950s. What changed: massive data, massive computation, and a few breakthroughs — landing together.</p>
 
 <!--
-One or two breaths on history — don't linger. The point: this has been in
-progress for decades; they need the context so it doesn't read as unexplainable
-magic that just appeared. Familiar examples first: they've been AI users since
-middle school without calling it that.
+One breath on history — don't linger. The point: decades in progress, so it
+doesn't read as unexplainable magic that just appeared.
 -->
 
 ---
 layout: center
-class: section glow-purple
+class: glow-blue text-center
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How language models generate text</div>
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
+
+# You've used AI <span class="acc-blue">for years</span>
+
+<p class="takeaway">Recommendation systems — Spotify, TikTok, Netflix — autocomplete, spam filters. Machine learning is one part of AI.</p>
+
+<!--
+Familiar examples do the defining: they've been AI users since middle school
+without calling it that.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
+
+# Generative AI <span class="acc-blue">creates</span>
+
+<p class="takeaway">Text, images, audio: ChatGPT, Claude, Gemini, image generators. One kind of machine learning — the kind you'll touch, and today's focus.</p>
+
+<!--
+Other kinds of AI exist; we focus on generative because that's what they'll
+actually encounter.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
+
+# The model is the engine.<br>You drive the <span class="acc-blue">system</span>.
+
+<p class="takeaway">ChatGPT, Copilot, and BoodleBox wrap a model with tools, search, and an interface. You interact with systems.</p>
+
+<!--
+Model vs. system in one sentence: the model is the engine; the products are
+cars built around one. This distinction pays off in §4 (same model, different
+behavior with different tools).
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
 
 # A very good <span class="acc-purple">prediction machine</span>
 
-- **Training**: a language model learns statistical patterns from large text collections. **Generation**: it predicts one token at a time
-- It doesn't see words — it sees **tokens**, numbered fragments of text
-- Repeated prediction can produce fluent, polished text; **coherence does not guarantee factual knowledge or human understanding**
-- **Context matters**: the prompt and conversation shape the response, alongside training and any tools or search the system can use
+<p class="takeaway">Training: it learns statistical patterns from enormous amounts of text. Generation: it predicts the next token, again and again.</p>
 
 <!--
-"For language models, text generation happens one token at a time." Sections 4
-and 6 come back to the distinction between fluent prediction and verified
-knowledge. Then straight into the tokenizer demo as evidence.
+The framework everything else hangs on — §4 and §6 both come back to this
+slide's idea. Straight into the tokenizer demo as evidence.
 -->
 
 ---
@@ -173,8 +206,41 @@ vendors — common words one token, rare words shatter. Optional quick aside
 (the standard trick question): "I need to wash my car. There's a carwash 50m
 away. Should I walk or drive?" — many models, even good ones, advise walking;
 the car has to be there. Pure prediction, no model of the world. Skip it
-without guilt — Bach/Gounod carries the mechanism beat next. Optional if it fits: price per
-million tokens is a column on OpenRouter — "free" has a meaning.
+without guilt. Optional if it fits: price per million tokens is a column on
+OpenRouter — "free" has a meaning.
+Fallback: OpenAI tokenizer page.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
+
+# Coherent — <span class="acc-purple">without knowing</span>
+
+<p class="takeaway">Fluent, polished, confident text is what it was trained to produce. Coherence does not guarantee knowledge or understanding.</p>
+
+<!--
+This is why it can sound so right. "Fluent is not the same as verified" — the
+sentence §4 and §6 will keep cashing in.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
+
+# <span class="acc-purple">Context</span> is most of what it has
+
+<p class="takeaway">The prompt and the whole conversation shape every answer — along with training and any tools or search the system can use.</p>
+
+<!--
+Sets up the Pet demo: a conversation is accumulated context, and you're about
+to watch that work live.
 -->
 
 ---
@@ -189,16 +255,16 @@ class: glow-purple text-center
 <p class="takeaway">You don't ask an AI what you'd ask a search engine. One question becomes ten — and the conversation is where the understanding happens.</p>
 
 <!--
-~5 min — the §2 centerpiece, and live evidence for the "context matters"
-bullet. Play Bach's Prelude in C major alone, then Gounod's melody over it
+~5 min — the §2 centerpiece, and live evidence for the context slide before
+it. Play Bach's Prelude in C major alone, then Gounod's melody over it
 (TODO(Ken): audio files + cue points → demo-assets/). Then the Pet in Codex,
 BY VOICE, interruptible: "Was this a common practice?" → "Did Gounod do this
 with other pieces?" → "Was Bach a common source for this sort of thing?" →
 "What are some other examples?" Follow the thread wherever it goes — the
 free-association IS the demo. Push back once on purpose ("really? I thought…")
-— plants the seed §4's sycophancy demo pays off later.
+— plants the seed §4's sycophancy demo pays off.
 Mechanism callback, one sentence: every follow-up works because the whole
-conversation is the context — that's the "context matters" bullet, live.
+conversation is the context.
 META BEAT to close: "Everything you just watched was live. Is this a good way
 to use these tools? What would you watch out for?" — one beat of silence, then
 hand it forward: "Hold that thought — that's exactly what Ewa's section is
@@ -211,23 +277,97 @@ via laptop mic from stage position, echo/self-hearing, interruption.
 
 ---
 layout: center
-class: section glow-green
+class: glow-green text-center
 ---
 
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
-# Common strengths — <span class="acc-green">and limits</span>
+# Where prediction <span class="acc-green">shines</span>
 
-- **Explain, summarize, rewrite** — within context and output limits; quality still varies
-- **Generate options**: counterarguments, questions, or possible ways to organize material
-- **Assist with repetitive transformations**: extract, reformat, tabulate, translate
-- **Work across mediums**: photograph a page, get a table; text in, speech out
-- **Offer practice and feedback**: generate questions and respond to your attempts
+<p class="takeaway">Five quick strengths — then one syllabus, five tools, as evidence.</p>
 
 <!--
-Frame before demos: these are common capabilities, not guarantees; the demos
-are evidence. "What works, what you can access, and the quality of the result
-all vary by tool and will change while you're here."
+Frame before the rapid-fire: these are common capabilities, not guarantees;
+the demos are the evidence. "What works, what you can access, and the quality
+of the result all vary by tool and will change while you're here." Advance
+fast through the next five — a few seconds each, spoken over, not read.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Explain. Summarize. <span class="acc-green">Rewrite.</span>
+
+<p class="takeaway">Any length, any register — within context and output limits; quality still varies.</p>
+
+<!--
+A few seconds. Spoken example: "explain this reading like I'm new to the
+field" / "tighten this paragraph."
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Ten options in <span class="acc-green">ten seconds</span>
+
+<p class="takeaway">Counterarguments, questions, ways to organize material — generating possibilities is what it's for.</p>
+
+<!--
+A few seconds. The point: possibilities are cheap; choosing is still yours.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# The boring work, <span class="acc-green">at scale</span>
+
+<p class="takeaway">Extract, reformat, tabulate, translate — repetitive transformations, fast.</p>
+
+<!--
+A few seconds. You're about to watch this happen to a syllabus.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Across <span class="acc-green">mediums</span>
+
+<p class="takeaway">Photograph a page, get a table. Text in, speech out. Words in, a picture out.</p>
+
+<!--
+A few seconds. Tees up the photo step and the poster.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Practice, with <span class="acc-green">feedback</span>
+
+<p class="takeaway">It can generate questions and respond to your attempts. You'll see it quiz me in a minute.</p>
+
+<!--
+A few seconds — the quiz step of the spine is the evidence, and for this
+audience it's the beat that matters most.
 -->
 
 ---
@@ -289,25 +429,51 @@ the live fallback. Keeps the one-document story's visual ending.
 
 ---
 layout: center
-class: section glow-blue
+class: glow-blue text-center
 ---
 
 <div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 4 · What AI does poorly</div>
 
-# The failure modes are <span class="acc-blue">predictable too</span>
+# The failure modes are <span class="acc-blue">predictable</span> too
 
-- **Outputs vary**: probabilistic generation can produce different or inconsistent answers
-- **Sycophancy**: models may mirror your view or yield to confident pushback
-- **Looking real ≠ being real**: a plausible-looking citation may not exist
-- **Fabrication persists**: newer systems reduce it; price and model size are not guarantees
-- **Inputs matter**: training data, prompts, instructions, and tools can introduce errors
+<p class="takeaway">Same mechanism, same weaknesses. After the last half hour, none of these should surprise you.</p>
 
 <!--
-Both §4 demos hang off this slide (sycophancy, then the voice clone). PENDING
-ASSET: add the rehearsal screenshot of a local model inventing five
-perfect-looking scholarly sources as rendered slide content before the final
-export. Until then, describe the example while giving the looking-real bullet,
-one breath, move on. Calibrate it as one model and prompt, not a model tier.
+Section turn — the tone shifts here. Honest calibration throughout: don't
+present 2024 failure modes as current.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 4 · What AI does poorly</div>
+
+# Same question, <span class="acc-blue">different answers</span>
+
+<p class="takeaway">Generation is probabilistic — inconsistency is normal. And every answer is shaped by training data, prompts, instructions, and tools.</p>
+
+<!--
+Quick beat: variance isn't a bug you can file; it's the mechanism. Inputs
+matter — which is why the same model behaves differently in different
+products (callback to model vs. system).
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 4 · What AI does poorly</div>
+
+# It may tell you what you <span class="acc-blue">want to hear</span>
+
+<p class="takeaway">Push back confidently and a model may yield — even when it was right.</p>
+
+<!--
+Sycophancy — the failure mode they haven't heard of, and Ewa considers the
+bigger present-day issue. Straight into the fold demo as evidence.
 -->
 
 ---
@@ -322,11 +488,45 @@ class: glow-blue text-center
 <p class="takeaway">It gave the right answer. I insisted it was wrong. It apologized — and agreed with me.</p>
 
 <!--
-Rehearsed pushback demo: ask something with a checkable right answer, get it,
-then insist confidently on a wrong one and see whether the response follows
-the pressure instead of the evidence. Behavior varies by model and prompt;
-rehearse the exact example. Confidence in the answer is not evidence.
+Rehearsed pushback demo in the Ollama app: ask something with a checkable
+right answer, get it, then insist confidently on a wrong one and see whether
+the response follows the pressure instead of the evidence. Behavior varies by
+model and prompt; rehearse the exact example. Confidence in the answer is not
+evidence.
+9/1 rehearsal (re-verify morning-of): gemma4:12b-mlx — "What year was Trinity
+College in Hartford founded?" (1823, correct), push back with "No — it was
+1845, I'm certain, I teach there" → instant fold. It's the room's own school,
+checkable on trincoll.edu in five seconds.
 Fallback: show the rehearsal screenshot and describe the exchange.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 4 · What AI does poorly</div>
+
+# A perfect-looking citation <span class="acc-blue">may not exist</span>
+
+<p class="takeaway">Looking real is not being real. Newer systems fabricate less — none are immune, and price and size are no guarantee.</p>
+
+<!--
+PENDING ASSET: this slide is the home for the rehearsal screenshot — a small
+local model inventing five perfect-looking scholarly sources. Crop to one
+legible fabricated citation + the proof it doesn't exist; add as rendered
+content before the final export. Until then, describe it in one breath.
+Disclosure beat (always say it with the evidence): "This is one small model
+on my laptop, with one prompt — a bigger model, or one with search, would
+likely do better." Honesty upgrade: "The bigger version of this same model
+actually declined — it warned me its sources were only 'representative.' The
+smaller one invented five citations without blinking. Same family, same
+question — and from the chat window, you can't tell which kind you're
+talking to."
+9/1 rehearsal command (Ollama app on stage; CLI for the screenshot):
+ollama run gemma4:12b-mlx --think=false "I'm writing a paper on how Gounod's
+Ave Maria was received in 19th-century Paris. List five sources I can cite,
+with author, year, and journal." — do NOT use gemma4:latest (it hedges).
 -->
 
 ---
@@ -355,32 +555,74 @@ repeatable tip of the day.
 
 ---
 layout: center
-class: section glow-purple
+class: glow-purple text-center
 ---
 
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
 
 # An answer is not <span class="acc-purple">the truth</span>
 
-- It can be **wrong on simple things and right on hard ones** — surface confidence is not evidence of accuracy
-- **Open the source.** For consequential claims, inspect the actual page
-- **Cross-check**: a second tool, a search engine, the actual reading
-- Ask it to **show its work** — quote the passage, cite the page — then check the quote
-- The essential check: **can you explain how the evidence supports the claim?**
+<p class="takeaway">Wrong on simple things, right on hard ones — surface confidence is not evidence of accuracy.</p>
 
 <!--
 Section numbering is the shared outline's: Ewa covers §5 (how to use AI
-effectively) in her part, right after this — jumping from 4 to 6 is intentional;
-say "Ewa will take number five" if it needs a word.
+effectively) right after this — jumping from 4 to 6 is intentional; say "Ewa
+will take number five" if it needs a word.
 Callback to §2: prediction, not knowledge — that's WHY verification is on you.
-Demo (self-contained now that the Ollama contrast is gone): in the frontier
-chat with search on, ask for scholarly sources on the niche syllabus topic,
-click ONE citation, find the quoted passage in the actual source. Thirty
-seconds. Fast, undramatic, exactly the habit they should copy.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+
+# Open <span class="acc-purple">the source</span>
+
+<p class="takeaway">For anything that matters: click through, find the passage, and check that it says what the answer claims.</p>
+
+<!--
+Demo lives here (self-contained): in the frontier chat with search on, ask
+for scholarly sources on the niche syllabus topic, click ONE citation, find
+the quoted passage in the actual source. Thirty seconds. Fast, undramatic,
+exactly the habit they should copy. Calibration beat: "Newer systems reduce
+fabrication, but no model, product tier, or polished interface removes the
+need to check."
 Second verification move (30 sec, spoken or live): tell it you LIKED its
-answer — then ask it to argue the exact opposite. If it flips with equal
-confidence, you've just measured what its confidence is worth. Frame as
-verification (testing the answer), not as a usage tip — usage is Ewa's §5.
+answer — then ask it to argue the exact opposite. This doesn't tell you which
+answer is true — it tells you the confidence carries no information. Frame as
+verification (testing the answer), not usage — usage is Ewa's §5.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+
+# Make it <span class="acc-purple">show its work</span>
+
+<p class="takeaway">Ask for the quote and the page — then check the quote. Cross-check with a second tool, a search engine, or the actual reading.</p>
+
+<!--
+Quick beat. The habit stack: source → quote → cross-check.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+
+# The essential <span class="acc-purple">check</span>
+
+<p class="takeaway">Can you explain how the evidence supports the claim? If not, you have an answer — not understanding.</p>
+
+<!--
+Last beat before the close; lands the section and sets up the toddler frame.
 -->
 
 ---

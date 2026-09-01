@@ -234,7 +234,7 @@ Adler/Moore citations, a nonexistent Charles Rosen title, wrong date for the
 piece itself), no hedging. **Do NOT use `gemma4:latest`** — it shows its
 thinking and labels the sources "representative," which kills the beat. Add
 the screenshot (cropped to one legible citation + the proof it doesn't
-exist) as rendered content on the §4 slide before the final export. Until
+exist) as rendered content on the §4 "perfect-looking citation" slide before the final export. Until
 then, describe it in one breath.
 
 **Disclosure beat (say it whenever the fabrication evidence is up):** "This
