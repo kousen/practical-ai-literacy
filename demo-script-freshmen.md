@@ -54,8 +54,8 @@ isn't surprised.
 - [ ] ElevenLabs key working; `demo-assets/voice-clone-demo.mp3` plays
       through the room's speakers as the clone fallback
 - [ ] Sycophancy pushback prompt and the car wash question rehearsed **that
-      morning** — models change weekly (if either uses a local model, Ollama
-      running)
+      morning** — models change weekly. Ollama app open, `gemma4:12b-mlx`
+      selected, thinking display hidden, text size checked
 - [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
       slide beat) and a pre-generated study poster, both in the folder
 - [ ] Phone charged, camera ready, mirroring tested; pre-shot syllabus photo
@@ -190,7 +190,15 @@ piece itself), no hedging. **Do NOT use `gemma4:latest`** — it shows its
 thinking and labels the sources "representative," which kills the beat. Add
 the screenshot (cropped to one legible citation + the proof it doesn't
 exist) as rendered content on the §4 slide before the final export. Until
-then, describe it in one breath. Then:
+then, describe it in one breath.
+
+**Disclosure beat (say it whenever the fabrication evidence is up):** "This
+is one small model running on my laptop, with one prompt — a bigger model,
+or one with search, would likely do better." Bonus honesty beat that makes
+it stronger: "The bigger version of this same model actually declined — it
+warned me its sources were only 'representative.' The smaller one invented
+five citations without blinking. Same family, same question — and from the
+chat window, you can't tell which kind you're talking to." Then:
 
 ### Demo: watch it fold (sycophancy)
 
@@ -198,6 +206,13 @@ Rehearsed pushback: ask a question with a checkable right answer, get the
 right answer, then insist confidently that it's wrong. See whether it
 apologizes and agrees. Behavior varies — rehearse the exact model and question
 that morning, and keep a rehearsal screenshot as backup.
+
+**On stage: run the local-model demos in the Ollama app** (model picker →
+`gemma4:12b-mlx`), not a terminal — a chat window reads as an app and
+projects better. The CLI commands below are for rehearsal/screenshots.
+**Thursday tech check: confirm the app hides/collapses the model's thinking
+display** (CLI needed `--think=false`) **and that chat text is readable from
+the back rows.**
 
 **9/1 rehearsal (re-verify morning-of):** `gemma4:12b-mlx --think=false`,
 ask *"What year was Trinity College in Hartford founded? One sentence."*
