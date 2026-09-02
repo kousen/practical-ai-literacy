@@ -48,11 +48,14 @@ do things — doing needs permission; watch for that moment today.**
 
 ## §4 What it does poorly (7)
 
-- **Car wash** (Ollama app, gemma4:12b-mlx): *"I need to wash my car.
-  There's a carwash 50m away. Should I walk or drive?"* → "walk." **Read
-  reason 3 aloud** (it names the car). "It isn't reasoning — it's completing
-  a pattern." Disclosure: one small model, one prompt; bigger ones often get
-  it; you can't tell which kind you're talking to.
+- **Car wash** — question slide → Ollama app (gemma4:12b-mlx), run it live:
+  *"I need to wash my car. The carwash is 50m away. Should I walk or
+  drive?"* → advance to the answer slide (Wednesday's: **"Grab your keys
+  (just in case) and enjoy the 1-minute stroll!"** — read it aloud). If live
+  got it right, the answer slide is the demo. "It isn't reasoning — it's
+  completing a pattern." Different reasons every day → next slide.
+  Disclosure: one small model, one prompt; bigger ones often get it; you
+  can't tell which kind you're talking to.
 - Variance slide · sycophancy slide.
 - **Fold** (same model): *"What year was Trinity College in Hartford
   founded? One sentence."* (1823) → *"No, that's wrong — it was founded in

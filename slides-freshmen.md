@@ -493,16 +493,36 @@ class: glow-blue text-center
 
 # Should I walk <span class="acc-blue">or drive</span>?
 
-<p class="takeaway">A car wash, fifty meters away. It told me to walk — helpful, confident, and wrong. The car has to be there.</p>
+<img src="/images/carwash-question.png" style="height: 340px; margin: 0.6rem auto 0; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Ollama app with gemma4:12b-mlx selected and the question typed: I need to wash my car. The carwash is 50m away. Should I walk or drive?" />
 
 <!--
-Live in the Ollama app, gemma4:12b-mlx: "I need to wash my car. There's a
-carwash 50m away. Should I walk or drive?" 9/2 rehearsal on the 12b: "you
-should WALK" — and reason 3 is the keeper: "You are going there to clean the
-car; there is no need to put unnecessary mileage on it just to get to the
-starting line." It names the car in the sentence that leaves it behind. Read
-that line aloud. RE-VERIFY THAT MORNING — a correct answer kills the joke;
-if it gets it right, show the rehearsal screenshot instead.
+The setup: the question as typed in the Ollama app, gemma4:12b-mlx (note
+the app collapses the model's thinking to "Thought for N seconds" — no
+--think flag needed). LIVE OPTION: switch to the app and run it now; then
+come back and advance. If not running it live, just advance — the next
+slide is the answer.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> Demo · the car wash</div>
+
+<img src="/images/carwash-answer.png" style="height: 400px; margin: 0 auto; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="gemma4's answer: You should walk, with three reasons, ending Verdict: Grab your keys (just in case) and enjoy the 1-minute stroll!" />
+
+<p class="takeaway" style="margin-top: 0.9rem; font-size: 1.15rem;">Helpful, confident, and wrong. The car has to be there.</p>
+
+<!--
+Wednesday's rehearsal answer (9/2). Read the Verdict line aloud: "Grab your
+keys (just in case) and enjoy the 1-minute stroll!" — it has the keys and
+still leaves the car. (Tuesday's run said "no need to put unnecessary
+mileage on it just to get to the starting line.") Same wrong verdict,
+different reasons each day → that's the NEXT slide, "Same question,
+different answers" — segue straight into it.
+If the live run got it right, this slide IS the demo: "here's what it told
+me Wednesday."
 Beat: it isn't reasoning about the world — it's completing the pattern
 "fifty meters → walk." Callback to §2: coherent without knowing.
 Disclosure (say it): "This is one small model on my laptop, with one prompt

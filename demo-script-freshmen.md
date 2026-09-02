@@ -281,15 +281,19 @@ are not guarantees.
 
 ### Demo: the car wash (confidently wrong on a simple thing)
 
-Right after the §4 opener slide. **Ollama app, `gemma4:12b-mlx`:** *"I need
-to wash my car. There's a carwash 50m away. Should I walk or drive?"* 9/2
-rehearsal on the 12b: "**you should walk**" — and its third reason is the
-keeper: *"You are going there to clean the car; there is no need to put
-unnecessary mileage on it just to get to the starting line."* It names the
-car in the very sentence that leaves it at home. **Read that line aloud.**
-(9/1 on `gemma4:latest`: same verdict, three reasons.) **Re-verify that
-morning — a correct answer kills the joke; if it gets it right, show the
-rehearsal screenshot instead.**
+Right after the §4 opener slide — **two slides with the live run between
+them.** Slide 1 is the question as typed in the Ollama app (`gemma4:12b-mlx`
+— the app collapses the model's thinking, no flag needed): *"I need to wash
+my car. The carwash is 50m away. Should I walk or drive?"* Switch to the app
+and run it live, then advance. Slide 2 is Wednesday's answer (9/2
+screenshot): "**You should walk**" — **read the Verdict aloud:** *"Grab your
+keys (just in case) and enjoy the 1-minute stroll!"* It has the keys and
+still leaves the car. Tuesday's run gave a different reason ("no need to put
+unnecessary mileage on it just to get to the starting line") — same wrong
+verdict, different reasons → segue straight into the next slide, "Same
+question, different answers." **If the live run gets it right, slide 2 IS
+the demo** ("here's what it told me Wednesday") — no separate fallback
+needed.
 
 **Beats:** "It isn't reasoning about the world — it's completing the pattern
 'fifty meters → walk.' Coherent without knowing" (callback to §2).
