@@ -493,7 +493,7 @@ class: glow-blue text-center
 
 # Should I walk <span class="acc-blue">or drive</span>?
 
-<img src="/images/carwash-question.png" style="height: 340px; margin: 0.6rem auto 0; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Ollama app with gemma4:12b-mlx selected and the question typed: I need to wash my car. The carwash is 50m away. Should I walk or drive?" />
+<img src="/images/carwash-question.png" style="width: 840px; max-width: 92%; margin: 1.2rem auto 0; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Ollama app with gemma4:12b-mlx selected and the question typed: I need to wash my car. The carwash is 50m away. Should I walk or drive?" />
 
 <!--
 The setup: the question as typed in the Ollama app, gemma4:12b-mlx (note
