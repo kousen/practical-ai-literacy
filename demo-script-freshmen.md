@@ -14,7 +14,8 @@ Bach/Gounod (in §2, replacing raspberry/9.11), the Nano Banana study poster
 (step 5 of the spine; cut again 9/1 — the ram-cover slide now carries image
 generation), and the ElevenLabs voice clone + family safe word (in
 §4, as the looking-real demo). The Ollama fake-citations live demo is dropped
-to pay for it — it survives as a rehearsal screenshot on the §4 slide.
+to pay for it; as of 9/2 the local-model demo in §4 is the **car wash
+question** instead (a deterministic failure — no betting on a hallucination).
 Mention on the Wed call that the safe-word tip is back in Ken's §4, so Ewa
 isn't surprised.
 
@@ -63,7 +64,7 @@ spoken, not demoed).
   Sonia wants structure/slides visibility early that week. Send the deck
   before this call if possible.
 - **Thu Sept 3** — on campus; nothing owed to the room after the clean
-  check — free for the last asset (citations screenshot).
+  check — no assets left to build; rehearsal only.
 - **Fri Sept 4** — fallback day. James's and Andrew's slides likely arrive
   this late; combine into the master deck as they land.
 - **Sun Sept 6** — the session (not the first slot of the day).
@@ -90,8 +91,8 @@ spoken, not demoed).
 - [ ] Sycophancy pushback prompt and the car wash question rehearsed **that
       morning** — models change weekly. Ollama app open, `gemma4:12b-mlx`
       selected, thinking display hidden, text size checked
-- [ ] Rehearsal screenshot of gemma4 fabricating five citations (for the §4
-      slide beat)
+- [ ] Rehearsal screenshots of the car wash answer and the fold, as
+      fallbacks if the model behaves that morning
 - [ ] Phone charged, Do Not Disturb on, USB-C video adapter in the bag (the
       spine may run from the phone — see §3 phone path)
 - [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
@@ -117,7 +118,7 @@ spoken, not demoed).
 | 0:00 | §1 What AI actually is (slide) | 2 |
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
 | 0:10 | §3 What it does well (slides + ram cover) → **Demo: my real semester** (find calendar → read schedule → one reminder → email) | 8 |
-| 0:18 | §4 What it does poorly (slide + citations screenshot; pending asset) → **Demo: sycophancy** → **Demo: voice clone** | 7 |
+| 0:18 | §4 What it does poorly (slide) → **Demo: car wash** → **Demo: sycophancy** → **Demo: voice clone** | 7 |
 | 0:25 | §6 Verification (slide) → **Demo: click the sources** | 3 |
 | 0:28 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
 
@@ -157,11 +158,8 @@ next-token prediction, context, and tools), then evidence:
 
 1. Tokenizer playground: type "Trinity College", paste a sentence from the
    academic calendar page, switch the vendor dropdown — common words one token, rare words
-   shatter. (Optional aside if there's a breath to spare — the car wash
-   problem: *"I need to wash my car. There's a carwash 50m away. Should I
-   walk or drive?"* Many models, even reasonably good ones, advise walking —
-   the car has to be there. Rehearse which model that morning; a correct
-   answer kills the joke. Bach/Gounod carries the mechanism beat now.)
+   shatter. (The car wash question is now the first §4 demo — don't spend
+   it here.)
 2. **Bach/Gounod, in conversation (~5 min) — the §2 centerpiece.** This is
    NOT a generation analogy; it's a live demonstration of *conversation as
    the way to use these tools*. **Play ~30 seconds of the Ave Maria from
@@ -267,30 +265,38 @@ good "it's asking" moment); test in a fresh conversation tonight.
 
 ---
 
-## §4 — What it does poorly → two demos (7 min)
+## §4 — What it does poorly → three demos (7 min)
 
 Slide first (variable outputs, sycophancy, looking-real-vs-being-real, and the
 limits introduced by training data, prompts, system instructions, and tools).
 Newer systems reduce fabrication, but none eliminate it; price and model size
-are not guarantees. **Pending asset:** during rehearsal, capture the fabrication screenshot.
-**9/1 rehearsal — use the 12b model with a student-style prompt:**
-`ollama run gemma4:12b-mlx --think=false "I'm writing a paper on how Gounod's
-Ave Maria was received in 19th-century Paris. List five sources I can cite,
-with author, year, and journal."` → five confident fabrications (invented
-Adler/Moore citations, a nonexistent Charles Rosen title, wrong date for the
-piece itself), no hedging. **Do NOT use `gemma4:latest`** — it shows its
-thinking and labels the sources "representative," which kills the beat. Add
-the screenshot (cropped to one legible citation + the proof it doesn't
-exist) as rendered content on the §4 "perfect-looking citation" slide before the final export. Until
-then, describe it in one breath.
+are not guarantees.
 
-**Disclosure beat (say it whenever the fabrication evidence is up):** "This
-is one small model running on my laptop, with one prompt — a bigger model,
-or one with search, would likely do better." Bonus honesty beat that makes
-it stronger: "The bigger version of this same model actually declined — it
-warned me its sources were only 'representative.' The smaller one invented
-five citations without blinking. Same family, same question — and from the
-chat window, you can't tell which kind you're talking to." Then:
+### Demo: the car wash (confidently wrong on a simple thing)
+
+Right after the §4 opener slide. **Ollama app, `gemma4:12b-mlx`:** *"I need
+to wash my car. There's a carwash 50m away. Should I walk or drive?"* 9/1
+rehearsal (on `gemma4:latest`): "**You should walk.**" with three tidy
+reasons, none of which notice the car has to be there. **Re-verify on the
+12b that morning — a correct answer kills the joke; if it gets it right,
+show the rehearsal screenshot instead.**
+
+**Beats:** "It isn't reasoning about the world — it's completing the pattern
+'fifty meters → walk.' Coherent without knowing" (callback to §2).
+**Disclosure (say it):** "This is one small model on my laptop, with one
+prompt — bigger models often get this right, and from the chat window you
+can't tell which kind you're talking to."
+
+The fabricated-citations point is now **spoken only**, on the
+"perfect-looking citation" slide (Ken didn't want to bet a beat on a
+hallucination happening on cue): "It knows what a real citation *looks*
+like — that's what pattern-completion is for. Newer systems with search
+fabricate far less; the free one behind some random chat window still
+might." (9/1 rehearsal prompt, if evidence is ever wanted: `ollama run
+gemma4:12b-mlx --think=false "I'm writing a paper on how Gounod's Ave Maria
+was received in 19th-century Paris. List five sources I can cite, with
+author, year, and journal."` → five confident fabrications; `gemma4:latest`
+hedges.) Then:
 
 ### Demo: watch it fold (sycophancy)
 
@@ -390,9 +396,10 @@ usable for the faculty/adult version or future sessions:
 - (The Codex Pet is un-parked: it's now the §2 conversation vehicle. The
   email demo is back in the §3 menu as a night-before choice.)
 - **Ollama fake-citations pair** (gemma4 invents sources / frontier-with-
-  search doesn't) — dropped 8/31 to pay for the restored demos; survives as
-  the rehearsal screenshot on the §4 slide and the §6 click-the-sources
-  habit. Full live steps in git history on this file.
+  search doesn't) — dropped 8/31 to pay for the restored demos; the
+  screenshot version was parked too on 9/2 (Ken won't bet a beat on a
+  hallucination happening on cue). The §6 click-the-sources habit remains;
+  the 9/1 rehearsal prompt is in §4 if evidence is ever wanted.
 - **Pangram detection** — detection adjacency reads as "we'll catch you";
   that conversation belongs to Ewa's integrity segment if anywhere.
 

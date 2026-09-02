@@ -230,12 +230,9 @@ class: glow-purple text-center
 
 <!--
 Tokenizer playground: "Trinity College", a sentence from the academic calendar page, switch
-vendors — common words one token, rare words shatter. Optional quick aside
-(the standard trick question): "I need to wash my car. There's a carwash 50m
-away. Should I walk or drive?" — many models, even good ones, advise walking;
-the car has to be there. Pure prediction, no model of the world. Skip it
-without guilt. Optional if it fits: price per million tokens is a column on
-OpenRouter — "free" has a meaning.
+vendors — common words one token, rare words shatter. (The car wash question
+now lives in §4 as its own demo — don't spend it here.) Optional if it fits:
+price per million tokens is a column on OpenRouter — "free" has a meaning.
 Fallback: OpenAI tokenizer page.
 -->
 
@@ -482,7 +479,32 @@ class: glow-blue text-center
 
 <!--
 Section turn — the tone shifts here. Honest calibration throughout: don't
-present 2024 failure modes as current.
+present 2024 failure modes as current. Straight into the car wash as the
+first piece of evidence.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> Demo · the car wash</div>
+
+# Should I walk <span class="acc-blue">or drive</span>?
+
+<p class="takeaway">A car wash, fifty meters away. It told me to walk — helpful, confident, and wrong. The car has to be there.</p>
+
+<!--
+Live in the Ollama app, gemma4:12b-mlx: "I need to wash my car. There's a
+carwash 50m away. Should I walk or drive?" 9/1 rehearsal (on gemma4:latest):
+"You should walk," three tidy reasons, none of which notice the car.
+RE-VERIFY ON THE 12b THAT MORNING — a correct answer kills the joke; if it
+gets it right, show the rehearsal screenshot instead.
+Beat: it isn't reasoning about the world — it's completing the pattern
+"fifty meters → walk." Callback to §2: coherent without knowing.
+Disclosure (say it): "This is one small model on my laptop, with one prompt
+— bigger models often get this right, and from the chat window you can't
+tell which kind you're talking to."
 -->
 
 ---
@@ -554,21 +576,17 @@ class: glow-blue text-center
 <p class="takeaway">Looking real is not being real. Newer systems fabricate less — none are immune, and price and size are no guarantee.</p>
 
 <!--
-PENDING ASSET: this slide is the home for the rehearsal screenshot — a small
-local model inventing five perfect-looking scholarly sources. Crop to one
-legible fabricated citation + the proof it doesn't exist; add as rendered
-content before the final export. Until then, describe it in one breath.
-Disclosure beat (always say it with the evidence): "This is one small model
-on my laptop, with one prompt — a bigger model, or one with search, would
-likely do better." Honesty upgrade: "The bigger version of this same model
-actually declined — it warned me its sources were only 'representative.' The
-smaller one invented five citations without blinking. Same family, same
-question — and from the chat window, you can't tell which kind you're
-talking to."
-9/1 rehearsal command (Ollama app on stage; CLI for the screenshot):
-ollama run gemma4:12b-mlx --think=false "I'm writing a paper on how Gounod's
-Ave Maria was received in 19th-century Paris. List five sources I can cite,
-with author, year, and journal." — do NOT use gemma4:latest (it hedges).
+Spoken point, no demo (the fabrication screenshot was parked 9/2 — Ken
+didn't want to bet a beat on a hallucination happening on cue). One breath:
+"It knows what a real citation LOOKS like — that's what pattern-completion
+is for. Newer systems with search fabricate far less; the free one behind
+some random chat window still might, and you won't always know which kind
+you're talking to." The voice clone next is the same lesson in a different
+medium.
+If evidence is ever wanted (9/1 rehearsal): ollama run gemma4:12b-mlx
+--think=false "I'm writing a paper on how Gounod's Ave Maria was received in
+19th-century Paris. List five sources I can cite, with author, year, and
+journal." → five confident fabrications; gemma4:latest hedges, don't use it.
 -->
 
 ---
