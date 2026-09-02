@@ -63,7 +63,7 @@ spoken, not demoed).
   Sonia wants structure/slides visibility early that week. Send the deck
   before this call if possible.
 - **Thu Sept 3** — on campus; nothing owed to the room after the clean
-  check — free for asset work (Bach/Gounod audio, citations screenshot).
+  check — free for the last asset (citations screenshot).
 - **Fri Sept 4** — fallback day. James's and Andrew's slides likely arrive
   this late; combine into the master deck as they land.
 - **Sun Sept 6** — the session (not the first slot of the day).
@@ -78,7 +78,10 @@ spoken, not demoed).
       page ever goes on screen), Google Calendar, Outlook web (Trinity)
 - [ ] Portal schedule screenshot pre-shot on the desktop as the fallback
 - [ ] Demo/scrubbed inbox only — never project real student mail
-- [ ] Bach/Gounod audio in `demo-assets/`, cued, plays through room speakers
+- [ ] YouTube Music tab queued to the Ave Maria recording, at the start,
+      volume checked through the room speakers; wifi fallback: the same
+      track downloaded for offline in the YouTube Music app on the phone
+      (which also projects and plays over USB-C)
 - [ ] **Codex Pet ready**: voice in/out through the house system, mic pickup
       tested from stage position, interruption rehearsed, the Bach/Gounod
       follow-up chain run once that morning
@@ -101,7 +104,8 @@ spoken, not demoed).
 - [ ] Start a fresh Claude conversation (memory still knows you — the
       Hartford beat re-fires); close the Pet conversation so session two
       starts from the same blank state
-- [ ] Re-cue the Bach/Gounod audio and the voice-clone fallback mp3
+- [ ] Re-cue the Ave Maria track to the start; re-cue the voice-clone
+      fallback mp3
 - [ ] Battery/power check; re-silence notifications
 
 ---
@@ -160,9 +164,11 @@ next-token prediction, context, and tools), then evidence:
    answer kills the joke. Bach/Gounod carries the mechanism beat now.)
 2. **Bach/Gounod, in conversation (~5 min) — the §2 centerpiece.** This is
    NOT a generation analogy; it's a live demonstration of *conversation as
-   the way to use these tools*. Play Bach's Prelude in C major alone, then
-   Gounod's melody over it. **TODO(Ken): audio files + cue points — drop in
-   `demo-assets/`, note them here.** Then the **Pet in Codex, by voice**
+   the way to use these tools*. **Play ~30 seconds of the Ave Maria from
+   YouTube Music** (subscription — no ads; tab queued to the chosen
+   recording, at the start). The opening bars are Bach's prelude on its own
+   — "that's Bach, 1722" — then the melody enters — "and that's Gounod,
+   1852, on top." One clip does both halves. Then the **Pet in Codex, by voice**
    (interruptible — interrupt it at least once, naturally): *"Was this a
    common practice?"* → *"Did Gounod do this with other pieces?"* → *"Was
    Bach a common source for this sort of thing?"* → *"What are some other

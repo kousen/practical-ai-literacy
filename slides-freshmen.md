@@ -284,8 +284,9 @@ class: glow-purple text-center
 
 <!--
 ~5 min — the §2 centerpiece, and live evidence for the context slide before
-it. Play Bach's Prelude in C major alone, then Gounod's melody over it
-(TODO(Ken): audio files + cue points → demo-assets/). Then the Pet in Codex,
+it. Play ~30 sec of the Ave Maria from YouTube Music (tab queued, at the
+start): the opening bars are Bach's prelude alone — say "that's Bach, 1722"
+— then the melody enters: "and that's Gounod, 1852, on top." Then the Pet in Codex,
 BY VOICE, interruptible: "Was this a common practice?" → "Did Gounod do this
 with other pieces?" → "Was Bach a common source for this sort of thing?" →
 "What are some other examples?" Follow the thread wherever it goes — the
