@@ -1,6 +1,6 @@
 ---
 theme: seriph
-colorSchema: dark
+colorSchema: auto
 background: none
 layout: center
 class: text-center
@@ -25,14 +25,21 @@ css: unocss
 ---
 
 <style>
-:global(:root) {
-  --fg: #F2F1ED;
-  --bg: #101114;
-  --muted: #A6ABB5;
-  --faint: #5D636E;
-  --lamp-blue: #6E8BFF;
-  --lamp-purple: #C36BFF;
-  --lamp-green: #4ADE80;
+/* Two palettes, one deck: Slidev's "d" key toggles html.dark. Every color
+   below must come from a variable so light and dark can never drift. */
+:global(html.dark) {
+  --fg: #F2F1ED; --bg: #101114; --muted: #A6ABB5; --faint: #5D636E; --muted-strong: #C8CCD4;
+  --lamp-blue: #6E8BFF; --lamp-purple: #C36BFF; --lamp-green: #4ADE80;
+  --glow-blue: rgba(110,139,255,0.20); --glow-purple: rgba(195,107,255,0.20); --glow-green: rgba(74,222,128,0.18);
+  --tri-blue: rgba(110,139,255,0.21); --tri-purple: rgba(195,107,255,0.17); --tri-green: rgba(74,222,128,0.15);
+  --shadow: rgba(0,0,0,0.5);
+}
+:global(html:not(.dark)) {
+  --fg: #15171C; --bg: #FBFAF7; --muted: #4B515C; --faint: #8A9099; --muted-strong: #3A4048;
+  --lamp-blue: #3552D6; --lamp-purple: #8B35D6; --lamp-green: #1C8A4C;
+  --glow-blue: rgba(53,82,214,0.13); --glow-purple: rgba(139,53,214,0.12); --glow-green: rgba(28,138,76,0.12);
+  --tri-blue: rgba(53,82,214,0.14); --tri-purple: rgba(139,53,214,0.11); --tri-green: rgba(28,138,76,0.11);
+  --shadow: rgba(0,0,0,0.22);
 }
 :global(.slidev-layout) {
   background: var(--bg);
@@ -67,16 +74,16 @@ css: unocss
 :global(.dot-blue)   { background: var(--lamp-blue); box-shadow: 0 0 16px var(--lamp-blue); }
 :global(.dot-purple) { background: var(--lamp-purple); box-shadow: 0 0 16px var(--lamp-purple); }
 :global(.dot-green)  { background: var(--lamp-green); box-shadow: 0 0 16px var(--lamp-green); }
-:global(.glow-blue)   { background: radial-gradient(1100px 700px at 88% -18%, rgba(110,139,255,0.20), transparent 62%), var(--bg) !important; }
-:global(.glow-purple) { background: radial-gradient(1100px 700px at 88% -18%, rgba(195,107,255,0.20), transparent 62%), var(--bg) !important; }
-:global(.glow-green)  { background: radial-gradient(1100px 700px at 88% -18%, rgba(74,222,128,0.18), transparent 62%), var(--bg) !important; }
+:global(.glow-blue)   { background: radial-gradient(1100px 700px at 88% -18%, var(--glow-blue), transparent 62%), var(--bg) !important; }
+:global(.glow-purple) { background: radial-gradient(1100px 700px at 88% -18%, var(--glow-purple), transparent 62%), var(--bg) !important; }
+:global(.glow-green)  { background: radial-gradient(1100px 700px at 88% -18%, var(--glow-green), transparent 62%), var(--bg) !important; }
 :global(.glow-tri) { background:
-  radial-gradient(900px 600px at 6% -14%, rgba(110,139,255,0.21), transparent 60%),
-  radial-gradient(900px 600px at 102% 8%, rgba(195,107,255,0.17), transparent 60%),
-  radial-gradient(1000px 560px at 50% 122%, rgba(74,222,128,0.15), transparent 62%),
+  radial-gradient(900px 600px at 6% -14%, var(--tri-blue), transparent 60%),
+  radial-gradient(900px 600px at 102% 8%, var(--tri-purple), transparent 60%),
+  radial-gradient(1000px 560px at 50% 122%, var(--tri-green), transparent 62%),
   var(--bg) !important; }
 :global(.takeaway) { max-width: 40rem; margin-left: auto; margin-right: auto; text-wrap: pretty; }
-:global(.contact) { font-size: 0.95rem !important; line-height: 1.65; color: #C8CCD4 !important; opacity: 1 !important; }
+:global(.contact) { font-size: 0.95rem !important; line-height: 1.65; color: var(--muted-strong) !important; opacity: 1 !important; }
 :global(.permchip) {
   font-family: 'IBM Plex Mono', Menlo, monospace;
   font-size: 0.85rem;
@@ -390,8 +397,8 @@ class: glow-green text-center
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
 <div style="display: flex; gap: 40px; justify-content: center; align-items: flex-end; margin-top: 0.4rem;">
-  <img src="/images/cc-cover.png" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Official cover of Claude Code: Up and Running" />
-  <v-click><img src="/images/ram-cover.jpg" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Generated image of a ram in a sweater reading the book by a fire" /></v-click>
+  <img src="/images/cc-cover.png" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px var(--shadow);" alt="Official cover of Claude Code: Up and Running" />
+  <v-click><img src="/images/ram-cover.jpg" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px var(--shadow);" alt="Generated image of a ram in a sweater reading the book by a fire" /></v-click>
 </div>
 
 <p class="takeaway" style="margin-top: 1.2rem; font-size: 1.1rem;">Left: my book's actual cover. <v-click><span>Right: the ram reads his own book.</span></v-click></p>
@@ -519,11 +526,11 @@ class: glow-blue text-center
 <div style="display: grid; grid-template-columns: 1fr 19rem; gap: 2rem; max-width: 49rem; margin: 1.2rem auto 0; align-items: center;">
   <div style="text-align: left;">
     <p style="margin: 0; color: var(--fg); font-size: 1.55rem; line-height: 1.35;">“Grab your keys <span class="acc-blue">(just in case)</span> and enjoy the 1-minute stroll!”</p>
-    <p style="margin: 1rem 0 0; font-size: 1.15rem; color: #C8CCD4 !important; opacity: 1;">It has the keys — and still leaves the car.</p>
+    <p style="margin: 1rem 0 0; font-size: 1.15rem; color: var(--muted-strong) !important; opacity: 1;">It has the keys — and still leaves the car.</p>
   </div>
   <div>
-    <img src="/images/carwash-answer.png" style="width: 100%; margin: 0 auto; border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,0.45);" alt="Screenshot of the actual Gemma 4 12B response in Ollama" />
-    <p style="margin: 0.45rem 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; line-height: 1.25; color: #A6ABB5 !important; opacity: 1;">Actual response · Ollama · Sept. 2 rehearsal</p>
+    <img src="/images/carwash-answer.png" style="width: 100%; margin: 0 auto; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Screenshot of the actual Gemma 4 12B response in Ollama" />
+    <p style="margin: 0.45rem 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; line-height: 1.25; color: var(--muted) !important; opacity: 1;">Actual response · Ollama · Sept. 2 rehearsal</p>
   </div>
 </div>
 

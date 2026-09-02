@@ -40,12 +40,13 @@ jobs:
         run: |
           npm run export
           npm run export:freshmen
+          npm run export:freshmen:light
 
       - name: Verify PDFs were produced
         # Fail loudly: action-gh-release only warns on a missing file, so without
         # this a renamed/missing export would publish a release with no asset.
         run: |
-          for f in practical-ai-literacy-slides.pdf ai-tools-for-academic-success.pdf; do
+          for f in practical-ai-literacy-slides.pdf ai-tools-for-academic-success.pdf ai-tools-for-academic-success-light.pdf; do
             test -s "$f" \
               || { echo "::error::$f is missing or empty — export failed or the output name changed"; exit 1; }
           done
@@ -60,9 +61,11 @@ jobs:
 
             - Workshop deck (`slides.md`): [`practical-ai-literacy-slides.pdf`](https://github.com/${{ github.repository }}/releases/latest/download/practical-ai-literacy-slides.pdf)
             - First-year orientation (`slides-freshmen.md`): [`ai-tools-for-academic-success.pdf`](https://github.com/${{ github.repository }}/releases/latest/download/ai-tools-for-academic-success.pdf)
+            - Same deck, light background: [`ai-tools-for-academic-success-light.pdf`](https://github.com/${{ github.repository }}/releases/latest/download/ai-tools-for-academic-success-light.pdf)
             - Other orientation presenters' decks: any `orientation-2026/*.pdf` committed to the repo
           files: |
             practical-ai-literacy-slides.pdf
             ai-tools-for-academic-success.pdf
+            ai-tools-for-academic-success-light.pdf
             orientation-2026/*.pdf
           make_latest: true

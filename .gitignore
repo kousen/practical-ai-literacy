@@ -5,3 +5,6 @@ dist/
 .DS_Store
 demo-assets/
 practical-ai-literacy-slides.pdf
+
+# Playwright MCP scratch output
+.playwright-mcp/

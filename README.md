@@ -46,6 +46,7 @@ Just want to read the deck? Grab the always-current PDF:
 
 The first-year orientation talk (*AI Tools for Academic Success*, `slides-freshmen.md`) is built the same way:
 **[ai-tools-for-academic-success.pdf](https://github.com/kousen/practical-ai-literacy/releases/latest/download/ai-tools-for-academic-success.pdf)**
+(also as a [light-background PDF](https://github.com/kousen/practical-ai-literacy/releases/latest/download/ai-tools-for-academic-success-light.pdf) for bright rooms)
 (rebuilt automatically on every slide change)
 
 ```bash

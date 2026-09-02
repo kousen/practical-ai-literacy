@@ -101,7 +101,9 @@ spoken, not demoed).
       fallbacks if the model behaves that morning
 - [ ] Phone charged, Do Not Disturb on, USB-C video adapter in the bag (the
       spine may run from the phone — see §3 phone path)
-- [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%
+- [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%; **dark or light
+      deck? press `d` in Slidev once you see it on the projector** (one file,
+      two palettes — the choice persists in the browser)
 - [ ] Rehearsal screenshots for every demo in one folder, in run order
 ## Between sessions (reset — session one leaves state behind)
 
