@@ -6,6 +6,7 @@ on:
     paths:
       - 'slides.md'
       - 'slides-freshmen.md'
+      - 'orientation-2026/*.pdf'
       - 'public/**'
       - 'package.json'
       - 'package-lock.json'
@@ -59,7 +60,9 @@ jobs:
 
             - Workshop deck (`slides.md`): [`practical-ai-literacy-slides.pdf`](https://github.com/${{ github.repository }}/releases/latest/download/practical-ai-literacy-slides.pdf)
             - First-year orientation (`slides-freshmen.md`): [`ai-tools-for-academic-success.pdf`](https://github.com/${{ github.repository }}/releases/latest/download/ai-tools-for-academic-success.pdf)
+            - Other orientation presenters' decks: any `orientation-2026/*.pdf` committed to the repo
           files: |
             practical-ai-literacy-slides.pdf
             ai-tools-for-academic-success.pdf
+            orientation-2026/*.pdf
           make_latest: true
