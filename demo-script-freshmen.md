@@ -3,11 +3,13 @@
 Instructor-only. Companion to `slides-freshmen.md` — restructured 2026-08-27
 after the planning meeting: **Ken delivers outline sections 1–4 and 6** (what
 AI is → how it works → does well → does poorly → verification), with demos as
-evidence inside each section. Ewa MCs, then follows Ken with **§5 (how to use
-AI effectively)**, AI-in-college, and the academic integrity policy; Andrew
-closes with the year's events. **Stay off §5, integrity, policy, and
-where-AI-is-headed — those are hers.** Slide numbering keeps the shared
-outline's numbers, so our deck jumps 4 → 6 deliberately.
+evidence inside each section. Ewa MCs, then follows Ken with **how to use AI
+effectively**, AI-in-college, and the academic integrity policy; Andrew
+closes with the year's events. **Stay off effective-use tips, integrity,
+policy, and where-AI-is-headed — those are hers.** (Since 9/2 the deck
+numbers its sections 1–5 sequentially; the shared planning outline's 4 → 6
+jump is gone — students don't care about the planning outline. "§5" below
+means OUR verification section.)
 
 **Revised 2026-08-31 (per Ken, via the Desktop planning session):** restored
 Bach/Gounod (in §2, replacing raspberry/9.11), the Nano Banana study poster
@@ -21,7 +23,8 @@ isn't surprised.
 
 **Revised 2026-09-01:** Bach/Gounod is now a **live Pet-in-Codex voice
 conversation** — free-association follow-ups about the piece, ending with a
-meta beat that tees up Ewa's §5 (tell her Wednesday). It demonstrates
+meta beat asked to the Pet itself, then "Ewa will have more to say about
+that." It demonstrates
 conversation-as-the-unit-of-use, not a generation analogy. **All demos stay
 in the menu (~33 full); Ken trims to fit the night before** — nothing is
 pre-cut. Tech check moved up to Tue 9/1, 5 pm; laptop-audio-over-HDMI is the
@@ -119,10 +122,10 @@ spoken, not demoed).
 | 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
 | 0:10 | §3 What it does well (slides + ram cover) → **Demo: my real semester** (find calendar → read schedule → one reminder → email) | 8 |
 | 0:18 | §4 What it does poorly (slide) → **Demo: car wash** → **Demo: sycophancy** → **Demo: voice clone** | 7 |
-| 0:25 | §6 Verification (slide) → **Demo: click the sources** | 3 |
-| 0:28 | Closing slide, hand back to Ewa (she opens with §5) | 1 |
+| 0:25 | §5 Verification (slide) → **Demo: click the sources** | 3 |
+| 0:28 | Closing slide, hand back to Ewa (she opens with effective use) | 1 |
 
-(§5, effective use, is Ewa's — per her 8/27 email.) **This is the full menu,
+(Effective use is Ewa's — per her 8/27 email.) **This is the full menu,
 ~29 with everything — deliberately.** Every demo stays available; **Ken
 trims to fit the night before (Sat)** by choosing among: the email step,
 the Pet follow-up count, sycophancy live vs. screenshot. Nothing is pre-cut. Live overrun ladder (for slippage on the
@@ -178,11 +181,12 @@ next-token prediction, context, and tools), then evidence:
 about retrieving a fact — it's a conversation that builds understanding, and
 you're free — encouraged — to push back." Mechanism callback in one
 sentence: every follow-up worked because the whole conversation is the
-context — that's the context bullet, live. **Then go meta:** "Everything you
-just watched was live. Is this a good way to use these tools? What would you
-watch out for?" — one beat of silence — "Hold that thought: that's exactly
-what Ewa's section is about." (Tell Ewa on the Wed call so she can catch
-the pass.)
+context — that's the context bullet, live. **Then go meta — ask the Pet
+itself, live:** "Everything we just did was live. Is this a good way to use
+a tool like you? What should I watch out for?" Let it answer — interrupt if
+it rambles; an AI listing its own failure modes *is* the demo. Then, simply:
+"Ewa will have more to say about that." (No coordination needed; mention it
+to her in passing.)
 
 **Fallback ladder:** pet misbehaves → same conversation typed in a chat
 window (loses charm, keeps content); AV fails → rehearsal screenshots,
@@ -214,7 +218,7 @@ printed-syllabus version — steps in git history):
    and any Trinity day-swap quirks. **Date arithmetic is where models slip:
    verify one no-class date against the calendar page on screen before
    going further** — verification inside the successful workflow. A live
-   mistake here is §6 arriving early, not a failure.
+   mistake here is §5 arriving early, not a failure.
 3. **Remind me** — *"Add a reminder to my calendar for the first week we
    don't meet."* **Pause on the permission prompt:** "It's asking before it
    acts. Read exactly what it wants to do — and afterwards, check what it
@@ -349,7 +353,7 @@ different medium: looking real — sounding real — is not being real.
 
 ---
 
-## §6 — Verification → click the sources (3 min)
+## §5 — Verification → click the sources (3 min)
 
 Slide first (wrong on simple things, right on hard ones; confidence ≠ truth),
 then the undramatic habit — self-contained now that the Ollama contrast is
@@ -365,7 +369,7 @@ the passage, and ask whether the evidence actually supports the claim."
 **Second verification move (30 sec):** tell it you *liked* its answer — then
 ask it to argue the exact opposite. If it flips with equal confidence, you've
 just measured what its confidence is worth. Keep the framing on *testing the
-answer* (verification), not on how-to-use-AI — usage tips are Ewa's §5.
+answer* (verification), not on how-to-use-AI — usage tips are Ewa's.
 
 ---
 
@@ -379,8 +383,7 @@ The metaphor is a memory hook, not a mechanism — §2 already gave the
 mechanism; this is how they'll retell it.
 
 Then the explicit handoff, *before* the bio on screen reads as "the end" and
-triggers applause: "That's my part — and I skipped number five on purpose,
-because Ewa owns it. Ewa?"
+triggers applause: "That's my part — Ewa takes it from here. Ewa?"
 
 ---
 
@@ -401,7 +404,7 @@ usable for the faculty/adult version or future sessions:
 - **Ollama fake-citations pair** (gemma4 invents sources / frontier-with-
   search doesn't) — dropped 8/31 to pay for the restored demos; the
   screenshot version was parked too on 9/2 (Ken won't bet a beat on a
-  hallucination happening on cue). The §6 click-the-sources habit remains;
+  hallucination happening on cue). The §5 click-the-sources habit remains;
   the 9/1 rehearsal prompt is in §4 if evidence is ever wanted.
 - **Pangram detection** — detection adjacency reads as "we'll catch you";
   that conversation belongs to Ewa's integrity segment if anywhere.

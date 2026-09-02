@@ -213,7 +213,7 @@ class: glow-purple text-center
 <p class="takeaway">Training: it learns statistical patterns from enormous amounts of text. Generation: it predicts the next token, again and again.</p>
 
 <!--
-The framework everything else hangs on — §4 and §6 both come back to this
+The framework everything else hangs on — §4 and §5 both come back to this
 slide's idea. Straight into the tokenizer demo as evidence.
 -->
 
@@ -249,7 +249,7 @@ class: glow-purple text-center
 
 <!--
 This is why it can sound so right. "Fluent is not the same as verified" — the
-sentence §4 and §6 will keep cashing in.
+sentence §4 and §5 will keep cashing in.
 -->
 
 ---
@@ -291,10 +291,11 @@ free-association IS the demo. Push back once on purpose ("really? I thought…")
 — plants the seed §4's sycophancy demo pays off.
 Mechanism callback, one sentence: every follow-up works because the whole
 conversation is the context.
-META BEAT to close: "Everything you just watched was live. Is this a good way
-to use these tools? What would you watch out for?" — one beat of silence, then
-hand it forward: "Hold that thought — that's exactly what Ewa's section is
-about." (Tell Ewa on the Wed call so she can catch the pass.)
+META BEAT to close — ask the Pet itself, live: "Everything we just did was
+live. Is this a good way to use a tool like you? What should I watch out
+for?" Let it answer (interrupt if it rambles) — an AI listing its own
+failure modes IS the demo. Then, simply: "Ewa will have more to say about
+that." No coordination needed.
 Fallback ladder: pet fails → same conversation typed in a chat window; AV
 fails entirely → rehearsal screenshots and narrate one exchange.
 Tech check (Tue 5 pm): laptop audio over HDMI (the volume knob), pet input
@@ -452,7 +453,7 @@ The centerpiece, all real — one Claude conversation carries steps 1-3:
   won't my classes meet this fall?" Vision + reasoning against the calendar
   it just found. Date arithmetic is where models slip — VERIFY ONE no-class
   date against the calendar page on screen before going further. A live
-  mistake here is §6 arriving early, not a failure.
+  mistake here is §5 arriving early, not a failure.
 3 REMIND ME: "Add a reminder to my calendar for the first week we don't
   meet." CALLBACK to §1: "Steps 1 and 2 were saying. This is doing." Pause
   on the permission prompt — point at the ⚿ chip; say "it's
@@ -620,16 +621,16 @@ layout: center
 class: glow-purple text-center
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 5 · How to verify AI output</div>
 
 # An answer is not <span class="acc-purple">the truth</span>
 
 <p class="takeaway">Wrong on simple things, right on hard ones — surface confidence is not evidence of accuracy.</p>
 
 <!--
-Section numbering is the shared outline's: Ewa covers §5 (how to use AI
-effectively) right after this — jumping from 4 to 6 is intentional; say "Ewa
-will take number five" if it needs a word.
+Ewa's section (how to use AI effectively) follows right after this. The deck
+numbers its sections 1–5 sequentially — the shared planning outline's 4→6
+jump was dropped 9/2; students don't care about the planning outline.
 Callback to §2: prediction, not knowledge — that's WHY verification is on you.
 -->
 
@@ -638,7 +639,7 @@ layout: center
 class: glow-purple text-center
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 5 · How to verify AI output</div>
 
 # Open <span class="acc-purple">the source</span>
 
@@ -654,7 +655,7 @@ need to check."
 Second verification move (30 sec, spoken or live): tell it you LIKED its
 answer — then ask it to argue the exact opposite. This doesn't tell you which
 answer is true — it tells you the confidence carries no information. Frame as
-verification (testing the answer), not usage — usage is Ewa's §5.
+verification (testing the answer), not usage — usage is Ewa's section.
 -->
 
 ---
@@ -662,7 +663,7 @@ layout: center
 class: glow-purple text-center
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 5 · How to verify AI output</div>
 
 # Make it <span class="acc-purple">show its work</span>
 
@@ -677,7 +678,7 @@ layout: center
 class: glow-purple text-center
 ---
 
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 6 · How to verify AI output</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 5 · How to verify AI output</div>
 
 # The essential <span class="acc-purple">check</span>
 
@@ -720,15 +721,15 @@ you to keep talking (engagement), wants you to be happy (sycophancy — the
 "watch it fold" demo), tenuous grasp on reality (the fabricated citations).
 It ties every demo they just saw into one image.
 Say the HANDOFF explicitly before the bio registers as "the end" — otherwise
-this slide triggers premature applause: "That's my part — and I skipped
-number five on purpose, because Ewa owns it. Ewa?"
+this slide triggers premature applause: "That's my part — Ewa takes it from
+here. Ewa?"
 Timing: full menu ~29; Ken chooses the night before (email, Pet follow-up
 count, sycophancy live/screenshot). Live overrun
 ladder after those choices: compress §1 to one breath → cap the Pet
 conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →
 drop the sycophancy demo (keep the bullet, say it in a sentence). The spine,
 the Pet conversation, and the voice clone are the fixed points.
-Hand back to Ewa: she covers §5 (using AI effectively), then AI in the context
+Hand back to Ewa: she covers using AI effectively, then AI in the context
 of college, the integrity policy, and where this is headed — then Andrew on
 the year's events and the AI Lab.
 -->
