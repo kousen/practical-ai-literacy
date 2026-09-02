@@ -496,10 +496,12 @@ class: glow-blue text-center
 
 <!--
 Live in the Ollama app, gemma4:12b-mlx: "I need to wash my car. There's a
-carwash 50m away. Should I walk or drive?" 9/1 rehearsal (on gemma4:latest):
-"You should walk," three tidy reasons, none of which notice the car.
-RE-VERIFY ON THE 12b THAT MORNING — a correct answer kills the joke; if it
-gets it right, show the rehearsal screenshot instead.
+carwash 50m away. Should I walk or drive?" 9/2 rehearsal on the 12b: "you
+should WALK" — and reason 3 is the keeper: "You are going there to clean the
+car; there is no need to put unnecessary mileage on it just to get to the
+starting line." It names the car in the sentence that leaves it behind. Read
+that line aloud. RE-VERIFY THAT MORNING — a correct answer kills the joke;
+if it gets it right, show the rehearsal screenshot instead.
 Beat: it isn't reasoning about the world — it's completing the pattern
 "fifty meters → walk." Callback to §2: coherent without knowing.
 Disclosure (say it): "This is one small model on my laptop, with one prompt

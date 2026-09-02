@@ -275,11 +275,14 @@ are not guarantees.
 ### Demo: the car wash (confidently wrong on a simple thing)
 
 Right after the §4 opener slide. **Ollama app, `gemma4:12b-mlx`:** *"I need
-to wash my car. There's a carwash 50m away. Should I walk or drive?"* 9/1
-rehearsal (on `gemma4:latest`): "**You should walk.**" with three tidy
-reasons, none of which notice the car has to be there. **Re-verify on the
-12b that morning — a correct answer kills the joke; if it gets it right,
-show the rehearsal screenshot instead.**
+to wash my car. There's a carwash 50m away. Should I walk or drive?"* 9/2
+rehearsal on the 12b: "**you should walk**" — and its third reason is the
+keeper: *"You are going there to clean the car; there is no need to put
+unnecessary mileage on it just to get to the starting line."* It names the
+car in the very sentence that leaves it at home. **Read that line aloud.**
+(9/1 on `gemma4:latest`: same verdict, three reasons.) **Re-verify that
+morning — a correct answer kills the joke; if it gets it right, show the
+rehearsal screenshot instead.**
 
 **Beats:** "It isn't reasoning about the world — it's completing the pattern
 'fifty meters → walk.' Coherent without knowing" (callback to §2).
