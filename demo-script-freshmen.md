@@ -282,18 +282,19 @@ are not guarantees.
 ### Demo: the car wash (confidently wrong on a simple thing)
 
 Right after the §4 opener slide — **two slides with the live run between
-them.** Slide 1 is the question as typed in the Ollama app (`gemma4:12b-mlx`
-— the app collapses the model's thinking, no flag needed): *"I need to wash
-my car. The carwash is 50m away. Should I walk or drive?"* Switch to the app
-and run it live, then advance. Slide 2 is Wednesday's answer (9/2
-screenshot): "**You should walk**" — **read the Verdict aloud:** *"Grab your
-keys (just in case) and enjoy the 1-minute stroll!"* It has the keys and
-still leaves the car. Tuesday's run gave a different reason ("no need to put
-unnecessary mileage on it just to get to the starting line") — same wrong
+them.** Slide 1 typesets the exact question at room-readable size and labels
+the model (`gemma4:12b-mlx` in Ollama; the app collapses the model's thinking,
+so no flag is needed): *"I need to wash my car. The carwash is 50m away.
+Should I walk or drive?"* Switch to the app and run it live, then advance.
+Slide 2 typesets Wednesday's answer (9/2) as the large headline — "**You
+should walk**" — and enlarges the key Verdict: *"Grab your keys (just in
+case) and enjoy the 1-minute stroll!"* The full screenshot remains on the
+slide only as a receipt; do not ask the audience to read it. It has the keys
+and still leaves the car. Tuesday's run gave a different reason ("no need to
+put unnecessary mileage on it just to get to the starting line") — same wrong
 verdict, different reasons → segue straight into the next slide, "Same
-question, different answers." **If the live run gets it right, slide 2 IS
-the demo** ("here's what it told me Wednesday") — no separate fallback
-needed.
+question, different answers." **If the live run gets it right, slide 2 IS the
+demo** ("here's what it told me Wednesday") — no separate fallback needed.
 
 **Beats:** "It isn't reasoning about the world — it's completing the pattern
 'fifty meters → walk.' Coherent without knowing" (callback to §2).

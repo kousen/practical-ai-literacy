@@ -491,16 +491,20 @@ class: glow-blue text-center
 
 <div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> Demo · the car wash</div>
 
-# Should I walk <span class="acc-blue">or drive</span>?
+# The carwash is <span class="acc-blue">50 meters away</span>
 
-<img src="/images/carwash-question.png" style="width: 840px; max-width: 92%; margin: 1.2rem auto 0; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="Ollama app with gemma4:12b-mlx selected and the question typed: I need to wash my car. The carwash is 50m away. Should I walk or drive?" />
+<div style="max-width: 46rem; margin: 1.8rem auto 0; padding: 1.2rem 1.7rem; border-left: 4px solid var(--lamp-blue); background: rgba(110,139,255,0.08); text-align: left;">
+  <p style="margin: 0; color: var(--fg); font-size: 1.75rem; line-height: 1.35;">“I need to wash my car.<br><strong>Should I walk or drive?</strong>”</p>
+</div>
+
+<p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--faint);">Gemma 4 12B · local model in Ollama</p>
 
 <!--
-The setup: the question as typed in the Ollama app, gemma4:12b-mlx (note
-the app collapses the model's thinking to "Thought for N seconds" — no
---think flag needed). LIVE OPTION: switch to the app and run it now; then
-come back and advance. If not running it live, just advance — the next
-slide is the answer.
+The setup: the exact question, typeset for the room instead of shown as UI
+chrome. The model is gemma4:12b-mlx in the Ollama app (the app collapses the
+model's thinking to "Thought for N seconds" — no --think flag needed). LIVE
+OPTION: switch to the app and run it now; then come back and advance. If not
+running it live, just advance — the next slide is the answer.
 -->
 
 ---
@@ -510,17 +514,27 @@ class: glow-blue text-center
 
 <div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> Demo · the car wash</div>
 
-<img src="/images/carwash-answer.png" style="height: 400px; margin: 0 auto; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);" alt="gemma4's answer: You should walk, with three reasons, ending Verdict: Grab your keys (just in case) and enjoy the 1-minute stroll!" />
+# “You should <span class="acc-blue">walk.</span>”
 
-<p class="takeaway" style="margin-top: 0.9rem; font-size: 1.15rem;">Helpful, confident, and wrong. The car has to be there.</p>
+<div style="display: grid; grid-template-columns: 1fr 19rem; gap: 2rem; max-width: 49rem; margin: 1.2rem auto 0; align-items: center;">
+  <div style="text-align: left;">
+    <p style="margin: 0; color: var(--fg); font-size: 1.55rem; line-height: 1.35;">“Grab your keys <span class="acc-blue">(just in case)</span> and enjoy the 1-minute stroll!”</p>
+    <p style="margin: 1rem 0 0; font-size: 1.15rem; color: #C8CCD4 !important; opacity: 1;">It has the keys — and still leaves the car.</p>
+  </div>
+  <div>
+    <img src="/images/carwash-answer.png" style="width: 100%; margin: 0 auto; border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,0.45);" alt="Screenshot of the actual Gemma 4 12B response in Ollama" />
+    <p style="margin: 0.45rem 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; line-height: 1.25; color: #A6ABB5 !important; opacity: 1;">Actual response · Ollama · Sept. 2 rehearsal</p>
+  </div>
+</div>
 
 <!--
-Wednesday's rehearsal answer (9/2). Read the Verdict line aloud: "Grab your
-keys (just in case) and enjoy the 1-minute stroll!" — it has the keys and
-still leaves the car. (Tuesday's run said "no need to put unnecessary
-mileage on it just to get to the starting line.") Same wrong verdict,
-different reasons each day → that's the NEXT slide, "Same question,
-different answers" — segue straight into it.
+Wednesday's rehearsal answer (9/2). The exact verdict is typeset large enough
+for the room; the full screenshot remains as a small receipt, not reading
+material. Read the verdict aloud: "Grab your keys (just in case) and enjoy the
+1-minute stroll!" — it has the keys and still leaves the car. (Tuesday's run
+said "no need to put unnecessary mileage on it just to get to the starting
+line.") Same wrong verdict, different reasons each day → that's the NEXT
+slide, "Same question, different answers" — segue straight into it.
 If the live run got it right, this slide IS the demo: "here's what it told
 me Wednesday."
 Beat: it isn't reasoning about the world — it's completing the pattern
