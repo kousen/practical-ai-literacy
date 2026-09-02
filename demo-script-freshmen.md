@@ -46,12 +46,10 @@ spoken, not demoed).
 
 ## Deadlines
 
-- **Tue Sept 1, 5:00 pm — TECH CHECK in the Washington Room (moved up from
-  Thu).** HDMI video and the mics are expected to be fine. **The real
-  question is laptop audio through the house system** — it should ride the
-  HDMI connection, but someone may need to find the volume knob, and
-  multiple demos depend on it (Bach/Gounod playback, voice-clone mp3, Pet
-  voice out). Checklist:
+- **Tue Sept 1, 5:00 pm — TECH CHECK in the Washington Room: DONE, all
+  checks passed** (HDMI audio through the house system, Pet round-trip,
+  phone over USB-C, QR scan from the projector, back-row readability).
+  Original checklist kept for the Sunday morning re-run:
   - [ ] HDMI audio broadcasts; identify the volume knob and who controls it
   - [ ] Bach/Gounod-style audio and the voice-clone mp3 at room volume
   - [ ] **Pet round-trip**: its output goes out over HDMI, but its INPUT is
@@ -64,8 +62,8 @@ spoken, not demoed).
 - **Wed Sept 2, 10:00** — sync call with Ewa (calendar invite received);
   Sonia wants structure/slides visibility early that week. Send the deck
   before this call if possible.
-- **Thu Sept 3** — on campus; now free for follow-ups if the 5 pm check
-  surfaces anything.
+- **Thu Sept 3** — on campus; nothing owed to the room after the clean
+  check — free for asset work (Bach/Gounod audio, citations screenshot).
 - **Fri Sept 4** — fallback day. James's and Andrew's slides likely arrive
   this late; combine into the master deck as they land.
 - **Sun Sept 6** — the session (not the first slot of the day).
