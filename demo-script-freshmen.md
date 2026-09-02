@@ -138,6 +138,13 @@ together. Familiar examples do the defining: they've used recommendation
 systems (Spotify, TikTok, Netflix) for years — that's AI; ChatGPT and image
 generators are the *generative* kind. Model vs. system in one sentence:
 the model is the engine, ChatGPT/Copilot/BoodleBox are cars built around one.
+Then its other half (added 9/2): **some say things, some do things.** A chat
+answers; an agent acts — searches, writes to your calendar, drafts the
+email. Say "agent" once, plainly. Doing is what needs permission — plants
+the ⚿ beat for §3. Most of today's demos are agents without the label
+(calendar write, email draft, voice clone via Claude Code, the Pet); the
+no-class-dates reasoning, the fold, and the citations are "saying."
+Mechanism, not hype.
 
 ---
 

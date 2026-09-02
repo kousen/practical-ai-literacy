@@ -177,7 +177,28 @@ class: glow-blue text-center
 <!--
 Model vs. system in one sentence: the model is the engine; the products are
 cars built around one. This distinction pays off in §4 (same model, different
-behavior with different tools).
+behavior with different tools) — and the next slide is its other half.
+-->
+
+---
+layout: center
+class: glow-blue text-center
+---
+
+<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
+
+# Some say things. Some <span class="acc-blue">do</span> things.
+
+<p class="takeaway">A chat answers you. An agent acts for you — searches, writes to your calendar, drafts the email. When it's about to <em>do</em>, it should ask. Watch for that moment today.</p>
+
+<!--
+Say the word "agent" ONCE, plainly: a system that wraps a model with tools
+and takes actions. Most of today's demos are agents without the label — the
+calendar write, the email draft, the voice clone (Claude Code calling an API
+for me), the Pet. Saying needs no permission; doing does — that's the ⚿
+moment in §3, planted here ten minutes early.
+Tone: mechanism, not hype — "does things for you" is where the marketing
+lives. Define it, name the permission consequence, move on.
 -->
 
 ---
@@ -435,7 +456,8 @@ The centerpiece, all real — one Claude conversation carries steps 1-3:
   date against the calendar page on screen before going further. A live
   mistake here is §6 arriving early, not a failure.
 3 REMIND ME: "Add a reminder to my calendar for the first week we don't
-  meet." Pause on the permission prompt — point at the ⚿ chip; say "it's
+  meet." CALLBACK to §1: "Steps 1 and 2 were saying. This is doing." Pause
+  on the permission prompt — point at the ⚿ chip; say "it's
   asking before it acts — read what it wants to do, and afterwards check
   what it changed"; permission is not privacy or correctness. Say yes, show
   the event land in the calendar tab. "And it could add all of them."
