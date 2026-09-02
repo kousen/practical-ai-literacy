@@ -1,6 +1,9 @@
 # Demo Script — First-Year Orientation (September 6)
 
-Instructor-only. Companion to `slides-freshmen.md` — restructured 2026-08-27
+Instructor-only. **On stage the screen is mirrored (tech check 9/1), so
+speaker notes are NOT visible while presenting** — the notes and this file
+are for prep and rehearsal; the printable one-page cue sheet is
+`run-card-freshmen.md`. Companion to `slides-freshmen.md` — restructured 2026-08-27
 after the planning meeting: **Ken delivers outline sections 1–4 and 6** (what
 AI is → how it works → does well → does poorly → verification), with demos as
 evidence inside each section. Ewa MCs, then follows Ken with **how to use AI
