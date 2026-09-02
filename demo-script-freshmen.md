@@ -46,7 +46,7 @@ spoken, not demoed).
   → Andrew.
 - Ken presents everyone's slides from his machine and owns the screens.
   Common format: PowerPoint / PDF. Export ours:
-  `npx slidev export slides-freshmen.md --format pptx` (or `--format pdf`).
+  the PDF is auto-published by the release action (`ai-tools-for-academic-success.pdf`); no PPTX needed (dropped 9/2). Local export if ever wanted: `npm run export:freshmen`.
 - **Tone guardrail:** this must not read as marketing or advocacy. Mechanism
   and evidence. "This is what's possible; what you'll have access to varies
   and will change" — never "you must use this."
@@ -78,7 +78,7 @@ spoken, not demoed).
 ## Pre-flight (morning of)
 
 - [ ] Combined deck (James + Ewa + Ken + Andrew) loaded and page-through
-      tested; ours exported to PPTX/PDF as the fallback for the live Slidev
+      tested; ours is the release PDF (fallback for the live Slidev)
 - [ ] Browser tabs, in run order: Tokenizer Playground (loaded once — it
       fetches on first use), claude.ai (calendar connector connected),
       Trinity portal on "My Course Schedule" (signed in; only the schedule
