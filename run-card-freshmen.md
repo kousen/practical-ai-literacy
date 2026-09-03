@@ -16,7 +16,8 @@ do things — doing needs permission; watch for that moment today.**
 ## §2 How it works (8)
 
 - **Tokenizer:** "Trinity College" → a sentence from the academic calendar
-  page → switch vendors.
+  page → switch vendors. (Static slide follows if the tab is slow — point at
+  "Collge" splitting in two.)
 - **Ave Maria** (YouTube Music tab, ~30 s): "that's Bach, 1722… and that's
   Gounod, 1852, on top."
 - **Pet (Codex, voice):** *Was this a common practice?* → *Did Gounod do

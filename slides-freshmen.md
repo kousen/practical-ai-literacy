@@ -248,6 +248,29 @@ layout: center
 class: glow-purple text-center
 ---
 
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · tokens</div>
+
+# 57 characters. <span class="acc-purple">12 tokens.</span>
+
+<img src="/images/tokenizer-input.png" style="width: 780px; max-width: 90%; margin: 0.6rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The typed sentence: Welcome to Trinity Collge. Let's learn something about AI" />
+<img src="/images/tokenizer-tokens.png" style="width: 780px; max-width: 90%; margin: 1rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Tokenizer output: 12 tokens, 57 characters; each word a colored chunk, with the misspelled Collge split into two" />
+
+<p class="takeaway" style="margin-top: 0.9rem; font-size: 1.1rem;">Every real word is one token. The misspelled one shatters into two.</p>
+
+<!--
+Static version of the playground (Sept 3 screenshot, gpt-4 tokenizer) — use
+it if the live tab is slow, or as the recap right after the live run. Point
+at "Collge": every common word is a single colored chunk; the misspelling
+splits into two — that's what "rare words shatter" looks like. 12 tokens for
+57 characters is the ¾-of-a-word rule of thumb. Switching the vendor
+dropdown changes the counts: different models, different fragments.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
 
 # Coherent — <span class="acc-purple">without knowing</span>

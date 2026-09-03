@@ -166,8 +166,10 @@ next-token prediction, context, and tools), then evidence:
 
 1. Tokenizer playground: type "Trinity College", paste a sentence from the
    academic calendar page, switch the vendor dropdown — common words one token, rare words
-   shatter. (The car wash question is now the first §4 demo — don't spend
-   it here.)
+   shatter. A static slide of the playground follows the demo slide (Sept 3
+   screenshot: "Collge" splits in two, 12 tokens / 57 characters) — use it
+   if the tab is slow, or as the recap. (The car wash question is now the
+   first §4 demo — don't spend it here.)
 2. **Bach/Gounod, in conversation (~5 min) — the §2 centerpiece.** This is
    NOT a generation analogy; it's a live demonstration of *conversation as
    the way to use these tools*. **Play ~30 seconds of the Ave Maria from
