@@ -54,8 +54,10 @@ Disconnect phone; reopen these cues.
 
 **Calendar slide (screenshot — no tab switch).**
 
-“I imported these meetings earlier. Here's how they look.” Mondays,
-Tuesdays, Labor Day off.
+“Claude added my classes through my Google Calendar connection earlier.”
+**“Busy” = Outlook feed**, not events Claude created.
+“Trinity hasn't authorized an Outlook connector, so we use a file to review
+and import.” Separate workflow; not the file just made.
 
 ## 15:00 · Car wash
 

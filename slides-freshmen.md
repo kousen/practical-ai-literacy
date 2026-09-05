@@ -346,7 +346,7 @@ class: glow-green text-center
 <p class="takeaway">The AI prepares the events.<br>I check them and choose whether to import them into Outlook.</p>
 
 <!--
-The school has not authorized a direct AI calendar connector. This demo uses
+The school has not authorized an AI connector to Trinity's Outlook calendar. This demo uses
 a downloadable .ics file and a human-controlled import. Preparing a file
 does not change Outlook. Two moments of human control, name both: the one
 action the AI takes — emailing me the file — asks permission first (the ⚿
@@ -396,8 +396,8 @@ One Claude conversation on the phone:
   prompt, file arrived. Confirm once from the PHONE tonight.)
   Fallback: download/share the file from the phone instead — no prompt, say so.
 Say: "The file is ready. It hasn't changed Outlook. I review it, then import."
-Ken reports already adding the actual meetings to Google Calendar successfully;
-that is separate evidence, not proof of Outlook compatibility.
+Claude already added the actual meetings through Ken's Google Calendar connector;
+that is a separate workflow, not proof of Outlook compatibility.
 Return to desktop. Optional rehearsed finish: import into a separate Outlook
 demo calendar and inspect an event. Otherwise show the file and describe import.
 Never re-import over the real Google events. Email is optional, outside the core:
@@ -415,21 +415,25 @@ layout: center
 class: glow-green text-center
 ---
 
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+<h1 style="font-size: 2.5rem; margin: 0 0 0.5rem;">Claude added my classes<br>to <span class="acc-green">Google Calendar</span></h1>
 
-# Here's how they <span class="acc-green">look</span>
+<p style="font-size: 1rem !important; margin: 0 0 0.6rem;">Monday, September 14 &amp; Tuesday, September 15</p>
 
-<img src="/images/google-calendar-trinity.png" style="width: 900px; max-width: 94%; margin: 0.4rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Google Calendar, four-week view Aug 30 to Sep 26, 2026, Trinity College calendar only: class meetings on Mondays and Tuesdays, Labor Day on Monday Sept 7 with no class" />
+<svg viewBox="174 420 355 120" role="img" aria-label="Detail of Google Calendar for September 14–15, 2026. Monday shows a 1:30pm Busy entry and a 1:30pm CPSC-415 class. Tuesday shows CPSC-403 classes at 1:30pm and 2:55pm." style="display: block; width: 760px; height: 257px; max-width: 100%; margin: 0 auto; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow); overflow: hidden;">
+  <image href="/images/google-calendar-trinity.png" width="1240" height="805" />
+</svg>
 
-<p class="takeaway" style="margin-top: 0.7rem; font-size: 1.1rem;">Imported earlier. Mondays and Tuesdays — and Labor Day off.</p>
+<p style="font-size: 1.2rem !important; line-height: 1.4 !important; margin: 0.8rem 0 0;">Class meetings: created by Claude<br>“Busy” entries: Outlook calendar feed</p>
 
 <!--
-Replaces switching to the Google Calendar tab: this is the Sept 5 screenshot
-of the Trinity calendar alone (sidebar and account cropped out for the
-public PDF). Say: "I imported these meetings earlier. Here's how they look."
-Point at the Monday/Tuesday rhythm and the Labor Day gap — that's the
-no-class date we checked. Don't imply these came from the file just made.
-The event text is small from the back; the pattern is the point.
+No tab switch: this is a magnified detail of the Sept 5 Google Calendar screenshot,
+showing September 14–15. The original image is preserved; Slidev crops the view.
+Say: "Claude added my classes through my Google Calendar connection earlier.
+The Busy entries come separately from my Outlook calendar feed. Trinity hasn't
+authorized an Outlook connector, so we're using a file you can review and import."
+These events did not come from the file just generated. The Outlook feed is
+not an AI connector and does not give Claude permission to write to Outlook.
+Keep the Labor Day exclusion check in the live demo; it is outside this crop.
 -->
 
 ---

@@ -17,10 +17,11 @@ means OUR verification section.)
 **Current plan, Sept 5:** desktop for Slidev and all demos except scheduling.
 Use the Claude app on the phone for the actual semester schedule, verify the
 dates, then request an Outlook-compatible calendar file. The school has not
-authorized a direct AI connector. Ken reports adding his actual class meetings
-to Google Calendar successfully. After the phone demo, return to the desktop
-and show the existing Google Calendar with only Trinity visible. Identify it
-as an earlier import. The .ics file demonstrates the method students can use
+authorized an AI connector to Trinity's Outlook calendar. Claude already added
+Ken's actual class meetings through his Google Calendar connector. After the
+phone demo, return to the calendar screenshot in Slidev. Identify the classes
+as an earlier connector result and the "Busy" entries as a separate Outlook
+calendar feed. The .ics file demonstrates the method students can use
 without an authorized AI connector; an Outlook import is not part of the live flow.
 **The "doing" beat (restored 9/5):** the app emails the .ics to Ken's Trinity
 address — a real action with a real permission prompt (tested 9/5 from Claude
@@ -81,8 +82,9 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
       time zone and an occurrence after the daylight-saving transition.
 - [ ] Cue document open on the phone. Switch to Claude before connecting it
       to the projector; reopen cues after disconnecting.
-- [ ] Desktop Google Calendar: hide non-Trinity calendars and select a teaching
-      week. Show the existing meetings without re-importing them.
+- [ ] Calendar screenshot in Slidev: check the September 14–15 detail and its
+      labels. Classes were created through the Google connector; "Busy" is
+      from the Outlook feed. No live calendar tab or re-import needed.
 - [ ] Gmail (send) permission set to ASK in the Claude app — approve once on
       stage, never "always"; one test send from the phone the night before
 - [ ] For optional email: copy the verified date list into Copilot/Outlook;
@@ -115,8 +117,8 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
 
 - [ ] Reconnect desktop and reopen Slidev at the start.
 - [ ] Start fresh phone/Pet conversations; re-cue music and clone fallback.
-- [ ] Keep the checked .ics fallback; reset the Google Calendar view to the
-      selected teaching week with only Trinity visible. Existing events stay put.
+- [ ] Keep the checked .ics fallback. The calendar screenshot needs no reset;
+      existing Google Calendar events stay put.
 - [ ] Discard any optional email draft. Check power and Do Not Disturb.
 
 ---
@@ -261,22 +263,24 @@ the schedule; the source comparison is the verification. On stage, inspecting
 one included and one excluded date illustrates that habit without reading the
 whole semester. Before using it for real, review the full file/preview.
 
-**Ken's existing result:** actual class meetings were added to Google Calendar
-without problems (reported Sept 5). You can mention or show that as a prior
-result, clearly labeled. It does not prove the new file imports correctly into
+**Ken's existing result:** Claude added the actual class meetings through Ken's
+Google Calendar connector (reported Sept 5). The "Busy" entries come separately
+from an exported Outlook calendar feed. This prior connector result does not
+prove the new file imports correctly into
 the school's Outlook account, and it is not a reason to duplicate those events.
 
 ### Return to desktop
 
-Disconnect the phone, reopen the cue document, and show desktop Google Calendar
-with only the Trinity calendar visible. Select a representative teaching week;
-collapse the sidebar after filtering if that improves readability.
-The next slide is a cropped screenshot of that calendar (Sept 5) — no tab
-switch needed. Say: "I imported these meetings earlier. Here's how they look."
-The existing events illustrate the result; do not imply they came from the file
-just generated. Explain that students can open/import an .ics file today. If
-the college authorizes a connector later, the tool could add events directly.
-Return to Slidev for the car-wash sequence.
+Disconnect the phone, reopen the cue document, and show the calendar slide.
+It magnifies September 14–15 from the Sept 5 screenshot; no tab switch needed.
+Say: "Claude added my classes through my Google Calendar connection earlier.
+The Busy entries come separately from my Outlook calendar feed. Trinity hasn't
+authorized an Outlook connector, so we're using a file you can review and import."
+The Outlook feed is not an AI connector or permission to write to Outlook.
+Do not imply these events came from the file just generated. Keep the Labor Day
+exclusion check in the live demo; it is outside this crop. If the college
+authorizes an Outlook connector later, the tool could add events directly.
+Advance to the car-wash sequence.
 
 **Outlook reference for preparation, not a live step:** transfer the file from
 phone to desktop. In Outlook on the web, Calendar → Add calendar → Upload
