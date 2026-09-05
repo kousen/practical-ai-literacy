@@ -22,6 +22,10 @@ to Google Calendar successfully. After the phone demo, return to the desktop
 and show the existing Google Calendar with only Trinity visible. Identify it
 as an earlier import. The .ics file demonstrates the method students can use
 without an authorized AI connector; an Outlook import is not part of the live flow.
+**The "doing" beat (restored 9/5):** the app emails the .ics to Ken's Trinity
+address — a real action with a real permission prompt (tested 9/5 from Claude
+Desktop; approved once, never "always"). The say/do slide returns in §3 to set
+it up; the ⚿ chip is back on the semester slide.
 Both persuasion exercises are dropped. Sycophancy is one spoken sentence.
 The shortened opening reaches tokens at 0:45 and the music/Pet around 2:00.
 Historical plans for direct calendar writes, the quiz, and poster are superseded.
@@ -79,6 +83,8 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
       to the projector; reopen cues after disconnecting.
 - [ ] Desktop Google Calendar: hide non-Trinity calendars and select a teaching
       week. Show the existing meetings without re-importing them.
+- [ ] Gmail (send) permission set to ASK in the Claude app — approve once on
+      stage, never "always"; one test send from the phone the night before
 - [ ] For optional email: copy the verified date list into Copilot/Outlook;
       it does not inherit the phone conversation. Draft only.
 - [ ] YouTube Music clip queued, room volume checked; offline phone copy ready.
@@ -104,7 +110,7 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
 | ----- | ------- | --- |
 | 0:00 | Title + §1 Familiar AI and generative AI (one content slide) | 0.75 |
 | 0:45 | §2 **Demo: tokenizer** → prediction example → **Demo: Bach/Gounod Pet conversation** → context debrief | 6.75 |
-| 7:30 | §3 Capabilities + ram cover → model/system + file/import distinction → **Demo: my real semester** | 7.5 |
+| 7:30 | §3 Capabilities + ram cover → model/system → say/do → file/import distinction → **Demo: my real semester** (incl. the send + ⚿ prompt) → calendar slide | 8 |
 | 15:00 | §4 **Demo: car wash** → brief limitations → **Demo: voice clone** | 5 |
 | 20:00 | §5 Verification → **Demo: one claim and its source** | 4 |
 | 24:00 | Closing slide, hand back to Ewa (she opens with effective use) | 1 |
@@ -209,8 +215,17 @@ reveal together. Connect the phone only for the scheduling demo.
    with the actual schedule and academic calendar. Confirm the term limits.
    The output needs checking even if a previous Google import succeeded.
 4. **Export it:** ask for the file below and a readable preview. Show the
-   download and one previewed event. Say: "The file is ready. It hasn't
-   changed Outlook. I review it, then choose whether to import it."
+   download and one previewed event.
+5. **Send it:** *"Email that .ics file to my Trinity address."* **Pause on
+   the permission prompt** — point at the ⚿ chip: "Steps 1–4 were saying.
+   This is doing — and it's asking before it acts. Read what it wants to do;
+   approve once, never 'always.'" Approve → the file lands in the Outlook
+   inbox, exactly where it gets imported from. (Tested 9/5 from Claude
+   Desktop: real prompt, file arrived. **Confirm once from the phone tonight**
+   — permissions are per account, so it should ask there too.) Fallback:
+   download/share the file from the phone — no prompt; say so plainly.
+   Then: "The file is ready. It hasn't changed Outlook. I review it, then
+   choose whether to import it."
 
 **Copy-ready file prompt:**
 

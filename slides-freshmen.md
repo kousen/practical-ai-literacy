@@ -309,7 +309,28 @@ class: glow-green text-center
 ~15 seconds, immediately before the semester demo. The model is the engine;
 the product supplies the interface and connected tools. "Watch the app find
 a calendar, read my schedule, and then produce a calendar file for me to review." Name capabilities
-as they appear instead of giving another advance tour.
+as they appear instead of giving another advance tour. Next slide plants
+the say/do distinction the send step will pay off.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Some say things. Some <span class="acc-green">do</span> things.
+
+<p class="takeaway">A chat answers you. An agent acts for you — searches, sends the email. When it's about to <em>do</em>, it should ask. Watch for that moment.</p>
+
+<!--
+~15 seconds. Say the word "agent" ONCE, plainly: a system that wraps a model
+with tools and takes actions. Saying needs no permission; doing does — the
+send step in the next demo is where you'll see it ask (tested 9/5: a real
+approval prompt, approved once, not "always"). Tone: mechanism, not hype —
+"does things for you" is where the marketing lives. Define it, name the
+permission consequence, move on.
 -->
 
 ---
@@ -326,8 +347,9 @@ class: glow-green text-center
 <!--
 The school has not authorized a direct AI calendar connector. This demo uses
 a downloadable .ics file and a human-controlled import. Preparing a file
-does not change Outlook. Do not wait for or describe an AI permission prompt.
-An agent can use connected tools to act, but here I perform the calendar write.
+does not change Outlook. Two moments of human control, name both: the one
+action the AI takes — emailing me the file — asks permission first (the ⚿
+moment on the next slide); the calendar write itself stays mine, after review.
 -->
 
 ---
@@ -339,13 +361,16 @@ class: glow-green text-center
 
 # My actual <span class="acc-green">fall semester</span>
 
-<p class="takeaway">From my class schedule to a calendar file.<br>Check the dates before importing.</p>
+<p class="takeaway">It asked permission before sending the file. I said yes. Remember that moment.</p>
 
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; max-width: 44rem; margin: 1.8rem auto 0;">
+<p style="margin-top: 0.4rem;"><span class="permchip">⚿ it's asking</span></p>
+
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; max-width: 50rem; margin: 1.6rem auto 0;">
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">1<br><strong>Find it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">2<br><strong>Read it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">3<br><strong>Check it</strong></div>
   <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">4<br><strong>Export it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">5<br><strong>Send it</strong></div>
 </div>
 
 <!--
@@ -362,6 +387,13 @@ One Claude conversation on the phone:
   class meetings, using America/New_York and excluding confirmed no-class
   dates. Ask for a plain-language preview of its contents. Full prompt and
   daylight-saving check are in the run sheet.
+5 SEND: "Email that .ics file to my Trinity address." → the permission
+  prompt. Point at the ⚿ chip: "Steps 1-4 were saying. This is doing — and
+  it's asking before it acts. Read what it wants to do; approve once, never
+  'always.'" Yes → the file lands in the Outlook inbox, which is exactly where
+  it gets imported from. (Tested 9/5 from Claude Desktop: real approval
+  prompt, file arrived. Confirm once from the PHONE tonight.)
+  Fallback: download/share the file from the phone instead — no prompt, say so.
 Say: "The file is ready. It hasn't changed Outlook. I review it, then import."
 Ken reports already adding the actual meetings to Google Calendar successfully;
 that is separate evidence, not proof of Outlook compatibility.

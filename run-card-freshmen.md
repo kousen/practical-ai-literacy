@@ -39,9 +39,13 @@ Interrupt naturally. Follow the conversation.
 
 Cover → reveal ram. “I used Nano Banana.”
 **Model generates responses; app supplies tools.**
+**Some say things; some do things. Doing should ask.**
 
 **Open Claude before connecting the phone.**
 You know the scheduling demo. Create the .ics file students can use now.
+Then: **"Email that .ics file to my Trinity address."** → it asks →
+**"Steps 1–4 were saying. This is doing."** Approve ONCE. "Remember that
+moment." (No prompt? download/share from the phone and say so.)
 
 ## BACK ON LAPTOP · Calendar
 
