@@ -89,6 +89,13 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
       it does not inherit the phone conversation. Draft only.
 - [ ] YouTube Music clip queued, room volume checked; offline phone copy ready.
 - [ ] Pet voice input/output and interruption tested from the stage position.
+- [ ] **Moonside Halo lamp on the podium, visible to the room** — it's the
+      "is it thinking?" indicator for the Pet conversation (Codex hook) and
+      flashes for the voice clone (Claude Code hook). Moonside phone app
+      fully CLOSED (it steals the BLE connection); lamp in the same room;
+      daemon running (`/tmp/moonside_daemon.log`). One sentence the first
+      time it changes color — "blue means it's working, green means it's
+      done" — then never mention it again. Nothing depends on it.
 - [ ] Ollama car-wash prompt rehearsed; recorded answer already on the slide.
 - [ ] Voice-clone fallback: demo-assets/voice-clone-demo.mp3, room audio checked.
 - [ ] BnF record preloaded and saved locally for an offline source check.
@@ -409,6 +416,12 @@ usable for the faculty/adult version or future sessions:
   the 9/1 rehearsal prompt is in §4 if evidence is ever wanted.
 - **Pangram detection** — detection adjacency reads as "we'll catch you";
   that conversation belongs to Ewa's integrity segment if anywhere.
+- **Browser agent (Claude in Chrome / Astro's equivalent)** — e.g. filling in
+  a Moodle course page, which Ken did 9/4 and found genuinely useful. Parked
+  9/5: untested live the night before, slow and fiddly on stage, and a
+  faculty task a first-year can't judge. Excellent for the faculty version
+  and the AI Lab. In this talk it's at most one spoken clause on the say/do
+  slide ("agents can also drive a browser").
 
 (Voice clone + family safe word: restored to §4 on 8/31 — no longer parked.
 Tell Ewa on the Wed call so the safety-tip conversation doesn't double up.)

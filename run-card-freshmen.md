@@ -40,6 +40,7 @@ Interrupt naturally. Follow the conversation.
 Cover → reveal ram. “I used Nano Banana.”
 **Model generates responses; app supplies tools.**
 **Some say things; some do things. Doing should ask.**
+(Lamp: first color change only — “blue = working, green = done.”)
 
 **Open Claude before connecting the phone.**
 You know the scheduling demo. Create the .ics file students can use now.

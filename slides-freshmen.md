@@ -330,7 +330,8 @@ with tools and takes actions. Saying needs no permission; doing does — the
 send step in the next demo is where you'll see it ask (tested 9/5: a real
 approval prompt, approved once, not "always"). Tone: mechanism, not hype —
 "does things for you" is where the marketing lives. Define it, name the
-permission consequence, move on.
+permission consequence, move on. Optional clause, no demo: "agents can also
+drive a browser — I used one yesterday to fill in a course page."
 -->
 
 ---
