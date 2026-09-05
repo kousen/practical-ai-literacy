@@ -89,6 +89,11 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
       it does not inherit the phone conversation. Draft only.
 - [ ] YouTube Music clip queued, room volume checked; offline phone copy ready.
 - [ ] Pet voice input/output and interruption tested from the stage position.
+      Pet "Intelligence" is set to **Instant** (latency matters on stage);
+      rehearse the exact four-question chain on that setting and listen for
+      what it says about 1852/1853 — that's the §5 claim. If Instant is
+      embarrassing rather than brief, try one setting up; the lamp covers a
+      few extra seconds of thinking.
 - [ ] **Moonside Halo lamp on the podium, visible to the room** — it's the
       "is it thinking?" indicator for the Pet conversation (Codex hook) and
       flashes for the voice clone (Claude Code hook). Moonside phone app
