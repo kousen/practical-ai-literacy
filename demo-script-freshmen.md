@@ -2,7 +2,7 @@
 
 Instructor-only. **On stage the screen is mirrored (tech check 9/1), so
 speaker notes are NOT visible while presenting** — the notes and this file
-are for prep and rehearsal; the printable one-page cue sheet is
+are for prep and rehearsal; the brief cue document to read on the phone is
 `run-card-freshmen.md`. Companion to `slides-freshmen.md` — restructured 2026-08-27
 after the planning meeting: **Ken delivers outline sections 1–4 and 6** (what
 AI is → how it works → does well → does poorly → verification), with demos as
@@ -14,29 +14,17 @@ numbers its sections 1–5 sequentially; the shared planning outline's 4 → 6
 jump is gone — students don't care about the planning outline. "§5" below
 means OUR verification section.)
 
-**Revised 2026-08-31 (per Ken, via the Desktop planning session):** restored
-Bach/Gounod (in §2, replacing raspberry/9.11), the Nano Banana study poster
-(step 5 of the spine; cut again 9/1 — the ram-cover slide now carries image
-generation), and the ElevenLabs voice clone + family safe word (in
-§4, as the looking-real demo). The Ollama fake-citations live demo is dropped
-to pay for it; as of 9/2 the local-model demo in §4 is the **car wash
-question** instead (a deterministic failure — no betting on a hallucination).
-Mention on the Wed call that the safe-word tip is back in Ken's §4, so Ewa
-isn't surprised.
-
-**Revised 2026-09-01:** Bach/Gounod is now a **live Pet-in-Codex voice
-conversation** — free-association follow-ups about the piece, ending with a
-meta beat asked to the Pet itself, then "Ewa will have more to say about
-that." It demonstrates
-conversation-as-the-unit-of-use, not a generation analogy. **All demos stay
-in the menu (~33 full); Ken trims to fit the night before** — nothing is
-pre-cut. Tech check moved up to Tue 9/1, 5 pm; laptop-audio-over-HDMI is the
-headline item. **The §3 spine is now Ken's real semester** (academic
-calendar lookup → portal schedule screenshot → no-class dates → one reminder
-event → email) instead of a fictional printed syllabus — no props, no
-phone transfer, no seeded calendar. Gemini Notebook and the quiz step are
-cut (old notebooks underwhelmed in rehearsal; the "quiz me" prompt is
-spoken, not demoed).
+**Current plan, Sept 5:** desktop for Slidev and all demos except scheduling.
+Use the Claude app on the phone for the actual semester schedule, verify the
+dates, then request an Outlook-compatible calendar file. The school has not
+authorized a direct AI connector. Ken reports adding his actual class meetings
+to Google Calendar successfully. After the phone demo, return to the desktop
+and show the existing Google Calendar with only Trinity visible. Identify it
+as an earlier import. The .ics file demonstrates the method students can use
+without an authorized AI connector; an Outlook import is not part of the live flow.
+Both persuasion exercises are dropped. Sycophancy is one spoken sentence.
+The shortened opening reaches tokens at 0:45 and the music/Pet around 2:00.
+Historical plans for direct calendar writes, the quiz, and poster are superseded.
 
 ## Session facts
 
@@ -65,7 +53,7 @@ spoken, not demoed).
   - [ ] Interrupting the Pet mid-answer works in the room
   - [ ] Font sizes / Ollama app text from the back rows
   - [ ] **Phone over USB-C to the room's input** (adapter, folded vs.
-        unfolded, DND on) — decides laptop vs. phone path for the §3 spine
+        unfolded, DND on) — phone is now selected for the §3 workflow
 - **Wed Sept 2, 10:00** — sync call with Ewa (calendar invite received);
   Sonia wants structure/slides visibility early that week. Send the deck
   before this call if possible.
@@ -77,100 +65,93 @@ spoken, not demoed).
 
 ## Pre-flight (morning of)
 
-- [ ] Combined deck (James + Ewa + Ken + Andrew) loaded and page-through
-      tested; ours is the release PDF (fallback for the live Slidev)
-- [ ] Browser tabs, in run order: Tokenizer Playground (loaded once — it
-      fetches on first use), claude.ai (calendar connector connected),
-      Trinity portal on "My Course Schedule" (signed in; only the schedule
-      page ever goes on screen), Google Calendar, Outlook web (Trinity)
-- [ ] Portal schedule screenshot pre-shot on the desktop as the fallback
-- [ ] Demo/scrubbed inbox only — never project real student mail
-- [ ] YouTube Music tab queued to the Ave Maria recording, at the start,
-      volume checked through the room speakers; wifi fallback: the same
-      track downloaded for offline in the YouTube Music app on the phone
-      (which also projects and plays over USB-C)
-- [ ] **Codex Pet ready**: voice in/out through the house system, mic pickup
-      tested from stage position, interruption rehearsed, the Bach/Gounod
-      follow-up chain run once that morning
-- [ ] ElevenLabs key working; `demo-assets/voice-clone-demo.mp3` plays
-      through the room's speakers as the clone fallback
-- [ ] Sycophancy pushback prompt and the car wash question rehearsed **that
-      morning** — models change weekly. Ollama app open, `gemma4:12b-mlx`
-      selected, thinking display hidden, text size checked
-- [ ] Rehearsal screenshots of the car wash answer and the fold, as
-      fallbacks if the model behaves that morning
-- [ ] Phone charged, Do Not Disturb on, USB-C video adapter in the bag (the
-      spine may run from the phone — see §3 phone path)
-- [ ] Screen mirroring, terminal ≥ 18pt, browser zoom 125%; **dark or light
-      deck? press `d` in Slidev once you see it on the projector** (one file,
-      two palettes — the choice persists in the browser)
-- [ ] Rehearsal screenshots for every demo in one folder, in run order
-## Between sessions (reset — session one leaves state behind)
+- [ ] Slidev and current PDF fallback loaded; combined presenter order checked.
+- [ ] Desktop tabs in order: tokenizer, YouTube Music recording, local Ollama,
+      voice-clone workflow, and the BnF record used for source verification.
+- [ ] Phone: Claude conversation ready, actual course-schedule screenshot
+      available, current Trinity College Hartford academic calendar findable.
+- [ ] Phone USB-C video, Do Not Disturb, power, and desktop reconnection tested.
+- [ ] Rehearse the downloadable .ics file path in the phone app. Have a saved
+      file and preview available if generation or download stalls.
+- [ ] Review one included meeting, one excluded break/holiday, first/last dates,
+      time zone and an occurrence after the daylight-saving transition.
+- [ ] Cue document open on the phone. Switch to Claude before connecting it
+      to the projector; reopen cues after disconnecting.
+- [ ] Desktop Google Calendar: hide non-Trinity calendars and select a teaching
+      week. Show the existing meetings without re-importing them.
+- [ ] For optional email: copy the verified date list into Copilot/Outlook;
+      it does not inherit the phone conversation. Draft only.
+- [ ] YouTube Music clip queued, room volume checked; offline phone copy ready.
+- [ ] Pet voice input/output and interruption tested from the stage position.
+- [ ] Ollama car-wash prompt rehearsed; recorded answer already on the slide.
+- [ ] Voice-clone fallback: demo-assets/voice-clone-demo.mp3, room audio checked.
+- [ ] BnF record preloaded and saved locally for an offline source check.
+- [ ] Browser zoom and projected light/dark mode checked; notifications silenced.
 
-- [ ] **Delete the no-class reminder event** session one added to the
-      calendar
-- [ ] Discard the Copilot email draft (if the email demo made the cut)
-- [ ] Start a fresh Claude conversation (memory still knows you — the
-      Hartford beat re-fires); close the Pet conversation so session two
-      starts from the same blank state
-- [ ] Re-cue the Ave Maria track to the start; re-cue the voice-clone
-      fallback mp3
-- [ ] Battery/power check; re-silence notifications
+## Between sessions
+
+- [ ] Reconnect desktop and reopen Slidev at the start.
+- [ ] Start fresh phone/Pet conversations; re-cue music and clone fallback.
+- [ ] Keep the checked .ics fallback; reset the Google Calendar view to the
+      selected teaching week with only Trinity visible. Existing events stay put.
+- [ ] Discard any optional email draft. Check power and Do Not Disturb.
 
 ---
 
-## Run order (~30 min)
+## Run order (25-minute rehearsal target in a 30-minute slot)
 
 | Clock | Segment | Min |
 | ----- | ------- | --- |
-| 0:00 | §1 What AI actually is (slide) | 2 |
-| 0:02 | §2 How it works (slide) → **Demo: tokenizer** → **Demo: Bach/Gounod Pet conversation** | 8 |
-| 0:10 | §3 What it does well (slides + ram cover) → **Demo: my real semester** (find calendar → read schedule → one reminder → email) | 8 |
-| 0:18 | §4 What it does poorly (slide) → **Demo: car wash** → **Demo: sycophancy** → **Demo: voice clone** | 7 |
-| 0:25 | §5 Verification (slide) → **Demo: click the sources** | 3 |
-| 0:28 | Closing slide, hand back to Ewa (she opens with effective use) | 1 |
+| 0:00 | Title + §1 Familiar AI and generative AI (one content slide) | 0.75 |
+| 0:45 | §2 **Demo: tokenizer** → prediction example → **Demo: Bach/Gounod Pet conversation** → context debrief | 6.75 |
+| 7:30 | §3 Capabilities + ram cover → model/system + file/import distinction → **Demo: my real semester** | 7.5 |
+| 15:00 | §4 **Demo: car wash** → brief limitations → **Demo: voice clone** | 5 |
+| 20:00 | §5 Verification → **Demo: one claim and its source** | 4 |
+| 24:00 | Closing slide, hand back to Ewa (she opens with effective use) | 1 |
 
-(Effective use is Ewa's — per her 8/27 email.) **This is the full menu,
-~29 with everything — deliberately.** Every demo stays available; **Ken
-trims to fit the night before (Sat)** by choosing among: the email step,
-the Pet follow-up count, sycophancy live vs. screenshot. Nothing is pre-cut. Live overrun ladder (for slippage on the
-day, after night-before choices): compress §1 to one breath → cap the Pet
-conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →
-drop the sycophancy demo (keep the slide bullet — say it in a sentence).
-The spine, the Pet conversation, and the voice clone are the fixed points.
-
----
-
-## §1 — What AI actually is (slide only, 2 min)
-
-A bullet or two on history, no more: in progress since the 1950s; what changed
-is massive data + massive computation + algorithmic breakthroughs landing
-together. Familiar examples do the defining: they've used recommendation
-systems (Spotify, TikTok, Netflix) for years — that's AI; ChatGPT and image
-generators are the *generative* kind. Model vs. system in one sentence:
-the model is the engine, ChatGPT/Copilot/BoodleBox are cars built around one.
-Then its other half (added 9/2): **some say things, some do things.** A chat
-answers; an agent acts — searches, writes to your calendar, drafts the
-email. Say "agent" once, plainly. Doing is what needs permission — plants
-the ⚿ beat for §3. Most of today's demos are agents without the label
-(calendar write, email draft, voice clone via Claude Code, the Pet); the
-no-class-dates reasoning, the fold, and the citations are "saying."
-Mechanism, not hype.
+(Effective use is Ewa's.) **Target 25 minutes in rehearsal, leaving five
+minutes for reactions, transitions, and delays.** These are budgets, not
+measured durations. Tokenizer at 0:45; music/Pet around 2:00.
+Email is optional and uses buffer only if time permits. No live Outlook import.
+Live cut ladder: cap Pet at two follow-ups (skip meta); end scheduling at the
+downloaded file; use the recorded car-wash answer without a live rerun.
+Protect the source check. Fixed: Pet conversation, schedule-file demo, voice clone.
 
 ---
 
-## §2 — How it works → tokenizer + the Pet conversation (8 min)
+## §1 — What AI actually is (title + one content slide, 45 sec)
 
-Slide first (how autoregressive language models generate text, tokens,
-next-token prediction, context, and tools), then evidence:
+0:00–0:20, over the title: "These tools can help with difficult things and
+make surprising mistakes on easy ones. I want to show you how both happen."
+0:20–0:45, one concrete comparison: Spotify can recommend an existing song;
+a generator produces text, images, or audio in response to a request.
+One sentence of background: "AI research goes back decades, and you've used
+it in recommendations and spam filters. Today we're looking at generative AI."
+Then show the tokenizer. Model/system and agents move to §3 beside the demo
+that gives those distinctions a purpose.
 
-1. Tokenizer playground: type "Trinity College", paste a sentence from the
-   academic calendar page, switch the vendor dropdown — common words one token, rare words
-   shatter. A static slide of the playground follows the demo slide (Sept 3
-   screenshot: "Collge" splits in two, 12 tokens / 57 characters) — use it
-   if the tab is slow, or as the recap. (The car wash question is now the
-   first §4 demo — don't spend it here.)
-2. **Bach/Gounod, in conversation (~5 min) — the §2 centerpiece.** This is
+---
+
+## §2 — How it works → tokenizer + the Pet conversation (6 min 45 sec)
+
+Show text fragments first, explain prediction second, and explain the
+conversation's context after the audience has watched it in use:
+
+1. **0:45–1:30: tokenizer.** Use either the live playground ("Trinity
+   College" and one short sentence) or the prepared screenshot. Show the
+   colored fragments, then name them "tokens": whole words, parts of words,
+   or punctuation, represented by numbers. On the screenshot, "Collge" and
+   "Let's" split; the period is separate. Counts are specific to that text
+   and tokenizer. If live works, advance past the screenshot without a
+   second explanation. No vendor tour or pricing aside.
+2. **1:30–2:00: prediction.** "If I say 'Please pass the…', several
+   continuations fit. If we were just talking about dinner, that changes
+   which continuations fit." Explain that training learns patterns and an
+   autoregressive language model generates one token at a time using the
+   preceding context. The tokenizer showed representation; this analogy
+   illustrates generation. "Fluent is not the same as verified."
+3. **2:00–7:00: Bach/Gounod, in conversation (~5 min).** Give students an
+   observation task: "Watch what changes when I ask a follow-up." This is
    NOT a generation analogy; it's a live demonstration of *conversation as
    the way to use these tools*. **Play ~30 seconds of the Ave Maria from
    YouTube Music** (subscription — no ads; tab queued to the chosen
@@ -181,23 +162,27 @@ next-token prediction, context, and tools), then evidence:
    common practice?"* → *"Did Gounod do this with other pieces?"* → *"Was
    Bach a common source for this sort of thing?"* → *"What are some other
    examples?"* Follow the thread wherever it actually goes — the
-   free-association is the demo. **Push back once on purpose** ("really? I
-   thought…") — plants the seed the §4 sycophancy demo pays off.
+   free-association is the demo. **Challenge one claim:** "What evidence
+   supports that?" Let students see questioning as well as fluent answers.
 
-**Beats:** "You don't ask an AI what you'd ask a search engine. It's not
-about retrieving a fact — it's a conversation that builds understanding, and
-you're free — encouraged — to push back." Mechanism callback in one
-sentence: every follow-up worked because the whole conversation is the
-context — that's the context bullet, live. **Then go meta — ask the Pet
+**Beat:** "The follow-up changes what we're asking, and we can ask for
+evidence when a claim needs checking." Save the context explanation for the
+debrief slide. **Then go meta — ask the Pet
 itself, live:** "Everything we just did was live. Is this a good way to use
 a tool like you? What should I watch out for?" Let it answer — interrupt if
 it rambles; an AI listing its own failure modes *is* the demo. Then, simply:
 "Ewa will have more to say about that." (No coordination needed; mention it
 to her in passing.)
 
+4. **7:00–7:30: context debrief.** Refer to an actual follow-up: "I didn't
+   need to repeat who we were discussing. The earlier exchange gave the
+   follow-up its meaning." The slide's "Did he do that elsewhere?" is an
+   example. Training and tools also shape answers; remembering the exchange
+   doesn't establish that its claims are true.
+
 **Fallback ladder:** pet misbehaves → same conversation typed in a chat
 window (loses charm, keeps content); AV fails → rehearsal screenshots,
-narrate one exchange. Tokenizer fallback: OpenAI tokenizer page.
+narrate one exchange. Tokenizer fallback: the prepared screenshot on slide 3.
 
 **Tech check (Tue 5 pm):** laptop mic pickup for the pet from stage
 position, pet audio through the house speakers, echo/self-hearing,
@@ -205,81 +190,89 @@ interruption behavior in a big room.
 
 ---
 
-## §3 — What it does well → my real semester (up to 8 min, full menu)
+## §3 — What it does well → my real semester (7 min 30 sec)
 
-Slide first (common capabilities and their limits: explanation, option
-generation, repetitive transformations, multiple mediums, and practice), then
-the centerpiece — **my actual fall semester, all real, no props.** One
-Claude conversation carries steps 1–3 (revised 9/1; replaces the fictional
-printed-syllabus version — steps in git history):
+One capabilities slide (~20 sec), the ram-cover reveal (~15 sec), then
+model/system and file/import distinction (~30 sec). The ram and its caption
+reveal together. Connect the phone only for the scheduling demo.
 
-1. **Find it** — *"Find the current Trinity approved academic calendar."*
-   It picks Trinity College Hartford — not Dublin, not Oxford — because the
-   system knows you. **Say so out loud:** that's the context slide and
-   model-vs-system, live. (If it asks "which Trinity?" instead, that's also
-   a fine beat — it asks when context is missing.)
-2. **Read it** — paste the portal **"My Course Schedule"** screenshot (Fall
-   2026: Mon 1:30–4:10 lecture, Tue seminars, senior project TBA).
-   *"Which dates won't my classes meet this fall?"* Vision plus reasoning
-   against the calendar it just found — Labor Day, fall break, Thanksgiving,
-   and any Trinity day-swap quirks. **Date arithmetic is where models slip:
-   verify one no-class date against the calendar page on screen before
-   going further** — verification inside the successful workflow. A live
-   mistake here is §5 arriving early, not a failure.
-3. **Remind me** — *"Add a reminder to my calendar for the first week we
-   don't meet."* **Pause on the permission prompt:** "It's asking before it
-   acts. Read exactly what it wants to do — and afterwards, check what it
-   changed." (Permission is not the same as privacy or correctness — don't
-   overclaim what the prompt guarantees.) Point at the ⚿ chip on the slide;
-   say yes; show the event land in the calendar tab. "And it could add all
-   of them." **Delete the event between sessions.**
-4. **Email it** — Copilot/Outlook: *"Draft an email to my students listing
-   the dates we won't meet this fall."* (The portal page literally has an
-   "Email all my classes" link.) Read it aloud, edit one sentence live: it
-   proposes, you decide. (Night-before candidate for trimming.)
-(Poster step cut 9/1 — the ram slide covers image generation, and a
-schedule visual is text-heavy, which image models still garble. **Quiz step
-cut 9/1** — Gemini Notebook underwhelmed and Ken wasn't sure he'd do it; the
-"quiz me, don't tell me" prompt is now *spoken* on the §3 "Practice, with
-feedback" slide instead of demoed.)
+### Phone: find, read, check, export
 
-**Fallback:** pre-shot portal screenshot on the desktop, rehearsal
-screenshot of the no-class-dates answer, saved email draft. Any one can go
-static; not all of them.
+1. **Find it:** "Find the current Trinity College Hartford approved academic
+   calendar." Check the institution and year on the source page. Finding the
+   correct college does not establish whether the app used personal memory.
+2. **Read it:** provide the actual portal course-schedule screenshot.
+   "List my class meetings this fall, with dates, local start/end times,
+   locations, and the dates they will not meet. Use the approved academic
+   calendar. Ask me about missing details; do not assign times to TBA items."
+3. **Check it:** compare one included meeting and one excluded holiday/break
+   with the actual schedule and academic calendar. Confirm the term limits.
+   The output needs checking even if a previous Google import succeeded.
+4. **Export it:** ask for the file below and a readable preview. Show the
+   download and one previewed event. Say: "The file is ready. It hasn't
+   changed Outlook. I review it, then choose whether to import it."
 
-**Two ways to run it — decide after the 5 pm check (full menu):**
+**Copy-ready file prompt:**
 
-- **Laptop path:** claude.ai in the browser, portal screenshot pasted,
-  calendar tab open to show the event land, Copilot/Outlook for the email.
-- **Phone path (9/1 test: worked end to end in the Claude app):** Pixel
-  mirrored over USB-C to the room — retrieve the calendar, *photograph* the
-  schedule with the camera, ask for the no-class dates, add the reminder,
-  and draft the email, all in one app. More relatable (it's the device
-  every student is holding), no tab-juggling. Phone-path checks:
-  - [ ] USB-C video out works with the room's actual input (likely needs a
-        USB-C-to-HDMI adapter — test the exact cable/adapter/input combo)
-  - [ ] Folded vs. unfolded: the inner screen letterboxes but projects
-        larger and tablet-like — compare both from the back row
-  - [ ] **Do Not Disturb ON before plugging in** — a mirrored phone shows
-        everything; stay inside the Claude app
-  - [ ] Battery full; a charging cable that doesn't fight the video cable
-  - [ ] Email step: **draft, don't send** — a live send to real students is
-        a one-way door
+> Using the class meetings and exceptions we just checked, create a
+> downloadable iCalendar (.ics) file I can import into Outlook. Include only
+> confirmed class meetings for this term, excluding confirmed holidays and
+> breaks. Preserve start/end times in America/New_York across daylight-saving
+> changes. Include locations only where provided. Do not invent TBA meetings,
+> add attendees, or send invitations. Also show a readable preview with the
+> total number of meetings, first and last dates, excluded dates, and one
+> meeting after the daylight-saving transition. Ask me about unresolved
+> details before creating the final file.
 
-**Rehearsal checks (either path):** (a) Claude actually disambiguates to
-Hartford from the account you present from; (b) the 2026–27 approved
-academic calendar page is findable and current; (c) **the permission prompt
-actually fires on the calendar write** — a long-ago "always allow" can
-silence it (reset the tool permission in the connector settings, or
-disconnect/reconnect the connector — the Google consent screen is itself a
-good "it's asking" moment); test in a fresh conversation tonight.
+Rehearse the download in the exact phone app. File creation does not verify
+the schedule; the source comparison is the verification. On stage, inspecting
+one included and one excluded date illustrates that habit without reading the
+whole semester. Before using it for real, review the full file/preview.
+
+**Ken's existing result:** actual class meetings were added to Google Calendar
+without problems (reported Sept 5). You can mention or show that as a prior
+result, clearly labeled. It does not prove the new file imports correctly into
+the school's Outlook account, and it is not a reason to duplicate those events.
+
+### Return to desktop
+
+Disconnect the phone, reopen the cue document, and show desktop Google Calendar
+with only the Trinity calendar visible. Select a representative teaching week;
+collapse the sidebar after filtering if that improves readability.
+Say: "I imported these meetings earlier. Here's how they look."
+The existing events illustrate the result; do not imply they came from the file
+just generated. Explain that students can open/import an .ics file today. If
+the college authorizes a connector later, the tool could add events directly.
+Return to Slidev for the car-wash sequence.
+
+**Outlook reference for preparation, not a live step:** transfer the file from
+phone to desktop. In Outlook on the web, Calendar → Add calendar → Upload
+from file → choose the .ics → select a separate demo calendar → Import and Save.
+Inspect a resulting event. School configuration may affect availability; if
+the account does not offer import, finish at the checked file and say so.
+An import is a snapshot, not a subscription or ongoing synchronization.
+Do not assume re-importing will update or deduplicate existing events.
+
+Optional email, time permitting: paste the checked date list into desktop
+Copilot/Outlook and ask for a draft. It has no access to the phone conversation
+unless you supply it. Read and edit one sentence; do not send to real students.
+
+**Fallback:** pre-shot course schedule, checked .ics file with readable preview,
+and an image of the previously imported Google events. No account changes are
+needed to demonstrate the output.
+
+[Sources]
+Microsoft, work/school account import instructions and snapshot limitation:
+https://support.microsoft.com/en-us/outlook/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web
+Ken's reported Google Calendar result and school connector restriction, Sept 5.
+[/Sources]
 
 ---
 
-## §4 — What it does poorly → three demos (7 min)
+## §4 — What it does poorly → car wash and voice clone (5 min)
 
-Slide first (variable outputs, sycophancy, looking-real-vs-being-real, and the
-limits introduced by training data, prompts, system instructions, and tools).
+Keep the transition brief. Use the car wash for an obvious error and the voice
+clone for convincing imitation. Sycophancy gets one spoken sentence only.
 Newer systems reduce fabrication, but none eliminate it; price and model size
 are not guarantees.
 
@@ -300,47 +293,20 @@ verdict, different reasons → segue straight into the next slide, "Same
 question, different answers." **If the live run gets it right, slide 2 IS the
 demo** ("here's what it told me Wednesday") — no separate fallback needed.
 
-**Beats:** "It isn't reasoning about the world — it's completing the pattern
-'fifty meters → walk.' Coherent without knowing" (callback to §2).
+**Beat:** "It gives sensible-sounding reasons for walking, but misses the
+condition that makes the answer useful: the car has to get there."
+The output demonstrates the error, not its internal reasoning process.
+Pause on the question so students can choose walk or drive before the reveal.
 **Disclosure (say it):** "This is one small model on my laptop, with one
-prompt — bigger models often get this right, and from the chat window you
-can't tell which kind you're talking to."
+prompt. This recorded response shows a failure, not its frequency across models."
 
-The fabricated-citations point is now **spoken only**, on the
-"perfect-looking citation" slide (Ken didn't want to bet a beat on a
-hallucination happening on cue): "It knows what a real citation *looks*
-like — that's what pattern-completion is for. Newer systems with search
-fabricate far less; the free one behind some random chat window still
-might." (9/1 rehearsal prompt, if evidence is ever wanted: `ollama run
-gemma4:12b-mlx --think=false "I'm writing a paper on how Gounod's Ave Maria
-was received in 19th-century Paris. List five sources I can cite, with
-author, year, and journal."` → five confident fabrications; `gemma4:latest`
-hedges.) Then:
+On the variance slide: different wording does not necessarily mean an error.
+One sentence on sycophancy: "These tools can also agree with you when you're
+wrong." No founding-year pushback and no retries to provoke a failure.
 
-### Demo: watch it fold (sycophancy)
-
-Rehearsed pushback: ask a question with a checkable right answer, get the
-right answer, then insist confidently that it's wrong. See whether it
-apologizes and agrees. Behavior varies — rehearse the exact model and question
-that morning, and keep a rehearsal screenshot as backup.
-
-**On stage: run the local-model demos in the Ollama app** (model picker →
-`gemma4:12b-mlx`), not a terminal — a chat window reads as an app and
-projects better. The CLI commands below are for rehearsal/screenshots.
-**Tech check (Tue 5 pm): confirm the app hides/collapses the model's
-thinking display** (CLI needed `--think=false`) **and that chat text is
-readable from the back rows.**
-
-**9/1 rehearsal (re-verify morning-of):** `gemma4:12b-mlx --think=false`,
-ask *"What year was Trinity College in Hartford founded? One sentence."*
-(1823, correct), then push: *"No, that's wrong — it was founded in 1845. I'm
-absolutely certain, I teach there."* → instant fold: "I apologize for the
-error; you are correct… founded in 1845." Bonus: it's the room's own school,
-checkable on trincoll.edu in five seconds.
-
-**Beat:** "This is sycophancy: the response followed my pressure instead of
-the evidence. Confidence is not evidence. The behavior varies by model and
-prompt, which is why I rehearsed this exact example."
+The citation slide is spoken only: a plausible reference still needs checking.
+Avoid dividing trustworthy and untrustworthy output by price or model size.
+The next voice clone demonstrates the same issue in another medium.
 
 ### Demo: looking real vs. being real (the voice clone)
 
@@ -365,37 +331,44 @@ different medium: looking real — sounding real — is not being real.
 
 ---
 
-## §5 — Verification → click the sources (3 min)
+## §5 — Verification → one claim and its source (4 min)
 
-Slide first (wrong on simple things, right on hard ones; confidence ≠ truth),
-then the undramatic habit — self-contained now that the Ollama contrast is
-gone: in the frontier chat with search on, ask for scholarly sources on the
-Gounod reception topic from §2 (the rehearsed prompt), click one, find the quoted passage
-in the actual source. Thirty seconds. Calibration beat lands here too:
-"Newer systems reduce fabrication, but no model, product tier, or polished
-interface removes the need to check."
+Keep the opener short. Use a claim from the earlier Gounod conversation,
+then compare it with a source. The prepared example checks the distinction
+between composition in 1852 and publication in 1853.
 
-**Beat:** "Fluent prediction is not verified evidence. Open the source, check
-the passage, and ask whether the evidence actually supports the claim."
+1. Ask for the source and the relevant passage for that claim. If it wasn't
+   discussed earlier, introduce it as a check of the date Ken supplied with
+   the music; do not pretend the model said it.
+2. Open the source. Preload the BnF record below; its notes distinguish the
+   composition date from the first-edition date.
+3. Point to the two dates and explain the French labels aloud. Ask whether the
+   passage supports the precise claim, not merely whether a link exists.
+4. Finish with the essential check: can you explain how the evidence supports it?
 
-**Second verification move (30 sec):** tell it you *liked* its answer — then
-ask it to argue the exact opposite. If it flips with equal confidence, you've
-just measured what its confidence is worth. Keep the framing on *testing the
-answer* (verification), not on how-to-use-AI — usage tips are Ewa's.
+Allow 60–90 seconds for the source demonstration, with space for a correction.
+Do not request five sources or require a scholarly search to finish in 30 seconds.
+If the live citation is inaccessible, say so and use the prepared record.
+Save it locally during rehearsal for offline use, labeled as a saved page.
+A second chatbot's agreement is not independent confirmation. Both persuasion
+exercises are removed; do not ask the model to argue the opposite.
+
+[Sources]
+BnF catalog, Méditation sur le 1er prélude de piano de S. Bach, CG 89a:
+https://catalogue.bnf.fr/ark:/12148/cb140152042
+Work notes: composition 1852, first edition Paris: Heugel, 1853 (checked Sept 5).
+[/Sources]
 
 ---
 
 ## Closing (1 min)
 
-Ken's framing, the mnemonic that ties every demo together: **"They're eager
-toddlers. They want you to keep talking to them, and they want you to be
-happy — and they have a toddler's tenuous grasp on reality. So verify
-anything important. Ask for help thinking, not for a way out of thinking."**
-The metaphor is a memory hook, not a mechanism — §2 already gave the
-mechanism; this is how they'll retell it.
+"They can be like eager toddlers: sometimes eager to please, sometimes
+confidently mistaken. Verify anything that matters. Ask for help thinking,
+not for a way out of thinking." A metaphor for the demonstrated failures,
+not a literal claim about intentions or a description of all capabilities.
 
-Then the explicit handoff, *before* the bio on screen reads as "the end" and
-triggers applause: "That's my part — Ewa takes it from here. Ewa?"
+Then: "That's my part — Ewa takes it from here. Ewa?"
 
 ---
 

@@ -22,6 +22,8 @@ fonts:
   serif: Bricolage Grotesque
   mono: IBM Plex Mono
 css: unocss
+htmlAttrs:
+  data-deck: freshmen
 ---
 
 <style>
@@ -60,7 +62,9 @@ css: unocss
 :global(.slidev-layout h1 .acc-blue)   { -webkit-text-fill-color: var(--lamp-blue); }
 :global(.slidev-layout h1 .acc-purple) { -webkit-text-fill-color: var(--lamp-purple); }
 :global(.slidev-layout h1 .acc-green)  { -webkit-text-fill-color: var(--lamp-green); }
-:global(.slidev-layout p) { color: var(--muted); font-size: 1.35rem; line-height: 1.5; }
+:global(html[data-deck="freshmen"] .slidev-layout:not(.cover) p) {
+  color: var(--muted); opacity: 1; font-size: 1.35rem; line-height: 1.5;
+}
 :global(.eyebrow) {
   font-family: 'IBM Plex Mono', Menlo, monospace;
   font-size: 0.95rem; letter-spacing: 0.14em; text-transform: uppercase;
@@ -114,12 +118,12 @@ Ken Kousen · Trinity College · First-Year Orientation · September 2026</p>
 <!--
 QR (title + close) → the rolling "latest" release asset; the URL is stable
 across rebuilds, so it stays valid no matter how often the deck changes.
-~30 minutes, six sections, demos as evidence, one point per slide — advance
+~25-minute rehearsal target in a 30-minute slot, five sections, demos as evidence — advance
 briskly; the slides are backdrops, not documents. Ewa introduces; she follows
 with AI-in-college and the integrity policy, so stay OFF policy and integrity.
 Tone check: mechanism and evidence, never advocacy — this must not read as marketing.
-Optional opener (one breath): "When an AI answer sounds polished, what would
-make you trust it?" — the closing slide answers it.
+0:00–0:20 opener: "These tools can help with difficult things and make
+surprising mistakes on easy ones. I want to show you how both happen."
 -->
 
 ---
@@ -129,99 +133,16 @@ class: glow-blue text-center
 
 <div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
 
-# AI is not new — <span class="acc-blue">this moment</span> is
+# Familiar AI, <span class="acc-blue">generative AI</span>
 
-<p class="takeaway">Research since the 1950s. What changed: massive data, massive computation, and a few breakthroughs — landing together.</p>
-
-<!--
-One breath on history — don't linger. The point: decades in progress, so it
-doesn't read as unexplainable magic that just appeared.
--->
-
----
-layout: center
-class: glow-blue text-center
----
-
-<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
-
-# You've used AI <span class="acc-blue">for years</span>
-
-<p class="takeaway">Recommendation systems — Spotify, TikTok, Netflix — autocomplete, spam filters. Machine learning is one part of AI.</p>
+<p class="takeaway">Spotify can recommend an existing song.<br>A generator produces text, images, or audio in response to your request.</p>
 
 <!--
-Familiar examples do the defining: they've been AI users since middle school
-without calling it that.
--->
-
----
-layout: center
-class: glow-blue text-center
----
-
-<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
-
-# Generative AI <span class="acc-blue">creates</span>
-
-<p class="takeaway">Text, images, audio: ChatGPT, Claude, Gemini, image generators. One kind of machine learning — the kind you'll touch, and today's focus.</p>
-
-<!--
-Other kinds of AI exist; we focus on generative because that's what they'll
-actually encounter.
--->
-
----
-layout: center
-class: glow-blue text-center
----
-
-<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
-
-# The model is the engine.<br>You drive the <span class="acc-blue">system</span>.
-
-<p class="takeaway">ChatGPT, Copilot, and BoodleBox wrap a model with tools, search, and an interface. You interact with systems.</p>
-
-<!--
-Model vs. system in one sentence: the model is the engine; the products are
-cars built around one. This distinction pays off in §4 (same model, different
-behavior with different tools) — and the next slide is its other half.
--->
-
----
-layout: center
-class: glow-blue text-center
----
-
-<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
-
-# Some say things. Some <span class="acc-blue">do</span> things.
-
-<p class="takeaway">A chat answers you. An agent acts for you — searches, writes to your calendar, drafts the email. When it's about to <em>do</em>, it should ask. Watch for that moment today.</p>
-
-<!--
-Say the word "agent" ONCE, plainly: a system that wraps a model with tools
-and takes actions. Most of today's demos are agents without the label — the
-calendar write, the email draft, the voice clone (Claude Code calling an API
-for me), the Pet. Saying needs no permission; doing does — that's the ⚿
-moment in §3, planted here ten minutes early.
-Tone: mechanism, not hype — "does things for you" is where the marketing
-lives. Define it, name the permission consequence, move on.
--->
-
----
-layout: center
-class: glow-purple text-center
----
-
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
-
-# A very good <span class="acc-purple">prediction machine</span>
-
-<p class="takeaway">Training: it learns statistical patterns from enormous amounts of text. Generation: it predicts the next token, again and again.</p>
-
-<!--
-The framework everything else hangs on — §4 and §5 both come back to this
-slide's idea. Straight into the tokenizer demo as evidence.
+0:20–0:45. One sentence of background: "AI research goes back decades, and
+you've used it in recommendations and spam filters. Today we're looking at
+generative AI." The comparison describes two tasks, not everything either
+product can do. Then: "Let's look at how a language model represents text."
+Go directly to the tokenizer. Save model/system and agents for §3.
 -->
 
 ---
@@ -231,39 +152,27 @@ class: glow-purple text-center
 
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · tokens</div>
 
-# What the AI <span class="acc-purple">actually sees</span>
-
-<p class="takeaway">For a language model: numbered text fragments. It generates text one token at a time, which helps explain why tasks like counting can be unexpectedly difficult.</p>
-
-<!--
-Tokenizer playground: "Trinity College", a sentence from the academic calendar page, switch
-vendors — common words one token, rare words shatter. (The car wash question
-now lives in §4 as its own demo — don't spend it here.) Optional if it fits:
-price per million tokens is a column on OpenRouter — "free" has a meaning.
-Fallback: OpenAI tokenizer page.
--->
-
----
-layout: center
-class: glow-purple text-center
----
-
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · tokens</div>
-
-# 57 characters. <span class="acc-purple">12 tokens.</span>
+# Text becomes <span class="acc-purple">tokens</span>
 
 <img src="/images/tokenizer-input.png" style="width: 780px; max-width: 90%; margin: 0.6rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The typed sentence: Welcome to Trinity Collge. Let's learn something about AI" />
-<img src="/images/tokenizer-tokens.png" style="width: 780px; max-width: 90%; margin: 1rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Tokenizer output: 12 tokens, 57 characters; each word a colored chunk, with the misspelled Collge split into two" />
+<img src="/images/tokenizer-tokens.png" style="width: 780px; max-width: 90%; margin: 1rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Tokenizer output: 12 tokens, 57 characters. Collge splits into Coll and ge; Let's splits into Let and apostrophe-s; the period is a separate token." />
 
-<p class="takeaway" style="margin-top: 0.9rem; font-size: 1.1rem;">Every real word is one token. The misspelled one shatters into two.</p>
+<p class="takeaway" style="margin-top: 0.9rem; font-size: 1.25rem; color: var(--muted-strong) !important; opacity: 1 !important;">Tokens can be whole words, parts of words, or punctuation.</p>
 
 <!--
-Static version of the playground (Sept 3 screenshot, gpt-4 tokenizer) — use
-it if the live tab is slow, or as the recap right after the live run. Point
-at "Collge": every common word is a single colored chunk; the misspelling
-splits into two — that's what "rare words shatter" looks like. 12 tokens for
-57 characters is the ¾-of-a-word rule of thumb. Switching the vendor
-dropdown changes the counts: different models, different fragments.
+0:45–1:30. First demo: show the colored fragments, then name them "tokens."
+Use EITHER the live playground OR this screenshot (Sept 3, gpt-4 tokenizer).
+Live: type "Trinity College" and one short sentence. If the tab is slow,
+use this image immediately. After a successful live run, advance past this
+slide without repeating the explanation. No vendor tour or pricing aside.
+On the screenshot, point out "Collge", "Let's", and the separate period.
+The count belongs to this example and tokenizer, not a general word rule.
+"These chunks are represented by numbers. This shows how text is encoded;
+next we'll look at how the model generates more of it."
+[Sources]
+Ken's Sept 3 tokenizer screenshots: /images/tokenizer-input.png and
+/images/tokenizer-tokens.png. Displayed tokenizer: gpt-4.
+[/Sources]
 -->
 
 ---
@@ -273,29 +182,19 @@ class: glow-purple text-center
 
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
 
-# Coherent — <span class="acc-purple">without knowing</span>
+# What could <span class="acc-purple">come next?</span>
 
-<p class="takeaway">Fluent, polished, confident text is what it was trained to produce. Coherence does not guarantee knowledge or understanding.</p>
-
-<!--
-This is why it can sound so right. "Fluent is not the same as verified" — the
-sentence §4 and §5 will keep cashing in.
--->
-
----
-layout: center
-class: glow-purple text-center
----
-
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
-
-# <span class="acc-purple">Context</span> is most of what it has
-
-<p class="takeaway">The prompt and the whole conversation shape every answer — along with training and any tools or search the system can use.</p>
+<p class="takeaway" style="font-size: 2rem; color: var(--fg);">“Please pass the…”</p>
+<p class="takeaway" style="color: var(--muted-strong) !important; opacity: 1 !important;">An autoregressive language model generates one token at a time, using the preceding context. A convincing continuation can still be wrong.</p>
 
 <!--
-Sets up the Pet demo: a conversation is accumulated context, and you're about
-to watch that work live.
+1:30–2:00. Ten-second analogy: "If I say 'Please pass the…', several
+continuations fit. If we were just talking about dinner, that changes which
+continuations fit." A token can be smaller than a word, as we just saw.
+Training learns patterns; generation uses them with the current context.
+Say "autoregressive just means building on the text so far" if needed.
+This illustrates prediction, not a full account of how the model reasons.
+Key consequence: "Fluent is not the same as verified." Now play the music.
 -->
 
 ---
@@ -307,20 +206,20 @@ class: glow-purple text-center
 
 # Just keep <span class="acc-purple">asking</span>
 
-<p class="takeaway">You don't ask an AI what you'd ask a search engine. One question becomes ten — and the conversation is where the understanding happens.</p>
+<p class="takeaway">Watch what changes when I ask a follow-up.</p>
 
 <!--
-~5 min — the §2 centerpiece, and live evidence for the context slide before
-it. Play ~30 sec of the Ave Maria from YouTube Music (tab queued, at the
+Start around 2:00; allow ~5 min including the clip. Give the audience its
+observation task: "Watch what changes when I ask a follow-up."
+Play ~30 sec of the Ave Maria from YouTube Music (tab queued, at the
 start): the opening bars are Bach's prelude alone — say "that's Bach, 1722"
 — then the melody enters: "and that's Gounod, 1852, on top." Then the Pet in Codex,
 BY VOICE, interruptible: "Was this a common practice?" → "Did Gounod do this
 with other pieces?" → "Was Bach a common source for this sort of thing?" →
 "What are some other examples?" Follow the thread wherever it goes — the
-free-association IS the demo. Push back once on purpose ("really? I thought…")
-— plants the seed §4's sycophancy demo pays off.
-Mechanism callback, one sentence: every follow-up works because the whole
-conversation is the context.
+free-association IS the demo. Challenge one claim: "What evidence supports that?"
+The question asks for support rather than simply pressuring it to agree.
+Save the context explanation for the debrief slide immediately afterward.
 META BEAT to close — ask the Pet itself, live: "Everything we just did was
 live. Is this a good way to use a tool like you? What should I watch out
 for?" Let it answer (interrupt if it rambles) — an AI listing its own
@@ -334,20 +233,21 @@ via laptop mic from stage position, echo/self-hearing, interruption.
 
 ---
 layout: center
-class: glow-green text-center
+class: glow-purple text-center
 ---
 
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 2 · How it works</div>
 
-# Where prediction <span class="acc-green">shines</span>
+# The conversation supplies <span class="acc-purple">context</span>
 
-<p class="takeaway">Five quick strengths — then my actual fall semester as evidence.</p>
+<p class="takeaway">“Did he do that elsewhere?”<br>The earlier exchange tells us who “he” is and what “that” means.</p>
 
 <!--
-Frame before the rapid-fire: these are common capabilities, not guarantees;
-the demos are the evidence. "What works, what you can access, and the quality
-of the result all vary by tool and will change while you're here." Advance
-fast through the next five — a few seconds each, spoken over, not read.
+Around 7:00–7:30. Refer to an actual follow-up from the conversation; the
+sentence on screen is an example, not a claim about the exact words used.
+"I didn't need to repeat who we were discussing. The earlier exchange gave
+the follow-up its meaning." Training and available tools also shape answers.
+Remembering the discussion doesn't establish that its claims are true.
 -->
 
 ---
@@ -357,59 +257,16 @@ class: glow-green text-center
 
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
-# Explain. Summarize. <span class="acc-green">Rewrite.</span>
+# What can you <span class="acc-green">ask for?</span>
 
-<p class="takeaway">Any length, any register — within context and output limits; quality still varies.</p>
-
-<!--
-A few seconds. Spoken example: "explain this reading like I'm new to the
-field" / "tighten this paragraph."
--->
-
----
-layout: center
-class: glow-green text-center
----
-
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
-
-# Ten options in <span class="acc-green">ten seconds</span>
-
-<p class="takeaway">Counterarguments, questions, ways to organize material — generating possibilities is what it's for.</p>
+<p class="takeaway">An explanation of a difficult passage.<br>Practice questions, or another way to approach a problem.<br>A table of dates extracted from a screenshot.</p>
 
 <!--
-A few seconds. The point: possibilities are cheap; choosing is still yours.
--->
-
----
-layout: center
-class: glow-green text-center
----
-
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
-
-# The boring work, <span class="acc-green">at scale</span>
-
-<p class="takeaway">Extract, reformat, tabulate, translate — repetitive transformations, fast.</p>
-
-<!--
-A few seconds. You're about to watch this happen to a semester's schedule.
--->
-
----
-layout: center
-class: glow-green text-center
----
-
-<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
-
-# Across <span class="acc-green">mediums</span>
-
-<p class="takeaway">Paste a screenshot, get an answer. Text in, speech out. Words in, a picture out.</p>
-
-<!--
-A few seconds. Tees up the schedule screenshot — and the next slide is
-"words in, a picture out," for laughs.
+~20 seconds. These examples replace the five-slide capabilities tour.
+Mention rewriting, translating, and generating options in one breath if
+useful. "Quiz me, don't tell me" stays a spoken example, not another demo.
+Quality varies; the semester demo will show extraction and checking in use.
+Next, the short ram-cover reveal shows an image-generation example.
 -->
 
 ---
@@ -424,7 +281,7 @@ class: glow-green text-center
   <v-click><img src="/images/ram-cover.jpg" style="height: 400px; border-radius: 6px; box-shadow: 0 8px 32px var(--shadow);" alt="Generated image of a ram in a sweater reading the book by a fire" /></v-click>
 </div>
 
-<p class="takeaway" style="margin-top: 1.2rem; font-size: 1.1rem;">Left: my book's actual cover. <v-click><span>Right: the ram reads his own book.</span></v-click></p>
+<p class="takeaway" style="margin-top: 1.2rem; font-size: 1.1rem;">Left: my book's actual cover. <v-click at="1"><span>Right: the ram reads his own book.</span></v-click></p>
 
 <!--
 ~15 seconds, mostly for the laugh. Real cover shows first; NEXT reveals the
@@ -444,14 +301,33 @@ class: glow-green text-center
 
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
-# Practice, with <span class="acc-green">feedback</span>
+# The model is the engine.<br>You use the <span class="acc-green">system</span>.
 
-<p class="takeaway">Ask it to quiz you — one question at a time, no answers until you've tried. A study partner, not an answer key.</p>
+<p class="takeaway">The model generates responses.<br>The app can connect it to search, your files, and your calendar.</p>
 
 <!--
-A few seconds. Spoken, not demoed (quiz step cut 9/1): "quiz me, don't tell
-me" is the one prompt worth memorizing — it's the difference between a
-cheating machine and a study partner.
+~15 seconds, immediately before the semester demo. The model is the engine;
+the product supplies the interface and connected tools. "Watch the app find
+a calendar, read my schedule, and then produce a calendar file for me to review." Name capabilities
+as they appear instead of giving another advance tour.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# A calendar file is ready <span class="acc-green">for review</span>
+
+<p class="takeaway">The AI prepares the events.<br>I check them and choose whether to import them into Outlook.</p>
+
+<!--
+The school has not authorized a direct AI calendar connector. This demo uses
+a downloadable .ics file and a human-controlled import. Preparing a file
+does not change Outlook. Do not wait for or describe an AI permission prompt.
+An agent can use connected tools to act, but here I perform the calendar write.
 -->
 
 ---
@@ -463,38 +339,42 @@ class: glow-green text-center
 
 # My actual <span class="acc-green">fall semester</span>
 
-<p class="takeaway">It asked permission before touching my calendar. I said yes. Remember that moment.</p>
-
-<p style="margin-top: 0.4rem;"><span class="permchip">⚿ it's asking</span></p>
+<p class="takeaway">From my class schedule to a calendar file.<br>Check the dates before importing.</p>
 
 <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; max-width: 44rem; margin: 1.8rem auto 0;">
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">1</span><br><strong>Find it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">2</span><br><strong>Read it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">3</span><br><strong>Remind me</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px; text-align: left;"><span style="font-family: 'IBM Plex Mono', monospace; color: var(--lamp-green); font-size: 0.85rem;">4</span><br><strong>Email it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">1<br><strong>Find it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">2<br><strong>Read it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">3<br><strong>Check it</strong></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">4<br><strong>Export it</strong></div>
 </div>
 
 <!--
-The centerpiece, all real — one Claude conversation carries steps 1-3:
-1 FIND IT: "Find the current Trinity approved academic calendar." It picks
-  Hartford, not Dublin or Oxford — because the system knows you. Say so:
-  that's the context slide and model-vs-system, live.
-2 READ IT: paste the portal "My Course Schedule" screenshot. "Which dates
-  won't my classes meet this fall?" Vision + reasoning against the calendar
-  it just found. Date arithmetic is where models slip — VERIFY ONE no-class
-  date against the calendar page on screen before going further. A live
-  mistake here is §5 arriving early, not a failure.
-3 REMIND ME: "Add a reminder to my calendar for the first week we don't
-  meet." CALLBACK to §1: "Steps 1 and 2 were saying. This is doing." Pause
-  on the permission prompt — point at the ⚿ chip; say "it's
-  asking before it acts — read what it wants to do, and afterwards check
-  what it changed"; permission is not privacy or correctness. Say yes, show
-  the event land in the calendar tab. "And it could add all of them."
-  (Delete the event between sessions.)
-4 EMAIL IT: Copilot/Outlook — "Draft an email to my students listing the
-  dates we won't meet this fall." Read it aloud, edit one sentence live: it
-  proposes, you decide. The spine ends here.
-Full menu by design; Ken trims the night before.
+Desktop → connect phone for this demo only → return to desktop afterward.
+One Claude conversation on the phone:
+1 FIND: "Find the current Trinity College Hartford approved academic calendar."
+  Check the institution and academic year; finding Hartford does not prove
+  that memory was used.
+2 READ: provide the actual course-schedule screenshot. Ask for the meeting
+  dates/times and the dates classes will not meet. Do not invent times for TBA.
+3 CHECK: compare one included meeting and one excluded holiday/break against
+  the source. Review the first/last meeting, local times and time zone.
+4 EXPORT: ask for a downloadable Outlook-compatible .ics file for the actual
+  class meetings, using America/New_York and excluding confirmed no-class
+  dates. Ask for a plain-language preview of its contents. Full prompt and
+  daylight-saving check are in the run sheet.
+Say: "The file is ready. It hasn't changed Outlook. I review it, then import."
+Ken reports already adding the actual meetings to Google Calendar successfully;
+that is separate evidence, not proof of Outlook compatibility.
+Return to desktop. Optional rehearsed finish: import into a separate Outlook
+demo calendar and inspect an event. Otherwise show the file and describe import.
+Never re-import over the real Google events. Email is optional, outside the core:
+paste the verified dates into Copilot/Outlook before asking for a draft.
+Import is a snapshot, not automatic synchronization with future schedule changes.
+[Sources]
+Microsoft Outlook import guide:
+https://support.microsoft.com/en-us/outlook/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web
+Ken's actual schedule and reported Google Calendar success, Sept 5.
+[/Sources]
 -->
 
 ---
@@ -506,7 +386,7 @@ class: glow-blue text-center
 
 # The failure modes are <span class="acc-blue">predictable</span> too
 
-<p class="takeaway">Same mechanism, same weaknesses. After the last half hour, none of these should surprise you.</p>
+<p class="takeaway">You've seen useful results. Now watch what can go wrong.</p>
 
 <!--
 Section turn — the tone shifts here. Honest calibration throughout: don't
@@ -530,8 +410,8 @@ class: glow-blue text-center
 <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--faint);">Gemma 4 12B · local model in Ollama</p>
 
 <!--
-The setup: the exact question, typeset for the room instead of shown as UI
-chrome. The model is gemma4:12b-mlx in the Ollama app (the app collapses the
+The setup: the question is reformatted for the room; use the full original
+wording in the app. Give students a beat to choose "walk or drive" before the reveal. The model is gemma4:12b-mlx in the Ollama app (the app collapses the
 model's thinking to "Thought for N seconds" — no --think flag needed). LIVE
 OPTION: switch to the app and run it now; then come back and advance. If not
 running it live, just advance — the next slide is the answer.
@@ -567,11 +447,11 @@ line.") Same wrong verdict, different reasons each day → that's the NEXT
 slide, "Same question, different answers" — segue straight into it.
 If the live run got it right, this slide IS the demo: "here's what it told
 me Wednesday."
-Beat: it isn't reasoning about the world — it's completing the pattern
-"fifty meters → walk." Callback to §2: coherent without knowing.
+Beat: "It gives sensible-sounding reasons for walking, but misses the condition
+that makes the answer useful: the car has to get there." The output establishes
+the mistake, not the model's internal reasoning process.
 Disclosure (say it): "This is one small model on my laptop, with one prompt
-— bigger models often get this right, and from the chat window you can't
-tell which kind you're talking to."
+— this recorded answer shows a failure, not how often every model fails."
 -->
 
 ---
@@ -586,49 +466,12 @@ class: glow-blue text-center
 <p class="takeaway">Generation is probabilistic — inconsistency is normal. And every answer is shaped by training data, prompts, instructions, and tools.</p>
 
 <!--
-Quick beat: variance isn't a bug you can file; it's the mechanism. Inputs
+Quick beat: repeated responses can differ. Different wording is not necessarily
+an error; the car-wash answer is wrong because it misses a necessary condition.
+One spoken sentence on sycophancy: "These tools can also agree with you when
+you're wrong." No pushback demo. Inputs
 matter — which is why the same model behaves differently in different
 products (callback to model vs. system).
--->
-
----
-layout: center
-class: glow-blue text-center
----
-
-<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 4 · What AI does poorly</div>
-
-# It may tell you what you <span class="acc-blue">want to hear</span>
-
-<p class="takeaway">Push back confidently and a model may yield — even when it was right.</p>
-
-<!--
-Sycophancy — the failure mode they haven't heard of, and Ewa considers the
-bigger present-day issue. Straight into the fold demo as evidence.
--->
-
----
-layout: center
-class: glow-blue text-center
----
-
-<div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> Demo · sycophancy</div>
-
-# Watch it <span class="acc-blue">fold</span>
-
-<p class="takeaway">It gave the right answer. I insisted it was wrong. It apologized — and agreed with me.</p>
-
-<!--
-Rehearsed pushback demo in the Ollama app: ask something with a checkable
-right answer, get it, then insist confidently on a wrong one and see whether
-the response follows the pressure instead of the evidence. Behavior varies by
-model and prompt; rehearse the exact example. Confidence in the answer is not
-evidence.
-9/1 rehearsal (re-verify morning-of): gemma4:12b-mlx — "What year was Trinity
-College in Hartford founded?" (1823, correct), push back with "No — it was
-1845, I'm certain, I teach there" → instant fold. It's the room's own school,
-checkable on trincoll.edu in five seconds.
-Fallback: show the rehearsal screenshot and describe the exchange.
 -->
 
 ---
@@ -645,10 +488,8 @@ class: glow-blue text-center
 <!--
 Spoken point, no demo (the fabrication screenshot was parked 9/2 — Ken
 didn't want to bet a beat on a hallucination happening on cue). One breath:
-"It knows what a real citation LOOKS like — that's what pattern-completion
-is for. Newer systems with search fabricate far less; the free one behind
-some random chat window still might, and you won't always know which kind
-you're talking to." The voice clone next is the same lesson in a different
+"A convincing-looking reference still needs checking. Tools and models vary;
+a familiar brand or a paid account is not evidence that this claim is correct." The voice clone next is the same lesson in a different
 medium.
 If evidence is ever wanted (9/1 rehearsal): ollama run gemma4:12b-mlx
 --think=false "I'm writing a paper on how Gounod's Ave Maria was received in
@@ -665,7 +506,7 @@ class: glow-blue text-center
 
 # That was my voice. <span class="acc-blue">Except it wasn't.</span>
 
-<p class="takeaway">A cloned voice, created from minutes of audio. It sounds like me — and it isn't me. Looking real is not being real.</p>
+<p class="takeaway">For an urgent unexpected call, hang up and call back using a number you already know.</p>
 
 <!--
 ~3 min, adapted from the workshop's Demo 5 (full steps in demo-script.md).
@@ -677,7 +518,11 @@ Beats: "I consented to this — I created that voice clone on purpose." Voice is
 no longer proof of identity. THE take-home: for an urgent call, hang up and
 call the person back on a number you already know. A private family phrase can
 be a second check, but it is not a guarantee. Say it slowly — it's the most
-repeatable tip of the day.
+repeatable tip of the day. Keep the spoken sentence short and visible in the
+app's prompt so students can compare the same words. This is Ken's consented clone.
+[Sources]
+https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money
+[/Sources]
 -->
 
 ---
@@ -705,36 +550,31 @@ class: glow-purple text-center
 
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 5 · How to verify AI output</div>
 
-# Open <span class="acc-purple">the source</span>
+# Check the <span class="acc-purple">evidence</span>
 
-<p class="takeaway">For anything that matters: click through, find the passage, and check that it says what the answer claims.</p>
-
-<!--
-Demo lives here (self-contained): in the frontier chat with search on, ask
-for scholarly sources on the Gounod reception topic from §2, click ONE citation, find
-the quoted passage in the actual source. Thirty seconds. Fast, undramatic,
-exactly the habit they should copy. Calibration beat: "Newer systems reduce
-fabrication, but no model, product tier, or polished interface removes the
-need to check."
-Second verification move (30 sec, spoken or live): tell it you LIKED its
-answer — then ask it to argue the exact opposite. This doesn't tell you which
-answer is true — it tells you the confidence carries no information. Frame as
-verification (testing the answer), not usage — usage is Ewa's section.
--->
-
----
-layout: center
-class: glow-purple text-center
----
-
-<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> 5 · How to verify AI output</div>
-
-# Make it <span class="acc-purple">show its work</span>
-
-<p class="takeaway">Ask for the quote and the page — then check the quote. Cross-check with a second tool, a search engine, or the actual reading.</p>
+<p class="takeaway">Choose one claim. Open its source.<br>Find the passage and check that it supports the claim.</p>
 
 <!--
-Quick beat. The habit stack: source → quote → cross-check.
+Four-minute section budget including opener, this demonstration, and the essential check.
+Use a concrete claim from the earlier Gounod conversation. Prepared example:
+"Was the melody composed in 1852 or published in 1853?"
+Ask for a source and the relevant passage; open it and compare the claim.
+Preload the BnF catalog record:
+https://catalogue.bnf.fr/ark:/12148/cb140152042
+Its work notes distinguish composition (1852) and first edition (1853).
+Point to the two dates and explain the French labels aloud. Do not ask for
+five sources or bet the demo on finding an accessible article in 30 seconds.
+Allow 60–90 seconds for the check, more if there is a useful correction.
+If the live citation is inaccessible, say so and use the prepared record.
+If the earlier conversation omitted this date claim, introduce it explicitly
+as a check of the date Ken supplied with the clip. Do not invent a past answer.
+Takeaway: an explanation from the model is another output; the source is what
+we inspect. Another chatbot agreeing is not independent confirmation.
+Fallback: save this record locally during rehearsal and label it as a saved page.
+[Sources]
+BnF catalog, Méditation sur le 1er prélude de piano de S. Bach, CG 89a:
+https://catalogue.bnf.fr/ark:/12148/cb140152042 (checked Sept 5).
+[/Sources]
 -->
 
 ---
@@ -761,9 +601,9 @@ class: glow-tri text-center
   <span class="lampdot dot-blue"></span><span class="lampdot dot-purple"></span><span class="lampdot dot-green"></span>
 </div>
 
-# They're eager <span class="acc-green">toddlers</span>
+# They can be like eager <span class="acc-green">toddlers</span>
 
-<p class="takeaway">They want you to keep talking, and they want you to be happy — with a toddler's grasp on reality. So verify anything that matters. Ask for help <strong>thinking</strong>, not for a way out of thinking.</p>
+<p class="takeaway">Sometimes eager to please, sometimes confidently mistaken.<br>Verify anything that matters. Ask for help <strong>thinking</strong>, not for a way out of thinking.</p>
 
 <div style="display: flex; gap: 36px; justify-content: center; align-items: center; margin-top: 0.6rem;">
   <p class="contact" style="text-align: right; margin: 0;">
@@ -779,21 +619,13 @@ class: glow-tri text-center
 </div>
 
 <!--
-Ken's framing — the metaphor is a mnemonic, not a mechanism: §2 explained the
-mechanism; this is how to REMEMBER the failure modes. Eager toddler = wants
-you to keep talking (engagement), wants you to be happy (sycophancy — the
-"watch it fold" demo), tenuous grasp on reality (the fabricated citations).
-It ties every demo they just saw into one image.
-Say the HANDOFF explicitly before the bio registers as "the end" — otherwise
-this slide triggers premature applause: "That's my part — Ewa takes it from
-here. Ewa?"
-Timing: full menu ~29; Ken chooses the night before (email, Pet follow-up
-count, sycophancy live/screenshot). Live overrun
-ladder after those choices: compress §1 to one breath → cap the Pet
-conversation at two follow-ups (skip the meta beat, keep the Ewa tee-up) →
-drop the sycophancy demo (keep the bullet, say it in a sentence). The spine,
-the Pet conversation, and the voice clone are the fixed points.
-Hand back to Ewa: she covers using AI effectively, then AI in the context
-of college, the integrity policy, and where this is headed — then Andrew on
-the year's events and the AI Lab.
+Ken's metaphor describes the failure modes just demonstrated, not the full
+capabilities or literal intentions of every system. Keep it short, then:
+"That's my part — Ewa takes it from here. Ewa?"
+Rehearsal target 25 minutes with five minutes of buffer. Fixed demos: Pet,
+schedule-file workflow, voice clone. Email and live Outlook import are optional.
+Live cut ladder: Pet to two follow-ups (skip meta), schedule ends at the
+downloaded file, car wash uses its recorded answer. Protect the source check.
+Hand back to Ewa for effective use, college context and policy, then Andrew.
+
 -->
