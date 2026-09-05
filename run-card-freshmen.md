@@ -47,9 +47,10 @@ You know the scheduling demo. Create the .ics file students can use now.
 
 Disconnect phone; reopen these cues.
 
-**Google Calendar: only Trinity visible, teaching week.**
+**Calendar slide (screenshot — no tab switch).**
 
-“I imported these meetings earlier. Here's how they look.”
+“I imported these meetings earlier. Here's how they look.” Mondays,
+Tuesdays, Labor Day off.
 
 ## 15:00 · Car wash
 
@@ -93,8 +94,8 @@ Check your own date if the model didn't discuss it.
 
 ## 24:00 · Close
 
-“They can be like eager toddlers: sometimes eager to please,
-sometimes confidently mistaken. Verify anything that matters.”
+“They're like eager toddlers: they want to please you, and they have a
+toddler's grasp on reality. Verify anything that matters.”
 
 **“Ask for help thinking, not for a way out of thinking.”**
 

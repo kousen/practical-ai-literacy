@@ -379,6 +379,28 @@ Ken's actual schedule and reported Google Calendar success, Sept 5.
 
 ---
 layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Here's how they <span class="acc-green">look</span>
+
+<img src="/images/google-calendar-trinity.png" style="width: 900px; max-width: 94%; margin: 0.4rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Google Calendar, four-week view Aug 30 to Sep 26, 2026, Trinity College calendar only: class meetings on Mondays and Tuesdays, Labor Day on Monday Sept 7 with no class" />
+
+<p class="takeaway" style="margin-top: 0.7rem; font-size: 1.1rem;">Imported earlier. Mondays and Tuesdays — and Labor Day off.</p>
+
+<!--
+Replaces switching to the Google Calendar tab: this is the Sept 5 screenshot
+of the Trinity calendar alone (sidebar and account cropped out for the
+public PDF). Say: "I imported these meetings earlier. Here's how they look."
+Point at the Monday/Tuesday rhythm and the Labor Day gap — that's the
+no-class date we checked. Don't imply these came from the file just made.
+The event text is small from the back; the pattern is the point.
+-->
+
+---
+layout: center
 class: glow-blue text-center
 ---
 
@@ -601,9 +623,9 @@ class: glow-tri text-center
   <span class="lampdot dot-blue"></span><span class="lampdot dot-purple"></span><span class="lampdot dot-green"></span>
 </div>
 
-# They can be like eager <span class="acc-green">toddlers</span>
+# They're like eager <span class="acc-green">toddlers</span>
 
-<p class="takeaway">Sometimes eager to please, sometimes confidently mistaken.<br>Verify anything that matters. Ask for help <strong>thinking</strong>, not for a way out of thinking.</p>
+<p class="takeaway">They want to please you — with a toddler's grasp on reality.<br>Verify anything that matters. Ask for help <strong>thinking</strong>, not for a way out of thinking.</p>
 
 <div style="display: flex; gap: 36px; justify-content: center; align-items: center; margin-top: 0.6rem;">
   <p class="contact" style="text-align: right; margin: 0;">

@@ -239,7 +239,8 @@ the school's Outlook account, and it is not a reason to duplicate those events.
 Disconnect the phone, reopen the cue document, and show desktop Google Calendar
 with only the Trinity calendar visible. Select a representative teaching week;
 collapse the sidebar after filtering if that improves readability.
-Say: "I imported these meetings earlier. Here's how they look."
+The next slide is a cropped screenshot of that calendar (Sept 5) — no tab
+switch needed. Say: "I imported these meetings earlier. Here's how they look."
 The existing events illustrate the result; do not imply they came from the file
 just generated. Explain that students can open/import an .ics file today. If
 the college authorizes a connector later, the tool could add events directly.
@@ -363,9 +364,9 @@ Work notes: composition 1852, first edition Paris: Heugel, 1853 (checked Sept 5)
 
 ## Closing (1 min)
 
-"They can be like eager toddlers: sometimes eager to please, sometimes
-confidently mistaken. Verify anything that matters. Ask for help thinking,
-not for a way out of thinking." A metaphor for the demonstrated failures,
+"They're like eager toddlers: they want to please you, and they have a
+toddler's grasp on reality. Verify anything that matters. Ask for help
+thinking, not for a way out of thinking." A metaphor for the demonstrated failures,
 not a literal claim about intentions or a description of all capabilities.
 
 Then: "That's my part — Ewa takes it from here. Ewa?"
