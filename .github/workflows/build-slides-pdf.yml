@@ -51,6 +51,14 @@ jobs:
               || { echo "::error::$f is missing or empty — export failed or the output name changed"; exit 1; }
           done
 
+      - name: Recreate the rolling release so its date and source snapshot match this build
+        # Updating a release in place keeps its original published date and
+        # leaves the source zips pointing at the old tag. Deleting the release
+        # and its tag first makes the next step create a fresh one at this sha.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release delete slides-latest --cleanup-tag --yes || true
+
       - name: Publish rolling "latest" release
         uses: softprops/action-gh-release@v3
         with:
