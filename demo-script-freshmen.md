@@ -100,6 +100,11 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
 - [ ] Voice-clone fallback: demo-assets/voice-clone-demo.mp3, room audio checked.
 - [ ] BnF record preloaded and saved locally for an offline source check.
 - [ ] Browser zoom and projected light/dark mode checked; notifications silenced.
+- [ ] Claude usage meter (Settings → Usage & billing): weekly limit was 42%
+      left on 9/5. Stage usage is small (phone chat, one email send, seconds
+      of Claude Code — the Pet is Codex's budget). Spend a usage-limit reset
+      ONLY if the weekly bar is under ~15% in the morning; also check the
+      weekly reset date — if it rolls over Sunday, ignore all this.
 
 ## Between sessions
 
