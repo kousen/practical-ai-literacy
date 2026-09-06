@@ -7,6 +7,10 @@ on the next push, alongside `ai-tools-for-academic-success.pdf`.
 
 Suggested names (order of the session):
 
+- `00-session-deck-ewa-syta.pdf` — Ewa's full session master deck (title,
+  agenda, welcome, her section, the lab divider, survey); the other files
+  are the individual presenters' pieces
+
 - `01-welcome-james.pdf`
 - `02-intro-ewa.pdf`
 - `03-ai-tools-for-academic-success-ken.pdf` — not needed; Ken's deck is
