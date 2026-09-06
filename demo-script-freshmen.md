@@ -89,7 +89,9 @@ Historical plans for direct calendar writes, the quiz, and poster are superseded
       stage, never "always"; one test send from the phone the night before
 - [ ] For optional email: copy the verified date list into Copilot/Outlook;
       it does not inherit the phone conversation. Draft only.
-- [ ] YouTube Music clip queued, room volume checked; offline phone copy ready.
+- [ ] Embedded Ave Maria video tested in Slidev, including its opening and
+      melody entrance; room volume checked. YouTube Music tab queued and
+      offline phone copy ready as fallbacks.
 - [ ] Pet voice input/output and interruption tested from the stage position.
       Pet "Intelligence" is set to **Instant** (latency matters on stage);
       rehearse the exact four-question chain on that setting and listen for
@@ -178,11 +180,15 @@ conversation's context after the audience has watched it in use:
 3. **2:00–7:00: Bach/Gounod, in conversation (~5 min).** Give students an
    observation task: "Watch what changes when I ask a follow-up." This is
    NOT a generation analogy; it's a live demonstration of *conversation as
-   the way to use these tools*. **Play ~30 seconds of the Ave Maria from
-   YouTube Music** (subscription — no ads; tab queued to the chosen
-   recording, at the start). The opening bars are Bach's prelude on its own
+   the way to use these tools*. **Click Play on the slide's embedded
+   [Ave Maria video by Rusanda Panfili](https://www.youtube.com/watch?v=MZKKeKTa-cU)**
+   and play ~30 seconds from the start. Rehearse this video's opening and
+   melody entrance beforehand. If the player fails, use the slide's YouTube
+   link or the queued YouTube Music recording; keep the offline phone copy ready.
+   The opening bars are Bach's prelude on its own
    — "that's Bach, 1722" — then the melody enters — "and that's Gounod,
-   1852, on top." One clip does both halves. Then the **Pet in Codex, by voice**
+   1852, on top." One clip does both halves. **Pause the video before switching
+   to the Pet.** Then the **Pet in Codex, by voice**
    (interruptible — interrupt it at least once, naturally): *"Was this a
    common practice?"* → *"Did Gounod do this with other pieces?"* → *"Was
    Bach a common source for this sort of thing?"* → *"What are some other

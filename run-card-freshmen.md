@@ -26,6 +26,9 @@ Generate one token at a time, using context.
 
 **30-second clip. Bach: 1722. Gounod: composed 1852, published 1853.**
 
+Click Play on the slide. **Pause before switching to the Pet.**
+Fallback: YouTube link / queued Music tab / offline phone copy.
+
 - “Was this a common practice?”
 - “Did Gounod do this with other pieces?”
 - “Was Bach a common source?”

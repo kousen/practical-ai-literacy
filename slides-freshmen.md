@@ -199,7 +199,7 @@ Key consequence: "Fluent is not the same as verified." Now play the music.
 
 ---
 layout: center
-class: glow-purple text-center
+class: glow-purple text-center music-demo
 ---
 
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · Bach → Gounod, in conversation</div>
@@ -208,12 +208,38 @@ class: glow-purple text-center
 
 <p class="takeaway">Watch what changes when I ask a follow-up.</p>
 
+<div class="music-clip">
+  <RenderWhen context="print">
+    <a href="https://www.youtube.com/watch?v=MZKKeKTa-cU" aria-label="Watch Ave Maria performed by Rusanda Panfili on YouTube">
+      <img src="/images/bach-gounod-video.jpg" alt="Rusanda Panfili playing violin, with the title Ave Maria" width="520" height="293" />
+    </a>
+    <template #fallback>
+      <Youtube id="MZKKeKTa-cU" :width="520" :height="293" title="Ave Maria — Gounod/Bach — Rusanda Panfili" referrerpolicy="strict-origin-when-cross-origin" />
+    </template>
+  </RenderWhen>
+</div>
+<div class="music-credit"><a href="https://www.youtube.com/watch?v=MZKKeKTa-cU" target="_blank" rel="noopener noreferrer">Ave Maria · Rusanda Panfili · Watch on YouTube</a></div>
+
+<style>
+.music-demo .eyebrow { margin-bottom: 0.5rem; }
+.music-demo .takeaway { margin: 0.5rem auto 1rem; }
+.music-clip { width: 520px; height: 293px; margin: 0 auto; }
+.music-clip iframe, .music-clip img { display: block; width: 100%; height: 100%; }
+.music-clip img { object-fit: cover; }
+.music-credit { margin-top: 0.5rem; font-size: 0.95rem; color: var(--muted); }
+</style>
+
 <!--
 Start around 2:00; allow ~5 min including the clip. Give the audience its
 observation task: "Watch what changes when I ask a follow-up."
-Play ~30 sec of the Ave Maria from YouTube Music (tab queued, at the
-start): the opening bars are Bach's prelude alone — say "that's Bach, 1722"
-— then the melody enters: "and that's Gounod, 1852, on top." Then the Pet in Codex,
+Click Play in the embedded Ave Maria video (Rusanda Panfili), from the start.
+Play ~30 sec: the opening bars are Bach's prelude alone — say "that's Bach, 1722"
+— then the melody enters: "and that's Gounod, 1852, on top."
+Pause the player before switching to the Pet. If embedding fails, use the
+Watch on YouTube link or the queued YouTube Music tab; offline phone copy is
+the final fallback. Rehearse this exact video and its opening before the talk.
+Video and thumbnail: https://www.youtube.com/watch?v=MZKKeKTa-cU
+Then the Pet in Codex,
 BY VOICE, interruptible: "Was this a common practice?" → "Did Gounod do this
 with other pieces?" → "Was Bach a common source for this sort of thing?" →
 "What are some other examples?" Follow the thread wherever it goes — the
