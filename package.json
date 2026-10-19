@@ -14,7 +14,7 @@
     "slidev-component-progress": {
       "@slidev/client": "$@slidev/cli"
     },
-    "dompurify": "^3.4.12"
+    "dompurify": "^3.4.16"
   },
   "devDependencies": {
     "@slidev/cli": "^52.18.0",
