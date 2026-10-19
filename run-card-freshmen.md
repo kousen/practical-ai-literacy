@@ -1,6 +1,9 @@
 # Freshmen talk · Sunday, September 6
 
 **Phone cues.** Times are targets from the start of your part.
+**Recording (Oct 2026):** laptop only, in segments, in Descript. YouTube cut
+adds the to-camera intro and the Moodle receipt slide; Moodle cut keeps the
+Ewa handoff. Never show the Outlook inbox on camera.
 [Detailed prep and fallbacks](demo-script-freshmen.md)
 
 ## 0:00 · Opening
@@ -38,22 +41,21 @@ Interrupt naturally. Follow the conversation.
 
 **Debrief:** “Did he do that elsewhere?” Context gives “he” and “that” meaning.
 
-## 7:30 · Useful work → PHONE
+## 7:30 · Useful work (laptop)
 
 Cover → reveal ram. “I used Nano Banana.”
 **Model generates responses; app supplies tools.**
 **Some say things; some do things. Doing should ask.**
 (Lamp: first color change only — “blue = working, green = done.”)
 
-**Open Claude before connecting the phone.**
+**Cold-start Claude (incognito / memory off). “Always allow” reset.**
+Step 2: paste the CleanShot screenshot of the portal schedule.
 You know the scheduling demo. Create the .ics file students can use now.
 Then: **"Email that .ics file to my Trinity address."** → it asks →
 **"Steps 1–4 were saying. This is doing."** Approve ONCE. "Remember that
-moment." (No prompt? download/share from the phone and say so.)
+moment." (No prompt? download the file and say so.) Cut before the inbox appears.
 
-## BACK ON LAPTOP · Calendar
-
-Disconnect phone; reopen these cues.
+## Calendar, then Moodle
 
 **Calendar slide (screenshot — no tab switch).**
 
@@ -61,6 +63,10 @@ Disconnect phone; reopen these cues.
 **“Busy” = Outlook feed**, not events Claude created.
 “Trinity hasn't authorized an Outlook connector, so we use a file to review
 and import.” Separate workflow; not the file just made.
+
+**Moodle slide (YouTube cut; optional for Moodle cut).** Receipt, not claim.
+“I'm not telling you what AI could do for a professor. This is what it did
+for this one.” (Ken's own line goes here.) Straight into section 4.
 
 ## 15:00 · Car wash
 

@@ -124,6 +124,14 @@ with AI-in-college and the integrity policy, so stay OFF policy and integrity.
 Tone check: mechanism and evidence, never advocacy — this must not read as marketing.
 0:00–0:20 opener: "These tools can help with difficult things and make
 surprising mistakes on easy ones. I want to show you how both happen."
+
+YOUTUBE CUT ONLY — to camera, ~30 s, before this slide (DRAFT, Ken to tune):
+"This is the talk I gave Trinity's incoming class in September 2026: what
+these tools actually are, what they're good and bad at, and how to tell the
+difference. I recorded this version for students who missed it — and for
+everyone who isn't eighteen and has asked me the same questions. The
+schedule you'll see is my real one. I built it the same way."
+Moodle cut: skip this, start on the title slide.
 -->
 
 ---
@@ -401,8 +409,10 @@ class: glow-green text-center
 </div>
 
 <!--
-Desktop → connect phone for this demo only → return to desktop afterward.
-One Claude conversation on the phone:
+RECORDING: laptop only, no phone. Cold-start the chat (incognito or memory
+off) so rehearsals don't leak into the answers. Reset the email "always
+allow" before this segment. Step 2 is a paste of the CleanShot X screenshot
+of the portal schedule. One Claude conversation:
 1 FIND: "Find the current Trinity College Hartford approved academic calendar."
   Check the institution and academic year; finding Hartford does not prove
   that memory was used.
@@ -419,12 +429,12 @@ One Claude conversation on the phone:
   it's asking before it acts. Read what it wants to do; approve once, never
   'always.'" Yes → the file lands in the Outlook inbox, which is exactly where
   it gets imported from. (Tested 9/5 from Claude Desktop: real approval
-  prompt, file arrived. Confirm once from the PHONE tonight.)
-  Fallback: download/share the file from the phone instead — no prompt, say so.
+  prompt, file arrived.) NEVER show the Outlook inbox on camera — cut right
+  after the approval. Fallback: download the file instead — no prompt, say so.
 Say: "The file is ready. It hasn't changed Outlook. I review it, then import."
 Claude already added the actual meetings through Ken's Google Calendar connector;
 that is a separate workflow, not proof of Outlook compatibility.
-Return to desktop. Optional rehearsed finish: import into a separate Outlook
+Optional rehearsed finish: import into a separate Outlook
 demo calendar and inspect an event. Otherwise show the file and describe import.
 Never re-import over the real Google events. Email is optional, outside the core:
 paste the verified dates into Copilot/Outlook before asking for a draft.
@@ -460,6 +470,32 @@ authorized an Outlook connector, so we're using a file you can review and import
 These events did not come from the file just generated. The Outlook feed is
 not an AI connector and does not give Claude permission to write to Outlook.
 Keep the Labor Day exclusion check in the live demo; it is outside this crop.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# I built my own course pages <span class="acc-green">the same way</span>
+
+<p class="takeaway">Same conversation, same checks: the schedule, the calendar, and the Moodle pages for this course.</p>
+
+<img src="/images/moodle-cpsc415.png" style="width: 780px; max-width: 90%; margin: 0.8rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The CPSC-415 AI Integration course page in Moodle, fall 2026" />
+
+<!--
+RECORDING-ONLY slide: in the YouTube cut, optional in the Moodle cut.
+Audience for this beat is Trinity faculty and staff, not students. It is a
+receipt, not a claim — a finished artifact that cannot fail on camera.
+TODO screenshot: CleanShot X capture of the real CPSC-415 Moodle course page
+→ public/images/moodle-cpsc415.png (same course as the schedule, one story).
+Say it once, first person. DRAFT, Ken to replace with his own line:
+"I'm not telling you what AI could do for a professor. This is what it did
+for this one."
+Then straight into section 4 — the verification beat that follows is what
+earns this slide.
 -->
 
 ---
