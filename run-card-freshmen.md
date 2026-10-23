@@ -21,7 +21,7 @@ Point to “Collge”, “Let's”, and the period.
 **“Please pass the…”** Dinner changes likely continuations.
 Generate one token at a time, using context.
 
-**“Fluent is not the same as verified.”**
+### “Fluent is not the same as verified.”
 
 ## 2:00 · Music and Pet
 
@@ -75,7 +75,7 @@ Let the room choose walk or drive.
 **Ollama:** “I need to wash my car. The carwash is 50m away.
 Should I walk or drive?”
 
-**“Grab your keys (just in case) and enjoy the 1-minute stroll!”**
+### “Grab your keys (just in case) and enjoy the 1-minute stroll!”
 
 “The car has to get there.” One model, one recorded failure.
 If live succeeds: **“Here's what it told me Wednesday.”**
@@ -113,9 +113,9 @@ Check your own date if the model didn't discuss it.
 “They're like eager toddlers: they want to please you, and they have a
 toddler's grasp on reality. Verify anything that matters.”
 
-**“Ask for help thinking, not for a way out of thinking.”**
+### “Ask for help thinking, not for a way out of thinking.”
 
-**“That's my part. Ewa takes it from here. Ewa?”**
+### “That's my part. Ewa takes it from here. Ewa?”
 
 ---
 
