@@ -411,8 +411,8 @@ class: glow-green text-center
 <!--
 RECORDING: laptop only, no phone. Cold-start the chat (incognito or memory
 off) so rehearsals don't leak into the answers. Reset the email "always
-allow" before this segment. Step 2 is a paste of the CleanShot X screenshot
-of the portal schedule. One Claude conversation:
+allow" before this segment. Step 2 is a paste of the cropped portal schedule
+screenshot (demo-assets/portal-course-schedule.png). One Claude conversation:
 1 FIND: "Find the current Trinity College Hartford approved academic calendar."
   Check the institution and academic year; finding Hartford does not prove
   that memory was used.
@@ -489,8 +489,8 @@ class: glow-green text-center
 RECORDING-ONLY slide: in the YouTube cut, optional in the Moodle cut.
 Audience for this beat is Trinity faculty and staff, not students. It is a
 receipt, not a claim — a finished artifact that cannot fail on camera.
-TODO screenshot: CleanShot X capture of the real CPSC-415 Moodle course page
-→ public/images/moodle-cpsc415.png (same course as the schedule, one story).
+Screenshot: public/images/moodle-cpsc415.png (the real CPSC-415 Moodle course
+page, with cell phone and Zoom ID blurred; same course as the schedule, one story).
 Say it once, first person. DRAFT, Ken to replace with his own line:
 "I'm not telling you what AI could do for a professor. This is what it did
 for this one."

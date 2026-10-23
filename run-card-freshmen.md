@@ -49,7 +49,7 @@ Cover → reveal ram. “I used Nano Banana.”
 (Lamp: first color change only — “blue = working, green = done.”)
 
 **Cold-start Claude (incognito / memory off). “Always allow” reset.**
-Step 2: paste the CleanShot screenshot of the portal schedule.
+Step 2: paste the cropped portal schedule (`demo-assets/portal-course-schedule.png`).
 You know the scheduling demo. Create the .ics file students can use now.
 Then: **"Email that .ics file to my Trinity address."** → it asks →
 **"Steps 1–4 were saying. This is doing."** Approve ONCE. "Remember that
