@@ -1,9 +1,8 @@
 # Freshmen talk · Sunday, September 6
 
 **Phone cues.** Times are targets from the start of your part.
-**Recording (Oct 2026):** laptop only, in segments, in Descript. YouTube cut
-adds the to-camera intro and the Moodle receipt slide; Moodle cut keeps the
-Ewa handoff. Never show the Outlook inbox on camera.
+**Recording (Oct 2026):** laptop only, in segments, in Descript. Add the
+to-camera intro and the Moodle receipt slide. Never show the Outlook inbox on camera.
 [Detailed prep and fallbacks](demo-script-freshmen.md)
 
 ## 0:00 · Opening
@@ -64,7 +63,7 @@ moment." (No prompt? download the file and say so.) Cut before the inbox appears
 “Trinity hasn't authorized an Outlook connector, so we use a file to review
 and import.” Separate workflow; not the file just made.
 
-**Moodle slide (YouTube cut; optional for Moodle cut).** Receipt, not claim.
+**Moodle slide.** Receipt, not claim.
 “I'm not telling you what AI could do for a professor. This is what it did
 for this one.” (Ken's own line goes here.) Straight into section 4.
 
@@ -108,14 +107,19 @@ Check your own date if the model didn't discuss it.
 
 “Can you explain how the evidence supports it?”
 
+## 23:00 · Using AI for learning
+
+**Completing the task is not learning from the task.**
+“Quiz me.” “Give me a hint, not the answer.” “Challenge my argument.”
+Check each course's policy first (Yes / No / Sometimes), disclose what you
+used, and remember you own what you submit.
+
 ## 24:00 · Close
 
 “They're like eager toddlers: they want to please you, and they have a
 toddler's grasp on reality. Verify anything that matters.”
 
 ### “Ask for help thinking, not for a way out of thinking.”
-
-### “That's my part. Ewa takes it from here. Ewa?”
 
 ---
 

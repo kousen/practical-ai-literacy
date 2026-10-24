@@ -118,20 +118,18 @@ Ken Kousen · Trinity College · First-Year Orientation · September 2026</p>
 <!--
 QR (title + close) → the rolling "latest" release asset; the URL is stable
 across rebuilds, so it stays valid no matter how often the deck changes.
-~25-minute rehearsal target in a 30-minute slot, five sections, demos as evidence — advance
-briskly; the slides are backdrops, not documents. Ewa introduces; she follows
-with AI-in-college and the integrity policy, so stay OFF policy and integrity.
+~25-minute target, six sections, demos as evidence — advance briskly; the
+slides are backdrops, not documents.
 Tone check: mechanism and evidence, never advocacy — this must not read as marketing.
 0:00–0:20 opener: "These tools can help with difficult things and make
 surprising mistakes on easy ones. I want to show you how both happen."
 
-YOUTUBE CUT ONLY — to camera, ~30 s, before this slide (DRAFT, Ken to tune):
+TO-CAMERA INTRO (~30 s, before this slide; DRAFT, Ken to tune):
 "This is the talk I gave Trinity's incoming class in September 2026: what
 these tools actually are, what they're good and bad at, and how to tell the
 difference. I recorded this version for students who missed it — and for
 everyone who isn't eighteen and has asked me the same questions. The
 schedule you'll see is my real one. I built it the same way."
-Moodle cut: skip this, start on the title slide.
 -->
 
 ---
@@ -261,8 +259,8 @@ Save the context explanation for the debrief slide immediately afterward.
 META BEAT to close — ask the Pet itself, live: "Everything we just did was
 live. Is this a good way to use a tool like you? What should I watch out
 for?" Let it answer (interrupt if it rambles) — an AI listing its own
-failure modes IS the demo. Then, simply: "Ewa will have more to say about
-that." No coordination needed.
+failure modes IS the demo. Then: "Hold onto that list — in a few minutes
+we're going to test one of the claims it just made against an actual archive."
 Fallback ladder: pet fails → same conversation typed in a chat window; AV
 fails entirely → rehearsal screenshots and narrate one exchange.
 Tech check (Tue 5 pm): laptop audio over HDMI (the volume knob), pet input
@@ -662,9 +660,6 @@ class: glow-purple text-center
 <p class="takeaway">Wrong on simple things, right on hard ones — surface confidence is not evidence of accuracy.</p>
 
 <!--
-Ewa's section (how to use AI effectively) follows right after this. The deck
-numbers its sections 1–5 sequentially — the shared planning outline's 4→6
-jump was dropped 9/2; students don't care about the planning outline.
 Callback to §2: prediction, not knowledge — that's WHY verification is on you.
 -->
 
@@ -714,7 +709,54 @@ class: glow-purple text-center
 <p class="takeaway">Can you explain how the evidence supports the claim? If not, you have an answer — not understanding.</p>
 
 <!--
-Last beat before the close; lands the section and sets up the toddler frame.
+Lands the verification section and sets up the learning vs. task-completion slide.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 6 · Using AI for learning</div>
+
+# Completing the task is not <span class="acc-green">learning</span>
+
+<p class="takeaway">AI can finish the assignment without teaching you anything.<br>Ask questions that make you think <em>more</em>, not less.</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; max-width: 46rem; margin: 1.8rem auto 0;">
+  <v-click><div style="border-top: 2px solid var(--lamp-green); padding-top: 12px;"><strong style="color: var(--fg); font-size: 1.25rem;">“Quiz me”</strong><br><span style="font-size: 1rem; color: var(--muted);">Test yourself first</span></div></v-click>
+  <v-click><div style="border-top: 2px solid var(--lamp-green); padding-top: 12px;"><strong style="color: var(--fg); font-size: 1.25rem;">“Give me a hint”</strong><br><span style="font-size: 1rem; color: var(--muted);">Not the answer</span></div></v-click>
+  <v-click><div style="border-top: 2px solid var(--lamp-green); padding-top: 12px;"><strong style="color: var(--fg); font-size: 1.25rem;">“Challenge this”</strong><br><span style="font-size: 1rem; color: var(--muted);">Spot weak assumptions</span></div></v-click>
+</div>
+
+<!--
+~30 seconds. Distilled from Ewa Syta's "AI and Your Academic Success" slide:
+Completing the task ≠ learning from the task. AI can produce a finished
+artifact without producing any learning — and the bill comes due on the exam,
+in seminar, or in the next course.
+Click through the three better asks:
+1. "Quiz me" — test yourself before the exam does.
+2. "Give me a hint" — get unstuck without skipping the struggle.
+3. "Challenge this" — ask what your argument is assuming or leaving out.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 6 · Using AI for learning</div>
+
+# Know the rules. <span class="acc-green">Own the result.</span>
+
+<p class="takeaway">Every course sets its own policy — check before you use it.<br>Disclose what you used, and remember you own what you submit.</p>
+
+<!--
+~20 seconds. Distilled from Ewa's policy & accountability slides:
+Every professor (and workplace) sets their own policy — Yes, No, or Sometimes
+— for good reasons. Check the syllabus before you use it, disclose what you
+used and keep the record, and remember that you — not the AI — are
+responsible for everything you submit.
 -->
 
 ---
@@ -745,12 +787,8 @@ class: glow-tri text-center
 
 <!--
 Ken's metaphor describes the failure modes just demonstrated, not the full
-capabilities or literal intentions of every system. Keep it short, then:
-"That's my part — Ewa takes it from here. Ewa?"
-Rehearsal target 25 minutes with five minutes of buffer. Fixed demos: Pet,
-schedule-file workflow, voice clone. Email and live Outlook import are optional.
-Live cut ladder: Pet to two follow-ups (skip meta), schedule ends at the
-downloaded file, car wash uses its recorded answer. Protect the source check.
-Hand back to Ewa for effective use, college context and policy, then Andrew.
-
+capabilities or literal intentions of every system.
+"They're like eager toddlers: they want to please you, and they have a
+toddler's grasp on reality. Verify anything that matters. Ask for help
+thinking, not for a way out of thinking."
 -->
