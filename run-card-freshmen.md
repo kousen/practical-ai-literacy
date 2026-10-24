@@ -15,8 +15,8 @@ Spotify recommends; generative AI produces a response.
 
 ## 0:45 · Tokens
 
-**Live OR screenshot.** Words, word parts, punctuation.
-Point to “Collge”, “Let's”, and the period.
+**Live (`platform.openai.com/tokenizer`) OR screenshot.** Words, word parts, punctuation.
+Point to “Collge” (`Coll` + `ge`), the period, and “Let's” (one token in GPT-5.x, split in GPT-4).
 
 **“Please pass the…”** Dinner changes likely continuations.
 Generate one token at a time, using context.

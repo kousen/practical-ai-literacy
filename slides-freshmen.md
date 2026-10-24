@@ -162,24 +162,28 @@ class: glow-purple text-center
 
 # Text becomes <span class="acc-purple">tokens</span>
 
-<img src="/images/tokenizer-input.png" style="width: 780px; max-width: 90%; margin: 0.6rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The typed sentence: Welcome to Trinity Collge. Let's learn something about AI" />
-<img src="/images/tokenizer-tokens.png" style="width: 780px; max-width: 90%; margin: 1rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Tokenizer output: 12 tokens, 57 characters. Collge splits into Coll and ge; Let's splits into Let and apostrophe-s; the period is a separate token." />
+<img src="/images/tokenizer-input.png" style="width: 780px; max-width: 90%; margin: 0.6rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="OpenAI Tokenizer (GPT-5.x & O1/3) with the typed sentence: Welcome to Trinity Collge. Let's learn something about AI" />
+<img src="/images/tokenizer-tokens.png" style="width: 780px; max-width: 90%; margin: 1rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Tokenizer output: 12 tokens, 58 characters. Collge splits into Coll and ge; the period is a separate token; Let's is a single token in GPT-5.x." />
 
-<p class="takeaway" style="margin-top: 0.9rem; font-size: 1.25rem; color: var(--muted-strong) !important; opacity: 1 !important;">Tokens can be whole words, parts of words, or punctuation.</p>
+<p class="takeaway" style="margin-top: 0.8rem; font-size: 1.25rem; color: var(--muted-strong) !important; opacity: 1 !important;">Tokens can be whole words, parts of words, or punctuation.</p>
+<div style="margin-top: 0.35rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--faint);"><a href="https://platform.openai.com/tokenizer" target="_blank" rel="noopener noreferrer">platform.openai.com/tokenizer</a></div>
 
 <!--
 0:45–1:30. First demo: show the colored fragments, then name them "tokens."
-Use EITHER the live playground OR this screenshot (Sept 3, gpt-4 tokenizer).
+Use EITHER the live OpenAI Tokenizer (https://platform.openai.com/tokenizer)
+OR this screenshot (GPT-5.x & O1/3 tokenizer).
 Live: type "Trinity College" and one short sentence. If the tab is slow,
 use this image immediately. After a successful live run, advance past this
 slide without repeating the explanation. No vendor tour or pricing aside.
-On the screenshot, point out "Collge", "Let's", and the separate period.
+On the screenshot, point out "Collge" (splits into "Coll" and "ge"), the
+separate period, and how "Let's" is a single token in GPT-5.x (whereas the
+legacy GPT-4 tab splits "Let" and "'s").
 The count belongs to this example and tokenizer, not a general word rule.
 "These chunks are represented by numbers. This shows how text is encoded;
 next we'll look at how the model generates more of it."
 [Sources]
-Ken's Sept 3 tokenizer screenshots: /images/tokenizer-input.png and
-/images/tokenizer-tokens.png. Displayed tokenizer: gpt-4.
+OpenAI Tokenizer screenshots: /images/tokenizer-input.png and
+/images/tokenizer-tokens.png (https://platform.openai.com/tokenizer, GPT-5.x & O1/3).
 [/Sources]
 -->
 
