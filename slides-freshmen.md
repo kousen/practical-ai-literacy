@@ -245,6 +245,12 @@ observation task: "Watch what changes when I ask a follow-up."
 Click Play in the embedded Ave Maria video (Rusanda Panfili), from the start.
 Play ~30 sec: the opening bars are Bach's prelude alone — say "that's Bach, 1722"
 — then the melody enters: "and that's Gounod, 1852, on top."
+(Quick aside while introducing the clip: when preparing this video for YouTube,
+you asked your coding agent to check whether playing 30 seconds of this clip
+would trigger a Content ID claim — it inspected the YouTube page metadata,
+confirmed there is no Content ID license block because Rusanda Panfili recorded
+it at home during the pandemic, and even pulled her description noting it was
+published in 1853.)
 Pause the player before switching to the Pet. If embedding fails, use the
 Watch on YouTube link or the queued YouTube Music tab; offline phone copy is
 the final fallback. Rehearse this exact video and its opening before the talk.
@@ -483,21 +489,26 @@ class: glow-green text-center
 
 # I built my own course pages <span class="acc-green">the same way</span>
 
-<p class="takeaway">Same conversation, same checks: the schedule, the calendar, and the Moodle pages for this course.</p>
+<p class="takeaway">Agents with tools aren't just for writing code.<br>One built this page — and blurred my phone and Zoom link here.</p>
 
-<img src="/images/moodle-cpsc415.png" style="width: 780px; max-width: 90%; margin: 0.8rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The CPSC-415 AI Integration course page in Moodle, fall 2026" />
+<img src="/images/moodle-cpsc415.png" style="width: 780px; max-width: 90%; margin: 0.8rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The CPSC-415 AI Integration course page in Moodle, fall 2026, with cell phone number and Zoom link blurred" />
 
 <!--
-RECORDING-ONLY slide: in the YouTube cut, optional in the Moodle cut.
-Audience for this beat is Trinity faculty and staff, not students. It is a
-receipt, not a claim — a finished artifact that cannot fail on camera.
+RECORDING-ONLY slide. It is a receipt, not a claim — a finished artifact on screen.
 Screenshot: public/images/moodle-cpsc415.png (the real CPSC-415 Moodle course
 page, with cell phone and Zoom ID blurred; same course as the schedule, one story).
-Say it once, first person. DRAFT, Ken to replace with his own line:
+Key point — using coding agents (Claude Code, Codex, Antigravity) for
+productive educational work, not just programming:
+1. An agent helped build this CPSC-415 Moodle course page.
+2. While preparing this video, you asked the agent to grab a screenshot of the
+   open Moodle window — it spotted your cell phone number and class Zoom link
+   on the page and blurred those two boxes before committing to GitHub.
+3. Earlier, when you wondered if the Ave Maria clip would trigger a YouTube
+   copyright claim, it inspected the YouTube page source to verify it was an
+   independent home recording with no Content ID block.
 "I'm not telling you what AI could do for a professor. This is what it did
 for this one."
-Then straight into section 4 — the verification beat that follows is what
-earns this slide.
+Then straight into section 4.
 -->
 
 ---

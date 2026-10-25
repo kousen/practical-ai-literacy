@@ -27,6 +27,9 @@ Generate one token at a time, using context.
 “Watch what changes when I ask a follow-up.”
 
 **30-second clip. Bach: 1722. Gounod: composed 1852, published 1853.**
+*(Agent check aside: coding agent inspected the YouTube page metadata — no
+Content ID block, home pandemic recording, and spotted "published 1853" in
+her description.)*
 
 Click Play on the slide. **Pause before switching to the Pet.**
 Fallback: YouTube link / queued Music tab / offline phone copy.
@@ -63,9 +66,12 @@ moment." (No prompt? download the file and say so.) Cut before the inbox appears
 “Trinity hasn't authorized an Outlook connector, so we use a file to review
 and import.” Separate workflow; not the file just made.
 
-**Moodle slide.** Receipt, not claim.
+**Moodle slide.** Receipt, not claim: coding agents (Claude Code, Codex,
+Antigravity) aren't just for code — built this Moodle page, blurred the phone
+number and Zoom link in this screenshot before pushing to GitHub, and checked
+the YouTube clip's metadata earlier.
 “I'm not telling you what AI could do for a professor. This is what it did
-for this one.” (Ken's own line goes here.) Straight into section 4.
+for this one.” Straight into section 4.
 
 ## 15:00 · Car wash
 
