@@ -675,25 +675,41 @@ class: glow-purple text-center
 <p class="takeaway">Choose one claim. Open its source.<br>Find the passage and check that it supports the claim.</p>
 
 <!--
-Four-minute section budget including opener, this demonstration, and the essential check.
-Use a concrete claim from the earlier Gounod conversation. Prepared example:
-"Was the melody composed in 1852 or published in 1853?"
-Ask for a source and the relevant passage; open it and compare the claim.
-Preload the BnF catalog record:
-https://catalogue.bnf.fr/ark:/12148/cb140152042
-Its work notes distinguish composition (1852) and first edition (1853).
-Point to the two dates and explain the French labels aloud. Do not ask for
-five sources or bet the demo on finding an accessible article in 30 seconds.
-Allow 60–90 seconds for the check, more if there is a useful correction.
-If the live citation is inaccessible, say so and use the prepared record.
-If the earlier conversation omitted this date claim, introduce it explicitly
-as a check of the date Ken supplied with the clip. Do not invent a past answer.
-Takeaway: an explanation from the model is another output; the source is what
-we inspect. Another chatbot agreeing is not independent confirmation.
-Fallback: save this record locally during rehearsal and label it as a saved page.
+Set up the habit: an explanation from the model is just another generated
+output — the source is what we inspect. Another chatbot agreeing is not
+independent confirmation. Next slide demonstrates this with a famous quote
+that ties directly into Section 6.
+-->
+
+---
+layout: center
+class: glow-purple text-center
+---
+
+<div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · check the evidence</div>
+
+# “Never let your schooling interfere<br>with your <span class="acc-purple">education</span>.”
+
+<p class="takeaway">Usually attributed to Hartford's own Mark Twain.<br><v-click>Actually written by <strong>Grant Allen (1894)</strong> — pinned on Twain in a 1907 air-rifle ad.</v-click></p>
+
+<div style="margin-top: 0.9rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--faint);"><a href="https://quoteinvestigator.com/2010/09/25/schooling-vs-education/" target="_blank" rel="noopener noreferrer">quoteinvestigator.com</a> · <a href="https://marktwainstudies.com/the-apocryphal-twain-never-let-schooling-interfere-with-your-education/" target="_blank" rel="noopener noreferrer">marktwainstudies.com</a></div>
+
+<!--
+1. Show the quote first: almost everyone attributes "Never let your schooling
+   interfere with your education" to Mark Twain, who lived right down the
+   street from Trinity in Hartford. Because that attribution is repeated all
+   over the internet, ungrounded prediction will happily repeat it too.
+2. Click to reveal (and optionally open the linked Quote Investigator or
+   Center for Mark Twain Studies page): when you check the primary sources,
+   Twain never wrote it. Grant Allen wrote it in 1894 (in Post-Prandial
+   Philosophy: "What a misfortune it is that we should thus be compelled to
+   let our boys' schooling interfere with their education!"), and it first got
+   attached to Mark Twain in a 1907 magazine ad for Daisy Air Rifles.
+3. Also note: you can check a specific claim from the earlier Bach/Gounod Pet
+   conversation the exact same way.
 [Sources]
-BnF catalog, Méditation sur le 1er prélude de piano de S. Bach, CG 89a:
-https://catalogue.bnf.fr/ark:/12148/cb140152042 (checked Sept 5).
+Quote Investigator: https://quoteinvestigator.com/2010/09/25/schooling-vs-education/
+Center for Mark Twain Studies: https://marktwainstudies.com/the-apocryphal-twain-never-let-schooling-interfere-with-your-education/
 [/Sources]
 -->
 
@@ -730,10 +746,13 @@ class: glow-green text-center
 </div>
 
 <!--
-~30 seconds. Distilled from Ewa Syta's "AI and Your Academic Success" slide:
-Completing the task ≠ learning from the task. AI can produce a finished
-artifact without producing any learning — and the bill comes due on the exam,
-in seminar, or in the next course.
+~30 seconds. Pivot on the Grant Allen quote we just verified:
+Almost all of today's examples are about not letting your schooling interfere
+with your education — getting the calendar logistics out of the way and using
+AI to follow your own curiosity (like the Bach/Gounod rabbit hole), rather
+than hunting for a shortcut to get an A without learning anything.
+Completing the task ≠ learning from the task: AI can produce the artifact
+without producing the learning, and the bill comes due on the exam.
 Click through the three better asks:
 1. "Quiz me" — test yourself before the exam does.
 2. "Give me a hint" — get unstuck without skipping the struggle.

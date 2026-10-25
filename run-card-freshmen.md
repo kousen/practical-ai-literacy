@@ -98,17 +98,17 @@ Fallback: `demo-assets/voice-clone-demo.mp3`.
 
 **One claim → source → passage.**
 
-Gounod: **1852 composition / 1853 publication**.
-[BnF record](https://catalogue.bnf.fr/ark:/12148/cb140152042):
-“Date de composition” / “1re éd.”
-
-**“Does this passage support the claim?”**
-Check your own date if the model didn't discuss it.
+**“Never let your schooling interfere with your education.”**
+Usually attributed to Hartford's own Mark Twain.
+Primary sources ([Quote Investigator](https://quoteinvestigator.com/2010/09/25/schooling-vs-education/) / [Center for Mark Twain Studies](https://marktwainstudies.com/the-apocryphal-twain-never-let-schooling-interfere-with-your-education/)):
+actually **Grant Allen (1894)** — pinned on Twain in a **1907 Daisy Air Rifle ad**.
+(Or verify a specific claim from the earlier Pet conversation.)
 
 “Can you explain how the evidence supports it?”
 
 ## 23:00 · Using AI for learning
 
+**Schooling vs. education:** use AI to follow your curiosity, not bypass the work.
 **Completing the task is not learning from the task.**
 “Quiz me.” “Give me a hint, not the answer.” “Challenge my argument.”
 Check each course's policy first (Yes / No / Sometimes), disclose what you
