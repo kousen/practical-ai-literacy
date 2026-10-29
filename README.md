@@ -44,6 +44,8 @@ Two ideas run throughout:
 Just want to read the deck? Grab the always-current PDF:
 **[practical-ai-literacy-slides.pdf](https://github.com/kousen/practical-ai-literacy/releases/latest/download/practical-ai-literacy-slides.pdf)**
 
+Or read it in the browser, no setup needed: **<https://kousen.github.io/practical-ai-literacy/>** (deployed to GitHub Pages on every slide change by [`deploy-slides-pages.yml`](.github/workflows/deploy-slides-pages.yml)).
+
 The first-year orientation talk (*AI Tools for Academic Success*, `slides-freshmen.md`) is built the same way:
 **[ai-tools-for-academic-success.pdf](https://github.com/kousen/practical-ai-literacy/releases/latest/download/ai-tools-for-academic-success.pdf)**
 (also as a [light-background PDF](https://github.com/kousen/practical-ai-literacy/releases/latest/download/ai-tools-for-academic-success-light.pdf) for bright rooms)
