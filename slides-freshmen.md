@@ -139,9 +139,9 @@ class: glow-blue text-center
 
 <div class="eyebrow acc-blue"><span class="lampdot dot-blue"></span> 1 · What AI actually is</div>
 
-# Familiar AI, <span class="acc-blue">generative AI</span>
+# Predictive AI vs. <span class="acc-blue">generative AI</span>
 
-<p class="takeaway">Spotify can recommend an existing song.<br>A generator produces text, images, or audio in response to your request.</p>
+<p class="takeaway">Predictive AI picks an existing song you’ll probably like.<br>Generative AI produces text, images, or audio in response to your request.</p>
 
 <!--
 0:20–0:45. One sentence of background: "AI research goes back decades, and
@@ -261,6 +261,9 @@ with other pieces?" → "Was Bach a common source for this sort of thing?" →
 "What are some other examples?" Follow the thread wherever it goes — the
 free-association IS the demo. Challenge one claim: "What evidence supports that?"
 The question asks for support rather than simply pressuring it to agree.
+Then, still by voice: "What haven't I asked you about?" Let it offer two or
+three directions and pick one. This is the first of the "three asks" slide
+coming in §3 — the room sees it work before it's named.
 Save the context explanation for the debrief slide immediately afterward.
 META BEAT to close — ask the Pet itself, live: "Everything we just did was
 live. Is this a good way to use a tool like you? What should I watch out
@@ -289,6 +292,8 @@ Around 7:00–7:30. Refer to an actual follow-up from the conversation; the
 sentence on screen is an example, not a claim about the exact words used.
 "I didn't need to repeat who we were discussing. The earlier exchange gave
 the follow-up its meaning." Training and available tools also shape answers.
+"What haven't I asked?" worked the same way: this thread, matched against
+patterns from everything it has read.
 Remembering the discussion doesn't establish that its claims are true.
 -->
 
@@ -299,16 +304,55 @@ class: glow-green text-center
 
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
-# What can you <span class="acc-green">ask for?</span>
+# A conversation, <span class="acc-green">not a search box</span>
 
-<p class="takeaway">An explanation of a difficult passage.<br>Practice questions, or another way to approach a problem.<br>A table of dates extracted from a screenshot.</p>
+<p class="takeaway">A fact, you can look up.<br>Bring it your situation — this passage, this problem, this draft — and ask for an interpretation.</p>
 
 <!--
-~20 seconds. These examples replace the five-slide capabilities tour.
-Mention rewriting, translating, and generating options in one breath if
-useful. "Quiz me, don't tell me" stays a spoken example, not another demo.
-Quality varies; the semester demo will show extraction and checking in use.
-Next, the short ram-cover reveal shows an image-generation example.
+~30 seconds. Name the principle the music demo just showed: "Don't ask it
+what you'd ask Google. Google is free, and it still gives a decent answer
+to a question you can phrase." (Spoken only — comparative asides stay off
+the slide.) The point of a language model is the conversation: it reads
+the nuance in YOUR context — the passage you're stuck on, the problem, the
+draft — and applies what it absorbed from everything it has read. You're
+not asking for a fact; you're asking for an interpretation.
+Examples in one breath: an explanation of a difficult passage, practice
+questions, another way to approach a problem, a table of dates pulled from
+a screenshot. Quality varies; the semester demo will show extraction and
+checking in use. Next slide: three asks that only work on a machine.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Three asks you'd never <span class="acc-green">make of a person</span>
+
+<p class="takeaway">It doesn't get tired, bored, or offended. Use that.</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; max-width: 46rem; margin: 1.8rem auto 0;">
+  <v-click><div style="border-top: 2px solid var(--lamp-green); padding-top: 12px;"><strong style="color: var(--fg); font-size: 1.25rem;">“What haven't I asked?”</strong><br><span style="font-size: 1rem; color: var(--muted);">What others do that hasn't occurred to you</span></div></v-click>
+  <v-click><div style="border-top: 2px solid var(--lamp-green); padding-top: 12px;"><strong style="color: var(--fg); font-size: 1.25rem;">“Give me ten more”</strong><br><span style="font-size: 1rem; color: var(--muted);">Say what was wrong with the first ten</span></div></v-click>
+  <v-click><div style="border-top: 2px solid var(--lamp-green); padding-top: 12px;"><strong style="color: var(--fg); font-size: 1.25rem;">“What can you do with this?”</strong><br><span style="font-size: 1rem; color: var(--muted);">Stuck? Give it the context and ask</span></div></v-click>
+</div>
+
+<!--
+~40 seconds. Click through the three. The room just watched the first one
+in the Bach/Gounod conversation — point back to it.
+1. "What haven't I asked? What am I forgetting? What do other people do
+   that hasn't occurred to me yet?" This leans on pattern-matching across
+   everything it has read: things others have already done that simply
+   weren't in your experience base yet — and you'd like them to be.
+2. "Give me ten titles for this." None of them work? "Give me ten more."
+   Then ten more. You wouldn't do that to a person; you can do it to this
+   all afternoon, especially if you say what was wrong with the last batch.
+3. Sitting at a problem thinking "how could this thing even help?" Ask it.
+   "Here's what I'm dealing with — what can you do for me here?" The more
+   context you give it, the better it knows what to try.
+Tone: habits, not features — no product names. Then the ram-cover gag.
 -->
 
 ---
@@ -334,6 +378,28 @@ laugh carries the credibility — never deliver this as a single image, and
 never recite credentials; the gag does it. Mention you've done this for all your books —
 they're on your home page. Then move on. Tone: it's a joke about your own
 book, not a product pitch.
+-->
+
+---
+layout: center
+class: glow-green text-center
+---
+
+<div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
+
+# Start with the part you <span class="acc-green">don't want to do</span>
+
+<p class="takeaway">Automate what you dislike. That's where it pays off first.<br>I didn't want to type my semester into a calendar. So I didn't.</p>
+
+<!--
+~15 seconds. The answer to "what should I even use this for?": look for
+the parts of the job you don't want to do — the tedious, the repetitive —
+and try handing those over first. You already don't want to do them, so
+the bar is low and the win is immediate. The next few minutes are that
+principle in practice: the semester schedule I did not want to type in by
+hand. (The Moodle course page later in the talk is the same principle
+applied to my own job — save the "wait, what?" story for that slide.)
+Straight into "the model is the engine."
 -->
 
 ---
@@ -491,7 +557,9 @@ class: glow-green text-center
 
 <p class="takeaway">Agents with tools aren't just for writing code.<br>One built this page — and blurred my phone and Zoom link here.</p>
 
-<img src="/images/moodle-cpsc415.png" style="width: 780px; max-width: 90%; margin: 0.8rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="The CPSC-415 AI Integration course page in Moodle, fall 2026, with cell phone number and Zoom link blurred" />
+<svg viewBox="0 0 2474 960" role="img" aria-label="The CPSC-415 AI Integration course page in Moodle, fall 2026, with cell phone number and Zoom link blurred" style="display: block; width: 680px; height: 264px; max-width: 90%; margin: 0.6rem auto 0; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow); overflow: hidden;">
+  <image href="/images/moodle-cpsc415.png" width="2474" height="1446" />
+</svg>
 
 <!--
 RECORDING-ONLY slide. It is a receipt, not a claim — a finished artifact on screen.
@@ -508,6 +576,12 @@ productive educational work, not just programming:
    independent home recording with no Content ID block.
 "I'm not telling you what AI could do for a professor. This is what it did
 for this one."
+SPOKEN BEAT — the line that wins over colleagues: "Every professor has to
+set up a Moodle page for every class, every semester. Nobody enjoys it.
+When I tell faculty I had my AI tool do mine, the response is always
+'Wait, what?'" The lesson for the room: automating the thing everyone
+hates is what converts skeptics — and this page is the one that did it.
+No tooling detail here (no MCP, no product tour); the screenshot is the proof.
 Then straight into section 4.
 -->
 
@@ -537,8 +611,11 @@ class: glow-blue text-center
 
 # The carwash is <span class="acc-blue">50 meters away</span>
 
-<div style="max-width: 46rem; margin: 1.8rem auto 0; padding: 1.2rem 1.7rem; border-left: 4px solid var(--lamp-blue); background: rgba(110,139,255,0.08); text-align: left;">
-  <p style="margin: 0; color: var(--fg); font-size: 1.75rem; line-height: 1.35;">“I need to wash my car.<br><strong>Should I walk or drive?</strong>”</p>
+<div style="display: grid; grid-template-columns: 1fr 20rem; gap: 2rem; max-width: 52rem; margin: 1.4rem auto 0; align-items: center;">
+  <div style="padding: 1.2rem 1.7rem; border-left: 4px solid var(--lamp-blue); background: rgba(110,139,255,0.08); text-align: left;">
+    <p style="margin: 0; color: var(--fg); font-size: 1.75rem; line-height: 1.35;">“I need to wash my car.<br><strong>Should I walk or drive?</strong>”</p>
+  </div>
+  <img src="/images/carwash.jpg" style="width: 100%; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="A car covered in foam inside a car wash bay" />
 </div>
 
 <p style="margin-top: 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--faint);">Gemma 4 12B · local model in Ollama</p>
@@ -549,6 +626,10 @@ wording in the app. Give students a beat to choose "walk or drive" before the re
 model's thinking to "Thought for N seconds" — no --think flag needed). LIVE
 OPTION: switch to the app and run it now; then come back and advance. If not
 running it live, just advance — the next slide is the answer.
+[Sources]
+Photo: Clarence Tioh, Unsplash (Unsplash License):
+https://unsplash.com/photos/kQdY2pR-ic8
+[/Sources]
 -->
 
 ---
@@ -640,7 +721,10 @@ class: glow-blue text-center
 
 # That was my voice. <span class="acc-blue">Except it wasn't.</span>
 
-<p class="takeaway">For an urgent unexpected call, hang up and call back using a number you already know.</p>
+<div style="display: grid; grid-template-columns: 1fr 15rem; gap: 2.2rem; max-width: 48rem; margin: 1.2rem auto 0; align-items: center;">
+  <p class="takeaway" style="text-align: left; margin: 0;">For an urgent unexpected call, hang up and call back using a number you already know.</p>
+  <img src="/images/phone-handset.jpg" style="width: 100%; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="A corded telephone handset lying off the hook" />
+</div>
 
 <!--
 ~3 min, adapted from the workshop's Demo 5 (full steps in demo-script.md).
@@ -656,6 +740,8 @@ repeatable tip of the day. Keep the spoken sentence short and visible in the
 app's prompt so students can compare the same words. This is Ken's consented clone.
 [Sources]
 https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money
+Photo: Alexander Andrews, Unsplash (Unsplash License):
+https://unsplash.com/photos/black-corded-telephone-JYGnB9gTCls
 [/Sources]
 -->
 
@@ -699,9 +785,13 @@ class: glow-purple text-center
 
 <div class="eyebrow acc-purple"><span class="lampdot dot-purple"></span> Demo · check the evidence</div>
 
-# “Never let your schooling interfere<br>with your <span class="acc-purple">education</span>.”
-
-<p class="takeaway">Usually attributed to Hartford's own Mark Twain.<br><v-click>Actually written by <strong>Grant Allen (1894)</strong> — pinned on Twain in a 1907 air-rifle ad.</v-click></p>
+<div style="display: grid; grid-template-columns: 13rem 1fr; gap: 2.4rem; max-width: 54rem; margin: 0.4rem auto 0; align-items: center; text-align: left;">
+  <img src="/images/mark-twain-1907.jpg" style="width: 100%; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Mark Twain, head-and-shoulders portrait, 1907, by A.F. Bradley" />
+  <div>
+    <h1 style="font-size: 2.5rem; margin: 0 0 0.8rem;">“Never let your schooling interfere with your <span class="acc-purple">education</span>.”</h1>
+    <p class="takeaway" style="margin: 0; max-width: none;">Usually attributed to Hartford's own Mark Twain.<br><v-click>Actually written by <strong>Grant Allen (1894)</strong> — pinned on Twain in a 1907 air-rifle ad.</v-click></p>
+  </div>
+</div>
 
 <div style="margin-top: 0.9rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--faint);"><a href="https://quoteinvestigator.com/2010/09/25/schooling-vs-education/" target="_blank" rel="noopener noreferrer">quoteinvestigator.com</a> · <a href="https://marktwainstudies.com/the-apocryphal-twain-never-let-schooling-interfere-with-your-education/" target="_blank" rel="noopener noreferrer">marktwainstudies.com</a></div>
 
@@ -721,6 +811,9 @@ class: glow-purple text-center
 [Sources]
 Quote Investigator: https://quoteinvestigator.com/2010/09/25/schooling-vs-education/
 Center for Mark Twain Studies: https://marktwainstudies.com/the-apocryphal-twain-never-let-schooling-interfere-with-your-education/
+Portrait: A.F. Bradley, 1907. Library of Congress Prints & Photographs
+Division, LC-USZ62-5513, "no known restrictions on publication":
+https://www.loc.gov/pictures/item/2004672770/
 [/Sources]
 -->
 
@@ -787,6 +880,12 @@ Every professor (and workplace) sets their own policy — Yes, No, or Sometimes
 — for good reasons. Check the syllabus before you use it, disclose what you
 used and keep the record, and remember that you — not the AI — are
 responsible for everything you submit.
+Say why the rules vary (candor, not apology): a lot of faculty are
+skeptical about AI in education, and they're right to be — it is
+disrupting teaching on a scale I'd compare to the arrival of the internet.
+Your professors are working this out in real time, which is why the policy
+differs from one course to the next. That turns "check the syllabus" from
+a rule into an explanation.
 -->
 
 ---
