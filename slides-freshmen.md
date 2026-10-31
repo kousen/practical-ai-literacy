@@ -88,15 +88,6 @@ htmlAttrs:
   var(--bg) !important; }
 :global(.takeaway) { max-width: 40rem; margin-left: auto; margin-right: auto; text-wrap: pretty; }
 :global(.contact) { font-size: 0.95rem !important; line-height: 1.65; color: var(--muted-strong) !important; opacity: 1 !important; }
-:global(.permchip) {
-  font-family: 'IBM Plex Mono', Menlo, monospace;
-  font-size: 0.85rem;
-  color: var(--lamp-green);
-  border: 1px solid var(--lamp-green);
-  border-radius: 999px;
-  padding: 4px 14px;
-  display: inline-block;
-}
 </style>
 
 <div class="eyebrow">
@@ -194,17 +185,66 @@ class: glow-purple text-center
 
 # What could <span class="acc-purple">come next?</span>
 
-<p class="takeaway" style="font-size: 2rem; color: var(--fg);">“Please pass the…”</p>
-<p class="takeaway" style="color: var(--muted-strong) !important; opacity: 1 !important;">An autoregressive language model generates one token at a time, using the preceding context. A convincing continuation can still be wrong.</p>
+<p class="takeaway" style="font-size: 1.7rem; color: var(--fg); margin-bottom: 0.4rem;">“Please pass the…”</p>
+
+<div class="nt-grid">
+  <v-click>
+  <div><div style="font-size: 0.95rem; color: var(--muted); margin-bottom: 8px; border-bottom: 2px solid var(--lamp-purple); padding-bottom: 6px;">No other context</div>
+    <div class="nt-row"><span class="nt-tok">word</span><span class="nt-bar"><span style="width: 86%"></span></span><span class="nt-pct">8.6%</span></div>
+    <div class="nt-row"><span class="nt-tok">following</span><span class="nt-bar"><span style="width: 36%"></span></span><span class="nt-pct">3.6%</span></div>
+    <div class="nt-row"><span class="nt-tok">message</span><span class="nt-bar"><span style="width: 28%"></span></span><span class="nt-pct">2.8%</span></div>
+    <div class="nt-row"><span class="nt-tok">information</span><span class="nt-bar"><span style="width: 25%"></span></span><span class="nt-pct">2.5%</span></div>
+    <div class="nt-row"><span class="nt-tok">link</span><span class="nt-bar"><span style="width: 18%"></span></span><span class="nt-pct">1.8%</span></div>
+  </div>
+  </v-click>
+  <v-click>
+  <div><div style="font-size: 0.95rem; color: var(--muted); margin-bottom: 8px; border-bottom: 2px solid var(--lamp-purple); padding-bottom: 6px;">After “We sat down to dinner.”</div>
+    <div class="nt-row"><span class="nt-tok">salt</span><span class="nt-bar"><span style="width: 55%"></span></span><span class="nt-pct">5.5%</span></div>
+    <div class="nt-row"><span class="nt-tok">wine</span><span class="nt-bar"><span style="width: 29%"></span></span><span class="nt-pct">2.9%</span></div>
+    <div class="nt-row"><span class="nt-tok">bread</span><span class="nt-bar"><span style="width: 23%"></span></span><span class="nt-pct">2.3%</span></div>
+    <div class="nt-row"><span class="nt-tok">salad</span><span class="nt-bar"><span style="width: 21%"></span></span><span class="nt-pct">2.1%</span></div>
+    <div class="nt-row"><span class="nt-tok">mashed</span><span class="nt-bar"><span style="width: 18%"></span></span><span class="nt-pct">1.8%</span></div>
+  </div>
+  </v-click>
+</div>
+
+<p class="takeaway" style="font-size: 1.1rem; margin-top: 1rem; color: var(--muted-strong) !important; opacity: 1 !important;">One token at a time, from the preceding context. A convincing continuation can still be wrong.</p>
+
+<style>
+.nt-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; max-width: 42rem; margin: 0 auto; text-align: left; }
+.nt-row { display: grid; grid-template-columns: 6.5rem 1fr 3rem; align-items: center; gap: 10px; font-size: 1rem; line-height: 1.55; }
+.nt-tok { color: var(--fg); font-family: ui-monospace, Menlo, monospace; }
+.nt-bar { display: block; height: 10px; background: color-mix(in srgb, var(--lamp-purple) 15%, transparent); border-radius: 5px; overflow: hidden; }
+.nt-bar > span { display: block; height: 100%; background: var(--lamp-purple); border-radius: 5px; }
+.nt-pct { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; font-size: 0.9rem; }
+</style>
 
 <!--
-1:30–2:00. Ten-second analogy: "If I say 'Please pass the…', several
-continuations fit. If we were just talking about dinner, that changes which
-continuations fit." A token can be smaller than a word, as we just saw.
+1:30–2:00. "If I say 'Please pass the…', several continuations fit."
+CLICK 1 — the left column: with no other context the model reads "pass" as
+pass ALONG, not hand-me-something. "Please pass the word along", "pass the
+message on", "pass the following information" — stock phrases in emails and
+forum posts, which is most of what it was trained on. (Measured: after
+"Please pass the word" it predicts " along" at 61%.) It didn't pick a weird
+word; it picked the other meaning of "pass", because nothing said dinner.
+Even the top guess is under one in ten — a full bar here is 10%. There is
+no single right answer.
+CLICK 2 — add one sentence of context and the same model moves to "salt",
+"wine", "bread". Nothing was looked up; the context changed which patterns
+fit. (If asked: after a football sentence it puts two-thirds on "ball".)
+"mashed" shows a token that is only part of what's coming — "potatoes" next.
 Training learns patterns; generation uses them with the current context.
 Say "autoregressive just means building on the text so far" if needed.
 This illustrates prediction, not a full account of how the model reasons.
 Key consequence: "Fluent is not the same as verified." Now play the music.
+[Sources]
+Numbers measured locally with GPT-2 XL (OpenAI, 2019, open weights, 1.5B
+parameters) via Hugging Face transformers: softmax over the next-token
+logits for each prompt, top 5 shown, rounded to 0.1%. Chosen because the
+weights are public so anyone can reproduce the exact figures; current
+models are far larger but generate the same way. Bars scaled so 10% = full.
+Football variant: "The quarterback dropped back. Please pass the" → " ball" 67.4%.
+[/Sources]
 -->
 
 ---
@@ -409,13 +449,16 @@ class: glow-green text-center
 
 <div class="eyebrow acc-green"><span class="lampdot dot-green"></span> 3 · What AI does well</div>
 
-# The model is the engine.<br>You use the <span class="acc-green">system</span>.
+# The model is the engine.<br>The app is the <span class="acc-green">car</span>.
 
-<p class="takeaway">The model generates responses.<br>The app can connect it to search, your files, and your calendar.</p>
+<p class="takeaway">The model generates the words.<br>The app adds the interface, and can connect it to search, your files, and your calendar.</p>
 
 <!--
 ~15 seconds, immediately before the semester demo. The model is the engine;
-the product supplies the interface and connected tools. "Watch the app find
+the app supplies the interface and connected tools. You never drive an
+engine; you drive the car. Same model, different apps, different abilities.
+(Developers call the wrapper a "harness" — don't say it here; "app" is the
+word the room already has.) "Watch the app find
 a calendar, read my schedule, and then produce a calendar file for me to review." Name capabilities
 as they appear instead of giving another advance tour. Next slide plants
 the say/do distinction the send step will pay off.
@@ -430,7 +473,7 @@ class: glow-green text-center
 
 # Some say things. Some <span class="acc-green">do</span> things.
 
-<p class="takeaway">A chat answers you. An agent acts for you — searches, sends the email. When it's about to <em>do</em>, it should ask. Watch for that moment.</p>
+<p class="takeaway">A <span class="acc-green">chat</span> answers you. An <span class="acc-green">agent</span> acts for you — searches, sends the email. When it's about to <em>do</em>, it should ask. Watch for that moment.</p>
 
 <!--
 ~15 seconds. Say the word "agent" ONCE, plainly: a system that wraps a model
@@ -457,8 +500,8 @@ class: glow-green text-center
 The school has not authorized an AI connector to Trinity's Outlook calendar. This demo uses
 a downloadable .ics file and a human-controlled import. Preparing a file
 does not change Outlook. Two moments of human control, name both: the one
-action the AI takes — emailing me the file — asks permission first (the ⚿
-moment on the next slide); the calendar write itself stays mine, after review.
+action the AI takes — emailing me the file — asks permission first (step 5
+on the next slide); the calendar write itself stays mine, after review.
 -->
 
 ---
@@ -470,19 +513,22 @@ class: glow-green text-center
 
 # My actual <span class="acc-green">fall semester</span>
 
-<p class="takeaway">It asked permission before sending the file. I said yes. Remember that moment.</p>
+<p class="takeaway" style="max-width: 52rem;">Public academic calendar + screenshot of my schedule = no class on break days.<br>A search box can't do that. And it asked before sending — remember that moment.</p>
 
-<p style="margin-top: 0.4rem;"><span class="permchip">⚿ it's asking</span></p>
-
-<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; max-width: 50rem; margin: 1.6rem auto 0;">
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">1<br><strong>Find it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">2<br><strong>Read it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">3<br><strong>Check it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">4<br><strong>Export it</strong></div>
-  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">5<br><strong>Send it</strong></div>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; max-width: 52rem; margin: 1.8rem auto 0;">
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">1<br><strong>Find it</strong><br><span style="font-size: 0.9rem; color: var(--muted); line-height: 1.35; display: inline-block; margin-top: 4px;">the public PDF of breaks and holidays</span></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">2<br><strong>Read it</strong><br><span style="font-size: 0.9rem; color: var(--muted); line-height: 1.35; display: inline-block; margin-top: 4px;">a screenshot of my schedule</span></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">3<br><strong>Check it</strong><br><span style="font-size: 0.9rem; color: var(--muted); line-height: 1.35; display: inline-block; margin-top: 4px;">no meetings on break days</span></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">4<br><strong>Export it</strong><br><span style="font-size: 0.9rem; color: var(--muted); line-height: 1.35; display: inline-block; margin-top: 4px;">a calendar file for Outlook</span></div>
+  <div style="border-top: 2px solid var(--lamp-green); padding-top: 10px;">5<br><strong>Send it</strong><br><span style="font-size: 0.9rem; color: var(--muted); line-height: 1.35; display: inline-block; margin-top: 4px;">it asks first</span></div>
 </div>
 
 <!--
+THE POINT OF THIS DEMO: not the vision model reading a screenshot, and not
+finding a PDF — it's the combination. Two sources (a public academic-calendar
+PDF of breaks and holidays, plus my schedule screenshot) cross-checked so the
+invites skip the days classes don't meet. A search engine returns pages; it
+doesn't combine them into a job. Say that out loud before step 5.
 RECORDING: laptop only, no phone. Cold-start the chat (incognito or memory
 off) so rehearsals don't leak into the answers. Reset the email "always
 allow" before this segment. Step 2 is a paste of the cropped portal schedule
@@ -499,7 +545,7 @@ screenshot (demo-assets/portal-course-schedule.png). One Claude conversation:
   dates. Ask for a plain-language preview of its contents. Full prompt and
   daylight-saving check are in the run sheet.
 5 SEND: "Email that .ics file to my Trinity address." → the permission
-  prompt. Point at the ⚿ chip: "Steps 1-4 were saying. This is doing — and
+  prompt. Point at chip 5, "it asks first": "Steps 1-4 were saying. This is doing — and
   it's asking before it acts. Read what it wants to do; approve once, never
   'always.'" Yes → the file lands in the Outlook inbox, which is exactly where
   it gets imported from. (Tested 9/5 from Claude Desktop: real approval
@@ -788,7 +834,7 @@ class: glow-purple text-center
 <div style="display: grid; grid-template-columns: 13rem 1fr; gap: 2.4rem; max-width: 54rem; margin: 0.4rem auto 0; align-items: center; text-align: left;">
   <img src="/images/mark-twain-1907.jpg" style="width: 100%; border-radius: 8px; box-shadow: 0 6px 24px var(--shadow);" alt="Mark Twain, head-and-shoulders portrait, 1907, by A.F. Bradley" />
   <div>
-    <h1 style="font-size: 2.5rem; margin: 0 0 0.8rem;">“Never let your schooling interfere with your <span class="acc-purple">education</span>.”</h1>
+    <h1 style="font-size: 2.5rem; margin: 0 0 0.8rem;">“Never let your <span class="acc-blue">schooling</span> interfere with your <span class="acc-purple">education</span>.”</h1>
     <p class="takeaway" style="margin: 0; max-width: none;">Usually attributed to Hartford's own Mark Twain.<br><v-click>Actually written by <strong>Grant Allen (1894)</strong> — pinned on Twain in a 1907 air-rifle ad.</v-click></p>
   </div>
 </div>
